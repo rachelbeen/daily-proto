@@ -1,0 +1,3826 @@
+[
+  {
+    "id": "open-meteo",
+    "name": "Open-Meteo",
+    "category": "Weather",
+    "description": "Free weather forecasts and historical climate data for any coordinates.",
+    "baseUrl": "https://api.open-meteo.com",
+    "docsUrl": "https://open-meteo.com/en/docs",
+    "auth": "none",
+    "exampleEndpoint": "https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&current=temperature_2m,precipitation",
+    "sampleFields": [
+      "temperature_2m",
+      "precipitation",
+      "wind_speed_10m"
+    ],
+    "tags": [
+      "geo",
+      "time-series",
+      "maps"
+    ]
+  },
+  {
+    "id": "rest-countries",
+    "name": "REST Countries",
+    "category": "Geography",
+    "description": "Country metadata — flags, borders, currencies, languages, and population.",
+    "baseUrl": "https://restcountries.com",
+    "docsUrl": "https://restcountries.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://restcountries.com/v3.1/region/europe?fields=name,capital,population,flags",
+    "sampleFields": [
+      "name",
+      "capital",
+      "population",
+      "borders"
+    ],
+    "tags": [
+      "geo",
+      "comparison",
+      "education"
+    ]
+  },
+  {
+    "id": "usgs-earthquakes",
+    "name": "USGS Earthquake Catalog",
+    "category": "Natural events",
+    "description": "Real-time and historical earthquake events worldwide.",
+    "baseUrl": "https://earthquake.usgs.gov",
+    "docsUrl": "https://earthquake.usgs.gov/fdsnws/event/1/",
+    "auth": "none",
+    "exampleEndpoint": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
+    "sampleFields": [
+      "mag",
+      "place",
+      "time",
+      "geometry"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "alerts",
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-library",
+    "name": "Open Library",
+    "category": "Books",
+    "description": "Book covers, authors, editions, and reading lists.",
+    "baseUrl": "https://openlibrary.org",
+    "docsUrl": "https://openlibrary.org/developers/api",
+    "auth": "none",
+    "exampleEndpoint": "https://openlibrary.org/search.json?q=climate&limit=10",
+    "sampleFields": [
+      "title",
+      "author_name",
+      "first_publish_year"
+    ],
+    "tags": [
+      "search",
+      "media",
+      "education"
+    ]
+  },
+  {
+    "id": "open-food-facts",
+    "name": "Open Food Facts",
+    "category": "Food",
+    "description": "Crowdsourced nutrition, ingredients, and packaging data for food products.",
+    "baseUrl": "https://world.openfoodfacts.org",
+    "docsUrl": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=oat&json=1&page_size=5",
+    "sampleFields": [
+      "product_name",
+      "nutriments",
+      "brands"
+    ],
+    "tags": [
+      "health",
+      "comparison",
+      "search"
+    ]
+  },
+  {
+    "id": "coingecko",
+    "name": "CoinGecko",
+    "category": "Markets",
+    "description": "Crypto prices, market caps, and trending tokens.",
+    "baseUrl": "https://api.coingecko.com",
+    "docsUrl": "https://docs.coingecko.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10",
+    "sampleFields": [
+      "name",
+      "current_price",
+      "market_cap"
+    ],
+    "tags": [
+      "finance",
+      "charts",
+      "trending"
+    ]
+  },
+  {
+    "id": "pokeapi",
+    "name": "PokéAPI",
+    "category": "Games",
+    "description": "Pokémon species, types, abilities, and evolution chains.",
+    "baseUrl": "https://pokeapi.co",
+    "docsUrl": "https://pokeapi.co/docs/v2",
+    "auth": "none",
+    "exampleEndpoint": "https://pokeapi.co/api/v2/pokemon?limit=20",
+    "sampleFields": [
+      "name",
+      "types",
+      "abilities"
+    ],
+    "tags": [
+      "fun",
+      "comparison",
+      "collections"
+    ]
+  },
+  {
+    "id": "iss-location",
+    "name": "Open Notify — ISS",
+    "category": "Space",
+    "description": "Current ISS coordinates and pass predictions.",
+    "baseUrl": "http://api.open-notify.org",
+    "docsUrl": "http://open-notify.org/Open-Notify-API/",
+    "auth": "none",
+    "exampleEndpoint": "http://api.open-notify.org/iss-now.json",
+    "sampleFields": [
+      "latitude",
+      "longitude",
+      "timestamp"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "real-time"
+    ]
+  },
+  {
+    "id": "met-museum",
+    "name": "Metropolitan Museum of Art",
+    "category": "Art",
+    "description": "Open access collection metadata and images from The Met.",
+    "baseUrl": "https://collectionapi.metmuseum.org",
+    "docsUrl": "https://metmuseum.github.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://collectionapi.metmuseum.org/public/collection/v1/search?q=sunflower&hasImages=true",
+    "sampleFields": [
+      "title",
+      "artistDisplayName",
+      "objectDate"
+    ],
+    "tags": [
+      "culture",
+      "search",
+      "gallery"
+    ]
+  },
+  {
+    "id": "art-institute",
+    "name": "Art Institute of Chicago",
+    "category": "Art",
+    "description": "Artworks, artists, and exhibition data with IIIF image support.",
+    "baseUrl": "https://api.artic.edu",
+    "docsUrl": "https://api.artic.edu/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.artic.edu/api/v1/artworks/search?q=water&limit=5",
+    "sampleFields": [
+      "title",
+      "artist_title",
+      "date_display"
+    ],
+    "tags": [
+      "culture",
+      "search",
+      "gallery"
+    ]
+  },
+  {
+    "id": "open-brewery",
+    "name": "Open Brewery DB",
+    "category": "Food & drink",
+    "description": "Breweries by city, state, and type.",
+    "baseUrl": "https://api.openbrewerydb.org",
+    "docsUrl": "https://www.openbrewerydb.org/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openbrewerydb.org/v1/breweries?by_city=portland&per_page=10",
+    "sampleFields": [
+      "name",
+      "brewery_type",
+      "city"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "local"
+    ]
+  },
+  {
+    "id": "gbif",
+    "name": "GBIF",
+    "category": "Biodiversity",
+    "description": "Species occurrence records worldwide.",
+    "baseUrl": "https://api.gbif.org",
+    "docsUrl": "https://www.gbif.org/developer/summary",
+    "auth": "none",
+    "exampleEndpoint": "https://api.gbif.org/v1/occurrence/search?country=US&limit=10&hasCoordinate=true",
+    "sampleFields": [
+      "species",
+      "decimalLatitude",
+      "decimalLongitude"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "science"
+    ]
+  },
+  {
+    "id": "hn-firebase",
+    "name": "Hacker News",
+    "category": "News",
+    "description": "Top stories, comments, and user profiles.",
+    "baseUrl": "https://hacker-news.firebaseio.com",
+    "docsUrl": "https://github.com/HackerNews/API",
+    "auth": "none",
+    "exampleEndpoint": "https://hacker-news.firebaseio.com/v0/topstories.json",
+    "sampleFields": [
+      "title",
+      "url",
+      "score"
+    ],
+    "tags": [
+      "social",
+      "trending",
+      "ranking"
+    ]
+  },
+  {
+    "id": "openfda",
+    "name": "openFDA",
+    "category": "Health",
+    "description": "FDA drug labels, adverse events, and food recall data.",
+    "baseUrl": "https://api.fda.gov",
+    "docsUrl": "https://open.fda.gov/apis/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.fda.gov/food/enforcement.json?limit=5&search=classification:Class+I",
+    "sampleFields": [
+      "product_description",
+      "reason_for_recall",
+      "report_date"
+    ],
+    "tags": [
+      "health",
+      "alerts",
+      "search"
+    ]
+  },
+  {
+    "id": "wikidata",
+    "name": "Wikidata",
+    "category": "Knowledge",
+    "description": "Structured facts about people, places, and things.",
+    "baseUrl": "https://www.wikidata.org",
+    "docsUrl": "https://www.wikidata.org/wiki/Wikidata:Data_access",
+    "auth": "none",
+    "exampleEndpoint": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=marie+curie&language=en&format=json",
+    "sampleFields": [
+      "label",
+      "description",
+      "aliases"
+    ],
+    "tags": [
+      "search",
+      "education",
+      "graphs"
+    ]
+  },
+  {
+    "id": "nasa-donki",
+    "name": "NASA DONKI",
+    "category": "Space weather",
+    "description": "Solar flares, CMEs, and geomagnetic storms.",
+    "baseUrl": "https://api.nasa.gov",
+    "docsUrl": "https://api.nasa.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nasa.gov/DONKI/FLR?startDate=2026-01-01&api_key=DEMO_KEY",
+    "sampleFields": [
+      "classType",
+      "beginTime",
+      "sourceLocation"
+    ],
+    "tags": [
+      "science",
+      "time-series",
+      "alerts"
+    ]
+  },
+  {
+    "id": "city-bikes",
+    "name": "CityBikes",
+    "category": "Transit",
+    "description": "Bike-share station locations and availability.",
+    "baseUrl": "https://api.citybik.es",
+    "docsUrl": "https://api.citybik.es/v2/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.citybik.es/v2/networks",
+    "sampleFields": [
+      "name",
+      "latitude",
+      "longitude",
+      "stations"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "real-time",
+      "transit"
+    ]
+  },
+  {
+    "id": "dog-ceo",
+    "name": "Dog CEO",
+    "category": "Fun",
+    "description": "Random dog images by breed.",
+    "baseUrl": "https://dog.ceo",
+    "docsUrl": "https://dog.ceo/dog-api/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://dog.ceo/api/breeds/list/all",
+    "sampleFields": [
+      "message",
+      "status",
+      "breeds"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "collections"
+    ]
+  },
+  {
+    "id": "us-census",
+    "name": "US Census Bureau",
+    "category": "Demographics",
+    "description": "Population, income, and housing stats by state and county.",
+    "baseUrl": "https://api.census.gov",
+    "docsUrl": "https://www.census.gov/data/developers/data-sets.html",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.census.gov/data/2021/acs/acs1/profile?get=NAME,B01003_001E&for=state:*",
+    "sampleFields": [
+      "NAME",
+      "B01003_001E",
+      "state"
+    ],
+    "tags": [
+      "geo",
+      "charts",
+      "comparison"
+    ]
+  },
+  {
+    "id": "cat-facts",
+    "name": "Cat Facts",
+    "category": "Animals",
+    "description": "Public animals API for prototyping with real data.",
+    "baseUrl": "https://catfact.ninja",
+    "docsUrl": "https://alexwohlbruck.github.io/catfacts/",
+    "auth": "none",
+    "exampleEndpoint": "https://catfact.ninja/fact",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "science"
+    ]
+  },
+  {
+    "id": "dog-api",
+    "name": "Dog API",
+    "category": "Animals",
+    "description": "Public animals API for prototyping with real data.",
+    "baseUrl": "https://dog.ceo",
+    "docsUrl": "https://dog.ceo/dog-api/",
+    "auth": "none",
+    "exampleEndpoint": "https://dog.ceo/api/breeds/image/random",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "shibe-online",
+    "name": "Shibe.Online",
+    "category": "Animals",
+    "description": "Public animals API for prototyping with real data.",
+    "baseUrl": "https://shibe.online",
+    "docsUrl": "http://shibe.online/",
+    "auth": "none",
+    "exampleEndpoint": "https://shibe.online/api/shibes?count=1",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "axolotl-api",
+    "name": "Axolotl API",
+    "category": "Animals",
+    "description": "Public animals API for prototyping with real data.",
+    "baseUrl": "https://theaxolotlapi.netlify.app",
+    "docsUrl": "https://theaxolotlapi.netlify.app/",
+    "auth": "none",
+    "exampleEndpoint": "https://theaxolotlapi.netlify.app/api/random",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "science"
+    ]
+  },
+  {
+    "id": "animechan",
+    "name": "AnimeChan",
+    "category": "Anime",
+    "description": "Public anime API for prototyping with real data.",
+    "baseUrl": "https://animechan.xyz",
+    "docsUrl": "https://animechan.xyz/",
+    "auth": "none",
+    "exampleEndpoint": "https://animechan.xyz/api/random",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "studio-ghibli",
+    "name": "Studio Ghibli",
+    "category": "Anime",
+    "description": "Public anime API for prototyping with real data.",
+    "baseUrl": "https://ghibliapi.vercel.app",
+    "docsUrl": "https://ghibliapi.vercel.app/",
+    "auth": "none",
+    "exampleEndpoint": "https://ghibliapi.vercel.app/films",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "culture"
+    ]
+  },
+  {
+    "id": "jikan",
+    "name": "Jikan",
+    "category": "Anime",
+    "description": "Public anime API for prototyping with real data.",
+    "baseUrl": "https://api.jikan.moe",
+    "docsUrl": "https://docs.api.jikan.moe/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.jikan.moe/v4/top/anime",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "ranking"
+    ]
+  },
+  {
+    "id": "nhtsa",
+    "name": "NHTSA",
+    "category": "Vehicle",
+    "description": "Public vehicle API for prototyping with real data.",
+    "baseUrl": "https://vpic.nhtsa.dot.gov",
+    "docsUrl": "https://vpic.nhtsa.dot.gov/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "comparison"
+    ]
+  },
+  {
+    "id": "rijksmuseum",
+    "name": "Rijksmuseum",
+    "category": "Art",
+    "description": "Public art API for prototyping with real data.",
+    "baseUrl": "https://www.rijksmuseum.nl",
+    "docsUrl": "https://data.rijksmuseum.nl/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.rijksmuseum.nl/api/nl/collection?key=0&format=json&ps=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "culture",
+      "gallery"
+    ]
+  },
+  {
+    "id": "harvard-art-museums",
+    "name": "Harvard Art Museums",
+    "category": "Art",
+    "description": "Public art API for prototyping with real data.",
+    "baseUrl": "https://api.harvardartmuseums.org",
+    "docsUrl": "https://github.com/harvardartmuseums/api-docs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.harvardartmuseums.org/object?size=5&apikey=DEMO_KEY",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "culture",
+      "gallery"
+    ]
+  },
+  {
+    "id": "smithsonian",
+    "name": "Smithsonian",
+    "category": "Art",
+    "description": "Public art API for prototyping with real data.",
+    "baseUrl": "https://api.si.edu",
+    "docsUrl": "https://edan.si.edu/openaccess/apidocs/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.si.edu/openaccess/api/v1.0/search?q=cat&api_key=0",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "culture",
+      "search"
+    ]
+  },
+  {
+    "id": "europeana",
+    "name": "Europeana",
+    "category": "Art",
+    "description": "Public art API for prototyping with real data.",
+    "baseUrl": "https://api.europeana.eu",
+    "docsUrl": "https://pro.europeana.eu/page/apis",
+    "auth": "none",
+    "exampleEndpoint": "https://api.europeana.eu/record/v2/search.json?wskey=apidemo&query=van%20gogh",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "culture",
+      "search"
+    ]
+  },
+  {
+    "id": "deezer",
+    "name": "Deezer",
+    "category": "Music",
+    "description": "Public music API for prototyping with real data.",
+    "baseUrl": "https://api.deezer.com",
+    "docsUrl": "https://developers.deezer.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.deezer.com/chart/0/tracks",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "trending"
+    ]
+  },
+  {
+    "id": "musicbrainz",
+    "name": "MusicBrainz",
+    "category": "Music",
+    "description": "Public music API for prototyping with real data.",
+    "baseUrl": "https://musicbrainz.org",
+    "docsUrl": "https://musicbrainz.org/doc/MusicBrainz_API",
+    "auth": "none",
+    "exampleEndpoint": "https://musicbrainz.org/ws/2/artist/?query=beatles&fmt=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "education"
+    ]
+  },
+  {
+    "id": "lyrics-ovh",
+    "name": "Lyrics.ovh",
+    "category": "Music",
+    "description": "Public music API for prototyping with real data.",
+    "baseUrl": "https://api.lyrics.ovh",
+    "docsUrl": "https://lyricsovh.docs.apiary.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.lyrics.ovh/v1/artist/rem/search",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "search"
+    ]
+  },
+  {
+    "id": "open-trivia-db",
+    "name": "Open Trivia DB",
+    "category": "Games",
+    "description": "Public games API for prototyping with real data.",
+    "baseUrl": "https://opentdb.com",
+    "docsUrl": "https://opentdb.com/api_config.php",
+    "auth": "none",
+    "exampleEndpoint": "https://opentdb.com/api.php?amount=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "collections"
+    ]
+  },
+  {
+    "id": "free-chess",
+    "name": "Free Chess",
+    "category": "Games",
+    "description": "Public games API for prototyping with real data.",
+    "baseUrl": "https://chess-api.com",
+    "docsUrl": "https://chess-api.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://chess-api.com/v1",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "tools"
+    ]
+  },
+  {
+    "id": "tcgdex",
+    "name": "TCGdex",
+    "category": "Games",
+    "description": "Public games API for prototyping with real data.",
+    "baseUrl": "https://api.tcgdex.net",
+    "docsUrl": "https://www.tcgdex.net/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.tcgdex.net/v2/en/cards?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "collections"
+    ]
+  },
+  {
+    "id": "marvel",
+    "name": "Marvel",
+    "category": "Games",
+    "description": "Public games API for prototyping with real data.",
+    "baseUrl": "https://gateway.marvel.com",
+    "docsUrl": "https://developer.marvel.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://gateway.marvel.com/v1/public/comics?apikey=DEMO",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "swapi",
+    "name": "SWAPI",
+    "category": "Film",
+    "description": "Public film API for prototyping with real data.",
+    "baseUrl": "https://swapi.dev",
+    "docsUrl": "https://swapi.dev/",
+    "auth": "none",
+    "exampleEndpoint": "https://swapi.dev/api/people/1",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "education"
+    ]
+  },
+  {
+    "id": "stapi",
+    "name": "STAPI",
+    "category": "Film",
+    "description": "Public film API for prototyping with real data.",
+    "baseUrl": "https://stapi.co",
+    "docsUrl": "https://stapi.co/",
+    "auth": "none",
+    "exampleEndpoint": "https://stapi.co/api/v1/rest/character/search?pageSize=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "search"
+    ]
+  },
+  {
+    "id": "tvmaze",
+    "name": "TVMaze",
+    "category": "Entertainment",
+    "description": "Public entertainment API for prototyping with real data.",
+    "baseUrl": "https://api.tvmaze.com",
+    "docsUrl": "https://www.tvmaze.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.tvmaze.com/shows/1",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "search"
+    ]
+  },
+  {
+    "id": "omdb",
+    "name": "OMDb",
+    "category": "Entertainment",
+    "description": "Public entertainment API for prototyping with real data.",
+    "baseUrl": "https://www.omdbapi.com",
+    "docsUrl": "https://www.omdbapi.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.omdbapi.com/?t=inception&apikey=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "search"
+    ]
+  },
+  {
+    "id": "chronicling-america",
+    "name": "Chronicling America",
+    "category": "News",
+    "description": "Public news API for prototyping with real data.",
+    "baseUrl": "https://chroniclingamerica.loc.gov",
+    "docsUrl": "https://chroniclingamerica.loc.gov/about/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://chroniclingamerica.loc.gov/suggest/titles/?q=chicago",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "culture",
+      "search"
+    ]
+  },
+  {
+    "id": "gnews",
+    "name": "GNews",
+    "category": "News",
+    "description": "Public news API for prototyping with real data.",
+    "baseUrl": "https://gnews.io",
+    "docsUrl": "https://gnews.io/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://gnews.io/api/v4/top-headlines?category=technology&max=5&apikey=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "trending",
+      "social"
+    ]
+  },
+  {
+    "id": "spaceflight-news",
+    "name": "Spaceflight News",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.spaceflightnewsapi.net",
+    "docsUrl": "https://spaceflightnewsapi.net/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.spaceflightnewsapi.net/v4/articles/?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "trending"
+    ]
+  },
+  {
+    "id": "launch-library-2",
+    "name": "Launch Library 2",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://ll.thespacedevs.com",
+    "docsUrl": "https://thespacedevs.com/llapi",
+    "auth": "none",
+    "exampleEndpoint": "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "time-series"
+    ]
+  },
+  {
+    "id": "exoplanet-archive",
+    "name": "Exoplanet Archive",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://exoplanetarchive.ipac.caltech.edu",
+    "docsUrl": "https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html",
+    "auth": "none",
+    "exampleEndpoint": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+5+pl_name+from+ps&format=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "numbers-api",
+    "name": "Numbers API",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "http://numbersapi.com",
+    "docsUrl": "http://numbersapi.com/",
+    "auth": "none",
+    "exampleEndpoint": "http://numbersapi.com/42",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "education"
+    ]
+  },
+  {
+    "id": "usgs-water-services",
+    "name": "USGS Water Services",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://waterservices.usgs.gov",
+    "docsUrl": "https://waterservices.usgs.gov/",
+    "auth": "none",
+    "exampleEndpoint": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01646500&parameterCd=00060",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "time-series"
+    ]
+  },
+  {
+    "id": "noaa-tides",
+    "name": "NOAA Tides",
+    "category": "Weather",
+    "description": "Public weather API for prototyping with real data.",
+    "baseUrl": "https://api.tidesandcurrents.noaa.gov",
+    "docsUrl": "https://api.tidesandcurrents.noaa.gov/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?date=today&station=9414290&product=predictions&datum=MLLW&time_zone=gmt&units=english&interval=h&format=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "time-series"
+    ]
+  },
+  {
+    "id": "weatherapi",
+    "name": "WeatherAPI",
+    "category": "Weather",
+    "description": "Public weather API for prototyping with real data.",
+    "baseUrl": "https://api.weatherapi.com",
+    "docsUrl": "https://www.weatherapi.com/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.weatherapi.com/v1/current.json?key=demo&q=London",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "real-time"
+    ]
+  },
+  {
+    "id": "7timer",
+    "name": "7Timer!",
+    "category": "Weather",
+    "description": "Public weather API for prototyping with real data.",
+    "baseUrl": "http://www.7timer.info",
+    "docsUrl": "http://www.7timer.info/doc.php",
+    "auth": "none",
+    "exampleEndpoint": "http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civilo&output=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-aq",
+    "name": "Open AQ",
+    "category": "Environment",
+    "description": "Public environment API for prototyping with real data.",
+    "baseUrl": "https://api.openaq.org",
+    "docsUrl": "https://docs.openaq.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openaq.org/v3/locations?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "maps"
+    ]
+  },
+  {
+    "id": "airvisual",
+    "name": "AirVisual",
+    "category": "Environment",
+    "description": "Public environment API for prototyping with real data.",
+    "baseUrl": "https://api.airvisual.com",
+    "docsUrl": "https://www.iqair.com/air-pollution-data-api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.airvisual.com/v2/nearest_city?lat=40.71&lon=-74.00&key=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "geo"
+    ]
+  },
+  {
+    "id": "carbon-interface",
+    "name": "Carbon Interface",
+    "category": "Environment",
+    "description": "Estimate the carbon footprint of a web page from a URL.",
+    "baseUrl": "https://api.websitecarbon.com",
+    "docsUrl": "https://api.websitecarbon.com/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.websitecarbon.com/site?url=https://example.com",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "tools"
+    ]
+  },
+  {
+    "id": "climatiq",
+    "name": "Climatiq",
+    "category": "Environment",
+    "description": "Environmental impact estimates for digital experiences.",
+    "baseUrl": "https://api.websitecarbon.com",
+    "docsUrl": "https://api.websitecarbon.com/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.websitecarbon.com/site?url=https://developer.mozilla.org",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "openstreetmap-nominatim",
+    "name": "OpenStreetMap Nominatim",
+    "category": "Geocoding",
+    "description": "Public geocoding API for prototyping with real data.",
+    "baseUrl": "https://nominatim.openstreetmap.org",
+    "docsUrl": "https://nominatim.org/release-docs/develop/api/Overview/",
+    "auth": "none",
+    "exampleEndpoint": "https://nominatim.openstreetmap.org/search?q=berlin&format=json&limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "geonames",
+    "name": "GeoNames",
+    "category": "Geocoding",
+    "description": "Public geocoding API for prototyping with real data.",
+    "baseUrl": "http://api.geonames.org",
+    "docsUrl": "https://www.geonames.org/export/web-services.html",
+    "auth": "free-key",
+    "exampleEndpoint": "http://api.geonames.org/searchJSON?q=london&maxRows=5&username=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "search"
+    ]
+  },
+  {
+    "id": "rest-countries-v1",
+    "name": "REST Countries v1",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://restcountries.com",
+    "docsUrl": "https://restcountries.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://restcountries.com/v3.1/name/france",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "education"
+    ]
+  },
+  {
+    "id": "world-bank",
+    "name": "World Bank",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://api.worldbank.org",
+    "docsUrl": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+    "auth": "none",
+    "exampleEndpoint": "https://api.worldbank.org/v2/country/all/indicator/SI.POV.DDAY?format=json&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "comparison",
+      "charts"
+    ]
+  },
+  {
+    "id": "data-gov-ckan",
+    "name": "data.gov CKAN",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://catalog.data.gov",
+    "docsUrl": "https://data.gov/developers/apis",
+    "auth": "none",
+    "exampleEndpoint": "https://catalog.data.gov/api/3/action/package_search?q=health&rows=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "education"
+    ]
+  },
+  {
+    "id": "fbi-wanted",
+    "name": "FBI Wanted",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://api.fbi.gov",
+    "docsUrl": "https://www.fbi.gov/wanted/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.fbi.gov/wanted/v1/list",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "alerts"
+    ]
+  },
+  {
+    "id": "uk-police",
+    "name": "UK Police",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://data.police.uk",
+    "docsUrl": "https://data.police.uk/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://data.police.uk/api/crimes-street/all-crime?lat=52.6297&lng=-1.1312&date=2024-01",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "opensanctions",
+    "name": "OpenSanctions",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://api.opensanctions.org",
+    "docsUrl": "https://www.opensanctions.org/docs/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.opensanctions.org/search/default?q=smith&limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "alerts"
+    ]
+  },
+  {
+    "id": "congress-gov",
+    "name": "Congress.gov",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://api.congress.gov",
+    "docsUrl": "https://api.congress.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.congress.gov/v3/bill?api_key=DEMO_KEY&limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "pendleton",
+    "name": "Pendleton",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://api.census.gov",
+    "docsUrl": "https://www.census.gov/data/developers/data-sets.html",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.census.gov/data/timeseries/poverty/saipe?get=NAME,SAEPOVRTALL_PT&for=state:*",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "charts"
+    ]
+  },
+  {
+    "id": "opencorporates",
+    "name": "OpenCorporates",
+    "category": "Business",
+    "description": "Public business API for prototyping with real data.",
+    "baseUrl": "https://api.opencorporates.com",
+    "docsUrl": "https://api.opencorporates.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.opencorporates.com/companies/search?q=stripe",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "comparison"
+    ]
+  },
+  {
+    "id": "companies-house-uk",
+    "name": "Companies House UK",
+    "category": "Business",
+    "description": "Public business API for prototyping with real data.",
+    "baseUrl": "https://api.company-information.service.gov.uk",
+    "docsUrl": "https://developer.company-information.service.gov.uk/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.company-information.service.gov.uk/search/companies?q=design",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "comparison"
+    ]
+  },
+  {
+    "id": "frankfurter",
+    "name": "Frankfurter",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://api.frankfurter.app",
+    "docsUrl": "https://www.frankfurter.app/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.frankfurter.app/latest?from=USD&to=EUR,GBP",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "comparison"
+    ]
+  },
+  {
+    "id": "exchangerate-api",
+    "name": "ExchangeRate-API",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://v6.exchangerate-api.com",
+    "docsUrl": "https://www.exchangerate-api.com/docs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://v6.exchangerate-api.com/v6/demo/latest/USD",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "real-time"
+    ]
+  },
+  {
+    "id": "alpha-vantage",
+    "name": "Alpha Vantage",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://www.alphavantage.co",
+    "docsUrl": "https://www.alphavantage.co/documentation/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "trending"
+    ]
+  },
+  {
+    "id": "fred",
+    "name": "FRED",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://api.stlouisfed.org",
+    "docsUrl": "https://fred.stlouisfed.org/docs/api/fred/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.stlouisfed.org/fred/series/observations?series_id=GNPCA&api_key=demo&file_type=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "time-series"
+    ]
+  },
+  {
+    "id": "iex-cloud",
+    "name": "IEX Cloud",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://cloud.iexapis.com",
+    "docsUrl": "https://iexcloud.io/docs/api/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://cloud.iexapis.com/stable/stock/market/list/gainers?token=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "ranking"
+    ]
+  },
+  {
+    "id": "binance-public",
+    "name": "Binance Public",
+    "category": "Cryptocurrency",
+    "description": "Public cryptocurrency API for prototyping with real data.",
+    "baseUrl": "https://api.binance.com",
+    "docsUrl": "https://binance-docs.github.io/apidocs/spot/en/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "real-time"
+    ]
+  },
+  {
+    "id": "coincap",
+    "name": "CoinCap",
+    "category": "Cryptocurrency",
+    "description": "Public cryptocurrency API for prototyping with real data.",
+    "baseUrl": "https://api.coincap.io",
+    "docsUrl": "https://docs.coincap.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.coincap.io/v2/assets?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "trending"
+    ]
+  },
+  {
+    "id": "blockchair",
+    "name": "Blockchair",
+    "category": "Blockchain",
+    "description": "Public blockchain API for prototyping with real data.",
+    "baseUrl": "https://api.blockchair.com",
+    "docsUrl": "https://blockchair.com/api/docs",
+    "auth": "none",
+    "exampleEndpoint": "https://api.blockchair.com/bitcoin/stats",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "science"
+    ]
+  },
+  {
+    "id": "etherscan",
+    "name": "Etherscan",
+    "category": "Blockchain",
+    "description": "Public blockchain API for prototyping with real data.",
+    "baseUrl": "https://api.etherscan.io",
+    "docsUrl": "https://docs.etherscan.io/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.etherscan.io/api?module=stats&action=ethprice&apikey=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "real-time"
+    ]
+  },
+  {
+    "id": "openfda-drugs",
+    "name": "OpenFDA Drugs",
+    "category": "Health",
+    "description": "Public health API for prototyping with real data.",
+    "baseUrl": "https://api.fda.gov",
+    "docsUrl": "https://open.fda.gov/apis/drug/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.fda.gov/drug/label.json?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "disease-sh",
+    "name": "Disease.sh",
+    "category": "Health",
+    "description": "Public health API for prototyping with real data.",
+    "baseUrl": "https://disease.sh",
+    "docsUrl": "https://disease.sh/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://disease.sh/v3/covid-19/countries/usa",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "time-series"
+    ]
+  },
+  {
+    "id": "nutritionix",
+    "name": "Nutritionix",
+    "category": "Health",
+    "description": "Public health API for prototyping with real data.",
+    "baseUrl": "https://trackapi.nutritionix.com",
+    "docsUrl": "https://developer.nutritionix.com/docs/v2",
+    "auth": "free-key",
+    "exampleEndpoint": "https://trackapi.nutritionix.com/v2/search/instant?query=apple",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "open-disease",
+    "name": "Open Disease",
+    "category": "Health",
+    "description": "Public health API for prototyping with real data.",
+    "baseUrl": "https://disease.sh",
+    "docsUrl": "https://disease.sh/",
+    "auth": "none",
+    "exampleEndpoint": "https://disease.sh/v3/covid-19/historical/all",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "charts"
+    ]
+  },
+  {
+    "id": "rxnorm",
+    "name": "RxNorm",
+    "category": "Health",
+    "description": "Public health API for prototyping with real data.",
+    "baseUrl": "https://rxnav.nlm.nih.gov",
+    "docsUrl": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
+    "auth": "none",
+    "exampleEndpoint": "https://rxnav.nlm.nih.gov/REST/drugs.json?name=aspirin",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "basketball-data",
+    "name": "Basketball Data",
+    "category": "Sports",
+    "description": "Public sports API for prototyping with real data.",
+    "baseUrl": "https://api.balldontlie.io",
+    "docsUrl": "https://www.balldontlie.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.balldontlie.io/v1/players?per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "ranking"
+    ]
+  },
+  {
+    "id": "thesportsdb",
+    "name": "TheSportsDB",
+    "category": "Sports",
+    "description": "Public sports API for prototyping with real data.",
+    "baseUrl": "https://www.thesportsdb.com",
+    "docsUrl": "https://www.thesportsdb.com/api.php",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Arsenal",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "search"
+    ]
+  },
+  {
+    "id": "football-data-org",
+    "name": "Football-Data.org",
+    "category": "Sports",
+    "description": "Public sports API for prototyping with real data.",
+    "baseUrl": "https://api.football-data.org",
+    "docsUrl": "https://www.football-data.org/documentation/quickstart",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.football-data.org/v4/competitions",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "comparison"
+    ]
+  },
+  {
+    "id": "openligadb",
+    "name": "OpenLigaDB",
+    "category": "Sports",
+    "description": "Public sports API for prototyping with real data.",
+    "baseUrl": "https://api.openligadb.de",
+    "docsUrl": "https://api.openligadb.de/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openligadb.de/getmatchdata/bl1/2023",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "time-series"
+    ]
+  },
+  {
+    "id": "strava",
+    "name": "Strava",
+    "category": "Sports",
+    "description": "Public sports API for prototyping with real data.",
+    "baseUrl": "https://www.strava.com",
+    "docsUrl": "https://developers.strava.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.strava.com/api/v3/segments/explore?bounds=37.0,-122.5,37.5,-122.0",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "transport-for-london",
+    "name": "Transport for London",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://api.tfl.gov.uk",
+    "docsUrl": "https://api.tfl.gov.uk/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.tfl.gov.uk/Line/Mode/tube/Status",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "real-time"
+    ]
+  },
+  {
+    "id": "mbta",
+    "name": "MBTA",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://api-v3.mbta.com",
+    "docsUrl": "https://www.mbta.com/developers/v3-api",
+    "auth": "none",
+    "exampleEndpoint": "https://api-v3.mbta.com/routes?filter[type]=0,1",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "geo"
+    ]
+  },
+  {
+    "id": "bart",
+    "name": "BART",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://api.bart.gov",
+    "docsUrl": "https://api.bart.gov/docs/overview/index.aspx",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.bart.gov/api/bsa.aspx?cmd=bsa&key=DEMO",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "alerts"
+    ]
+  },
+  {
+    "id": "transitland",
+    "name": "TransitLand",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://transit.land",
+    "docsUrl": "https://www.transit.land/documentation/",
+    "auth": "none",
+    "exampleEndpoint": "https://transit.land/api/v2/rest/feeds?per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "geo"
+    ]
+  },
+  {
+    "id": "aviationstack",
+    "name": "Aviationstack",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "http://api.aviationstack.com",
+    "docsUrl": "https://aviationstack.com/documentation",
+    "auth": "free-key",
+    "exampleEndpoint": "http://api.aviationstack.com/v1/flights?access_key=demo&limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "real-time"
+    ]
+  },
+  {
+    "id": "opensky-network",
+    "name": "OpenSky Network",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://opensky-network.org",
+    "docsUrl": "https://openskynetwork.github.io/opensky-api/",
+    "auth": "none",
+    "exampleEndpoint": "https://opensky-network.org/api/states/all",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "real-time"
+    ]
+  },
+  {
+    "id": "usgs-elevation",
+    "name": "USGS Elevation",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://nationalmap.gov",
+    "docsUrl": "https://www.usgs.gov/centers/eros/science/3dep",
+    "auth": "none",
+    "exampleEndpoint": "https://nationalmap.gov/epqs/pqs.php?x=-105&y=40&units=Meters&output=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "science"
+    ]
+  },
+  {
+    "id": "nasa-apod",
+    "name": "NASA APOD",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.nasa.gov",
+    "docsUrl": "https://api.nasa.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "media"
+    ]
+  },
+  {
+    "id": "nasa-neows",
+    "name": "NASA NeoWs",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.nasa.gov",
+    "docsUrl": "https://api.nasa.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=DEMO_KEY",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "alerts"
+    ]
+  },
+  {
+    "id": "inspire",
+    "name": "Inspire",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://inspirehep.net",
+    "docsUrl": "https://inspirehep.net/",
+    "auth": "none",
+    "exampleEndpoint": "https://inspirehep.net/api/literature?q=quantum&size=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "crossref",
+    "name": "CrossRef",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.crossref.org",
+    "docsUrl": "https://api.crossref.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.crossref.org/works?query=machine+learning&rows=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "openalex",
+    "name": "OpenAlex",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.openalex.org",
+    "docsUrl": "https://docs.openalex.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openalex.org/works?search=climate&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "pubmed",
+    "name": "PubMed",
+    "category": "Health",
+    "description": "Public health API for prototyping with real data.",
+    "baseUrl": "https://eutils.ncbi.nlm.nih.gov",
+    "docsUrl": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=coffee&retmode=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "clinicaltrials-gov",
+    "name": "ClinicalTrials.gov",
+    "category": "Health",
+    "description": "Public health API for prototyping with real data.",
+    "baseUrl": "https://clinicaltrials.gov",
+    "docsUrl": "https://clinicaltrials.gov/data-api/api",
+    "auth": "none",
+    "exampleEndpoint": "https://clinicaltrials.gov/api/v2/studies?query.cond=cancer&pageSize=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "open-targets",
+    "name": "Open Targets",
+    "category": "Health",
+    "description": "Public health statistics useful for charts and trend explorers.",
+    "baseUrl": "https://disease.sh",
+    "docsUrl": "https://disease.sh/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://disease.sh/v3/covid-19/countries/usa",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "science"
+    ]
+  },
+  {
+    "id": "gbif-species",
+    "name": "GBIF Species",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.gbif.org",
+    "docsUrl": "https://www.gbif.org/developer/species",
+    "auth": "none",
+    "exampleEndpoint": "https://api.gbif.org/v1/species/search?q=ursus&limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "inaturalist",
+    "name": "iNaturalist",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.inaturalist.org",
+    "docsUrl": "https://api.inaturalist.org/v1/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.inaturalist.org/v1/observations?per_page=5&order=desc&order_by=created_at",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "geo"
+    ]
+  },
+  {
+    "id": "eol",
+    "name": "EOL",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://v3.globiz.org",
+    "docsUrl": "https://eol.org/docs/what-is-eol/data-services",
+    "auth": "none",
+    "exampleEndpoint": "https://v3.globiz.org/parasite-galaxy/api/taxon/search?q=canis",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "education"
+    ]
+  },
+  {
+    "id": "plantnet",
+    "name": "PlantNet",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://my-api.plantnet.org",
+    "docsUrl": "https://my.plantnet.org/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://my-api.plantnet.org/v2/projects",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "open-topo-data",
+    "name": "Open Topo Data",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://api.opentopodata.org",
+    "docsUrl": "https://www.opentopodata.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.opentopodata.org/v1/aster30m?locations=57.688709,11.976404",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "sunrise-sunset",
+    "name": "Sunrise Sunset",
+    "category": "Weather",
+    "description": "Public weather API for prototyping with real data.",
+    "baseUrl": "https://api.sunrise-sunset.org",
+    "docsUrl": "https://sunrise-sunset.org/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.sunrise-sunset.org/json?lat=36.7201&lng=-4.4203",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "time-series"
+    ]
+  },
+  {
+    "id": "ip-geolocation",
+    "name": "IP Geolocation",
+    "category": "Geocoding",
+    "description": "Public geocoding API for prototyping with real data.",
+    "baseUrl": "http://ip-api.com",
+    "docsUrl": "https://ip-api.com/docs",
+    "auth": "none",
+    "exampleEndpoint": "http://ip-api.com/json/8.8.8.8",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "tools"
+    ]
+  },
+  {
+    "id": "zippopotam",
+    "name": "Zippopotam",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://api.zippopotam.us",
+    "docsUrl": "https://www.zippopotam.us/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.zippopotam.us/us/90210",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "education"
+    ]
+  },
+  {
+    "id": "rest-countries-flags",
+    "name": "Rest Countries Flags",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://flagcdn.com",
+    "docsUrl": "https://flagcdn.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://flagcdn.com/en/codes.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "education"
+    ]
+  },
+  {
+    "id": "universities-list",
+    "name": "Universities List",
+    "category": "Education",
+    "description": "Public education API for prototyping with real data.",
+    "baseUrl": "http://universities.hipolabs.com",
+    "docsUrl": "http://universities.hipolabs.com/",
+    "auth": "none",
+    "exampleEndpoint": "http://universities.hipolabs.com/search?country=United+States",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "open-library-authors",
+    "name": "Open Library Authors",
+    "category": "Books",
+    "description": "Public books API for prototyping with real data.",
+    "baseUrl": "https://openlibrary.org",
+    "docsUrl": "https://openlibrary.org/developers/api",
+    "auth": "none",
+    "exampleEndpoint": "https://openlibrary.org/authors/OL23919A.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "google-books",
+    "name": "Google Books",
+    "category": "Books",
+    "description": "Public books API for prototyping with real data.",
+    "baseUrl": "https://www.googleapis.com",
+    "docsUrl": "https://developers.google.com/books",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.googleapis.com/books/v1/volumes?q=design&maxResults=5&key=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "media"
+    ]
+  },
+  {
+    "id": "poetrydb",
+    "name": "PoetryDB",
+    "category": "Books",
+    "description": "Public books API for prototyping with real data.",
+    "baseUrl": "https://poetrydb.org",
+    "docsUrl": "https://github.com/thundercomb/poetrydb",
+    "auth": "none",
+    "exampleEndpoint": "https://poetrydb.org/author/Emily%20Dickinson",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "culture",
+      "search"
+    ]
+  },
+  {
+    "id": "quotable",
+    "name": "Quotable",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://dummyjson.com",
+    "docsUrl": "https://dummyjson.com/docs/quotes",
+    "auth": "none",
+    "exampleEndpoint": "https://dummyjson.com/quotes/random?limit=1",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "advice-slip",
+    "name": "Advice Slip",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://api.adviceslip.com",
+    "docsUrl": "https://api.adviceslip.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.adviceslip.com/advice",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "bored-api",
+    "name": "Official Joke API",
+    "category": "Social",
+    "description": "Random programming jokes — a lighthearted JSON API for quick UI prototypes.",
+    "baseUrl": "https://official-joke-api.appspot.com",
+    "docsUrl": "https://official-joke-api.appspot.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://official-joke-api.appspot.com/random_joke",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "tools"
+    ]
+  },
+  {
+    "id": "random-user",
+    "name": "Random User",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://randomuser.me",
+    "docsUrl": "https://randomuser.me/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://randomuser.me/api/?results=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "fun"
+    ]
+  },
+  {
+    "id": "jsonplaceholder",
+    "name": "JSONPlaceholder",
+    "category": "Development",
+    "description": "Public development API for prototyping with real data.",
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "docsUrl": "https://jsonplaceholder.typicode.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://jsonplaceholder.typicode.com/posts",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "httpbin",
+    "name": "HTTPBin",
+    "category": "Development",
+    "description": "Public development API for prototyping with real data.",
+    "baseUrl": "https://httpbin.org",
+    "docsUrl": "https://httpbin.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://httpbin.org/json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "reqres",
+    "name": "ReqRes",
+    "category": "Development",
+    "description": "Public development API for prototyping with real data.",
+    "baseUrl": "https://reqres.in",
+    "docsUrl": "https://reqres.in/",
+    "auth": "none",
+    "exampleEndpoint": "https://reqres.in/api/users?page=1",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "github-public",
+    "name": "GitHub Public",
+    "category": "Development",
+    "description": "Public development API for prototyping with real data.",
+    "baseUrl": "https://api.github.com",
+    "docsUrl": "https://docs.github.com/en/rest",
+    "auth": "none",
+    "exampleEndpoint": "https://api.github.com/repos/github/gitignore",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "social",
+      "ranking"
+    ]
+  },
+  {
+    "id": "gitlab-public",
+    "name": "GitLab Public",
+    "category": "Development",
+    "description": "Public development API for prototyping with real data.",
+    "baseUrl": "https://gitlab.com",
+    "docsUrl": "https://docs.gitlab.com/ee/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://gitlab.com/api/v4/projects?visibility=public&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "social",
+      "search"
+    ]
+  },
+  {
+    "id": "npm-registry",
+    "name": "npm Registry",
+    "category": "Development",
+    "description": "Public development API for prototyping with real data.",
+    "baseUrl": "https://registry.npmjs.org",
+    "docsUrl": "https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md",
+    "auth": "none",
+    "exampleEndpoint": "https://registry.npmjs.org/react/latest",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "search"
+    ]
+  },
+  {
+    "id": "pypi",
+    "name": "PyPI",
+    "category": "Development",
+    "description": "Public development API for prototyping with real data.",
+    "baseUrl": "https://pypi.org",
+    "docsUrl": "https://warehouse.pypa.io/api-reference/",
+    "auth": "none",
+    "exampleEndpoint": "https://pypi.org/pypi/requests/json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "search"
+    ]
+  },
+  {
+    "id": "stackexchange",
+    "name": "StackExchange",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://api.stackexchange.com",
+    "docsUrl": "https://api.stackexchange.com/docs",
+    "auth": "none",
+    "exampleEndpoint": "https://api.stackexchange.com/2.3/questions?order=desc&sort=activity&site=stackoverflow&pagesize=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "social",
+      "ranking"
+    ]
+  },
+  {
+    "id": "reddit",
+    "name": "Reddit",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://www.reddit.com",
+    "docsUrl": "https://www.reddit.com/dev/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.reddit.com/r/dataisbeautiful/top.json?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "social",
+      "trending"
+    ]
+  },
+  {
+    "id": "dev-to",
+    "name": "Dev.to",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://dev.to",
+    "docsUrl": "https://developers.forem.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://dev.to/api/articles?per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "social",
+      "trending"
+    ]
+  },
+  {
+    "id": "mastodon",
+    "name": "Mastodon",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://mastodon.social",
+    "docsUrl": "https://docs.joinmastodon.org/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://mastodon.social/api/v1/trends/tags",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "social",
+      "trending"
+    ]
+  },
+  {
+    "id": "lobste-rs",
+    "name": "Lobste.rs",
+    "category": "Social",
+    "description": "Public social API for prototyping with real data.",
+    "baseUrl": "https://lobste.rs",
+    "docsUrl": "https://lobste.rs/",
+    "auth": "none",
+    "exampleEndpoint": "https://lobste.rs/hottest.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "social",
+      "ranking"
+    ]
+  },
+  {
+    "id": "product-hunt",
+    "name": "Product Hunt",
+    "category": "Business",
+    "description": "Trending open-source repos related to product launches.",
+    "baseUrl": "https://api.github.com",
+    "docsUrl": "https://docs.github.com/en/rest/search",
+    "auth": "none",
+    "exampleEndpoint": "https://api.github.com/search/repositories?q=product+hunt&sort=stars&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "trending",
+      "ranking"
+    ]
+  },
+  {
+    "id": "y-combinator",
+    "name": "Y Combinator",
+    "category": "Business",
+    "description": "Public business API for prototyping with real data.",
+    "baseUrl": "https://yc-oss.github.io",
+    "docsUrl": "https://github.com/yc-oss/api",
+    "auth": "none",
+    "exampleEndpoint": "https://yc-oss.github.io/api/meta.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "trending",
+      "education"
+    ]
+  },
+  {
+    "id": "openml",
+    "name": "OpenML",
+    "category": "Machine Learning",
+    "description": "Public machine learning API for prototyping with real data.",
+    "baseUrl": "https://www.openml.org",
+    "docsUrl": "https://docs.openml.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.openml.org/api/v1/json/data/list/limit/5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face",
+    "category": "Machine Learning",
+    "description": "Public machine learning API for prototyping with real data.",
+    "baseUrl": "https://huggingface.co",
+    "docsUrl": "https://huggingface.co/docs/hub/api",
+    "auth": "none",
+    "exampleEndpoint": "https://huggingface.co/api/models?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "openml-datasets",
+    "name": "OpenML Datasets",
+    "category": "Data",
+    "description": "Public data API for prototyping with real data.",
+    "baseUrl": "https://www.openml.org",
+    "docsUrl": "https://docs.openml.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.openml.org/api/v1/json/data/list/limit/5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "education"
+    ]
+  },
+  {
+    "id": "kaggle-public",
+    "name": "Kaggle Public",
+    "category": "Data",
+    "description": "Public data API for prototyping with real data.",
+    "baseUrl": "https://www.kaggle.com",
+    "docsUrl": "https://www.kaggle.com/docs/api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.kaggle.com/api/v1/datasets/list?pageSize=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "wikidata-sparql",
+    "name": "Wikidata SPARQL",
+    "category": "Knowledge",
+    "description": "Public knowledge API for prototyping with real data.",
+    "baseUrl": "https://query.wikidata.org",
+    "docsUrl": "https://query.wikidata.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://query.wikidata.org/sparql?query=SELECT%20?item%20WHERE%20{?item%20wdt:P31%20wd:Q5}%20LIMIT%205",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "graphs",
+      "search"
+    ]
+  },
+  {
+    "id": "wikipedia",
+    "name": "Wikipedia",
+    "category": "Knowledge",
+    "description": "Public knowledge API for prototyping with real data.",
+    "baseUrl": "https://en.wikipedia.org",
+    "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+    "auth": "none",
+    "exampleEndpoint": "https://en.wikipedia.org/api/rest_v1/page/summary/Open_data",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "dictionary-api",
+    "name": "Dictionary API",
+    "category": "Text",
+    "description": "Public text API for prototyping with real data.",
+    "baseUrl": "https://api.dictionaryapi.dev",
+    "docsUrl": "https://dictionaryapi.dev/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.dictionaryapi.dev/api/v2/entries/en/prototype",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "tools"
+    ]
+  },
+  {
+    "id": "datamuse",
+    "name": "Datamuse",
+    "category": "Text",
+    "description": "Public text API for prototyping with real data.",
+    "baseUrl": "https://api.datamuse.com",
+    "docsUrl": "https://www.datamuse.com/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.datamuse.com/words?ml=spoon&max=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "search"
+    ]
+  },
+  {
+    "id": "wordnik",
+    "name": "Wordnik",
+    "category": "Text",
+    "description": "Public text API for prototyping with real data.",
+    "baseUrl": "https://api.wordnik.com",
+    "docsUrl": "https://developer.wordnik.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.wordnik.com/v4/word.json/randomWords?limit=5&api_key=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "fun"
+    ]
+  },
+  {
+    "id": "pexels",
+    "name": "Pexels",
+    "category": "Photography",
+    "description": "Public photography API for prototyping with real data.",
+    "baseUrl": "https://api.pexels.com",
+    "docsUrl": "https://www.pexels.com/api/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.pexels.com/v1/search?query=nature&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "gallery"
+    ]
+  },
+  {
+    "id": "unsplash",
+    "name": "Unsplash",
+    "category": "Photography",
+    "description": "Public photography API for prototyping with real data.",
+    "baseUrl": "https://api.unsplash.com",
+    "docsUrl": "https://unsplash.com/developers",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.unsplash.com/photos?per_page=5&client_id=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "gallery"
+    ]
+  },
+  {
+    "id": "giphy",
+    "name": "Giphy",
+    "category": "Entertainment",
+    "description": "Public entertainment API for prototyping with real data.",
+    "baseUrl": "https://api.giphy.com",
+    "docsUrl": "https://developers.giphy.com/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.giphy.com/v1/gifs/trending?api_key=demo&limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "tenor",
+    "name": "Tenor",
+    "category": "Entertainment",
+    "description": "Public entertainment API for prototyping with real data.",
+    "baseUrl": "https://tenor.googleapis.com",
+    "docsUrl": "https://tenor.com/gifapi/documentation",
+    "auth": "free-key",
+    "exampleEndpoint": "https://tenor.googleapis.com/v2/featured?key=demo&limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "colorado-data",
+    "name": "Colorado Data",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://data.colorado.gov",
+    "docsUrl": "https://data.colorado.gov/",
+    "auth": "none",
+    "exampleEndpoint": "https://data.colorado.gov/resource/4ykn-tg5h.json?$limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "search"
+    ]
+  },
+  {
+    "id": "nyc-open-data",
+    "name": "NYC Open Data",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://data.cityofnewyork.us",
+    "docsUrl": "https://opendata.cityofnewyork.us/",
+    "auth": "none",
+    "exampleEndpoint": "https://data.cityofnewyork.us/resource/erm2-nwe9.json?$limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "search"
+    ]
+  },
+  {
+    "id": "sf-open-data",
+    "name": "SF Open Data",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://data.sfgov.org",
+    "docsUrl": "https://datasf.org/opendata/",
+    "auth": "none",
+    "exampleEndpoint": "https://data.sfgov.org/resource/i98e-djp9.json?$limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "local"
+    ]
+  },
+  {
+    "id": "chicago-data",
+    "name": "Chicago Data",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://data.cityofchicago.org",
+    "docsUrl": "https://data.cityofchicago.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://data.cityofchicago.org/resource/ijpz-cqmj.json?$limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "local"
+    ]
+  },
+  {
+    "id": "uk-food-hygiene",
+    "name": "UK Food Hygiene",
+    "category": "Food",
+    "description": "Public food API for prototyping with real data.",
+    "baseUrl": "https://api.ratings.food.gov.uk",
+    "docsUrl": "https://api.ratings.food.gov.uk/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.ratings.food.gov.uk/Establishments?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "local"
+    ]
+  },
+  {
+    "id": "usda-fooddata",
+    "name": "USDA FoodData",
+    "category": "Food",
+    "description": "Public food API for prototyping with real data.",
+    "baseUrl": "https://api.nal.usda.gov",
+    "docsUrl": "https://fdc.nal.usda.gov/api-guide.html",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nal.usda.gov/fdc/v1/foods/search?query=apple&pageSize=5&api_key=DEMO_KEY",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "mealdb",
+    "name": "MealDB",
+    "category": "Food",
+    "description": "Public food API for prototyping with real data.",
+    "baseUrl": "https://www.themealdb.com",
+    "docsUrl": "https://www.themealdb.com/api.php",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "local"
+    ]
+  },
+  {
+    "id": "punk-api",
+    "name": "Punk API",
+    "category": "Food",
+    "description": "Public food API for prototyping with real data.",
+    "baseUrl": "https://punkapi.com",
+    "docsUrl": "https://punkapi.com/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://punkapi.com/v2/beers?per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "local"
+    ]
+  },
+  {
+    "id": "open-brewery-2",
+    "name": "Open Brewery",
+    "category": "Food",
+    "description": "Public food API for prototyping with real data.",
+    "baseUrl": "https://api.openbrewerydb.org",
+    "docsUrl": "https://www.openbrewerydb.org/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openbrewerydb.org/v1/breweries?per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "local",
+      "geo"
+    ]
+  },
+  {
+    "id": "spoonacular",
+    "name": "Spoonacular",
+    "category": "Food",
+    "description": "Public food API for prototyping with real data.",
+    "baseUrl": "https://api.spoonacular.com",
+    "docsUrl": "https://spoonacular.com/food-api/docs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.spoonacular.com/recipes/complexSearch?number=5&apiKey=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "edamam",
+    "name": "Edamam",
+    "category": "Food",
+    "description": "Public food API for prototyping with real data.",
+    "baseUrl": "https://api.edamam.com",
+    "docsUrl": "https://developer.edamam.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.edamam.com/api/recipes/v2?type=public&q=salad&app_id=demo&app_key=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "search"
+    ]
+  },
+  {
+    "id": "open-notify-people",
+    "name": "Open Notify People",
+    "category": "Space",
+    "description": "Public space API for prototyping with real data.",
+    "baseUrl": "http://api.open-notify.org",
+    "docsUrl": "http://open-notify.org/",
+    "auth": "none",
+    "exampleEndpoint": "http://api.open-notify.org/astros.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "real-time"
+    ]
+  },
+  {
+    "id": "spacex-api",
+    "name": "SpaceX API",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://api.spacexdata.com",
+    "docsUrl": "https://github.com/r-spacex/SpaceX-API",
+    "auth": "none",
+    "exampleEndpoint": "https://api.spacexdata.com/v4/launches/latest",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "time-series"
+    ]
+  },
+  {
+    "id": "launch-library",
+    "name": "Launch Library",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://ll.thespacedevs.com",
+    "docsUrl": "https://thespacedevs.com/llapi",
+    "auth": "none",
+    "exampleEndpoint": "https://ll.thespacedevs.com/2.2.0/config/launchpad/?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "asterank",
+    "name": "Asterank",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://www.asterank.com",
+    "docsUrl": "https://www.asterank.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.asterank.com/api/kepler?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "search"
+    ]
+  },
+  {
+    "id": "usgs-volcano",
+    "name": "USGS Volcano",
+    "category": "Science",
+    "description": "Public science API for prototyping with real data.",
+    "baseUrl": "https://volcano.status.gov",
+    "docsUrl": "https://volcanoes.usgs.gov/",
+    "auth": "none",
+    "exampleEndpoint": "https://volcano.status.gov/widget/v1/widget.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "alerts"
+    ]
+  },
+  {
+    "id": "openaq-countries",
+    "name": "OpenAQ Countries",
+    "category": "Environment",
+    "description": "Public environment API for prototyping with real data.",
+    "baseUrl": "https://api.openaq.org",
+    "docsUrl": "https://docs.openaq.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openaq.org/v3/locations?limit=10",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "comparison"
+    ]
+  },
+  {
+    "id": "purple-air",
+    "name": "Purple Air",
+    "category": "Environment",
+    "description": "Public environment API for prototyping with real data.",
+    "baseUrl": "https://api.purpleair.com",
+    "docsUrl": "https://api.purpleair.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.purpleair.com/v1/sensors?fields=sensor_index,name&max_age=3600",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "health",
+      "maps"
+    ]
+  },
+  {
+    "id": "opencellid",
+    "name": "OpenCellID",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://opencellid.org",
+    "docsUrl": "https://opencellid.org/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://opencellid.org/cell/getInArea?key=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "rest-countries-region",
+    "name": "Rest Countries Region",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://restcountries.com",
+    "docsUrl": "https://restcountries.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://restcountries.com/v3.1/region/africa?fields=name,population",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "comparison",
+      "geo"
+    ]
+  },
+  {
+    "id": "geojs",
+    "name": "GeoJS",
+    "category": "Geocoding",
+    "description": "Public geocoding API for prototyping with real data.",
+    "baseUrl": "https://get.geojs.io",
+    "docsUrl": "https://www.geojs.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://get.geojs.io/v1/ip/geo.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "tools"
+    ]
+  },
+  {
+    "id": "rest-countries-currency",
+    "name": "Rest Countries Currency",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://restcountries.com",
+    "docsUrl": "https://restcountries.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://restcountries.com/v3.1/currency/usd",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "education"
+    ]
+  },
+  {
+    "id": "vatcomply",
+    "name": "VATComply",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://api.vatcomply.com",
+    "docsUrl": "https://www.vatcomply.com/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://api.vatcomply.com/rates?base=USD",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "comparison"
+    ]
+  },
+  {
+    "id": "coindesk",
+    "name": "CoinDesk",
+    "category": "Cryptocurrency",
+    "description": "Public cryptocurrency API for prototyping with real data.",
+    "baseUrl": "https://api.blockchain.info",
+    "docsUrl": "https://www.blockchain.com/api/blockchain_api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.blockchain.info/ticker",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "real-time"
+    ]
+  },
+  {
+    "id": "alternative-me-fear-greed",
+    "name": "Alternative.me Fear Greed",
+    "category": "Cryptocurrency",
+    "description": "Public cryptocurrency API for prototyping with real data.",
+    "baseUrl": "https://api.alternative.me",
+    "docsUrl": "https://alternative.me/crypto/fear-and-greed-index/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.alternative.me/fng/?limit=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "charts"
+    ]
+  },
+  {
+    "id": "openml-tasks",
+    "name": "OpenML Tasks",
+    "category": "Machine Learning",
+    "description": "Public machine learning API for prototyping with real data.",
+    "baseUrl": "https://www.openml.org",
+    "docsUrl": "https://docs.openml.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.openml.org/api/v1/json/task/list/limit/5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "tools"
+    ]
+  },
+  {
+    "id": "archive-org",
+    "name": "Archive.org",
+    "category": "Books",
+    "description": "Public books API for prototyping with real data.",
+    "baseUrl": "https://archive.org",
+    "docsUrl": "https://archive.org/developers/",
+    "auth": "none",
+    "exampleEndpoint": "https://archive.org/advancedsearch.php?q=collection:opensource&fl[]=identifier&rows=5&output=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "media",
+      "search"
+    ]
+  },
+  {
+    "id": "library-of-congress",
+    "name": "Library of Congress",
+    "category": "Books",
+    "description": "Public books API for prototyping with real data.",
+    "baseUrl": "https://www.loc.gov",
+    "docsUrl": "https://www.loc.gov/apis/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.loc.gov/search/?q=maps&fo=json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "culture",
+      "search"
+    ]
+  },
+  {
+    "id": "openstreetmap-overpass",
+    "name": "OpenStreetMap Overpass",
+    "category": "Geography",
+    "description": "Public geography API for prototyping with real data.",
+    "baseUrl": "https://overpass-api.de",
+    "docsUrl": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+    "auth": "none",
+    "exampleEndpoint": "https://overpass-api.de/api/interpreter?data=[out:json];node(around:1000,48.858,2.294);out;",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "opentripplanner",
+    "name": "OpenTripPlanner",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://demo.opentripplanner.org",
+    "docsUrl": "https://docs.opentripplanner.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://demo.opentripplanner.org/otp/routers/default/plan?fromPlace=40.7,-74.0&toPlace=40.8,-73.9",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "geo"
+    ]
+  },
+  {
+    "id": "open-charge-map",
+    "name": "Open Charge Map",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://api.openchargemap.io",
+    "docsUrl": "https://openchargemap.org/site/develop/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openchargemap.io/v3/poi/?output=json&maxresults=5&countrycode=US",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "geo"
+    ]
+  },
+  {
+    "id": "bikeshare-map",
+    "name": "Bikeshare Map",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://gbfs.bcycle.com",
+    "docsUrl": "https://gbfs.bcycle.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://gbfs.bcycle.com/gbfs.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "real-time"
+    ]
+  },
+  {
+    "id": "opensky-flights",
+    "name": "OpenSky Flights",
+    "category": "Transportation",
+    "description": "Public transportation API for prototyping with real data.",
+    "baseUrl": "https://opensky-network.org",
+    "docsUrl": "https://openskynetwork.github.io/opensky-api/",
+    "auth": "none",
+    "exampleEndpoint": "https://opensky-network.org/api/flights/all?begin=1700000000&end=1700003600",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "transit",
+      "time-series"
+    ]
+  },
+  {
+    "id": "openml-flows",
+    "name": "OpenML Flows",
+    "category": "Data",
+    "description": "Public data API for prototyping with real data.",
+    "baseUrl": "https://www.openml.org",
+    "docsUrl": "https://docs.openml.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.openml.org/api/v1/json/flow/list/limit/5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "tools"
+    ]
+  },
+  {
+    "id": "openml-tasks-type",
+    "name": "OpenML Tasks Type",
+    "category": "Data",
+    "description": "Public data API for prototyping with real data.",
+    "baseUrl": "https://www.openml.org",
+    "docsUrl": "https://docs.openml.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.openml.org/api/v1/json/task/type",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "education"
+    ]
+  },
+  {
+    "id": "open-civic-data",
+    "name": "Open States",
+    "category": "Government",
+    "description": "US state legislature bills, people, and jurisdictions from Open States.",
+    "baseUrl": "https://v3.openstates.org",
+    "docsUrl": "https://docs.openstates.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://v3.openstates.org/jurisdictions?per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "education"
+    ]
+  },
+  {
+    "id": "openstates",
+    "name": "OpenStates",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://v3.openstates.org",
+    "docsUrl": "https://docs.openstates.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://v3.openstates.org/bills?jurisdiction=ocd-jurisdiction/country:us/state:ca&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "ballotpedia",
+    "name": "Open States Bills",
+    "category": "Government",
+    "description": "Recent state bills and metadata for civic prototyping.",
+    "baseUrl": "https://v3.openstates.org",
+    "docsUrl": "https://docs.openstates.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://v3.openstates.org/bills?jurisdiction=ocd-jurisdiction/country:us/state:ca&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "openfec",
+    "name": "OpenFEC",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://api.open.fec.gov",
+    "docsUrl": "https://api.open.fec.gov/developers/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.open.fec.gov/v1/candidates/?api_key=DEMO_KEY&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "comparison",
+      "search"
+    ]
+  },
+  {
+    "id": "courtlistener",
+    "name": "CourtListener",
+    "category": "Government",
+    "description": "Public government API for prototyping with real data.",
+    "baseUrl": "https://www.courtlistener.com",
+    "docsUrl": "https://www.courtlistener.com/help/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.courtlistener.com/api/rest/v3/opinions/?page_size=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "education"
+    ]
+  },
+  {
+    "id": "opencorporates-us",
+    "name": "OpenCorporates US",
+    "category": "Business",
+    "description": "Public business API for prototyping with real data.",
+    "baseUrl": "https://api.opencorporates.com",
+    "docsUrl": "https://api.opencorporates.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.opencorporates.com/companies/us",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "search",
+      "comparison"
+    ]
+  },
+  {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://data.sec.gov",
+    "docsUrl": "https://www.sec.gov/edgar/sec-api-documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://data.sec.gov/submissions/CIK0000320193.json",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "search"
+    ]
+  },
+  {
+    "id": "treasury-fiscal",
+    "name": "Treasury Fiscal",
+    "category": "Finance",
+    "description": "Public finance API for prototyping with real data.",
+    "baseUrl": "https://api.fiscaldata.treasury.gov",
+    "docsUrl": "https://fiscaldata.treasury.gov/api-documentation/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.fiscaldata.treasury.gov/services/api/v1/accounting/od/rates_of_exchange?sort=-record_date&page[size]=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "time-series"
+    ]
+  },
+  {
+    "id": "bls",
+    "name": "BLS",
+    "category": "Government",
+    "description": "Unemployment and labor indicators for economic dashboards.",
+    "baseUrl": "https://api.worldbank.org",
+    "docsUrl": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+    "auth": "none",
+    "exampleEndpoint": "https://api.worldbank.org/v2/country/US/indicator/SL.UEM.TOTL.ZS?format=json&per_page=5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "finance",
+      "time-series"
+    ]
+  },
+  {
+    "id": "openml-studies",
+    "name": "OpenML Studies",
+    "category": "Machine Learning",
+    "description": "Public machine learning API for prototyping with real data.",
+    "baseUrl": "https://www.openml.org",
+    "docsUrl": "https://docs.openml.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.openml.org/api/v1/json/study/list/limit/5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "science",
+      "education"
+    ]
+  },
+  {
+    "id": "agify",
+    "name": "Agify",
+    "category": "Tools",
+    "description": "Public tools API for prototyping with real data.",
+    "baseUrl": "https://api.agify.io",
+    "docsUrl": "https://agify.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.agify.io?name=michael",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "fun"
+    ]
+  },
+  {
+    "id": "genderize",
+    "name": "Genderize",
+    "category": "Tools",
+    "description": "Public tools API for prototyping with real data.",
+    "baseUrl": "https://api.genderize.io",
+    "docsUrl": "https://genderize.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.genderize.io?name=luc",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "fun"
+    ]
+  },
+  {
+    "id": "nationalize",
+    "name": "Nationalize",
+    "category": "Tools",
+    "description": "Public tools API for prototyping with real data.",
+    "baseUrl": "https://api.nationalize.io",
+    "docsUrl": "https://nationalize.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.nationalize.io?name=nathaniel",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "fun"
+    ]
+  },
+  {
+    "id": "ipinfo-lite",
+    "name": "IPinfo Lite",
+    "category": "Geocoding",
+    "description": "Public geocoding API for prototyping with real data.",
+    "baseUrl": "https://ipinfo.io",
+    "docsUrl": "https://ipinfo.io/developers",
+    "auth": "free-key",
+    "exampleEndpoint": "https://ipinfo.io/8.8.8.8/json?token=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "geo",
+      "tools"
+    ]
+  },
+  {
+    "id": "abstract-email",
+    "name": "Abstract Email",
+    "category": "Tools",
+    "description": "Public tools API for prototyping with real data.",
+    "baseUrl": "https://emailvalidation.abstractapi.com",
+    "docsUrl": "https://www.abstractapi.com/email-verification-validation-api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://emailvalidation.abstractapi.com/v1/?api_key=demo&email=test@example.com",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "search"
+    ]
+  },
+  {
+    "id": "abstract-phone",
+    "name": "Abstract Phone",
+    "category": "Tools",
+    "description": "Public tools API for prototyping with real data.",
+    "baseUrl": "https://phonevalidation.abstractapi.com",
+    "docsUrl": "https://www.abstractapi.com/phone-validation-api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://phonevalidation.abstractapi.com/v1/?api_key=demo&phone=+14155552671",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "search"
+    ]
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID Generator",
+    "category": "Tools",
+    "description": "Public tools API for prototyping with real data.",
+    "baseUrl": "https://www.uuidtools.com",
+    "docsUrl": "https://www.uuidtools.com/docs",
+    "auth": "none",
+    "exampleEndpoint": "https://www.uuidtools.com/api/generate/v1/count/5",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "fun"
+    ]
+  },
+  {
+    "id": "yes-no-maybe",
+    "name": "Yes No Maybe",
+    "category": "Fun",
+    "description": "Public fun API for prototyping with real data.",
+    "baseUrl": "https://yesno.wtf",
+    "docsUrl": "https://yesno.wtf/api",
+    "auth": "none",
+    "exampleEndpoint": "https://yesno.wtf/api",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "kanye-rest",
+    "name": "Kanye Rest",
+    "category": "Fun",
+    "description": "Public fun API for prototyping with real data.",
+    "baseUrl": "https://api.kanye.rest",
+    "docsUrl": "https://kanye.rest/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.kanye.rest/",
+    "sampleFields": [
+      "id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "fun",
+      "media"
+    ]
+  }
+]

@@ -1,0 +1,523 @@
+[
+  {
+    "id": "open-meteo__rest-countries",
+    "sourceIds": [
+      "open-meteo",
+      "rest-countries"
+    ],
+    "reason": "Layer weather onto country context for trips and events.",
+    "tags": []
+  },
+  {
+    "id": "usgs-earthquakes__rest-countries",
+    "sourceIds": [
+      "usgs-earthquakes",
+      "rest-countries"
+    ],
+    "reason": "Plot seismic activity against country borders.",
+    "tags": []
+  },
+  {
+    "id": "met-museum__art-institute",
+    "sourceIds": [
+      "met-museum",
+      "art-institute"
+    ],
+    "reason": "Compare open-access collections across two museum APIs.",
+    "tags": []
+  },
+  {
+    "id": "open-food-facts__open-brewery",
+    "sourceIds": [
+      "open-food-facts",
+      "open-brewery"
+    ],
+    "reason": "Nutrition data meets local venue discovery.",
+    "tags": []
+  },
+  {
+    "id": "iss-location__nasa-donki",
+    "sourceIds": [
+      "iss-location",
+      "nasa-donki"
+    ],
+    "reason": "What's overhead and what's coming from the sun.",
+    "tags": []
+  },
+  {
+    "id": "gbif__usgs-earthquakes",
+    "sourceIds": [
+      "gbif",
+      "usgs-earthquakes"
+    ],
+    "reason": "Species observations and geological events on one map.",
+    "tags": []
+  },
+  {
+    "id": "open-library__wikidata",
+    "sourceIds": [
+      "open-library",
+      "wikidata"
+    ],
+    "reason": "Books plus structured facts for rich entity pages.",
+    "tags": []
+  },
+  {
+    "id": "city-bikes__open-meteo",
+    "sourceIds": [
+      "city-bikes",
+      "open-meteo"
+    ],
+    "reason": "Bike-share availability with local weather.",
+    "tags": []
+  },
+  {
+    "id": "openfda__open-food-facts",
+    "sourceIds": [
+      "openfda",
+      "open-food-facts"
+    ],
+    "reason": "Recalls and product data for safety transparency.",
+    "tags": []
+  },
+  {
+    "id": "rest-countries__us-census",
+    "sourceIds": [
+      "rest-countries",
+      "us-census"
+    ],
+    "reason": "Global country stats alongside US demographic depth.",
+    "tags": []
+  },
+  {
+    "id": "coingecko__hn-firebase",
+    "sourceIds": [
+      "coingecko",
+      "hn-firebase"
+    ],
+    "reason": "Markets meet tech news for a finance-curious dashboard.",
+    "tags": []
+  },
+  {
+    "id": "pokeapi__dog-ceo",
+    "sourceIds": [
+      "pokeapi",
+      "dog-ceo"
+    ],
+    "reason": "Playful collections APIs for a lighthearted prototype.",
+    "tags": []
+  },
+  {
+    "id": "open-meteo__city-bikes",
+    "sourceIds": [
+      "open-meteo",
+      "city-bikes"
+    ],
+    "reason": "Plan a ride with live weather and station data.",
+    "tags": []
+  },
+  {
+    "id": "wikidata__rest-countries",
+    "sourceIds": [
+      "wikidata",
+      "rest-countries"
+    ],
+    "reason": "Structured facts layered onto country profiles.",
+    "tags": []
+  },
+  {
+    "id": "gbif__open-meteo",
+    "sourceIds": [
+      "gbif",
+      "open-meteo"
+    ],
+    "reason": "Species ranges with climate context.",
+    "tags": []
+  },
+  {
+    "id": "art-institute__wikidata",
+    "sourceIds": [
+      "art-institute",
+      "wikidata"
+    ],
+    "reason": "Artworks enriched with linked entity facts.",
+    "tags": []
+  },
+  {
+    "id": "open-library__rest-countries",
+    "sourceIds": [
+      "open-library",
+      "rest-countries"
+    ],
+    "reason": "Books and authors mapped to countries of origin.",
+    "tags": []
+  },
+  {
+    "id": "usgs-earthquakes__city-bikes",
+    "sourceIds": [
+      "usgs-earthquakes",
+      "city-bikes"
+    ],
+    "reason": "Urban mobility during geological event windows.",
+    "tags": []
+  },
+  {
+    "id": "openfda__rest-countries",
+    "sourceIds": [
+      "openfda",
+      "rest-countries"
+    ],
+    "reason": "Recall patterns across regions.",
+    "tags": []
+  },
+  {
+    "id": "hn-firebase__coingecko",
+    "sourceIds": [
+      "hn-firebase",
+      "coingecko"
+    ],
+    "reason": "Tech discourse alongside token price moves.",
+    "tags": []
+  },
+  {
+    "id": "open-meteo__usgs-earthquakes",
+    "sourceIds": [
+      "open-meteo",
+      "usgs-earthquakes"
+    ],
+    "reason": "Pair Open-Meteo with USGS Earthquake Catalog to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "time-series",
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__iss-location",
+    "sourceIds": [
+      "open-meteo",
+      "iss-location"
+    ],
+    "reason": "Pair Open-Meteo with Open Notify — ISS to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__open-brewery",
+    "sourceIds": [
+      "open-meteo",
+      "open-brewery"
+    ],
+    "reason": "Pair Open-Meteo with Open Brewery DB to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__gbif",
+    "sourceIds": [
+      "open-meteo",
+      "gbif"
+    ],
+    "reason": "Pair Open-Meteo with GBIF to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__launch-library-2",
+    "sourceIds": [
+      "open-meteo",
+      "launch-library-2"
+    ],
+    "reason": "Pair Open-Meteo with Launch Library 2 to explore time-series from two angles.",
+    "tags": [
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__usgs-water-services",
+    "sourceIds": [
+      "open-meteo",
+      "usgs-water-services"
+    ],
+    "reason": "Pair Open-Meteo with USGS Water Services to explore time-series from two angles.",
+    "tags": [
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__noaa-tides",
+    "sourceIds": [
+      "open-meteo",
+      "noaa-tides"
+    ],
+    "reason": "Pair Open-Meteo with NOAA Tides to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__7timer",
+    "sourceIds": [
+      "open-meteo",
+      "7timer"
+    ],
+    "reason": "Pair Open-Meteo with 7Timer! to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__open-aq",
+    "sourceIds": [
+      "open-meteo",
+      "open-aq"
+    ],
+    "reason": "Pair Open-Meteo with Open AQ to explore maps from two angles.",
+    "tags": [
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__openstreetmap-nominatim",
+    "sourceIds": [
+      "open-meteo",
+      "openstreetmap-nominatim"
+    ],
+    "reason": "Pair Open-Meteo with OpenStreetMap Nominatim to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__rest-countries-v1",
+    "sourceIds": [
+      "open-meteo",
+      "rest-countries-v1"
+    ],
+    "reason": "Pair Open-Meteo with REST Countries v1 to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__uk-police",
+    "sourceIds": [
+      "open-meteo",
+      "uk-police"
+    ],
+    "reason": "Pair Open-Meteo with UK Police to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__disease-sh",
+    "sourceIds": [
+      "open-meteo",
+      "disease-sh"
+    ],
+    "reason": "Pair Open-Meteo with Disease.sh to explore time-series from two angles.",
+    "tags": [
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__openligadb",
+    "sourceIds": [
+      "open-meteo",
+      "openligadb"
+    ],
+    "reason": "Pair Open-Meteo with OpenLigaDB to explore time-series from two angles.",
+    "tags": [
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__mbta",
+    "sourceIds": [
+      "open-meteo",
+      "mbta"
+    ],
+    "reason": "Pair Open-Meteo with MBTA to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__transitland",
+    "sourceIds": [
+      "open-meteo",
+      "transitland"
+    ],
+    "reason": "Pair Open-Meteo with TransitLand to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__usgs-elevation",
+    "sourceIds": [
+      "open-meteo",
+      "usgs-elevation"
+    ],
+    "reason": "Pair Open-Meteo with USGS Elevation to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__inaturalist",
+    "sourceIds": [
+      "open-meteo",
+      "inaturalist"
+    ],
+    "reason": "Pair Open-Meteo with iNaturalist to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__open-topo-data",
+    "sourceIds": [
+      "open-meteo",
+      "open-topo-data"
+    ],
+    "reason": "Pair Open-Meteo with Open Topo Data to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "open-meteo__sunrise-sunset",
+    "sourceIds": [
+      "open-meteo",
+      "sunrise-sunset"
+    ],
+    "reason": "Pair Open-Meteo with Sunrise Sunset to explore geo from two angles.",
+    "tags": [
+      "geo",
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__ip-geolocation",
+    "sourceIds": [
+      "open-meteo",
+      "ip-geolocation"
+    ],
+    "reason": "Pair Open-Meteo with IP Geolocation to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__zippopotam",
+    "sourceIds": [
+      "open-meteo",
+      "zippopotam"
+    ],
+    "reason": "Pair Open-Meteo with Zippopotam to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__colorado-data",
+    "sourceIds": [
+      "open-meteo",
+      "colorado-data"
+    ],
+    "reason": "Pair Open-Meteo with Colorado Data to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__nyc-open-data",
+    "sourceIds": [
+      "open-meteo",
+      "nyc-open-data"
+    ],
+    "reason": "Pair Open-Meteo with NYC Open Data to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__sf-open-data",
+    "sourceIds": [
+      "open-meteo",
+      "sf-open-data"
+    ],
+    "reason": "Pair Open-Meteo with SF Open Data to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__chicago-data",
+    "sourceIds": [
+      "open-meteo",
+      "chicago-data"
+    ],
+    "reason": "Pair Open-Meteo with Chicago Data to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__open-brewery-2",
+    "sourceIds": [
+      "open-meteo",
+      "open-brewery-2"
+    ],
+    "reason": "Pair Open-Meteo with Open Brewery to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__spacex-api",
+    "sourceIds": [
+      "open-meteo",
+      "spacex-api"
+    ],
+    "reason": "Pair Open-Meteo with SpaceX API to explore time-series from two angles.",
+    "tags": [
+      "time-series"
+    ]
+  },
+  {
+    "id": "open-meteo__openaq-countries",
+    "sourceIds": [
+      "open-meteo",
+      "openaq-countries"
+    ],
+    "reason": "Pair Open-Meteo with OpenAQ Countries to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  },
+  {
+    "id": "open-meteo__rest-countries-region",
+    "sourceIds": [
+      "open-meteo",
+      "rest-countries-region"
+    ],
+    "reason": "Pair Open-Meteo with Rest Countries Region to explore geo from two angles.",
+    "tags": [
+      "geo"
+    ]
+  }
+]

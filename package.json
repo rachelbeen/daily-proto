@@ -1,0 +1,28 @@
+{
+  "name": "daily-proto",
+  "version": "0.1.0",
+  "description": "Daily prototyping prompts powered by public APIs and data sources",
+  "type": "module",
+  "bin": {
+    "daily-proto": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && cp -r src/data/catalog dist/data/",
+    "dev": "tsx src/cli.ts",
+    "generate": "tsx src/cli.ts generate",
+    "post": "tsx src/cli.ts post",
+    "seed": "node scripts/seed-catalog.mjs",
+    "start": "node dist/server.js",
+    "serve": "tsx src/server.ts",
+    "today": "tsx src/cli.ts today"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@vercel/node": "^5.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}

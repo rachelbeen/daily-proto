@@ -1,0 +1,3597 @@
+[
+  {
+    "id": "openaq",
+    "name": "OpenAQ",
+    "category": "Environment",
+    "description": "Global air quality measurements from government monitors and sensors.",
+    "baseUrl": "https://api.openaq.org",
+    "docsUrl": "https://docs.openaq.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openaq.org/v3/locations?limit=5",
+    "sampleFields": [
+      "name",
+      "locality",
+      "coordinates"
+    ],
+    "tags": [
+      "geo",
+      "science",
+      "time-series",
+      "health"
+    ]
+  },
+  {
+    "id": "7timer",
+    "name": "7Timer!",
+    "category": "Weather",
+    "description": "Astronomical and civil weather forecasts for any coordinates worldwide.",
+    "baseUrl": "http://www.7timer.info",
+    "docsUrl": "http://www.7timer.info/doc.php",
+    "auth": "none",
+    "exampleEndpoint": "http://www.7timer.info/bin/api.pl?lon=113.2&lat=23.1&product=civil&output=json",
+    "sampleFields": [
+      "init",
+      "dataseries",
+      "weather"
+    ],
+    "tags": [
+      "geo",
+      "time-series",
+      "science"
+    ]
+  },
+  {
+    "id": "met-no",
+    "name": "MET Norway",
+    "category": "Weather",
+    "description": "Location forecasts and weather symbols from the Norwegian Meteorological Institute.",
+    "baseUrl": "https://api.met.no",
+    "docsUrl": "https://api.met.no/weatherapi/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.91&lon=10.75",
+    "sampleFields": [
+      "timeseries",
+      "instant",
+      "details"
+    ],
+    "tags": [
+      "geo",
+      "time-series",
+      "maps"
+    ]
+  },
+  {
+    "id": "sunrise-sunset",
+    "name": "Sunrise-Sunset.org",
+    "category": "Weather",
+    "description": "Sunrise, sunset, and twilight times for any latitude and longitude.",
+    "baseUrl": "https://api.sunrise-sunset.org",
+    "docsUrl": "https://sunrise-sunset.org/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.sunrise-sunset.org/json?lat=40.71&lng=-74.01&formatted=0",
+    "sampleFields": [
+      "sunrise",
+      "sunset",
+      "day_length"
+    ],
+    "tags": [
+      "geo",
+      "time-series",
+      "tools"
+    ]
+  },
+  {
+    "id": "nominatim",
+    "name": "OpenStreetMap Nominatim",
+    "category": "Geocoding",
+    "description": "Forward and reverse geocoding for places worldwide from OpenStreetMap.",
+    "baseUrl": "https://nominatim.openstreetmap.org",
+    "docsUrl": "https://nominatim.org/release-docs/latest/api/Overview/",
+    "auth": "none",
+    "exampleEndpoint": "https://nominatim.openstreetmap.org/search?q=brooklyn&format=json&limit=5",
+    "sampleFields": [
+      "display_name",
+      "lat",
+      "lon"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "search"
+    ]
+  },
+  {
+    "id": "zippopotam",
+    "name": "Zippopotam",
+    "category": "Geography",
+    "description": "Postal code metadata including place names and coordinates.",
+    "baseUrl": "https://api.zippopotam.us",
+    "docsUrl": "https://wiki.openstreetmap.org/wiki/Zippopotam",
+    "auth": "none",
+    "exampleEndpoint": "https://api.zippopotam.us/us/10001",
+    "sampleFields": [
+      "post code",
+      "place name",
+      "state"
+    ],
+    "tags": [
+      "geo",
+      "local",
+      "search"
+    ]
+  },
+  {
+    "id": "geonames",
+    "name": "GeoNames",
+    "category": "Geography",
+    "description": "Geographic names, elevation, population, and nearby places.",
+    "baseUrl": "https://www.geonames.org",
+    "docsUrl": "https://www.geonames.org/export/web-services.html",
+    "auth": "free-key",
+    "exampleEndpoint": "https://secure.geonames.org/searchJSON?q=london&maxRows=5&username=demo",
+    "sampleFields": [
+      "name",
+      "countryName",
+      "lat"
+    ],
+    "tags": [
+      "geo",
+      "search",
+      "education"
+    ]
+  },
+  {
+    "id": "postcodes-io",
+    "name": "Postcodes.io",
+    "category": "Geography",
+    "description": "UK postcode lookup with coordinates, regions, and administrative areas.",
+    "baseUrl": "https://api.postcodes.io",
+    "docsUrl": "https://postcodes.io/docs",
+    "auth": "none",
+    "exampleEndpoint": "https://api.postcodes.io/postcodes/SW1A1AA",
+    "sampleFields": [
+      "postcode",
+      "latitude",
+      "longitude"
+    ],
+    "tags": [
+      "geo",
+      "local",
+      "search"
+    ]
+  },
+  {
+    "id": "world-bank",
+    "name": "World Bank Open Data",
+    "category": "Government",
+    "description": "Development indicators for countries and regions over time.",
+    "baseUrl": "https://api.worldbank.org",
+    "docsUrl": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+    "auth": "none",
+    "exampleEndpoint": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=5",
+    "sampleFields": [
+      "country",
+      "date",
+      "value"
+    ],
+    "tags": [
+      "finance",
+      "charts",
+      "comparison"
+    ]
+  },
+  {
+    "id": "fred",
+    "name": "FRED",
+    "category": "Finance",
+    "description": "Federal Reserve economic time series for US macro indicators.",
+    "baseUrl": "https://api.stlouisfed.org",
+    "docsUrl": "https://fred.stlouisfed.org/docs/api/fred/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.stlouisfed.org/fred/series/observations?series_id=UNRATE&api_key=demo&file_type=json",
+    "sampleFields": [
+      "date",
+      "value",
+      "series_id"
+    ],
+    "tags": [
+      "finance",
+      "time-series",
+      "charts"
+    ]
+  },
+  {
+    "id": "frankfurter",
+    "name": "Frankfurter",
+    "category": "Finance",
+    "description": "European Central Bank exchange rates with historical lookups.",
+    "baseUrl": "https://api.frankfurter.app",
+    "docsUrl": "https://www.frankfurter.app/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.frankfurter.app/latest?from=USD&to=EUR,GBP",
+    "sampleFields": [
+      "amount",
+      "base",
+      "rates"
+    ],
+    "tags": [
+      "finance",
+      "comparison",
+      "time-series"
+    ]
+  },
+  {
+    "id": "coincap",
+    "name": "CoinCap",
+    "category": "Finance",
+    "description": "Real-time cryptocurrency prices, market caps, and asset metadata.",
+    "baseUrl": "https://api.coincap.io",
+    "docsUrl": "https://docs.coincap.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.coincap.io/v2/assets?limit=10",
+    "sampleFields": [
+      "name",
+      "priceUsd",
+      "marketCapUsd"
+    ],
+    "tags": [
+      "finance",
+      "trending",
+      "real-time"
+    ]
+  },
+  {
+    "id": "exchangerate-host",
+    "name": "ExchangeRate.host",
+    "category": "Finance",
+    "description": "Currency conversion rates with historical and timeseries endpoints.",
+    "baseUrl": "https://api.exchangerate.host",
+    "docsUrl": "https://exchangerate.host/#/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.exchangerate.host/latest?base=USD&symbols=EUR,GBP,JPY",
+    "sampleFields": [
+      "base",
+      "date",
+      "rates"
+    ],
+    "tags": [
+      "finance",
+      "comparison",
+      "time-series"
+    ]
+  },
+  {
+    "id": "nasa-apod",
+    "name": "NASA APOD",
+    "category": "Space",
+    "description": "Astronomy Picture of the Day with titles, explanations, and media URLs.",
+    "baseUrl": "https://api.nasa.gov",
+    "docsUrl": "https://api.nasa.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+    "sampleFields": [
+      "title",
+      "url",
+      "explanation"
+    ],
+    "tags": [
+      "science",
+      "media",
+      "gallery"
+    ]
+  },
+  {
+    "id": "nasa-neo",
+    "name": "NASA NeoWs",
+    "category": "Space",
+    "description": "Near-Earth object close-approach data from NASA JPL.",
+    "baseUrl": "https://api.nasa.gov",
+    "docsUrl": "https://api.nasa.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nasa.gov/neo/rest/v1/feed?start_date=2026-01-01&end_date=2026-01-07&api_key=DEMO_KEY",
+    "sampleFields": [
+      "name",
+      "close_approach_data",
+      "estimated_diameter"
+    ],
+    "tags": [
+      "science",
+      "alerts",
+      "time-series"
+    ]
+  },
+  {
+    "id": "nasa-mars-rover",
+    "name": "NASA Mars Rover Photos",
+    "category": "Space",
+    "description": "Photos captured by Curiosity, Opportunity, and Perseverance rovers.",
+    "baseUrl": "https://api.nasa.gov",
+    "docsUrl": "https://api.nasa.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY",
+    "sampleFields": [
+      "img_src",
+      "earth_date",
+      "camera"
+    ],
+    "tags": [
+      "science",
+      "gallery",
+      "media"
+    ]
+  },
+  {
+    "id": "nasa-eonet",
+    "name": "NASA EONET",
+    "category": "Natural events",
+    "description": "Open natural event metadata including wildfires, storms, and volcanoes.",
+    "baseUrl": "https://eonet.gsfc.nasa.gov",
+    "docsUrl": "https://eonet.gsfc.nasa.gov/docs/v3",
+    "auth": "none",
+    "exampleEndpoint": "https://eonet.gsfc.nasa.gov/api/v3/events?limit=5",
+    "sampleFields": [
+      "title",
+      "categories",
+      "geometry"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "alerts"
+    ]
+  },
+  {
+    "id": "spacex",
+    "name": "SpaceX API",
+    "category": "Space",
+    "description": "Launches, rockets, payloads, and company info from r/SpaceX.",
+    "baseUrl": "https://api.spacexdata.com",
+    "docsUrl": "https://github.com/r-spacex/SpaceX-API",
+    "auth": "none",
+    "exampleEndpoint": "https://api.spacexdata.com/v4/launches/upcoming",
+    "sampleFields": [
+      "name",
+      "date_utc",
+      "details"
+    ],
+    "tags": [
+      "science",
+      "time-series",
+      "trending"
+    ]
+  },
+  {
+    "id": "launch-library",
+    "name": "The Space Devs Launch Library",
+    "category": "Space",
+    "description": "Rocket launches, agencies, and pad schedules worldwide.",
+    "baseUrl": "https://ll.thespacedevs.com",
+    "docsUrl": "https://thespacedevs.com/llapi",
+    "auth": "none",
+    "exampleEndpoint": "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=5",
+    "sampleFields": [
+      "name",
+      "net",
+      "status"
+    ],
+    "tags": [
+      "science",
+      "time-series",
+      "alerts"
+    ]
+  },
+  {
+    "id": "inaturalist",
+    "name": "iNaturalist",
+    "category": "Animals",
+    "description": "Community species observations with photos and taxonomic data.",
+    "baseUrl": "https://api.inaturalist.org",
+    "docsUrl": "https://api.inaturalist.org/v1/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.inaturalist.org/v1/observations?per_page=5&order=desc&order_by=created_at",
+    "sampleFields": [
+      "species_guess",
+      "location",
+      "taxon_name"
+    ],
+    "tags": [
+      "science",
+      "geo",
+      "gallery"
+    ]
+  },
+  {
+    "id": "eol",
+    "name": "Encyclopedia of Life",
+    "category": "Animals",
+    "description": "Taxonomic pages, traits, and media for species across the tree of life.",
+    "baseUrl": "https://eol.org",
+    "docsUrl": "https://eol.org/docs/what-is-eol/data-services",
+    "auth": "none",
+    "exampleEndpoint": "https://eol.org/api/search/1.0.json?q=panthera+leo&page=1",
+    "sampleFields": [
+      "title",
+      "link",
+      "content"
+    ],
+    "tags": [
+      "science",
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "cat-facts",
+    "name": "Cat Facts",
+    "category": "Animals",
+    "description": "Random cat facts and breed lists served as simple JSON.",
+    "baseUrl": "https://catfact.ninja",
+    "docsUrl": "https://catfact.ninja/",
+    "auth": "none",
+    "exampleEndpoint": "https://catfact.ninja/fact",
+    "sampleFields": [
+      "fact",
+      "length",
+      "breeds"
+    ],
+    "tags": [
+      "fun",
+      "education",
+      "collections"
+    ]
+  },
+  {
+    "id": "shibe-online",
+    "name": "Shibe.Online",
+    "category": "Animals",
+    "description": "Random Shiba Inu images on demand.",
+    "baseUrl": "http://shibe.online",
+    "docsUrl": "http://shibe.online/api",
+    "auth": "none",
+    "exampleEndpoint": "http://shibe.online/api/shibes?count=1&urls=true",
+    "sampleFields": [
+      "urls",
+      "breeds",
+      "count"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "gallery"
+    ]
+  },
+  {
+    "id": "cataas",
+    "name": "CATAAS",
+    "category": "Animals",
+    "description": "Cat as a service — random cat images and GIFs by tag.",
+    "baseUrl": "https://cataas.com",
+    "docsUrl": "https://cataas.com/doc.html",
+    "auth": "none",
+    "exampleEndpoint": "https://cataas.com/cat?json=true",
+    "sampleFields": [
+      "id",
+      "tags",
+      "mimetype"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "gallery"
+    ]
+  },
+  {
+    "id": "fishwatch",
+    "name": "NOAA FishWatch",
+    "category": "Animals",
+    "description": "Sustainable seafood species profiles from NOAA Fisheries.",
+    "baseUrl": "https://www.fishwatch.gov",
+    "docsUrl": "https://www.fishwatch.gov/developers",
+    "auth": "none",
+    "exampleEndpoint": "https://www.fishwatch.gov/api/species?limit=5",
+    "sampleFields": [
+      "Species_Name",
+      "Scientific_Name",
+      "Location"
+    ],
+    "tags": [
+      "science",
+      "health",
+      "education"
+    ]
+  },
+  {
+    "id": "xkcd",
+    "name": "xkcd",
+    "category": "Comics",
+    "description": "xkcd comic metadata including transcripts and alt text.",
+    "baseUrl": "https://xkcd.com",
+    "docsUrl": "https://xkcd.com/json.html",
+    "auth": "none",
+    "exampleEndpoint": "https://xkcd.com/info.0.json",
+    "sampleFields": [
+      "title",
+      "day",
+      "img"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "culture"
+    ]
+  },
+  {
+    "id": "studio-ghibli",
+    "name": "Studio Ghibli API",
+    "category": "Anime",
+    "description": "Films, characters, and locations from Studio Ghibli works.",
+    "baseUrl": "https://ghibliapi.vercel.app",
+    "docsUrl": "https://ghibliapi.vercel.app/",
+    "auth": "none",
+    "exampleEndpoint": "https://ghibliapi.vercel.app/films?limit=5",
+    "sampleFields": [
+      "title",
+      "director",
+      "release_date"
+    ],
+    "tags": [
+      "fun",
+      "culture",
+      "collections"
+    ]
+  },
+  {
+    "id": "jikan",
+    "name": "Jikan",
+    "category": "Anime",
+    "description": "Unofficial MyAnimeList API for anime, manga, and character data.",
+    "baseUrl": "https://api.jikan.moe",
+    "docsUrl": "https://docs.api.jikan.moe/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.jikan.moe/v4/top/anime?limit=5",
+    "sampleFields": [
+      "title",
+      "score",
+      "synopsis"
+    ],
+    "tags": [
+      "fun",
+      "ranking",
+      "search"
+    ]
+  },
+  {
+    "id": "rick-morty",
+    "name": "Rick and Morty API",
+    "category": "Entertainment",
+    "description": "Characters, locations, and episodes from Rick and Morty.",
+    "baseUrl": "https://rickandmortyapi.com",
+    "docsUrl": "https://rickandmortyapi.com/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://rickandmortyapi.com/api/character?page=1",
+    "sampleFields": [
+      "name",
+      "status",
+      "species"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "search"
+    ]
+  },
+  {
+    "id": "swapi",
+    "name": "SWAPI",
+    "category": "Entertainment",
+    "description": "Star Wars films, people, planets, and starships.",
+    "baseUrl": "https://swapi.dev",
+    "docsUrl": "https://swapi.dev/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://swapi.dev/api/people/?page=1",
+    "sampleFields": [
+      "name",
+      "height",
+      "homeworld"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "education"
+    ]
+  },
+  {
+    "id": "hp-api",
+    "name": "Harry Potter API",
+    "category": "Games",
+    "description": "Spells, characters, and houses from the Harry Potter universe.",
+    "baseUrl": "https://hp-api.onrender.com",
+    "docsUrl": "https://github.com/fedeperin/HarryPotterApi",
+    "auth": "none",
+    "exampleEndpoint": "https://hp-api.onrender.com/api/characters",
+    "sampleFields": [
+      "name",
+      "house",
+      "patronus"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "education"
+    ]
+  },
+  {
+    "id": "game-of-thrones",
+    "name": "Game of Thrones API",
+    "category": "Entertainment",
+    "description": "Characters, houses, and quotes from Game of Thrones.",
+    "baseUrl": "https://thronesapi.com",
+    "docsUrl": "https://thronesapi.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://thronesapi.com/api/v2/Characters?limit=5",
+    "sampleFields": [
+      "fullName",
+      "family",
+      "title"
+    ],
+    "tags": [
+      "fun",
+      "culture",
+      "search"
+    ]
+  },
+  {
+    "id": "tvmaze",
+    "name": "TVMaze",
+    "category": "Entertainment",
+    "description": "TV show schedules, cast, episodes, and network metadata.",
+    "baseUrl": "https://api.tvmaze.com",
+    "docsUrl": "https://www.tvmaze.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.tvmaze.com/search/shows?q=arcane",
+    "sampleFields": [
+      "name",
+      "premiered",
+      "summary"
+    ],
+    "tags": [
+      "media",
+      "search",
+      "trending"
+    ]
+  },
+  {
+    "id": "themealdb",
+    "name": "TheMealDB",
+    "category": "Food",
+    "description": "Meal recipes, ingredients, and categories with images.",
+    "baseUrl": "https://www.themealdb.com",
+    "docsUrl": "https://www.themealdb.com/api.php",
+    "auth": "none",
+    "exampleEndpoint": "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata",
+    "sampleFields": [
+      "strMeal",
+      "strCategory",
+      "strInstructions"
+    ],
+    "tags": [
+      "health",
+      "search",
+      "gallery"
+    ]
+  },
+  {
+    "id": "cocktaildb",
+    "name": "The Cocktail DB",
+    "category": "Food",
+    "description": "Cocktail recipes, ingredients, and glassware types.",
+    "baseUrl": "https://www.thecocktaildb.com",
+    "docsUrl": "https://www.thecocktaildb.com/api.php",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+    "sampleFields": [
+      "strDrink",
+      "strCategory",
+      "strInstructions"
+    ],
+    "tags": [
+      "fun",
+      "search",
+      "collections"
+    ]
+  },
+  {
+    "id": "usda-fooddata",
+    "name": "USDA FoodData Central",
+    "category": "Food",
+    "description": "Branded and foundation foods with nutrients and portions.",
+    "baseUrl": "https://api.nal.usda.gov",
+    "docsUrl": "https://fdc.nal.usda.gov/api-guide.html",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nal.usda.gov/fdc/v1/foods/search?query=apple&pageSize=5&api_key=DEMO_KEY",
+    "sampleFields": [
+      "description",
+      "foodNutrients",
+      "brandOwner"
+    ],
+    "tags": [
+      "health",
+      "comparison",
+      "search"
+    ]
+  },
+  {
+    "id": "openchargemap",
+    "name": "Open Charge Map",
+    "category": "Transport",
+    "description": "EV charging station locations and connector details worldwide.",
+    "baseUrl": "https://api.openchargemap.io",
+    "docsUrl": "https://openchargemap.io/site/develop/api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.openchargemap.io/v3/poi/?output=json&maxresults=5&key=demo",
+    "sampleFields": [
+      "AddressInfo",
+      "Connections",
+      "OperatorInfo"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "transit"
+    ]
+  },
+  {
+    "id": "transportapi",
+    "name": "TransportAPI UK",
+    "category": "Transport",
+    "description": "UK bus, train, and tube departures and stop metadata.",
+    "baseUrl": "https://transportapi.com",
+    "docsUrl": "https://developer.transportapi.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://transportapi.com/v3/uk/places.json?query=london",
+    "sampleFields": [
+      "name",
+      "latitude",
+      "longitude"
+    ],
+    "tags": [
+      "transit",
+      "real-time",
+      "geo"
+    ]
+  },
+  {
+    "id": "transitland",
+    "name": "Transitland",
+    "category": "Transport",
+    "description": "Global public transit feeds, routes, and stop geometries.",
+    "baseUrl": "https://transit.land",
+    "docsUrl": "https://www.transit.land/documentation/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://transit.land/api/v2/rest/feeds?limit=5",
+    "sampleFields": [
+      "onestop_id",
+      "spec",
+      "urls"
+    ],
+    "tags": [
+      "transit",
+      "geo",
+      "maps"
+    ]
+  },
+  {
+    "id": "nps",
+    "name": "National Park Service",
+    "category": "Government",
+    "description": "US national park alerts, activities, and visitor information.",
+    "baseUrl": "https://developer.nps.gov",
+    "docsUrl": "https://www.nps.gov/subjects/developer/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://developer.nps.gov/api/v1/parks?limit=5&api_key=DEMO_KEY",
+    "sampleFields": [
+      "fullName",
+      "states",
+      "description"
+    ],
+    "tags": [
+      "geo",
+      "education",
+      "local"
+    ]
+  },
+  {
+    "id": "fbi-wanted",
+    "name": "FBI Wanted API",
+    "category": "Government",
+    "description": "FBI wanted persons with photos, charges, and reward info.",
+    "baseUrl": "https://api.fbi.gov",
+    "docsUrl": "https://www.fbi.gov/wanted/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.fbi.gov/wanted/v1/list?page=1",
+    "sampleFields": [
+      "title",
+      "subjects",
+      "details"
+    ],
+    "tags": [
+      "alerts",
+      "search",
+      "media"
+    ]
+  },
+  {
+    "id": "uk-police",
+    "name": "data.police.uk",
+    "category": "Government",
+    "description": "Street-level crime and stop-and-search data for England, Wales, and NI.",
+    "baseUrl": "https://data.police.uk",
+    "docsUrl": "https://data.police.uk/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://data.police.uk/api/crimes-street/all-crime?lat=51.5074&lng=-0.1278&date=2024-01",
+    "sampleFields": [
+      "category",
+      "month",
+      "location"
+    ],
+    "tags": [
+      "geo",
+      "maps",
+      "comparison"
+    ]
+  },
+  {
+    "id": "congress-gov",
+    "name": "Congress.gov API",
+    "category": "Government",
+    "description": "US bills, members, committees, and congressional records.",
+    "baseUrl": "https://api.congress.gov",
+    "docsUrl": "https://api.congress.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.congress.gov/v3/bill?limit=5&api_key=DEMO_KEY",
+    "sampleFields": [
+      "title",
+      "congress",
+      "type"
+    ],
+    "tags": [
+      "education",
+      "search",
+      "time-series"
+    ]
+  },
+  {
+    "id": "europeana",
+    "name": "Europeana",
+    "category": "Art",
+    "description": "Millions of digitized cultural heritage objects from European institutions.",
+    "baseUrl": "https://api.europeana.eu",
+    "docsUrl": "https://pro.europeana.eu/page/apis",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.europeana.eu/record/v2/search.json?wskey=apidemo&query=van+gogh&rows=5",
+    "sampleFields": [
+      "title",
+      "edmPreview",
+      "dataProvider"
+    ],
+    "tags": [
+      "culture",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "rijksmuseum",
+    "name": "Rijksmuseum",
+    "category": "Art",
+    "description": "Dutch national museum collection with high-resolution artwork metadata.",
+    "baseUrl": "https://data.rijksmuseum.nl",
+    "docsUrl": "https://data.rijksmuseum.nl/object-metadata/api/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://data.rijksmuseum.nl/object-metadata/api/record?objectNumber=SK-C-5",
+    "sampleFields": [
+      "titles",
+      "creators",
+      "dating"
+    ],
+    "tags": [
+      "culture",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "smithsonian",
+    "name": "Smithsonian Open Access",
+    "category": "Art",
+    "description": "Open access museum objects across Smithsonian collections.",
+    "baseUrl": "https://api.si.edu",
+    "docsUrl": "https://api.si.edu/openaccess/api/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.si.edu/openaccess/api/v1.0/search?q=space&api_key=DEMO_KEY",
+    "sampleFields": [
+      "title",
+      "content",
+      "url"
+    ],
+    "tags": [
+      "culture",
+      "gallery",
+      "education"
+    ]
+  },
+  {
+    "id": "harvard-art",
+    "name": "Harvard Art Museums",
+    "category": "Art",
+    "description": "Artworks, exhibitions, and galleries from Harvard collections.",
+    "baseUrl": "https://api.harvardartmuseums.org",
+    "docsUrl": "https://github.com/harvardartmuseums/api-docs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.harvardartmuseums.org/object?size=5&apikey=demo",
+    "sampleFields": [
+      "title",
+      "classification",
+      "dated"
+    ],
+    "tags": [
+      "culture",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "cleveland-museum",
+    "name": "Cleveland Museum of Art",
+    "category": "Art",
+    "description": "Open access artworks with creators, dates, and IIIF images.",
+    "baseUrl": "https://openaccess-api.clevelandart.org",
+    "docsUrl": "https://openaccess-api.clevelandart.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://openaccess-api.clevelandart.org/api/artworks/?limit=5",
+    "sampleFields": [
+      "title",
+      "creators",
+      "creation_date"
+    ],
+    "tags": [
+      "culture",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "brooklyn-museum",
+    "name": "Brooklyn Museum",
+    "category": "Art",
+    "description": "Collection objects with artists, dates, and public domain images.",
+    "baseUrl": "https://www.brooklynmuseum.org",
+    "docsUrl": "https://www.brooklynmuseum.org/opencollection/api",
+    "auth": "none",
+    "exampleEndpoint": "https://www.brooklynmuseum.org/api/v2/object?has_images=1&limit=5",
+    "sampleFields": [
+      "title",
+      "artist",
+      "object_date"
+    ],
+    "tags": [
+      "culture",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "gutendex",
+    "name": "Gutendex",
+    "category": "Books",
+    "description": "Project Gutenberg book catalog with authors and download links.",
+    "baseUrl": "https://gutendex.com",
+    "docsUrl": "https://gutendex.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://gutendex.com/books/?search=pride",
+    "sampleFields": [
+      "title",
+      "authors",
+      "download_count"
+    ],
+    "tags": [
+      "education",
+      "media",
+      "search"
+    ]
+  },
+  {
+    "id": "google-books",
+    "name": "Google Books",
+    "category": "Books",
+    "description": "Book search, previews, and volume metadata from Google.",
+    "baseUrl": "https://www.googleapis.com/books",
+    "docsUrl": "https://developers.google.com/books",
+    "auth": "optional",
+    "exampleEndpoint": "https://www.googleapis.com/books/v1/volumes?q=design&maxResults=5",
+    "sampleFields": [
+      "title",
+      "authors",
+      "publishedDate"
+    ],
+    "tags": [
+      "education",
+      "search",
+      "media"
+    ]
+  },
+  {
+    "id": "openalex",
+    "name": "OpenAlex",
+    "category": "Science",
+    "description": "Open catalog of scholarly works, authors, institutions, and topics.",
+    "baseUrl": "https://api.openalex.org",
+    "docsUrl": "https://docs.openalex.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openalex.org/works?search=climate&per_page=5",
+    "sampleFields": [
+      "title",
+      "publication_year",
+      "cited_by_count"
+    ],
+    "tags": [
+      "science",
+      "search",
+      "ranking"
+    ]
+  },
+  {
+    "id": "crossref",
+    "name": "Crossref",
+    "category": "Science",
+    "description": "Scholarly metadata for DOIs including citations and funders.",
+    "baseUrl": "https://api.crossref.org",
+    "docsUrl": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.crossref.org/works?query=neural&rows=5",
+    "sampleFields": [
+      "title",
+      "author",
+      "published"
+    ],
+    "tags": [
+      "science",
+      "search",
+      "education"
+    ]
+  },
+  {
+    "id": "arxiv",
+    "name": "arXiv API",
+    "category": "Science",
+    "description": "Preprint metadata and abstracts from arXiv.org.",
+    "baseUrl": "https://export.arxiv.org",
+    "docsUrl": "https://info.arxiv.org/help/api/index.html",
+    "auth": "none",
+    "exampleEndpoint": "https://export.arxiv.org/api/query?search_query=all:electron&max_results=5",
+    "sampleFields": [
+      "title",
+      "summary",
+      "published"
+    ],
+    "tags": [
+      "science",
+      "search",
+      "time-series"
+    ]
+  },
+  {
+    "id": "semantic-scholar",
+    "name": "Semantic Scholar",
+    "category": "Science",
+    "description": "Academic paper search with citations and influential metrics.",
+    "baseUrl": "https://api.semanticscholar.org",
+    "docsUrl": "https://api.semanticscholar.org/api-docs/",
+    "auth": "optional",
+    "exampleEndpoint": "https://api.semanticscholar.org/graph/v1/paper/search?query=transformer&limit=5",
+    "sampleFields": [
+      "title",
+      "year",
+      "citationCount"
+    ],
+    "tags": [
+      "science",
+      "search",
+      "ranking"
+    ]
+  },
+  {
+    "id": "disease-sh",
+    "name": "disease.sh",
+    "category": "Health",
+    "description": "COVID-19 and disease statistics aggregated by country.",
+    "baseUrl": "https://disease.sh",
+    "docsUrl": "https://disease.sh/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://disease.sh/v3/covid-19/countries?limit=5",
+    "sampleFields": [
+      "country",
+      "cases",
+      "deaths"
+    ],
+    "tags": [
+      "health",
+      "charts",
+      "comparison"
+    ]
+  },
+  {
+    "id": "nhtsa",
+    "name": "NHTSA",
+    "category": "Government",
+    "description": "US vehicle safety ratings, recalls, and VIN decoding.",
+    "baseUrl": "https://vpic.nhtsa.dot.gov",
+    "docsUrl": "https://vpic.nhtsa.dot.gov/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json",
+    "sampleFields": [
+      "Make_Name",
+      "MakeId",
+      "VehicleTypeName"
+    ],
+    "tags": [
+      "comparison",
+      "search",
+      "health"
+    ]
+  },
+  {
+    "id": "epa-fueleconomy",
+    "name": "EPA Fuel Economy",
+    "category": "Government",
+    "description": "US vehicle fuel economy, emissions, and annual cost estimates.",
+    "baseUrl": "https://www.fueleconomy.gov",
+    "docsUrl": "https://www.fueleconomy.gov/ws/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/make?format=json",
+    "sampleFields": [
+      "text",
+      "value",
+      "menuName"
+    ],
+    "tags": [
+      "comparison",
+      "science",
+      "charts"
+    ]
+  },
+  {
+    "id": "guardian",
+    "name": "The Guardian Open Platform",
+    "category": "News",
+    "description": "Articles, tags, and sections from The Guardian.",
+    "baseUrl": "https://content.guardianapis.com",
+    "docsUrl": "https://open-platform.theguardian.com/documentation/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://content.guardianapis.com/search?show-fields=headline&page-size=5&api-key=test",
+    "sampleFields": [
+      "webTitle",
+      "webUrl",
+      "sectionName"
+    ],
+    "tags": [
+      "trending",
+      "search",
+      "social"
+    ]
+  },
+  {
+    "id": "nytimes",
+    "name": "New York Times API",
+    "category": "News",
+    "description": "Articles, books, and archive metadata from The New York Times.",
+    "baseUrl": "https://api.nytimes.com",
+    "docsUrl": "https://developer.nytimes.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=demo",
+    "sampleFields": [
+      "title",
+      "abstract",
+      "url"
+    ],
+    "tags": [
+      "trending",
+      "media",
+      "time-series"
+    ]
+  },
+  {
+    "id": "newsapi",
+    "name": "NewsAPI",
+    "category": "News",
+    "description": "Headlines and articles from thousands of global news sources.",
+    "baseUrl": "https://newsapi.org",
+    "docsUrl": "https://newsapi.org/docs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://newsapi.org/v2/top-headlines?country=us&pageSize=5&apiKey=demo",
+    "sampleFields": [
+      "title",
+      "source",
+      "publishedAt"
+    ],
+    "tags": [
+      "trending",
+      "search",
+      "real-time"
+    ]
+  },
+  {
+    "id": "gnews",
+    "name": "GNews",
+    "category": "News",
+    "description": "Searchable news articles from worldwide publishers.",
+    "baseUrl": "https://gnews.io",
+    "docsUrl": "https://gnews.io/docs/v4",
+    "auth": "free-key",
+    "exampleEndpoint": "https://gnews.io/api/v4/top-headlines?category=technology&max=5&apikey=demo",
+    "sampleFields": [
+      "title",
+      "description",
+      "publishedAt"
+    ],
+    "tags": [
+      "trending",
+      "search",
+      "media"
+    ]
+  },
+  {
+    "id": "dev-to",
+    "name": "DEV Community",
+    "category": "Social",
+    "description": "Developer articles, tags, and community posts from DEV.to.",
+    "baseUrl": "https://dev.to",
+    "docsUrl": "https://developers.forem.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://dev.to/api/articles?per_page=5",
+    "sampleFields": [
+      "title",
+      "user",
+      "tag_list"
+    ],
+    "tags": [
+      "social",
+      "trending",
+      "education"
+    ]
+  },
+  {
+    "id": "github",
+    "name": "GitHub REST API",
+    "category": "Development",
+    "description": "Repositories, issues, users, and activity from GitHub.",
+    "baseUrl": "https://api.github.com",
+    "docsUrl": "https://docs.github.com/en/rest",
+    "auth": "optional",
+    "exampleEndpoint": "https://api.github.com/search/repositories?q=stars:>10000&sort=stars&per_page=5",
+    "sampleFields": [
+      "name",
+      "stargazers_count",
+      "language"
+    ],
+    "tags": [
+      "ranking",
+      "trending",
+      "social"
+    ]
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab API",
+    "category": "Development",
+    "description": "Projects, issues, and merge requests from GitLab instances.",
+    "baseUrl": "https://gitlab.com/api/v4",
+    "docsUrl": "https://docs.gitlab.com/ee/api/rest/",
+    "auth": "optional",
+    "exampleEndpoint": "https://gitlab.com/api/v4/projects?starred=true&per_page=5",
+    "sampleFields": [
+      "name",
+      "star_count",
+      "description"
+    ],
+    "tags": [
+      "ranking",
+      "social",
+      "search"
+    ]
+  },
+  {
+    "id": "stackexchange",
+    "name": "Stack Exchange API",
+    "category": "Social",
+    "description": "Questions, answers, and tags from Stack Overflow and sister sites.",
+    "baseUrl": "https://api.stackexchange.com",
+    "docsUrl": "https://api.stackexchange.com/docs",
+    "auth": "optional",
+    "exampleEndpoint": "https://api.stackexchange.com/2.3/questions?order=desc&sort=votes&site=stackoverflow&pagesize=5",
+    "sampleFields": [
+      "title",
+      "score",
+      "tags"
+    ],
+    "tags": [
+      "ranking",
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "hn-algolia",
+    "name": "HN Algolia Search",
+    "category": "News",
+    "description": "Searchable Hacker News stories and comments via Algolia.",
+    "baseUrl": "https://hn.algolia.com",
+    "docsUrl": "https://hn.algolia.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://hn.algolia.com/api/v1/search?query=open+source&hitsPerPage=5",
+    "sampleFields": [
+      "title",
+      "points",
+      "url"
+    ],
+    "tags": [
+      "search",
+      "trending",
+      "ranking"
+    ]
+  },
+  {
+    "id": "reddit-json",
+    "name": "Reddit JSON",
+    "category": "Social",
+    "description": "Public subreddit posts and comments via Reddit's JSON endpoints.",
+    "baseUrl": "https://www.reddit.com",
+    "docsUrl": "https://www.reddit.com/dev/api/",
+    "auth": "optional",
+    "exampleEndpoint": "https://www.reddit.com/r/dataisbeautiful/top.json?limit=5",
+    "sampleFields": [
+      "title",
+      "score",
+      "author"
+    ],
+    "tags": [
+      "social",
+      "trending",
+      "ranking"
+    ]
+  },
+  {
+    "id": "npm-registry",
+    "name": "npm Registry",
+    "category": "Development",
+    "description": "Package metadata, versions, and download stats from npm.",
+    "baseUrl": "https://registry.npmjs.org",
+    "docsUrl": "https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md",
+    "auth": "none",
+    "exampleEndpoint": "https://registry.npmjs.org/-/v1/search?text=react&size=5",
+    "sampleFields": [
+      "name",
+      "version",
+      "description"
+    ],
+    "tags": [
+      "search",
+      "ranking",
+      "tools"
+    ]
+  },
+  {
+    "id": "pypi",
+    "name": "PyPI JSON API",
+    "category": "Development",
+    "description": "Python package releases, classifiers, and project metadata.",
+    "baseUrl": "https://pypi.org",
+    "docsUrl": "https://warehouse.pypa.io/api-reference/json.html",
+    "auth": "none",
+    "exampleEndpoint": "https://pypi.org/pypi/requests/json",
+    "sampleFields": [
+      "name",
+      "version",
+      "summary"
+    ],
+    "tags": [
+      "search",
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "crates-io",
+    "name": "crates.io",
+    "category": "Development",
+    "description": "Rust crate versions, owners, and dependency metadata.",
+    "baseUrl": "https://crates.io",
+    "docsUrl": "https://crates.io/data-access",
+    "auth": "none",
+    "exampleEndpoint": "https://crates.io/api/v1/crates?q=serde&per_page=5",
+    "sampleFields": [
+      "name",
+      "description",
+      "downloads"
+    ],
+    "tags": [
+      "search",
+      "ranking",
+      "tools"
+    ]
+  },
+  {
+    "id": "homebrew",
+    "name": "Homebrew Formulae API",
+    "category": "Development",
+    "description": "macOS package formulae, versions, and dependencies.",
+    "baseUrl": "https://formulae.brew.sh",
+    "docsUrl": "https://formulae.brew.sh/docs/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://formulae.brew.sh/api/formula.json",
+    "sampleFields": [
+      "name",
+      "desc",
+      "version"
+    ],
+    "tags": [
+      "tools",
+      "search",
+      "collections"
+    ]
+  },
+  {
+    "id": "caniuse",
+    "name": "Can I Use Embed",
+    "category": "Development",
+    "description": "Browser support tables for web platform features.",
+    "baseUrl": "https://caniuse.com",
+    "docsUrl": "https://github.com/Fyrd/caniuse",
+    "auth": "none",
+    "exampleEndpoint": "https://caniuse.com/json-api.json",
+    "sampleFields": [
+      "title",
+      "stats",
+      "description"
+    ],
+    "tags": [
+      "education",
+      "comparison",
+      "tools"
+    ]
+  },
+  {
+    "id": "musicbrainz",
+    "name": "MusicBrainz",
+    "category": "Music",
+    "description": "Open music encyclopedia with artists, releases, and recordings.",
+    "baseUrl": "https://musicbrainz.org",
+    "docsUrl": "https://musicbrainz.org/doc/MusicBrainz_API",
+    "auth": "none",
+    "exampleEndpoint": "https://musicbrainz.org/ws/2/artist/?query=radiohead&fmt=json&limit=5",
+    "sampleFields": [
+      "name",
+      "type",
+      "country"
+    ],
+    "tags": [
+      "media",
+      "search",
+      "collections"
+    ]
+  },
+  {
+    "id": "cover-art-archive",
+    "name": "Cover Art Archive",
+    "category": "Music",
+    "description": "Album cover art linked to MusicBrainz release groups.",
+    "baseUrl": "https://coverartarchive.org",
+    "docsUrl": "https://musicbrainz.org/doc/Cover_Art_Archive/API",
+    "auth": "none",
+    "exampleEndpoint": "https://coverartarchive.org/release-group/5b11f4ce-a62d-471e-81fc-a69a8278c7da",
+    "sampleFields": [
+      "images",
+      "front",
+      "thumbnails"
+    ],
+    "tags": [
+      "media",
+      "gallery",
+      "culture"
+    ]
+  },
+  {
+    "id": "lyrics-ovh",
+    "name": "Lyrics.ovh",
+    "category": "Music",
+    "description": "Simple lyrics lookup by artist and song title.",
+    "baseUrl": "https://api.lyrics.ovh",
+    "docsUrl": "https://lyricsovh.docs.apiary.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.lyrics.ovh/v1/adele/hello",
+    "sampleFields": [
+      "lyrics",
+      "artist",
+      "title"
+    ],
+    "tags": [
+      "media",
+      "search",
+      "fun"
+    ]
+  },
+  {
+    "id": "discogs",
+    "name": "Discogs",
+    "category": "Music",
+    "description": "Music releases, artists, labels, and marketplace data.",
+    "baseUrl": "https://api.discogs.com",
+    "docsUrl": "https://www.discogs.com/developers/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.discogs.com/database/search?q=nirvana&type=artist&per_page=5",
+    "sampleFields": [
+      "title",
+      "year",
+      "genre"
+    ],
+    "tags": [
+      "media",
+      "search",
+      "collections"
+    ]
+  },
+  {
+    "id": "balldontlie",
+    "name": "BALLDONTLIE",
+    "category": "Sports",
+    "description": "NBA teams, players, and game statistics.",
+    "baseUrl": "https://api.balldontlie.io",
+    "docsUrl": "https://www.balldontlie.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.balldontlie.io/v1/teams",
+    "sampleFields": [
+      "full_name",
+      "city",
+      "conference"
+    ],
+    "tags": [
+      "ranking",
+      "comparison",
+      "fun"
+    ]
+  },
+  {
+    "id": "thesportsdb",
+    "name": "TheSportsDB",
+    "category": "Sports",
+    "description": "Sports teams, players, events, and league metadata.",
+    "baseUrl": "https://www.thesportsdb.com",
+    "docsUrl": "https://www.thesportsdb.com/api.php",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Arsenal",
+    "sampleFields": [
+      "strTeam",
+      "strLeague",
+      "strStadium"
+    ],
+    "tags": [
+      "fun",
+      "search",
+      "collections"
+    ]
+  },
+  {
+    "id": "chess-com",
+    "name": "Chess.com Published Data",
+    "category": "Games",
+    "description": "Public player stats, games, and club data from Chess.com.",
+    "baseUrl": "https://api.chess.com",
+    "docsUrl": "https://www.chess.com/news/view/published-data-api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.chess.com/pub/player/hikaru",
+    "sampleFields": [
+      "username",
+      "title",
+      "country"
+    ],
+    "tags": [
+      "ranking",
+      "fun",
+      "social"
+    ]
+  },
+  {
+    "id": "lichess",
+    "name": "Lichess API",
+    "category": "Games",
+    "description": "Public chess games, puzzles, and player activity on Lichess.",
+    "baseUrl": "https://lichess.org",
+    "docsUrl": "https://lichess.org/api",
+    "auth": "none",
+    "exampleEndpoint": "https://lichess.org/api/user/top/standard",
+    "sampleFields": [
+      "username",
+      "perfs",
+      "title"
+    ],
+    "tags": [
+      "ranking",
+      "fun",
+      "real-time"
+    ]
+  },
+  {
+    "id": "mtg",
+    "name": "Magicthegathering.io",
+    "category": "Games",
+    "description": "Magic: The Gathering cards, sets, and rulings.",
+    "baseUrl": "https://api.magicthegathering.io",
+    "docsUrl": "https://docs.magicthegathering.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.magicthegathering.io/v1/cards?pageSize=5",
+    "sampleFields": [
+      "name",
+      "manaCost",
+      "type"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "search"
+    ]
+  },
+  {
+    "id": "deck-of-cards",
+    "name": "Deck of Cards API",
+    "category": "Games",
+    "description": "Shuffle, draw, and manage virtual playing card decks.",
+    "baseUrl": "https://deckofcardsapi.com",
+    "docsUrl": "https://deckofcardsapi.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+    "sampleFields": [
+      "deck_id",
+      "remaining",
+      "shuffled"
+    ],
+    "tags": [
+      "fun",
+      "tools",
+      "real-time"
+    ]
+  },
+  {
+    "id": "rawg",
+    "name": "RAWG",
+    "category": "Games",
+    "description": "Video game database with genres, platforms, and ratings.",
+    "baseUrl": "https://api.rawg.io",
+    "docsUrl": "https://rawg.io/apidocs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.rawg.io/api/games?key=demo&page_size=5",
+    "sampleFields": [
+      "name",
+      "released",
+      "rating"
+    ],
+    "tags": [
+      "fun",
+      "ranking",
+      "search"
+    ]
+  },
+  {
+    "id": "free-to-game",
+    "name": "FreeToGame",
+    "category": "Games",
+    "description": "Free-to-play PC games with genres and screenshots.",
+    "baseUrl": "https://www.freetogame.com",
+    "docsUrl": "https://www.freetogame.com/api-doc",
+    "auth": "none",
+    "exampleEndpoint": "https://www.freetogame.com/api/games?platform=pc",
+    "sampleFields": [
+      "title",
+      "genre",
+      "release_date"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "trending"
+    ]
+  },
+  {
+    "id": "advice-slip",
+    "name": "Advice Slip",
+    "category": "Fun",
+    "description": "Random advice snippets from the Advice Slip API.",
+    "baseUrl": "https://api.adviceslip.com",
+    "docsUrl": "https://api.adviceslip.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.adviceslip.com/advice",
+    "sampleFields": [
+      "slip",
+      "id",
+      "advice"
+    ],
+    "tags": [
+      "fun",
+      "education",
+      "media"
+    ]
+  },
+  {
+    "id": "kanye-rest",
+    "name": "Kanye REST",
+    "category": "Fun",
+    "description": "Random Kanye West quotes as JSON.",
+    "baseUrl": "https://api.kanye.rest",
+    "docsUrl": "https://kanye.rest/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.kanye.rest/",
+    "sampleFields": [
+      "quote",
+      "id",
+      "status"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "social"
+    ]
+  },
+  {
+    "id": "quotable",
+    "name": "Quotable",
+    "category": "Fun",
+    "description": "Searchable quotes with authors and tags.",
+    "baseUrl": "https://api.quotable.io",
+    "docsUrl": "https://github.com/lukePeavey/quotable",
+    "auth": "none",
+    "exampleEndpoint": "https://api.quotable.io/random",
+    "sampleFields": [
+      "content",
+      "author",
+      "tags"
+    ],
+    "tags": [
+      "fun",
+      "education",
+      "search"
+    ]
+  },
+  {
+    "id": "icanhazdadjoke",
+    "name": "icanhazdadjoke",
+    "category": "Fun",
+    "description": "Random dad jokes with search support.",
+    "baseUrl": "https://icanhazdadjoke.com",
+    "docsUrl": "https://icanhazdadjoke.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://icanhazdadjoke.com/",
+    "sampleFields": [
+      "id",
+      "joke",
+      "status"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "search"
+    ]
+  },
+  {
+    "id": "chuck-norris",
+    "name": "Chuck Norris Jokes",
+    "category": "Fun",
+    "description": "Chuck Norris joke categories and random jokes.",
+    "baseUrl": "https://api.chucknorris.io",
+    "docsUrl": "https://api.chucknorris.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.chucknorris.io/jokes/random",
+    "sampleFields": [
+      "id",
+      "value",
+      "categories"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "media"
+    ]
+  },
+  {
+    "id": "bored-api",
+    "name": "Bored API",
+    "category": "Fun",
+    "description": "Activity suggestions when you are bored, filterable by type.",
+    "baseUrl": "https://www.boredapi.com",
+    "docsUrl": "https://www.boredapi.com/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://www.boredapi.com/api/activity",
+    "sampleFields": [
+      "activity",
+      "type",
+      "participants"
+    ],
+    "tags": [
+      "fun",
+      "education",
+      "tools"
+    ]
+  },
+  {
+    "id": "open-trivia",
+    "name": "Open Trivia Database",
+    "category": "Games",
+    "description": "Multiple-choice trivia questions across many categories.",
+    "baseUrl": "https://opentdb.com",
+    "docsUrl": "https://opentdb.com/api_config.php",
+    "auth": "none",
+    "exampleEndpoint": "https://opentdb.com/api.php?amount=5&type=multiple",
+    "sampleFields": [
+      "question",
+      "category",
+      "difficulty"
+    ],
+    "tags": [
+      "fun",
+      "education",
+      "collections"
+    ]
+  },
+  {
+    "id": "numbers-api",
+    "name": "Numbers API",
+    "category": "Fun",
+    "description": "Interesting facts about numbers, dates, and years.",
+    "baseUrl": "http://numbersapi.com",
+    "docsUrl": "http://numbersapi.com/",
+    "auth": "none",
+    "exampleEndpoint": "http://numbersapi.com/42/trivia",
+    "sampleFields": [
+      "text",
+      "number",
+      "type"
+    ],
+    "tags": [
+      "fun",
+      "education",
+      "tools"
+    ]
+  },
+  {
+    "id": "picsum",
+    "name": "Lorem Picsum",
+    "category": "Photography",
+    "description": "Placeholder photos with size, grayscale, and blur controls.",
+    "baseUrl": "https://picsum.photos",
+    "docsUrl": "https://picsum.photos/",
+    "auth": "none",
+    "exampleEndpoint": "https://picsum.photos/v2/list?page=1&limit=5",
+    "sampleFields": [
+      "id",
+      "author",
+      "download_url"
+    ],
+    "tags": [
+      "media",
+      "gallery",
+      "tools"
+    ]
+  },
+  {
+    "id": "flagcdn",
+    "name": "Flagpedia / FlagCDN",
+    "category": "Utilities",
+    "description": "Country flag images and ISO country codes.",
+    "baseUrl": "https://flagcdn.com",
+    "docsUrl": "https://flagpedia.net/download/api",
+    "auth": "none",
+    "exampleEndpoint": "https://flagcdn.com/w320/us.png",
+    "sampleFields": [
+      "code",
+      "width",
+      "url"
+    ],
+    "tags": [
+      "geo",
+      "education",
+      "media"
+    ]
+  },
+  {
+    "id": "countriesnow",
+    "name": "CountriesNow",
+    "category": "Geography",
+    "description": "Country and city data including population and currency info.",
+    "baseUrl": "https://countriesnow.space",
+    "docsUrl": "https://countriesnow.space/",
+    "auth": "none",
+    "exampleEndpoint": "https://countriesnow.space/api/v0.1/countries/population",
+    "sampleFields": [
+      "country",
+      "population",
+      "iso3"
+    ],
+    "tags": [
+      "geo",
+      "comparison",
+      "education"
+    ]
+  },
+  {
+    "id": "randomuser",
+    "name": "RandomUser.me",
+    "category": "Utilities",
+    "description": "Random fictional user profiles for demos and prototypes.",
+    "baseUrl": "https://randomuser.me",
+    "docsUrl": "https://randomuser.me/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://randomuser.me/api/?results=5",
+    "sampleFields": [
+      "name",
+      "email",
+      "location"
+    ],
+    "tags": [
+      "tools",
+      "fun",
+      "local"
+    ]
+  },
+  {
+    "id": "agify",
+    "name": "Agify",
+    "category": "Utilities",
+    "description": "Predicted age from a first name using demographic data.",
+    "baseUrl": "https://api.agify.io",
+    "docsUrl": "https://agify.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.agify.io/?name=michael",
+    "sampleFields": [
+      "name",
+      "age",
+      "count"
+    ],
+    "tags": [
+      "tools",
+      "comparison",
+      "fun"
+    ]
+  },
+  {
+    "id": "genderize",
+    "name": "Genderize",
+    "category": "Utilities",
+    "description": "Predicted gender probability from a first name.",
+    "baseUrl": "https://api.genderize.io",
+    "docsUrl": "https://genderize.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.genderize.io/?name=alex",
+    "sampleFields": [
+      "name",
+      "gender",
+      "probability"
+    ],
+    "tags": [
+      "tools",
+      "comparison",
+      "education"
+    ]
+  },
+  {
+    "id": "nationalize",
+    "name": "Nationalize",
+    "category": "Utilities",
+    "description": "Predicted nationality distribution from a first name.",
+    "baseUrl": "https://api.nationalize.io",
+    "docsUrl": "https://nationalize.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.nationalize.io/?name=emma",
+    "sampleFields": [
+      "name",
+      "country",
+      "probability"
+    ],
+    "tags": [
+      "tools",
+      "geo",
+      "comparison"
+    ]
+  },
+  {
+    "id": "ip-api",
+    "name": "ip-api",
+    "category": "Utilities",
+    "description": "IP geolocation with ISP, timezone, and ASN lookup.",
+    "baseUrl": "http://ip-api.com",
+    "docsUrl": "http://ip-api.com/docs/",
+    "auth": "none",
+    "exampleEndpoint": "http://ip-api.com/json/8.8.8.8",
+    "sampleFields": [
+      "country",
+      "city",
+      "lat"
+    ],
+    "tags": [
+      "geo",
+      "tools",
+      "local"
+    ]
+  },
+  {
+    "id": "ipify",
+    "name": "ipify",
+    "category": "Utilities",
+    "description": "Returns your public IPv4 or IPv6 address as plain text or JSON.",
+    "baseUrl": "https://api.ipify.org",
+    "docsUrl": "https://www.ipify.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.ipify.org?format=json",
+    "sampleFields": [
+      "ip",
+      "format",
+      "version"
+    ],
+    "tags": [
+      "tools",
+      "real-time"
+    ]
+  },
+  {
+    "id": "httpbin",
+    "name": "httpbin",
+    "category": "Development",
+    "description": "HTTP request echo service for testing clients and webhooks.",
+    "baseUrl": "https://httpbin.org",
+    "docsUrl": "https://httpbin.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://httpbin.org/get",
+    "sampleFields": [
+      "url",
+      "headers",
+      "origin"
+    ],
+    "tags": [
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "jsonplaceholder",
+    "name": "JSONPlaceholder",
+    "category": "Development",
+    "description": "Fake REST API for posts, comments, and users in prototyping.",
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "docsUrl": "https://jsonplaceholder.typicode.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://jsonplaceholder.typicode.com/posts?_limit=5",
+    "sampleFields": [
+      "title",
+      "body",
+      "userId"
+    ],
+    "tags": [
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "reqres",
+    "name": "ReqRes",
+    "category": "Development",
+    "description": "Hosted REST API with users, login, and pagination for demos.",
+    "baseUrl": "https://reqres.in",
+    "docsUrl": "https://reqres.in/",
+    "auth": "none",
+    "exampleEndpoint": "https://reqres.in/api/users?page=1",
+    "sampleFields": [
+      "email",
+      "first_name",
+      "avatar"
+    ],
+    "tags": [
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "datamuse",
+    "name": "Datamuse API",
+    "category": "Dictionaries",
+    "description": "Word-finding engine for rhymes, synonyms, and related terms.",
+    "baseUrl": "https://api.datamuse.com",
+    "docsUrl": "https://www.datamuse.com/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.datamuse.com/words?ml=spoon&max=5",
+    "sampleFields": [
+      "word",
+      "score",
+      "tags"
+    ],
+    "tags": [
+      "education",
+      "search",
+      "tools"
+    ]
+  },
+  {
+    "id": "dictionaryapi",
+    "name": "Free Dictionary API",
+    "category": "Dictionaries",
+    "description": "English word definitions, phonetics, and meanings.",
+    "baseUrl": "https://api.dictionaryapi.dev",
+    "docsUrl": "https://dictionaryapi.dev/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.dictionaryapi.dev/api/v2/entries/en/hello",
+    "sampleFields": [
+      "word",
+      "phonetics",
+      "meanings"
+    ],
+    "tags": [
+      "education",
+      "search",
+      "tools"
+    ]
+  },
+  {
+    "id": "wiktionary-api",
+    "name": "Wiktionary API",
+    "category": "Dictionaries",
+    "description": "Multilingual dictionary entries from Wikimedia Wiktionary.",
+    "baseUrl": "https://en.wiktionary.org",
+    "docsUrl": "https://en.wiktionary.org/api/rest_v1/",
+    "auth": "none",
+    "exampleEndpoint": "https://en.wiktionary.org/api/rest_v1/page/definition/design",
+    "sampleFields": [
+      "definitions",
+      "language",
+      "partOfSpeech"
+    ],
+    "tags": [
+      "education",
+      "search",
+      "culture"
+    ]
+  },
+  {
+    "id": "universities",
+    "name": "Universities List",
+    "category": "Education",
+    "description": "Search universities worldwide by country and name.",
+    "baseUrl": "http://universities.hipolabs.com",
+    "docsUrl": "http://universities.hipolabs.com/",
+    "auth": "none",
+    "exampleEndpoint": "http://universities.hipolabs.com/search?country=Canada",
+    "sampleFields": [
+      "name",
+      "country",
+      "web_pages"
+    ],
+    "tags": [
+      "education",
+      "search",
+      "geo"
+    ]
+  },
+  {
+    "id": "open-notify-astros",
+    "name": "Open Notify — People in Space",
+    "category": "Space",
+    "description": "Count and names of people currently in space.",
+    "baseUrl": "http://api.open-notify.org",
+    "docsUrl": "http://open-notify.org/Open-Notify-API/People-In-Space",
+    "auth": "none",
+    "exampleEndpoint": "http://api.open-notify.org/astros.json",
+    "sampleFields": [
+      "number",
+      "people",
+      "craft"
+    ],
+    "tags": [
+      "science",
+      "real-time",
+      "fun"
+    ]
+  },
+  {
+    "id": "noaa-tides",
+    "name": "NOAA CO-OPS Tides",
+    "category": "Weather",
+    "description": "US coastal tide predictions and water level observations.",
+    "baseUrl": "https://api.tidesandcurrents.noaa.gov",
+    "docsUrl": "https://api.tidesandcurrents.noaa.gov/api/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date=20260101&end_date=20260102&datum=MLLW&station=9414290&time_zone=lst_ldt&units=english&interval=h&format=json",
+    "sampleFields": [
+      "t",
+      "v",
+      "predictions"
+    ],
+    "tags": [
+      "geo",
+      "time-series",
+      "science"
+    ]
+  },
+  {
+    "id": "weather-gov",
+    "name": "National Weather Service",
+    "category": "Weather",
+    "description": "US forecasts, alerts, and gridpoint weather from NOAA.",
+    "baseUrl": "https://api.weather.gov",
+    "docsUrl": "https://www.weather.gov/documentation/services-web-api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.weather.gov/alerts/active?area=CA",
+    "sampleFields": [
+      "event",
+      "headline",
+      "severity"
+    ],
+    "tags": [
+      "alerts",
+      "geo",
+      "real-time"
+    ]
+  },
+  {
+    "id": "airnow",
+    "name": "AirNow",
+    "category": "Environment",
+    "description": "US air quality index and pollutant concentrations.",
+    "baseUrl": "https://www.airnowapi.org",
+    "docsUrl": "https://docs.airnowapi.org/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=10001&distance=25&API_KEY=DEMO",
+    "sampleFields": [
+      "AQI",
+      "Category",
+      "ReportingArea"
+    ],
+    "tags": [
+      "health",
+      "alerts",
+      "geo"
+    ]
+  },
+  {
+    "id": "purpleair",
+    "name": "PurpleAir",
+    "category": "Environment",
+    "description": "Community air quality sensor readings worldwide.",
+    "baseUrl": "https://api.purpleair.com",
+    "docsUrl": "https://api.purpleair.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.purpleair.com/v1/sensors?fields=sensor_index,name,latitude,longitude,pm2.5&max_age=3600&nwlng=-122.5&nwlat=37.8&selng=-122.3&selat=37.7",
+    "sampleFields": [
+      "name",
+      "latitude",
+      "longitude"
+    ],
+    "tags": [
+      "health",
+      "maps",
+      "real-time"
+    ]
+  },
+  {
+    "id": "iqair",
+    "name": "IQAir AirVisual",
+    "category": "Environment",
+    "description": "Global air quality rankings and city pollution data.",
+    "baseUrl": "https://api.airvisual.com",
+    "docsUrl": "https://www.iqair.com/air-pollution-data-api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.airvisual.com/v2/city?city=Los%20Angeles&state=California&country=USA&key=demo",
+    "sampleFields": [
+      "city",
+      "current",
+      "location"
+    ],
+    "tags": [
+      "health",
+      "ranking",
+      "geo"
+    ]
+  },
+  {
+    "id": "openrouteservice",
+    "name": "OpenRouteService",
+    "category": "Geocoding",
+    "description": "Directions, isochrones, and geocoding from OpenStreetMap.",
+    "baseUrl": "https://api.openrouteservice.org",
+    "docsUrl": "https://openrouteservice.org/dev/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.openrouteservice.org/geocode/search?api_key=demo&text=berlin",
+    "sampleFields": [
+      "features",
+      "geometry",
+      "properties"
+    ],
+    "tags": [
+      "maps",
+      "transit",
+      "geo"
+    ]
+  },
+  {
+    "id": "overpass",
+    "name": "Overpass API",
+    "category": "Geocoding",
+    "description": "Query OpenStreetMap features with a powerful search language.",
+    "baseUrl": "https://overpass-api.de",
+    "docsUrl": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+    "auth": "none",
+    "exampleEndpoint": "https://overpass-api.de/api/interpreter?data=[out:json];node(around:1000,40.71,-74.01)[amenity=cafe];out%205;",
+    "sampleFields": [
+      "tags",
+      "lat",
+      "lon"
+    ],
+    "tags": [
+      "maps",
+      "geo",
+      "search"
+    ]
+  },
+  {
+    "id": "open-elevation",
+    "name": "Open-Elevation",
+    "category": "Geography",
+    "description": "Look up terrain elevation for latitude and longitude points.",
+    "baseUrl": "https://api.open-elevation.com",
+    "docsUrl": "https://open-elevation.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.open-elevation.com/api/v1/lookup?locations=40.71,-74.01",
+    "sampleFields": [
+      "latitude",
+      "longitude",
+      "elevation"
+    ],
+    "tags": [
+      "geo",
+      "science",
+      "tools"
+    ]
+  },
+  {
+    "id": "restdb",
+    "name": "RestDB.io Public",
+    "category": "Development",
+    "description": "Hosted JSON collections for quick backend prototypes.",
+    "baseUrl": "https://restdb.io",
+    "docsUrl": "https://restdb.io/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://restdb.io/docs/",
+    "sampleFields": [
+      "_id",
+      "name",
+      "data"
+    ],
+    "tags": [
+      "tools",
+      "collections",
+      "search"
+    ]
+  },
+  {
+    "id": "pokemon-tcg",
+    "name": "Pokémon TCG API",
+    "category": "Games",
+    "description": "Trading card data for Pokémon TCG sets and cards.",
+    "baseUrl": "https://api.pokemontcg.io",
+    "docsUrl": "https://docs.pokemontcg.io/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.pokemontcg.io/v2/cards?pageSize=5",
+    "sampleFields": [
+      "name",
+      "set",
+      "images"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "gallery"
+    ]
+  },
+  {
+    "id": "digimon-api",
+    "name": "Digimon API",
+    "category": "Games",
+    "description": "Digimon characters with levels, images, and attributes.",
+    "baseUrl": "https://digimon-api.vercel.app",
+    "docsUrl": "https://digimon-api.vercel.app/",
+    "auth": "none",
+    "exampleEndpoint": "https://digimon-api.vercel.app/api/digimon?page=1&pageSize=5",
+    "sampleFields": [
+      "name",
+      "level",
+      "img"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "search"
+    ]
+  },
+  {
+    "id": "animechan",
+    "name": "AnimeChan",
+    "category": "Anime",
+    "description": "Anime quotes searchable by title or character.",
+    "baseUrl": "https://animechan.xyz",
+    "docsUrl": "https://animechan.xyz/",
+    "auth": "none",
+    "exampleEndpoint": "https://animechan.xyz/api/random",
+    "sampleFields": [
+      "anime",
+      "character",
+      "quote"
+    ],
+    "tags": [
+      "fun",
+      "culture",
+      "media"
+    ]
+  },
+  {
+    "id": "waifu-pics",
+    "name": "Waifu.pics",
+    "category": "Anime",
+    "description": "Random anime-style images by category.",
+    "baseUrl": "https://api.waifu.pics",
+    "docsUrl": "https://waifu.pics/docs",
+    "auth": "none",
+    "exampleEndpoint": "https://api.waifu.pics/sfw/waifu",
+    "sampleFields": [
+      "url",
+      "source",
+      "category"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "gallery"
+    ]
+  },
+  {
+    "id": "placekitten",
+    "name": "PlaceKitten",
+    "category": "Photography",
+    "description": "Placeholder kitten images at arbitrary dimensions.",
+    "baseUrl": "https://placekitten.com",
+    "docsUrl": "https://placekitten.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://placekitten.com/320/240",
+    "sampleFields": [
+      "width",
+      "height",
+      "url"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "tools"
+    ]
+  },
+  {
+    "id": "placebear",
+    "name": "PlaceBear",
+    "category": "Photography",
+    "description": "Placeholder bear images at arbitrary dimensions.",
+    "baseUrl": "https://placebear.com",
+    "docsUrl": "https://placebear.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://placebear.com/320/240",
+    "sampleFields": [
+      "width",
+      "height",
+      "url"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "tools"
+    ]
+  },
+  {
+    "id": "loripsum",
+    "name": "Loripsum",
+    "category": "Text",
+    "description": "Lorem ipsum placeholder text with HTML formatting controls.",
+    "baseUrl": "https://loripsum.net",
+    "docsUrl": "https://loripsum.net/",
+    "auth": "none",
+    "exampleEndpoint": "https://loripsum.net/api/5/medium/plaintext",
+    "sampleFields": [
+      "text",
+      "length",
+      "format"
+    ],
+    "tags": [
+      "tools",
+      "education"
+    ]
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID Generator",
+    "category": "Utilities",
+    "description": "Generate version 4 UUIDs on demand.",
+    "baseUrl": "https://www.uuidgenerator.net",
+    "docsUrl": "https://www.uuidgenerator.net/api",
+    "auth": "none",
+    "exampleEndpoint": "https://www.uuidgenerator.net/api/version4/3",
+    "sampleFields": [
+      "uuid",
+      "version",
+      "count"
+    ],
+    "tags": [
+      "tools",
+      "fun"
+    ]
+  },
+  {
+    "id": "dicebear",
+    "name": "DiceBear Avatars",
+    "category": "Utilities",
+    "description": "Deterministic SVG avatar generation from seeds.",
+    "baseUrl": "https://api.dicebear.com",
+    "docsUrl": "https://www.dicebear.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+    "sampleFields": [
+      "seed",
+      "style",
+      "svg"
+    ],
+    "tags": [
+      "tools",
+      "fun",
+      "media"
+    ]
+  },
+  {
+    "id": "countries-trevorblades",
+    "name": "Countries API by fannheyward",
+    "category": "Geography",
+    "description": "Country facts including capitals, regions, and flag images.",
+    "baseUrl": "https://countries.trevorblades.com",
+    "docsUrl": "https://countries.trevorblades.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://countries.trevorblades.com/api/v1/country/canada",
+    "sampleFields": [
+      "name",
+      "capital",
+      "region"
+    ],
+    "tags": [
+      "geo",
+      "comparison",
+      "education"
+    ]
+  },
+  {
+    "id": "worldtimeapi",
+    "name": "World Time API",
+    "category": "Utilities",
+    "description": "Current time and timezone data for cities and coordinates.",
+    "baseUrl": "http://worldtimeapi.org",
+    "docsUrl": "http://worldtimeapi.org/",
+    "auth": "none",
+    "exampleEndpoint": "http://worldtimeapi.org/api/timezone/America/New_York",
+    "sampleFields": [
+      "datetime",
+      "timezone",
+      "utc_offset"
+    ],
+    "tags": [
+      "time-series",
+      "geo",
+      "tools"
+    ]
+  },
+  {
+    "id": "date-nager",
+    "name": "Nager.Date",
+    "category": "Government",
+    "description": "Public holidays by country and year.",
+    "baseUrl": "https://date.nager.at",
+    "docsUrl": "https://date.nager.at/swagger/index.html",
+    "auth": "none",
+    "exampleEndpoint": "https://date.nager.at/api/v3/PublicHolidays/2026/US",
+    "sampleFields": [
+      "date",
+      "localName",
+      "name"
+    ],
+    "tags": [
+      "education",
+      "geo",
+      "time-series"
+    ]
+  },
+  {
+    "id": "fixer",
+    "name": "Fixer.io",
+    "category": "Finance",
+    "description": "Foreign exchange rates with historical conversion data.",
+    "baseUrl": "https://data.fixer.io",
+    "docsUrl": "https://fixer.io/documentation",
+    "auth": "free-key",
+    "exampleEndpoint": "https://data.fixer.io/api/latest?access_key=demo",
+    "sampleFields": [
+      "base",
+      "date",
+      "rates"
+    ],
+    "tags": [
+      "finance",
+      "comparison",
+      "time-series"
+    ]
+  },
+  {
+    "id": "alphavantage",
+    "name": "Alpha Vantage",
+    "category": "Finance",
+    "description": "Stock quotes, forex, and crypto time series.",
+    "baseUrl": "https://www.alphavantage.co",
+    "docsUrl": "https://www.alphavantage.co/documentation/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=demo",
+    "sampleFields": [
+      "ticker",
+      "price",
+      "change_percentage"
+    ],
+    "tags": [
+      "finance",
+      "charts",
+      "trending"
+    ]
+  },
+  {
+    "id": "yahoo-finance",
+    "name": "Yahoo Finance Unofficial",
+    "category": "Finance",
+    "description": "Market quotes and chart data via community endpoints.",
+    "baseUrl": "https://query1.finance.yahoo.com",
+    "docsUrl": "https://github.com/ranaroussi/yfinance",
+    "auth": "none",
+    "exampleEndpoint": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?interval=1d&range=5d",
+    "sampleFields": [
+      "symbol",
+      "timestamp",
+      "close"
+    ],
+    "tags": [
+      "finance",
+      "charts",
+      "real-time"
+    ]
+  },
+  {
+    "id": "coindesk-bpi",
+    "name": "CoinDesk BPI",
+    "category": "Finance",
+    "description": "Bitcoin price index in multiple fiat currencies.",
+    "baseUrl": "https://api.coindesk.com",
+    "docsUrl": "https://www.coindesk.com/coindesk-api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.coindesk.com/v1/bpi/currentprice.json",
+    "sampleFields": [
+      "time",
+      "bpi",
+      "disclaimer"
+    ],
+    "tags": [
+      "finance",
+      "real-time",
+      "charts"
+    ]
+  },
+  {
+    "id": "blockchain-info",
+    "name": "Blockchain.com Charts",
+    "category": "Finance",
+    "description": "Bitcoin network stats including hash rate and market price.",
+    "baseUrl": "https://api.blockchain.info",
+    "docsUrl": "https://www.blockchain.com/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.blockchain.info/stats",
+    "sampleFields": [
+      "market_price_usd",
+      "hash_rate",
+      "total_bitcoins"
+    ],
+    "tags": [
+      "finance",
+      "science",
+      "time-series"
+    ]
+  },
+  {
+    "id": "openbrewery-alt",
+    "name": "BreweryDB Legacy",
+    "category": "Food",
+    "description": "Searchable brewery listings by geography and beer style.",
+    "baseUrl": "https://brewerydb.com",
+    "docsUrl": "https://www.brewerydb.com/developers",
+    "auth": "free-key",
+    "exampleEndpoint": "https://brewerydb.com/v2/breweries?key=demo",
+    "sampleFields": [
+      "name",
+      "brewery_type",
+      "website"
+    ],
+    "tags": [
+      "local",
+      "search",
+      "geo"
+    ]
+  },
+  {
+    "id": "spoonacular",
+    "name": "Spoonacular",
+    "category": "Food",
+    "description": "Recipe search, nutrition facts, and ingredient substitutions.",
+    "baseUrl": "https://api.spoonacular.com",
+    "docsUrl": "https://spoonacular.com/food-api/docs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.spoonacular.com/recipes/complexSearch?query=pasta&number=5&apiKey=demo",
+    "sampleFields": [
+      "title",
+      "image",
+      "id"
+    ],
+    "tags": [
+      "health",
+      "search",
+      "comparison"
+    ]
+  },
+  {
+    "id": "punk-api",
+    "name": "Punk API",
+    "category": "Food",
+    "description": "Craft beer catalog with hops, malts, and ABV from Brewdog's open dataset.",
+    "baseUrl": "https://punkapi.com",
+    "docsUrl": "https://punkapi.com/documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://punkapi.com/v2/beers?beer_name=punk&per_page=5",
+    "sampleFields": [
+      "name",
+      "abv",
+      "tagline"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "comparison"
+    ]
+  },
+  {
+    "id": "cdc-open-data",
+    "name": "CDC Open Data",
+    "category": "Health",
+    "description": "US disease surveillance datasets from the CDC.",
+    "baseUrl": "https://data.cdc.gov",
+    "docsUrl": "https://dev.socrata.com/",
+    "auth": "none",
+    "exampleEndpoint": "https://data.cdc.gov/resource/g4ie-h725.json?$limit=5",
+    "sampleFields": [
+      "state",
+      "week",
+      "level"
+    ],
+    "tags": [
+      "health",
+      "time-series",
+      "alerts"
+    ]
+  },
+  {
+    "id": "clinicaltrials",
+    "name": "ClinicalTrials.gov",
+    "category": "Health",
+    "description": "Clinical study registry with conditions, phases, and locations.",
+    "baseUrl": "https://clinicaltrials.gov",
+    "docsUrl": "https://clinicaltrials.gov/data-api/api",
+    "auth": "none",
+    "exampleEndpoint": "https://clinicaltrials.gov/api/v2/studies?query.cond=cancer&pageSize=5",
+    "sampleFields": [
+      "NCTId",
+      "BriefTitle",
+      "OverallStatus"
+    ],
+    "tags": [
+      "health",
+      "search",
+      "science"
+    ]
+  },
+  {
+    "id": "openfda-drugs",
+    "name": "openFDA Drug Labels",
+    "category": "Health",
+    "description": "Structured drug labeling and adverse reaction fields.",
+    "baseUrl": "https://api.fda.gov",
+    "docsUrl": "https://open.fda.gov/apis/drug/label/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:advil&limit=5",
+    "sampleFields": [
+      "openfda",
+      "purpose",
+      "warnings"
+    ],
+    "tags": [
+      "health",
+      "search",
+      "education"
+    ]
+  },
+  {
+    "id": "health-gov",
+    "name": "Health.gov MyHealthfinder",
+    "category": "Health",
+    "description": "Preventive care recommendations by age and sex.",
+    "baseUrl": "https://health.gov",
+    "docsUrl": "https://odphp.health.gov/myhealthfinder/api-documentation",
+    "auth": "none",
+    "exampleEndpoint": "https://odphp.health.gov/myhealthfinder/api/v4/myhealthfinder.json?age=40&sex=female",
+    "sampleFields": [
+      "Title",
+      "AccessibleVersion",
+      "Sections"
+    ],
+    "tags": [
+      "health",
+      "education",
+      "tools"
+    ]
+  },
+  {
+    "id": "nasa-techtransfer",
+    "name": "NASA TechPort",
+    "category": "Science",
+    "description": "NASA technology projects, missions, and portfolio data.",
+    "baseUrl": "https://api.nasa.gov",
+    "docsUrl": "https://api.nasa.gov/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.nasa.gov/techport/api/projects?api_key=DEMO_KEY",
+    "sampleFields": [
+      "title",
+      "description",
+      "status"
+    ],
+    "tags": [
+      "science",
+      "search",
+      "education"
+    ]
+  },
+  {
+    "id": "usgs-water",
+    "name": "USGS Water Services",
+    "category": "Science",
+    "description": "Streamflow and water monitoring sites across the United States.",
+    "baseUrl": "https://waterservices.usgs.gov",
+    "docsUrl": "https://waterservices.usgs.gov/",
+    "auth": "none",
+    "exampleEndpoint": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01646500&parameterCd=00060",
+    "sampleFields": [
+      "value",
+      "dateTime",
+      "unitCode"
+    ],
+    "tags": [
+      "science",
+      "time-series",
+      "geo"
+    ]
+  },
+  {
+    "id": "noaa-climate",
+    "name": "NOAA Climate Data",
+    "category": "Science",
+    "description": "US climate normals and weather station datasets.",
+    "baseUrl": "https://www.ncei.noaa.gov",
+    "docsUrl": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.ncei.noaa.gov/cdo-web/api/v2/datasets",
+    "sampleFields": [
+      "uid",
+      "title",
+      "mindate"
+    ],
+    "tags": [
+      "science",
+      "time-series",
+      "charts"
+    ]
+  },
+  {
+    "id": "xeno-canto",
+    "name": "Xeno-canto",
+    "category": "Animals",
+    "description": "Community bird sound recordings with species and location metadata.",
+    "baseUrl": "https://xeno-canto.org",
+    "docsUrl": "https://xeno-canto.org/explore/api",
+    "auth": "none",
+    "exampleEndpoint": "https://xeno-canto.org/api/2/recordings?query=crow&page=1",
+    "sampleFields": [
+      "en",
+      "loc",
+      "sono"
+    ],
+    "tags": [
+      "science",
+      "media",
+      "geo"
+    ]
+  },
+  {
+    "id": "fishbase-api",
+    "name": "FishBase",
+    "category": "Animals",
+    "description": "Fish species ecology, distribution, and common names.",
+    "baseUrl": "https://fishbase.ropensci.org",
+    "docsUrl": "https://ropensci.github.io/fishbaseapidocs/",
+    "auth": "none",
+    "exampleEndpoint": "https://fishbase.ropensci.org/species?Species=Salmo+salar&limit=5",
+    "sampleFields": [
+      "Species",
+      "Genus",
+      "Family"
+    ],
+    "tags": [
+      "science",
+      "collections",
+      "search"
+    ]
+  },
+  {
+    "id": "colormind",
+    "name": "Colormind",
+    "category": "Design",
+    "description": "AI-generated color palettes for UI and data visualization.",
+    "baseUrl": "http://colormind.io",
+    "docsUrl": "http://colormind.io/api-access/",
+    "auth": "none",
+    "exampleEndpoint": "http://colormind.io/api/",
+    "sampleFields": [
+      "result",
+      "palette",
+      "model"
+    ],
+    "tags": [
+      "tools",
+      "gallery",
+      "charts"
+    ]
+  },
+  {
+    "id": "unsplash",
+    "name": "Unsplash",
+    "category": "Photography",
+    "description": "High-quality stock photos with search and collections.",
+    "baseUrl": "https://api.unsplash.com",
+    "docsUrl": "https://unsplash.com/developers",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.unsplash.com/photos?client_id=demo&per_page=5",
+    "sampleFields": [
+      "urls",
+      "user",
+      "description"
+    ],
+    "tags": [
+      "media",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "pixabay",
+    "name": "Pixabay",
+    "category": "Photography",
+    "description": "Royalty-free images and videos searchable by keyword.",
+    "baseUrl": "https://pixabay.com",
+    "docsUrl": "https://pixabay.com/api/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://pixabay.com/api/?key=demo&q=yellow+flowers&per_page=5",
+    "sampleFields": [
+      "tags",
+      "webformatURL",
+      "user"
+    ],
+    "tags": [
+      "media",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "giphy",
+    "name": "GIPHY",
+    "category": "Entertainment",
+    "description": "Search and trending GIFs and stickers.",
+    "baseUrl": "https://api.giphy.com",
+    "docsUrl": "https://developers.giphy.com/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.giphy.com/v1/gifs/trending?api_key=demo&limit=5",
+    "sampleFields": [
+      "title",
+      "images",
+      "url"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "trending"
+    ]
+  },
+  {
+    "id": "imgflip",
+    "name": "Imgflip",
+    "category": "Entertainment",
+    "description": "Meme templates and caption generation.",
+    "baseUrl": "https://api.imgflip.com",
+    "docsUrl": "https://imgflip.com/api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.imgflip.com/get_memes",
+    "sampleFields": [
+      "name",
+      "url",
+      "box_count"
+    ],
+    "tags": [
+      "fun",
+      "media",
+      "social"
+    ]
+  },
+  {
+    "id": "openverse",
+    "name": "Openverse",
+    "category": "Media",
+    "description": "Search openly licensed images and audio across sources.",
+    "baseUrl": "https://api.openverse.org",
+    "docsUrl": "https://api.openverse.org/v1/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.openverse.org/v1/images/?q=nature&page_size=5",
+    "sampleFields": [
+      "title",
+      "creator",
+      "url"
+    ],
+    "tags": [
+      "media",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "wikimedia-commons",
+    "name": "Wikimedia Commons",
+    "category": "Media",
+    "description": "Structured metadata for freely usable media files.",
+    "baseUrl": "https://commons.wikimedia.org",
+    "docsUrl": "https://commons.wikimedia.org/wiki/Commons:API",
+    "auth": "none",
+    "exampleEndpoint": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=aurora&format=json",
+    "sampleFields": [
+      "title",
+      "snippet",
+      "pageid"
+    ],
+    "tags": [
+      "media",
+      "culture",
+      "search"
+    ]
+  },
+  {
+    "id": "tmdb",
+    "name": "The Movie Database",
+    "category": "Entertainment",
+    "description": "Movies, TV shows, cast, and ratings metadata.",
+    "baseUrl": "https://api.themoviedb.org",
+    "docsUrl": "https://developer.themoviedb.org/docs",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.themoviedb.org/3/movie/popular?api_key=demo",
+    "sampleFields": [
+      "title",
+      "release_date",
+      "vote_average"
+    ],
+    "tags": [
+      "media",
+      "ranking",
+      "trending"
+    ]
+  },
+  {
+    "id": "omdb",
+    "name": "OMDb API",
+    "category": "Entertainment",
+    "description": "Movie and series metadata by title or IMDb ID.",
+    "baseUrl": "https://www.omdbapi.com",
+    "docsUrl": "https://www.omdbapi.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://www.omdbapi.com/?t=Inception&apikey=demo",
+    "sampleFields": [
+      "Title",
+      "Year",
+      "imdbRating"
+    ],
+    "tags": [
+      "media",
+      "search",
+      "comparison"
+    ]
+  },
+  {
+    "id": "comicvine",
+    "name": "Comic Vine",
+    "category": "Entertainment",
+    "description": "Comic characters, issues, and publisher encyclopedia.",
+    "baseUrl": "https://comicvine.gamespot.com",
+    "docsUrl": "https://comicvine.gamespot.com/api/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://comicvine.gamespot.com/api/characters/?api_key=demo&format=json&limit=5",
+    "sampleFields": [
+      "name",
+      "deck",
+      "image"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "search"
+    ]
+  },
+  {
+    "id": "marvel",
+    "name": "Marvel Comics API",
+    "category": "Entertainment",
+    "description": "Marvel characters, comics, and series with artwork.",
+    "baseUrl": "https://developer.marvel.com",
+    "docsUrl": "https://developer.marvel.com/documentation",
+    "auth": "free-key",
+    "exampleEndpoint": "https://gateway.marvel.com/v1/public/characters?limit=5&apikey=demo",
+    "sampleFields": [
+      "name",
+      "description",
+      "thumbnail"
+    ],
+    "tags": [
+      "fun",
+      "culture",
+      "gallery"
+    ]
+  },
+  {
+    "id": "internet-archive",
+    "name": "Internet Archive",
+    "category": "Books",
+    "description": "Millions of books, texts, and media with metadata search.",
+    "baseUrl": "https://archive.org",
+    "docsUrl": "https://archive.org/developers/",
+    "auth": "none",
+    "exampleEndpoint": "https://archive.org/advancedsearch.php?q=title:design&fl=identifier,title,creator&rows=5&output=json",
+    "sampleFields": [
+      "identifier",
+      "title",
+      "creator"
+    ],
+    "tags": [
+      "media",
+      "search",
+      "collections"
+    ]
+  },
+  {
+    "id": "nypl-digital",
+    "name": "NYPL Digital Collections",
+    "category": "Books",
+    "description": "Public domain images and texts from the New York Public Library.",
+    "baseUrl": "https://api.repo.nypl.org",
+    "docsUrl": "https://api.repo.nypl.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.repo.nypl.org/api/v2/items/search?q=map&per_page=5",
+    "sampleFields": [
+      "title",
+      "uuid",
+      "date"
+    ],
+    "tags": [
+      "culture",
+      "gallery",
+      "search"
+    ]
+  },
+  {
+    "id": "librivox",
+    "name": "LibriVox",
+    "category": "Books",
+    "description": "Public domain audiobook catalog with readers and languages.",
+    "baseUrl": "https://librivox.org",
+    "docsUrl": "https://librivox.org/api/info",
+    "auth": "none",
+    "exampleEndpoint": "https://librivox.org/api/feed/audiobooks?limit=5",
+    "sampleFields": [
+      "title",
+      "language",
+      "url_rss"
+    ],
+    "tags": [
+      "media",
+      "education",
+      "collections"
+    ]
+  },
+  {
+    "id": "openstreetmap-tiles",
+    "name": "OpenStreetMap",
+    "category": "Maps",
+    "description": "Collaborative map data and tile services for the world.",
+    "baseUrl": "https://www.openstreetmap.org",
+    "docsUrl": "https://wiki.openstreetmap.org/wiki/API",
+    "auth": "none",
+    "exampleEndpoint": "https://www.openstreetmap.org/api/0.6/map?bbox=-0.15,51.50,-0.10,51.52",
+    "sampleFields": [
+      "node",
+      "way",
+      "bounds"
+    ],
+    "tags": [
+      "maps",
+      "geo",
+      "tools"
+    ]
+  },
+  {
+    "id": "thunderforest",
+    "name": "Thunderforest",
+    "category": "Maps",
+    "description": "OpenStreetMap-based map tiles for outdoor and transport styles.",
+    "baseUrl": "https://tile.thunderforest.com",
+    "docsUrl": "https://www.thunderforest.com/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://tile.thunderforest.com/cycle/0/0/0.png?apikey=demo",
+    "sampleFields": [
+      "z",
+      "x",
+      "y"
+    ],
+    "tags": [
+      "maps",
+      "transit",
+      "geo"
+    ]
+  },
+  {
+    "id": "open-weather",
+    "name": "OpenWeatherMap",
+    "category": "Weather",
+    "description": "Current weather, forecasts, and one-call weather data.",
+    "baseUrl": "https://api.openweathermap.org",
+    "docsUrl": "https://openweathermap.org/api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=demo",
+    "sampleFields": [
+      "main",
+      "weather",
+      "wind"
+    ],
+    "tags": [
+      "geo",
+      "time-series",
+      "real-time"
+    ]
+  },
+  {
+    "id": "weatherapi",
+    "name": "WeatherAPI.com",
+    "category": "Weather",
+    "description": "Weather forecasts, astronomy, and sports weather endpoints.",
+    "baseUrl": "https://api.weatherapi.com",
+    "docsUrl": "https://www.weatherapi.com/docs/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.weatherapi.com/v1/current.json?key=demo&q=London",
+    "sampleFields": [
+      "location",
+      "current",
+      "forecast"
+    ],
+    "tags": [
+      "geo",
+      "time-series",
+      "alerts"
+    ]
+  },
+  {
+    "id": "visual-crossing",
+    "name": "Visual Crossing",
+    "category": "Weather",
+    "description": "Historical and forecast weather timelines for locations.",
+    "baseUrl": "https://weather.visualcrossing.com",
+    "docsUrl": "https://www.visualcrossing.com/resources/documentation/weather-api/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/London?key=demo",
+    "sampleFields": [
+      "datetime",
+      "temp",
+      "conditions"
+    ],
+    "tags": [
+      "time-series",
+      "charts",
+      "geo"
+    ]
+  },
+  {
+    "id": "ambee-air",
+    "name": "Ambee Air Quality",
+    "category": "Environment",
+    "description": "Hyperlocal air quality, pollen, and weather readings.",
+    "baseUrl": "https://api.ambeedata.com",
+    "docsUrl": "https://docs.ambeedata.com/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.ambeedata.com/latest/by-lat-lng?lat=12&lng=77",
+    "sampleFields": [
+      "city",
+      "aqi",
+      "pollutants"
+    ],
+    "tags": [
+      "health",
+      "geo",
+      "real-time"
+    ]
+  },
+  {
+    "id": "waqi",
+    "name": "WAQI Air Quality",
+    "category": "Environment",
+    "description": "World Air Quality Index readings by city and station.",
+    "baseUrl": "https://api.waqi.info",
+    "docsUrl": "https://aqicn.org/api/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.waqi.info/feed/here/?token=demo",
+    "sampleFields": [
+      "aqi",
+      "idx",
+      "city"
+    ],
+    "tags": [
+      "health",
+      "geo",
+      "real-time"
+    ]
+  },
+  {
+    "id": "transitfeeds",
+    "name": "TransitFeeds",
+    "category": "Transport",
+    "description": "GTFS transit feed directory with coverage worldwide.",
+    "baseUrl": "https://transitfeeds.com",
+    "docsUrl": "https://transitfeeds.com/api/v1/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://transitfeeds.com/api/v1/feeds?key=demo",
+    "sampleFields": [
+      "title",
+      "location",
+      "latest"
+    ],
+    "tags": [
+      "transit",
+      "geo",
+      "collections"
+    ]
+  },
+  {
+    "id": "mbta",
+    "name": "MBTA V3 API",
+    "category": "Transport",
+    "description": "Boston-area transit predictions, routes, and alerts.",
+    "baseUrl": "https://api-v3.mbta.com",
+    "docsUrl": "https://www.mbta.com/developers/v3-api",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api-v3.mbta.com/predictions?filter[route]=Red&page[limit]=5",
+    "sampleFields": [
+      "arrival_time",
+      "status",
+      "direction_id"
+    ],
+    "tags": [
+      "transit",
+      "real-time",
+      "alerts"
+    ]
+  },
+  {
+    "id": "transport-opendata",
+    "name": "Transport for London",
+    "category": "Transport",
+    "description": "London tube, bus, and road disruption open data.",
+    "baseUrl": "https://api.tfl.gov.uk",
+    "docsUrl": "https://api.tfl.gov.uk/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.tfl.gov.uk/Line/Mode/tube/Status?app_key=demo",
+    "sampleFields": [
+      "id",
+      "name",
+      "lineStatuses"
+    ],
+    "tags": [
+      "transit",
+      "alerts",
+      "real-time"
+    ]
+  },
+  {
+    "id": "aviationstack",
+    "name": "Aviationstack",
+    "category": "Transport",
+    "description": "Real-time and historical flight data worldwide.",
+    "baseUrl": "https://api.aviationstack.com",
+    "docsUrl": "https://aviationstack.com/documentation",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.aviationstack.com/v1/flights?access_key=demo&limit=5",
+    "sampleFields": [
+      "flight",
+      "departure",
+      "arrival"
+    ],
+    "tags": [
+      "transit",
+      "real-time",
+      "geo"
+    ]
+  },
+  {
+    "id": "adsb-exchange",
+    "name": "ADS-B Exchange",
+    "category": "Transport",
+    "description": "Live aircraft positions from community ADS-B receivers.",
+    "baseUrl": "https://adsbexchange.com",
+    "docsUrl": "https://www.adsbexchange.com/data/",
+    "auth": "free-key",
+    "exampleEndpoint": "https://adsbexchange.com/api/aircraft/icao/3c6444/",
+    "sampleFields": [
+      "lat",
+      "lon",
+      "alt_baro"
+    ],
+    "tags": [
+      "transit",
+      "maps",
+      "real-time"
+    ]
+  },
+  {
+    "id": "geojs",
+    "name": "GeoJS",
+    "category": "Utilities",
+    "description": "Simple IP geolocation and network metadata as JSON.",
+    "baseUrl": "https://get.geojs.io",
+    "docsUrl": "https://www.geojs.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://get.geojs.io/v1/ip/geo.json",
+    "sampleFields": [
+      "city",
+      "country",
+      "latitude"
+    ],
+    "tags": [
+      "geo",
+      "tools",
+      "real-time"
+    ]
+  },
+  {
+    "id": "zenquotes",
+    "name": "ZenQuotes",
+    "category": "Fun",
+    "description": "Inspirational quotes with authors and attribution.",
+    "baseUrl": "https://zenquotes.io",
+    "docsUrl": "https://docs.zenquotes.io/",
+    "auth": "none",
+    "exampleEndpoint": "https://zenquotes.io/api/random",
+    "sampleFields": [
+      "q",
+      "a",
+      "h"
+    ],
+    "tags": [
+      "fun",
+      "education",
+      "media"
+    ]
+  },
+  {
+    "id": "affirmations",
+    "name": "Affirmations",
+    "category": "Fun",
+    "description": "Random positive affirmations for wellness apps.",
+    "baseUrl": "https://www.affirmations.dev",
+    "docsUrl": "https://www.affirmations.dev/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.affirmations.dev/api",
+    "sampleFields": [
+      "affirmation",
+      "text",
+      "source"
+    ],
+    "tags": [
+      "fun",
+      "health",
+      "tools"
+    ]
+  },
+  {
+    "id": "football-data",
+    "name": "Football-Data.org",
+    "category": "Sports",
+    "description": "Soccer competitions, matches, teams, and standings.",
+    "baseUrl": "https://api.football-data.org",
+    "docsUrl": "https://www.football-data.org/documentation/quickstart",
+    "auth": "free-key",
+    "exampleEndpoint": "https://api.football-data.org/v4/competitions",
+    "sampleFields": [
+      "name",
+      "code",
+      "area"
+    ],
+    "tags": [
+      "ranking",
+      "comparison",
+      "trending"
+    ]
+  },
+  {
+    "id": "opentopodata",
+    "name": "Open Topo Data",
+    "category": "Geography",
+    "description": "Elevation lookup for batches of latitude and longitude points.",
+    "baseUrl": "https://api.opentopodata.org",
+    "docsUrl": "https://www.opentopodata.org/",
+    "auth": "none",
+    "exampleEndpoint": "https://api.opentopodata.org/v1/aster30m?locations=57.688709,11.976404",
+    "sampleFields": [
+      "results",
+      "elevation",
+      "location"
+    ],
+    "tags": [
+      "geo",
+      "science",
+      "maps"
+    ]
+  },
+  {
+    "id": "dnd5e",
+    "name": "D&D 5e API",
+    "category": "Games",
+    "description": "Dungeons and Dragons spells, monsters, classes, and equipment.",
+    "baseUrl": "https://www.dnd5eapi.co",
+    "docsUrl": "https://www.dnd5eapi.co/docs/",
+    "auth": "none",
+    "exampleEndpoint": "https://www.dnd5eapi.co/api/spells?limit=5",
+    "sampleFields": [
+      "name",
+      "level",
+      "school"
+    ],
+    "tags": [
+      "fun",
+      "collections",
+      "education"
+    ]
+  }
+]
