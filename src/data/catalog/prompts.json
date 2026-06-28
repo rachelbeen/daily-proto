@@ -1,7 +1,7 @@
 [
   {
     "id": "map-01",
-    "prompt": "Create a map that makes geographic patterns obvious at a glance.",
+    "prompt": "Make a map that shows at a glance where things cluster and where they don't.",
     "tags": [
       "map",
       "geo"
@@ -9,7 +9,7 @@
   },
   {
     "id": "map-02",
-    "prompt": "Build a spatial view that shows where the data clusters and why it matters.",
+    "prompt": "Build a map that answers one simple question about places in today's data.",
     "tags": [
       "map",
       "geo"
@@ -17,7 +17,7 @@
   },
   {
     "id": "map-03",
-    "prompt": "Design a map-first prototype that answers one place-based question.",
+    "prompt": "Design a screen with a list on one side and a map on the other so people can explore locations.",
     "tags": [
       "map",
       "geo"
@@ -25,7 +25,7 @@
   },
   {
     "id": "map-04",
-    "prompt": "Prototype a list-plus-map experience for exploring locations in the dataset.",
+    "prompt": "Show how crowded, spread out, or far apart things are — all on one map.",
     "tags": [
       "map",
       "geo"
@@ -33,7 +33,7 @@
   },
   {
     "id": "map-05",
-    "prompt": "Make a map that compares density, distance, or distribution in one screen.",
+    "prompt": "Tell a place-based story: what feels different from one region to the next?",
     "tags": [
       "map",
       "geo"
@@ -41,7 +41,7 @@
   },
   {
     "id": "map-06",
-    "prompt": "Turn coordinates into a story — show what changes from region to region.",
+    "prompt": "Help someone spot the odd one out on a map — the place that doesn't fit the pattern.",
     "tags": [
       "map",
       "geo"
@@ -49,7 +49,7 @@
   },
   {
     "id": "map-07",
-    "prompt": "Build a map UI that helps someone spot outliers in the real world.",
+    "prompt": "Create a map people can pan and zoom, with one clear takeaway when they land.",
     "tags": [
       "map",
       "geo"
@@ -57,7 +57,7 @@
   },
   {
     "id": "map-08",
-    "prompt": "Create a lightweight geo explorer with pan, zoom, and one clear insight.",
+    "prompt": "Layer two ideas on one map so the connection between them is obvious.",
     "tags": [
       "map",
       "geo"
@@ -65,7 +65,7 @@
   },
   {
     "id": "map-09",
-    "prompt": "Design a map overlay that connects two layers from the same dataset.",
+    "prompt": "Sketch a map view that makes borders, routes, or nearness easy to understand.",
     "tags": [
       "map",
       "geo"
@@ -73,7 +73,7 @@
   },
   {
     "id": "map-10",
-    "prompt": "Sketch a spatial dashboard that makes borders, routes, or proximity click.",
+    "prompt": "Turn locations from today's data into something a teammate would actually open and use.",
     "tags": [
       "map",
       "geo"
@@ -81,7 +81,7 @@
   },
   {
     "id": "charts-01",
-    "prompt": "Build a one-screen dashboard that surfaces the most surprising pattern in today's data.",
+    "prompt": "Build one screen that surfaces the most surprising pattern in today's numbers.",
     "tags": [
       "charts",
       "time-series",
@@ -90,7 +90,7 @@
   },
   {
     "id": "charts-02",
-    "prompt": "Design a dashboard that answers one executive question in under ten seconds.",
+    "prompt": "Design a single view that answers one big question in under ten seconds.",
     "tags": [
       "charts",
       "time-series",
@@ -99,7 +99,7 @@
   },
   {
     "id": "charts-03",
-    "prompt": "Create a single view that compares today vs. typical using live API data.",
+    "prompt": "Compare what's happening now with what's normal — using real numbers, not made-up ones.",
     "tags": [
       "charts",
       "time-series",
@@ -108,7 +108,7 @@
   },
   {
     "id": "charts-04",
-    "prompt": "Prototype a dashboard where typography does more work than charts.",
+    "prompt": "Make a summary screen where the words do as much work as the charts.",
     "tags": [
       "charts",
       "time-series",
@@ -117,7 +117,7 @@
   },
   {
     "id": "charts-05",
-    "prompt": "Build a KPI wall from real endpoints — no placeholder numbers.",
+    "prompt": "Show a handful of key numbers from today's data — all real, nothing fake.",
     "tags": [
       "charts",
       "time-series",
@@ -126,7 +126,7 @@
   },
   {
     "id": "charts-06",
-    "prompt": "Design a dashboard that highlights one anomaly worth investigating.",
+    "prompt": "Highlight one weird or noteworthy thing in the data worth a closer look.",
     "tags": [
       "charts",
       "time-series",
@@ -135,7 +135,7 @@
   },
   {
     "id": "charts-07",
-    "prompt": "Create a summary screen that links every metric back to its source field.",
+    "prompt": "Create a summary where every number clearly ties back to where it came from.",
     "tags": [
       "charts",
       "time-series",
@@ -144,7 +144,7 @@
   },
   {
     "id": "charts-08",
-    "prompt": "Build a dashboard that makes a trend impossible to misread.",
+    "prompt": "Make a trend so clear that nobody can misread what it's saying.",
     "tags": [
       "charts",
       "time-series",
@@ -153,7 +153,7 @@
   },
   {
     "id": "charts-09",
-    "prompt": "Prototype a daily briefing view powered entirely by public API responses.",
+    "prompt": "Design a daily briefing screen your team could check every morning.",
     "tags": [
       "charts",
       "time-series",
@@ -162,7 +162,7 @@
   },
   {
     "id": "charts-10",
-    "prompt": "Design a compact dashboard for a teammate who hates dashboards.",
+    "prompt": "Build a simple stats screen for someone who usually finds dashboards overwhelming.",
     "tags": [
       "charts",
       "time-series",
@@ -171,7 +171,7 @@
   },
   {
     "id": "search-01",
-    "prompt": "Prototype a small decision tool that helps someone pick, compare, or filter with live data.",
+    "prompt": "Build a small tool that helps someone pick, compare, or narrow down real options.",
     "tags": [
       "search",
       "comparison",
@@ -180,7 +180,7 @@
   },
   {
     "id": "search-02",
-    "prompt": "Build a chooser that narrows hundreds of records down to one recommendation.",
+    "prompt": "Start with lots of choices and end with one clear recommendation.",
     "tags": [
       "search",
       "comparison",
@@ -189,7 +189,7 @@
   },
   {
     "id": "search-03",
-    "prompt": "Design a filter flow with great defaults and one satisfying final result.",
+    "prompt": "Design a step-by-step flow with smart defaults and a satisfying final answer.",
     "tags": [
       "search",
       "comparison",
@@ -198,7 +198,7 @@
   },
   {
     "id": "search-04",
-    "prompt": "Create a comparison tool that makes tradeoffs obvious without chart junk.",
+    "prompt": "Compare two or more options side by side so the tradeoffs are obvious.",
     "tags": [
       "search",
       "comparison",
@@ -207,7 +207,7 @@
   },
   {
     "id": "search-05",
-    "prompt": "Prototype a wizard that uses API data at every step.",
+    "prompt": "Walk someone through a few questions and land on a suggestion backed by real data.",
     "tags": [
       "search",
       "comparison",
@@ -216,7 +216,7 @@
   },
   {
     "id": "search-06",
-    "prompt": "Build a tool that answers 'which one should I use?' from real records.",
+    "prompt": "Answer 'which one should I choose?' using today's actual records.",
     "tags": [
       "search",
       "comparison",
@@ -225,7 +225,7 @@
   },
   {
     "id": "search-07",
-    "prompt": "Design a side-by-side picker for two entities from the dataset.",
+    "prompt": "Put two things next to each other — cities, products, whatever fits — and make differences pop.",
     "tags": [
       "search",
       "comparison",
@@ -234,7 +234,7 @@
   },
   {
     "id": "search-08",
-    "prompt": "Create a short questionnaire that ends in a data-backed suggestion.",
+    "prompt": "Create a short quiz that ends in a data-backed suggestion.",
     "tags": [
       "search",
       "comparison",
@@ -243,7 +243,7 @@
   },
   {
     "id": "search-09",
-    "prompt": "Prototype a sorting interface that teaches what the fields mean.",
+    "prompt": "Help people sort and filter while gently explaining what each label means.",
     "tags": [
       "search",
       "comparison",
@@ -252,7 +252,7 @@
   },
   {
     "id": "search-10",
-    "prompt": "Build a micro-app that helps a teammate decide in one sitting.",
+    "prompt": "Build something a teammate could use to decide in one sitting.",
     "tags": [
       "search",
       "comparison",
@@ -261,7 +261,7 @@
   },
   {
     "id": "time-series-01",
-    "prompt": "Design a timeline or trend explorer that follows one thread through the data over time.",
+    "prompt": "Follow one thread through time and show how it changes.",
     "tags": [
       "time-series",
       "trending"
@@ -269,7 +269,7 @@
   },
   {
     "id": "time-series-02",
-    "prompt": "Build a timeline that shows momentum — not every data point at once.",
+    "prompt": "Build a timeline that shows momentum — not every single point at once.",
     "tags": [
       "time-series",
       "trending"
@@ -277,7 +277,7 @@
   },
   {
     "id": "time-series-03",
-    "prompt": "Create a trend view that highlights when something changed and why it might matter.",
+    "prompt": "Highlight when something shifted and why that moment might matter.",
     "tags": [
       "time-series",
       "trending"
@@ -285,7 +285,7 @@
   },
   {
     "id": "time-series-04",
-    "prompt": "Prototype a sparkline-first screen with one expandable deep dive.",
+    "prompt": "Start with a small trend line and let people dig deeper if they want.",
     "tags": [
       "time-series",
       "trending"
@@ -293,7 +293,7 @@
   },
   {
     "id": "time-series-05",
-    "prompt": "Design a chronological story with three moments that matter most.",
+    "prompt": "Tell a story across time in three moments that matter most.",
     "tags": [
       "time-series",
       "trending"
@@ -301,7 +301,7 @@
   },
   {
     "id": "time-series-06",
-    "prompt": "Build a time slider that updates the whole UI from live API calls.",
+    "prompt": "Add a slider that updates the whole screen as people move through dates.",
     "tags": [
       "time-series",
       "trending"
@@ -309,7 +309,7 @@
   },
   {
     "id": "time-series-07",
-    "prompt": "Create a 'what changed this week?' explorer from timestamped records.",
+    "prompt": "Answer 'what changed this week?' using dated records from today's source.",
     "tags": [
       "time-series",
       "trending"
@@ -317,7 +317,7 @@
   },
   {
     "id": "time-series-08",
-    "prompt": "Prototype a history view that links events to their source entries.",
+    "prompt": "Link events on a timeline back to the original records they came from.",
     "tags": [
       "time-series",
       "trending"
@@ -325,7 +325,7 @@
   },
   {
     "id": "time-series-09",
-    "prompt": "Design a trend card that stands alone in Slack or email.",
+    "prompt": "Design a trend card that works on its own in Slack or email.",
     "tags": [
       "time-series",
       "trending"
@@ -333,7 +333,7 @@
   },
   {
     "id": "time-series-10",
-    "prompt": "Build a timeline that compares two series on the same axis.",
+    "prompt": "Compare two trends on the same timeline so the relationship is easy to see.",
     "tags": [
       "time-series",
       "trending"
@@ -341,7 +341,7 @@
   },
   {
     "id": "alerts-01",
-    "prompt": "Sketch an alert you'd actually want to receive when the data crosses a threshold that matters.",
+    "prompt": "Sketch an alert you'd actually want when something crosses a line that matters to you.",
     "tags": [
       "alerts",
       "real-time"
@@ -349,7 +349,7 @@
   },
   {
     "id": "alerts-02",
-    "prompt": "Design a notification concept with visible trigger logic and a clear action.",
+    "prompt": "Design a notification that shows what triggered it and what to do next.",
     "tags": [
       "alerts",
       "real-time"
@@ -357,7 +357,7 @@
   },
   {
     "id": "alerts-03",
-    "prompt": "Build a monitor that shows green/yellow/red based on live API values.",
+    "prompt": "Build a simple green / yellow / red monitor using live values from today's data.",
     "tags": [
       "alerts",
       "real-time"
@@ -365,7 +365,7 @@
   },
   {
     "id": "alerts-04",
-    "prompt": "Prototype an alert preview — what would the message say right now?",
+    "prompt": "Preview what the alert would say right now if you turned it on today.",
     "tags": [
       "alerts",
       "real-time"
@@ -373,7 +373,7 @@
   },
   {
     "id": "alerts-05",
-    "prompt": "Create a threshold editor tied to real fields from the dataset.",
+    "prompt": "Let people set a threshold using real fields from the dataset.",
     "tags": [
       "alerts",
       "real-time"
@@ -381,7 +381,7 @@
   },
   {
     "id": "alerts-06",
-    "prompt": "Design a watchlist that pings you when something unusual appears.",
+    "prompt": "Create a watchlist that pings you when something unusual shows up.",
     "tags": [
       "alerts",
       "real-time"
@@ -389,7 +389,7 @@
   },
   {
     "id": "alerts-07",
-    "prompt": "Build a status page powered by a public API's current values.",
+    "prompt": "Build a status page powered by the latest values from today's source.",
     "tags": [
       "alerts",
       "real-time"
@@ -397,7 +397,7 @@
   },
   {
     "id": "alerts-08",
-    "prompt": "Prototype an on-call style alert card with context, not just noise.",
+    "prompt": "Design an alert card with enough context to be useful — not just noise.",
     "tags": [
       "alerts",
       "real-time"
@@ -405,7 +405,7 @@
   },
   {
     "id": "alerts-09",
-    "prompt": "Create a rule builder: if this field, then this notification.",
+    "prompt": "Make a simple rule builder: when this happens, send this message.",
     "tags": [
       "alerts",
       "real-time"
@@ -413,7 +413,7 @@
   },
   {
     "id": "alerts-10",
-    "prompt": "Design an alert digest that groups related signals into one update.",
+    "prompt": "Group related signals into one digest instead of ten separate pings.",
     "tags": [
       "alerts",
       "real-time"
@@ -421,7 +421,7 @@
   },
   {
     "id": "comparison-01",
-    "prompt": "Build a side-by-side comparison between two entities from the data.",
+    "prompt": "Compare two things from the data side by side.",
     "tags": [
       "comparison",
       "education"
@@ -429,7 +429,7 @@
   },
   {
     "id": "comparison-02",
-    "prompt": "Design a diff view that makes similarities and gaps scannable in seconds.",
+    "prompt": "Make similarities and gaps easy to scan in a few seconds.",
     "tags": [
       "comparison",
       "education"
@@ -437,7 +437,7 @@
   },
   {
     "id": "comparison-03",
-    "prompt": "Create a comparison table that links every cell to its API source.",
+    "prompt": "Build a comparison table where every cell links to where that fact came from.",
     "tags": [
       "comparison",
       "education"
@@ -445,7 +445,7 @@
   },
   {
     "id": "comparison-04",
-    "prompt": "Prototype a 'versus' screen for two cities, products, species, or artworks.",
+    "prompt": "Create a 'this vs. that' screen — two cities, products, species, artworks, whatever fits.",
     "tags": [
       "comparison",
       "education"
@@ -453,7 +453,7 @@
   },
   {
     "id": "comparison-05",
-    "prompt": "Build a comparison that works on mobile with swipe between entities.",
+    "prompt": "Design a comparison that works on a phone with a swipe between the two.",
     "tags": [
       "comparison",
       "education"
@@ -461,7 +461,7 @@
   },
   {
     "id": "comparison-06",
-    "prompt": "Design a benchmark view — how does A stack up against B on one metric?",
+    "prompt": "Show how A stacks up against B on one metric that matters.",
     "tags": [
       "comparison",
       "education"
@@ -469,7 +469,7 @@
   },
   {
     "id": "comparison-07",
-    "prompt": "Create a split screen that updates both sides from live fetches.",
+    "prompt": "Build a split screen where both sides update from live data.",
     "tags": [
       "comparison",
       "education"
@@ -477,7 +477,7 @@
   },
   {
     "id": "comparison-08",
-    "prompt": "Prototype a comparison export someone would share with their team.",
+    "prompt": "Make a comparison worth sharing with your team.",
     "tags": [
       "comparison",
       "education"
@@ -485,7 +485,7 @@
   },
   {
     "id": "comparison-09",
-    "prompt": "Build a before/after comparison using two API snapshots.",
+    "prompt": "Compare how things looked before and after using two snapshots from the data.",
     "tags": [
       "comparison",
       "education"
@@ -493,7 +493,7 @@
   },
   {
     "id": "comparison-10",
-    "prompt": "Design a comparison that explains what each field means inline.",
+    "prompt": "Explain what each label means right where people are comparing.",
     "tags": [
       "comparison",
       "education"
@@ -501,7 +501,7 @@
   },
   {
     "id": "search-01",
-    "prompt": "Prototype a search-and-discover flow with a polished empty state and real results.",
+    "prompt": "Build search with a friendly empty state and satisfying real results.",
     "tags": [
       "search",
       "gallery"
@@ -509,7 +509,7 @@
   },
   {
     "id": "search-02",
-    "prompt": "Build a search UI where the zero-results state is as good as the hits.",
+    "prompt": "Make the 'no results' screen as thoughtful as the hits.",
     "tags": [
       "search",
       "gallery"
@@ -517,7 +517,7 @@
   },
   {
     "id": "search-03",
-    "prompt": "Design typeahead that queries a live endpoint on every keystroke.",
+    "prompt": "Show suggestions as people type, pulling from live data.",
     "tags": [
       "search",
       "gallery"
@@ -525,7 +525,7 @@
   },
   {
     "id": "search-04",
-    "prompt": "Create a discovery feed that surfaces unexpected records from the API.",
+    "prompt": "Create a discovery feed that surfaces surprising finds from today's source.",
     "tags": [
       "search",
       "gallery"
@@ -533,7 +533,7 @@
   },
   {
     "id": "search-05",
-    "prompt": "Prototype search with filters, sort, and one delightful detail in the results.",
+    "prompt": "Combine search, filters, and sort — plus one small delightful detail in the results.",
     "tags": [
       "search",
       "gallery"
@@ -541,7 +541,7 @@
   },
   {
     "id": "search-06",
-    "prompt": "Build a browse experience for people who do not know what to search for.",
+    "prompt": "Help people browse when they don't know what to search for yet.",
     "tags": [
       "search",
       "gallery"
@@ -549,7 +549,7 @@
   },
   {
     "id": "search-07",
-    "prompt": "Design a search results card with one-click jump to the raw JSON.",
+    "prompt": "Design result cards with an easy way to see the full record behind each hit.",
     "tags": [
       "search",
       "gallery"
@@ -557,7 +557,7 @@
   },
   {
     "id": "search-08",
-    "prompt": "Create a tag-based explorer built from fields in the response.",
+    "prompt": "Let people explore by tags or categories from the data.",
     "tags": [
       "search",
       "gallery"
@@ -565,7 +565,7 @@
   },
   {
     "id": "search-09",
-    "prompt": "Prototype search that saves recent queries locally.",
+    "prompt": "Remember recent searches so people can pick up where they left off.",
     "tags": [
       "search",
       "gallery"
@@ -573,7 +573,7 @@
   },
   {
     "id": "search-10",
-    "prompt": "Build a 'surprise me' button that pulls a random valid record.",
+    "prompt": "Add a 'surprise me' button that pulls one random real record.",
     "tags": [
       "search",
       "gallery"
@@ -581,7 +581,7 @@
   },
   {
     "id": "culture-01",
-    "prompt": "Tell a data story in three cards — hook, evidence, takeaway.",
+    "prompt": "Tell a story in three beats — hook, proof, takeaway.",
     "tags": [
       "culture",
       "education",
@@ -590,7 +590,7 @@
   },
   {
     "id": "culture-02",
-    "prompt": "Design a three-beat narrative entirely from live API responses.",
+    "prompt": "Build a three-part narrative entirely from real records in today's data.",
     "tags": [
       "culture",
       "education",
@@ -599,7 +599,7 @@
   },
   {
     "id": "culture-03",
-    "prompt": "Build a story scroll where each section cites a different endpoint.",
+    "prompt": "Create a scroll where each section introduces a new slice of the story.",
     "tags": [
       "culture",
       "education",
@@ -608,7 +608,7 @@
   },
   {
     "id": "culture-04",
-    "prompt": "Create a card stack that teaches one concept using real records.",
+    "prompt": "Use a stack of cards to teach one idea with real examples.",
     "tags": [
       "culture",
       "education",
@@ -617,7 +617,7 @@
   },
   {
     "id": "culture-05",
-    "prompt": "Prototype a story format your team would read on a phone.",
+    "prompt": "Design a story format that reads well on a phone.",
     "tags": [
       "culture",
       "education",
@@ -626,7 +626,7 @@
   },
   {
     "id": "culture-06",
-    "prompt": "Design a visual essay with pull quotes from the data.",
+    "prompt": "Write a short visual essay with pull quotes taken from the data.",
     "tags": [
       "culture",
       "education",
@@ -635,7 +635,7 @@
   },
   {
     "id": "culture-07",
-    "prompt": "Build a three-slide deck generated from today's dataset.",
+    "prompt": "Turn today's dataset into a three-slide deck your team could present.",
     "tags": [
       "culture",
       "education",
@@ -644,7 +644,7 @@
   },
   {
     "id": "culture-08",
-    "prompt": "Create a story template teammates can reuse with new APIs.",
+    "prompt": "Make a story template teammates can reuse with new sources later.",
     "tags": [
       "culture",
       "education",
@@ -653,7 +653,7 @@
   },
   {
     "id": "culture-09",
-    "prompt": "Prototype a narrative that links evidence to source URLs.",
+    "prompt": "Link every claim in the story back to where the fact came from.",
     "tags": [
       "culture",
       "education",
@@ -662,7 +662,7 @@
   },
   {
     "id": "culture-10",
-    "prompt": "Design a story with one chart, one table, and one plain-language takeaway.",
+    "prompt": "Combine one chart, one table, and one plain-language takeaway.",
     "tags": [
       "culture",
       "education",
@@ -671,7 +671,7 @@
   },
   {
     "id": "fun-01",
-    "prompt": "Turn the dataset into a lightweight game or quiz using real API data.",
+    "prompt": "Turn today's data into a light game or quiz — still using real records.",
     "tags": [
       "fun",
       "collections",
@@ -680,7 +680,7 @@
   },
   {
     "id": "fun-02",
-    "prompt": "Build a sixty-second game that still teaches something about the fields.",
+    "prompt": "Build a sixty-second game that teaches something about what's in the data.",
     "tags": [
       "fun",
       "collections",
@@ -689,7 +689,7 @@
   },
   {
     "id": "fun-03",
-    "prompt": "Design a trivia round where every answer comes from the API.",
+    "prompt": "Design a trivia round where every answer comes from today's source.",
     "tags": [
       "fun",
       "collections",
@@ -698,7 +698,7 @@
   },
   {
     "id": "fun-04",
-    "prompt": "Create a collection game — gather items that match a hidden rule.",
+    "prompt": "Create a collection game: gather items that match a hidden rule.",
     "tags": [
       "fun",
       "collections",
@@ -707,7 +707,7 @@
   },
   {
     "id": "fun-05",
-    "prompt": "Prototype a swipe-left/swipe-right game on live records.",
+    "prompt": "Build a swipe-left / swipe-right game using live records.",
     "tags": [
       "fun",
       "collections",
@@ -716,7 +716,7 @@
   },
   {
     "id": "fun-06",
-    "prompt": "Build a guessing game using obscured fields from real responses.",
+    "prompt": "Build a guessing game using clues from real fields — nothing made up.",
     "tags": [
       "fun",
       "collections",
@@ -725,7 +725,7 @@
   },
   {
     "id": "fun-07",
-    "prompt": "Design a daily challenge mode tied to the current dataset.",
+    "prompt": "Add a daily challenge mode tied to whatever today's data offers.",
     "tags": [
       "fun",
       "collections",
@@ -734,7 +734,7 @@
   },
   {
     "id": "fun-08",
-    "prompt": "Create a leaderboard based on API-derived scores, not fake points.",
+    "prompt": "Make a leaderboard from scores you can actually calculate from the data.",
     "tags": [
       "fun",
       "collections",
@@ -743,7 +743,7 @@
   },
   {
     "id": "fun-09",
-    "prompt": "Prototype a playful onboarding that introduces the schema through play.",
+    "prompt": "Use play to introduce what's in the dataset — fun first, facts second.",
     "tags": [
       "fun",
       "collections",
@@ -752,7 +752,7 @@
   },
   {
     "id": "fun-10",
-    "prompt": "Build a mini-game someone would replay during a coffee break.",
+    "prompt": "Build a mini-game someone might replay on a coffee break.",
     "tags": [
       "fun",
       "collections",
@@ -761,7 +761,7 @@
   },
   {
     "id": "media-01",
-    "prompt": "Design something worth sharing — a snapshot, card, or link your team would actually post.",
+    "prompt": "Design something worth sharing — a card or link your team would actually post.",
     "tags": [
       "media",
       "trending",
@@ -770,7 +770,7 @@
   },
   {
     "id": "media-02",
-    "prompt": "Build a share card generated from one live API record.",
+    "prompt": "Generate a shareable card from one real record in today's data.",
     "tags": [
       "media",
       "trending",
@@ -779,7 +779,7 @@
   },
   {
     "id": "media-03",
-    "prompt": "Create an exportable image or link preview from the dataset.",
+    "prompt": "Create an image or link preview people would pass around.",
     "tags": [
       "media",
       "trending",
@@ -788,7 +788,7 @@
   },
   {
     "id": "media-04",
-    "prompt": "Prototype a one-click 'post to Slack' summary of today's find.",
+    "prompt": "Build a one-click summary formatted for Slack.",
     "tags": [
       "media",
       "trending",
@@ -806,7 +806,7 @@
   },
   {
     "id": "media-06",
-    "prompt": "Build a meme generator powered by real API text fields.",
+    "prompt": "Have fun with text from the data — quotes, labels, captions — in something shareable.",
     "tags": [
       "media",
       "trending",
@@ -815,7 +815,7 @@
   },
   {
     "id": "media-07",
-    "prompt": "Create a weekly recap card from aggregated public data.",
+    "prompt": "Create a weekly recap card from public data.",
     "tags": [
       "media",
       "trending",
@@ -824,7 +824,7 @@
   },
   {
     "id": "media-08",
-    "prompt": "Prototype a branded snapshot with source attribution baked in.",
+    "prompt": "Make a branded snapshot that credits the source.",
     "tags": [
       "media",
       "trending",
@@ -833,7 +833,7 @@
   },
   {
     "id": "media-09",
-    "prompt": "Design a share flow that includes the endpoint for transparency.",
+    "prompt": "Include a link to where the facts came from so people can verify.",
     "tags": [
       "media",
       "trending",
@@ -842,7 +842,7 @@
   },
   {
     "id": "media-10",
-    "prompt": "Build something viral-internal — fun enough to pass around the team.",
+    "prompt": "Build something fun enough to pass around the team — but still grounded in real data.",
     "tags": [
       "media",
       "trending",
@@ -851,7 +851,7 @@
   },
   {
     "id": "real-time-01",
-    "prompt": "Build a live monitor that feels current the moment the page loads.",
+    "prompt": "Build a live screen that feels current the moment it loads.",
     "tags": [
       "real-time",
       "transit",
@@ -860,7 +860,7 @@
   },
   {
     "id": "real-time-02",
-    "prompt": "Design a real-time ticker fed directly from a public endpoint.",
+    "prompt": "Design a ticker fed directly from up-to-the-minute data.",
     "tags": [
       "real-time",
       "transit",
@@ -869,7 +869,7 @@
   },
   {
     "id": "real-time-03",
-    "prompt": "Create a 'right now' view with a visible last-updated timestamp.",
+    "prompt": "Show a 'right now' view with a clear 'last updated' time.",
     "tags": [
       "real-time",
       "transit",
@@ -878,7 +878,7 @@
   },
   {
     "id": "real-time-04",
-    "prompt": "Prototype a refresh button that re-fetches and animates the delta.",
+    "prompt": "Add a refresh button that updates the screen and shows what changed.",
     "tags": [
       "real-time",
       "transit",
@@ -887,7 +887,7 @@
   },
   {
     "id": "real-time-05",
-    "prompt": "Build a pulse view for data that changes minute to minute.",
+    "prompt": "Create a pulse view for data that shifts minute to minute.",
     "tags": [
       "real-time",
       "transit",
@@ -896,7 +896,7 @@
   },
   {
     "id": "real-time-06",
-    "prompt": "Design a live board optimized for a wall display or TV.",
+    "prompt": "Design a board that would work on a wall display or TV.",
     "tags": [
       "real-time",
       "transit",
@@ -905,7 +905,7 @@
   },
   {
     "id": "real-time-07",
-    "prompt": "Create a status strip that shows the latest value for three key fields.",
+    "prompt": "Show the latest value for three important things in a simple strip.",
     "tags": [
       "real-time",
       "transit",
@@ -914,7 +914,7 @@
   },
   {
     "id": "real-time-08",
-    "prompt": "Prototype auto-refresh with graceful loading between polls.",
+    "prompt": "Auto-refresh gracefully when new data arrives.",
     "tags": [
       "real-time",
       "transit",
@@ -923,7 +923,7 @@
   },
   {
     "id": "real-time-09",
-    "prompt": "Build a commute-style glanceable UI from live transit or weather data.",
+    "prompt": "Build a glanceable commute-style screen from live transit or weather data.",
     "tags": [
       "real-time",
       "transit",
@@ -932,7 +932,7 @@
   },
   {
     "id": "real-time-10",
-    "prompt": "Design a real-time view that still works when the API is slow.",
+    "prompt": "Keep it useful even when the source is slow to respond.",
     "tags": [
       "real-time",
       "transit",
@@ -941,7 +941,7 @@
   },
   {
     "id": "ranking-01",
-    "prompt": "Build a leaderboard that ranks records by a field that actually matters.",
+    "prompt": "Rank records by something that actually matters — and show why.",
     "tags": [
       "ranking",
       "trending",
@@ -950,7 +950,7 @@
   },
   {
     "id": "ranking-02",
-    "prompt": "Design a top-ten list with inline context from the API.",
+    "prompt": "Design a top-ten list with enough context to understand each entry.",
     "tags": [
       "ranking",
       "trending",
@@ -959,7 +959,7 @@
   },
   {
     "id": "ranking-03",
-    "prompt": "Create a ranking view that explains how scores are calculated.",
+    "prompt": "Explain how the ranking is calculated in plain language.",
     "tags": [
       "ranking",
       "trending",
@@ -968,7 +968,7 @@
   },
   {
     "id": "ranking-04",
-    "prompt": "Prototype a 'movers' list — who rose or fell since yesterday.",
+    "prompt": "Show who rose or fell since yesterday — the movers list.",
     "tags": [
       "ranking",
       "trending",
@@ -977,7 +977,7 @@
   },
   {
     "id": "ranking-05",
-    "prompt": "Build a hall-of-fame for outliers in the dataset.",
+    "prompt": "Celebrate the outliers — the records that stand out from the pack.",
     "tags": [
       "ranking",
       "trending",
@@ -986,7 +986,7 @@
   },
   {
     "id": "ranking-06",
-    "prompt": "Design a sortable ranking with one hero stat up top.",
+    "prompt": "Build a sortable ranking with one hero stat up top.",
     "tags": [
       "ranking",
       "trending",
@@ -995,7 +995,7 @@
   },
   {
     "id": "ranking-07",
-    "prompt": "Create a podium view for the top three API records.",
+    "prompt": "Create a podium view for the top three.",
     "tags": [
       "ranking",
       "trending",
@@ -1004,7 +1004,7 @@
   },
   {
     "id": "ranking-08",
-    "prompt": "Prototype a ranking export as CSV from live JSON.",
+    "prompt": "Let people export the ranking as a simple spreadsheet.",
     "tags": [
       "ranking",
       "trending",
@@ -1013,7 +1013,7 @@
   },
   {
     "id": "ranking-09",
-    "prompt": "Build a debate-starter: rank something unexpected from the data.",
+    "prompt": "Rank something unexpected from the data and start a friendly debate.",
     "tags": [
       "ranking",
       "trending",
@@ -1022,7 +1022,7 @@
   },
   {
     "id": "ranking-10",
-    "prompt": "Design a leaderboard that links each row to full details.",
+    "prompt": "Link each row in the ranking to full details.",
     "tags": [
       "ranking",
       "trending",
@@ -1031,7 +1031,7 @@
   },
   {
     "id": "search-01",
-    "prompt": "Design an explorer that rewards curiosity — every click opens a new question.",
+    "prompt": "Reward curiosity — every click should open a new question worth asking.",
     "tags": [
       "search",
       "education",
@@ -1040,7 +1040,7 @@
   },
   {
     "id": "search-02",
-    "prompt": "Build a rabbit-hole UI that chains API calls into a short journey.",
+    "prompt": "Chain a short journey through the data: one find leads to the next.",
     "tags": [
       "search",
       "education",
@@ -1049,7 +1049,7 @@
   },
   {
     "id": "search-03",
-    "prompt": "Create a 'related records' panel driven by shared fields.",
+    "prompt": "Show related records that share something in common.",
     "tags": [
       "search",
       "education",
@@ -1058,7 +1058,7 @@
   },
   {
     "id": "search-04",
-    "prompt": "Prototype an explore mode with bookmarks for interesting finds.",
+    "prompt": "Let people bookmark interesting finds as they explore.",
     "tags": [
       "search",
       "education",
@@ -1067,7 +1067,7 @@
   },
   {
     "id": "search-05",
-    "prompt": "Design a museum-style walkthrough of records from the dataset.",
+    "prompt": "Design a walkthrough of records like a small museum tour.",
     "tags": [
       "search",
       "education",
@@ -1076,7 +1076,7 @@
   },
   {
     "id": "search-06",
-    "prompt": "Build a field glossary generated from the schema you discover.",
+    "prompt": "Build a simple glossary for the most important labels in the data.",
     "tags": [
       "search",
       "education",
@@ -1085,7 +1085,7 @@
   },
   {
     "id": "search-07",
-    "prompt": "Create an explorer with random entry points into the data.",
+    "prompt": "Offer random entry points for people who don't know where to start.",
     "tags": [
       "search",
       "education",
@@ -1094,7 +1094,7 @@
   },
   {
     "id": "search-08",
-    "prompt": "Prototype a graph-lite view of how entities connect.",
+    "prompt": "Show how things connect without overwhelming people with complexity.",
     "tags": [
       "search",
       "education",
@@ -1103,7 +1103,7 @@
   },
   {
     "id": "search-09",
-    "prompt": "Design an explore screen for someone new to this API.",
+    "prompt": "Make an explore screen for someone who's never seen this data before.",
     "tags": [
       "search",
       "education",
@@ -1112,7 +1112,7 @@
   },
   {
     "id": "search-10",
-    "prompt": "Build a curiosity button that always lands on a valid record.",
+    "prompt": "Add a button that always lands on something valid and interesting.",
     "tags": [
       "search",
       "education",
@@ -1121,7 +1121,7 @@
   },
   {
     "id": "charts-01",
-    "prompt": "Use one chart maximum — let layout and type carry the insight.",
+    "prompt": "Use one chart only — let the layout and chart type carry the insight.",
     "tags": [
       "charts",
       "comparison"
@@ -1137,7 +1137,7 @@
   },
   {
     "id": "charts-03",
-    "prompt": "Design a single visualization with a sentence that interprets it.",
+    "prompt": "Pair one visualization with a sentence that explains what it means.",
     "tags": [
       "charts",
       "comparison"
@@ -1145,7 +1145,7 @@
   },
   {
     "id": "charts-04",
-    "prompt": "Prototype a bar or line view with every bar linked to source data.",
+    "prompt": "Make a bar or line chart where each mark links back to the underlying data.",
     "tags": [
       "charts",
       "comparison"
@@ -1153,7 +1153,7 @@
   },
   {
     "id": "charts-05",
-    "prompt": "Create a minimalist chart with a bold headline takeaway.",
+    "prompt": "Keep the chart minimal and put the takeaway in a bold headline.",
     "tags": [
       "charts",
       "comparison"
@@ -1161,7 +1161,7 @@
   },
   {
     "id": "charts-06",
-    "prompt": "Build a comparison chart that works without a legend.",
+    "prompt": "Design a comparison chart that doesn't need a legend to understand.",
     "tags": [
       "charts",
       "comparison"
@@ -1169,7 +1169,7 @@
   },
   {
     "id": "charts-07",
-    "prompt": "Design a sparkline gallery — many small trends, one page.",
+    "prompt": "Show many small trends on one page — like a row of tiny line charts.",
     "tags": [
       "charts",
       "comparison"
@@ -1177,7 +1177,7 @@
   },
   {
     "id": "charts-08",
-    "prompt": "Prototype a chart with accessible color and plain-language labels.",
+    "prompt": "Use color and labels anyone can read, no jargon required.",
     "tags": [
       "charts",
       "comparison"
@@ -1185,7 +1185,7 @@
   },
   {
     "id": "charts-09",
-    "prompt": "Create a chart that degrades gracefully on mobile.",
+    "prompt": "Make sure the chart still works on a small phone screen.",
     "tags": [
       "charts",
       "comparison"
@@ -1193,7 +1193,7 @@
   },
   {
     "id": "charts-10",
-    "prompt": "Build a chart whose tooltip teaches what the field means.",
+    "prompt": "Use tooltips or hints that explain what each number means in everyday language.",
     "tags": [
       "charts",
       "comparison"
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "search-01",
-    "prompt": "Build a filter panel that slices the dataset without losing context.",
+    "prompt": "Build filters that slice the data without losing the big picture.",
     "tags": [
       "search",
       "health",
@@ -1210,7 +1210,7 @@
   },
   {
     "id": "search-02",
-    "prompt": "Design faceted search using fields discovered in the API response.",
+    "prompt": "Let people narrow down by categories they can see in the results.",
     "tags": [
       "search",
       "health",
@@ -1219,7 +1219,7 @@
   },
   {
     "id": "search-03",
-    "prompt": "Create a slice-and-dice view with reversible filters.",
+    "prompt": "Create a view where filters can be added and removed easily.",
     "tags": [
       "search",
       "health",
@@ -1228,7 +1228,7 @@
   },
   {
     "id": "search-04",
-    "prompt": "Prototype a filter chip bar that updates counts live.",
+    "prompt": "Show filter chips that update counts as people tap them.",
     "tags": [
       "search",
       "health",
@@ -1237,7 +1237,7 @@
   },
   {
     "id": "search-05",
-    "prompt": "Build a query builder for non-technical teammates.",
+    "prompt": "Design filters a non-technical teammate could use without help.",
     "tags": [
       "search",
       "health",
@@ -1246,7 +1246,7 @@
   },
   {
     "id": "search-06",
-    "prompt": "Design filters that show how many records match before you apply.",
+    "prompt": "Show how many results match before someone applies a filter.",
     "tags": [
       "search",
       "health",
@@ -1255,7 +1255,7 @@
   },
   {
     "id": "search-07",
-    "prompt": "Create a saved-filter preset for a common team question.",
+    "prompt": "Save a filter preset for a question your team asks all the time.",
     "tags": [
       "search",
       "health",
@@ -1264,7 +1264,7 @@
   },
   {
     "id": "search-08",
-    "prompt": "Prototype a filter UI that exposes one advanced field creatively.",
+    "prompt": "Expose one advanced filter in a creative, approachable way.",
     "tags": [
       "search",
       "health",
@@ -1273,7 +1273,7 @@
   },
   {
     "id": "search-09",
-    "prompt": "Build a narrowing funnel from all records to one insight.",
+    "prompt": "Guide people from 'everything' down to one clear insight.",
     "tags": [
       "search",
       "health",
@@ -1282,7 +1282,7 @@
   },
   {
     "id": "search-10",
-    "prompt": "Design a filter experience that never feels like a dead end.",
+    "prompt": "Make sure filtering never feels like hitting a dead end.",
     "tags": [
       "search",
       "health",
@@ -1291,7 +1291,7 @@
   },
   {
     "id": "education-01",
-    "prompt": "Teach one concept from the dataset in a single scrolling screen.",
+    "prompt": "Teach one idea from the data on a single scrolling screen.",
     "tags": [
       "education",
       "culture"
@@ -1299,7 +1299,7 @@
   },
   {
     "id": "education-02",
-    "prompt": "Build an explainer that uses real examples, not lorem ipsum.",
+    "prompt": "Use real examples from today's source — no placeholder text.",
     "tags": [
       "education",
       "culture"
@@ -1307,7 +1307,7 @@
   },
   {
     "id": "education-03",
-    "prompt": "Design a 'learn the API' page that doubles as a useful tool.",
+    "prompt": "Build a page that's both a learning tool and something useful on its own.",
     "tags": [
       "education",
       "culture"
@@ -1315,7 +1315,7 @@
   },
   {
     "id": "education-04",
-    "prompt": "Create a guided tour through three representative records.",
+    "prompt": "Walk through three representative records like a guided tour.",
     "tags": [
       "education",
       "culture"
@@ -1323,7 +1323,7 @@
   },
   {
     "id": "education-05",
-    "prompt": "Prototype an FAQ where every answer links to a live fetch.",
+    "prompt": "Create an FAQ where every answer points to a real example.",
     "tags": [
       "education",
       "culture"
@@ -1331,7 +1331,7 @@
   },
   {
     "id": "education-06",
-    "prompt": "Build a glossary card for the five most important fields.",
+    "prompt": "Explain the five most important fields in simple language.",
     "tags": [
       "education",
       "culture"
@@ -1339,7 +1339,7 @@
   },
   {
     "id": "education-07",
-    "prompt": "Design a teachable moment — what would a new hire need to know?",
+    "prompt": "Ask: what would a new teammate need to know on day one?",
     "tags": [
       "education",
       "culture"
@@ -1347,7 +1347,7 @@
   },
   {
     "id": "education-08",
-    "prompt": "Create a compare-and-learn view for two sample entities.",
+    "prompt": "Compare two sample entries as a way to learn what's in the data.",
     "tags": [
       "education",
       "culture"
@@ -1355,7 +1355,7 @@
   },
   {
     "id": "education-09",
-    "prompt": "Prototype an onboarding that ends in a working mini-feature.",
+    "prompt": "End getting started with a small feature that actually works.",
     "tags": [
       "education",
       "culture"
@@ -1363,7 +1363,7 @@
   },
   {
     "id": "education-10",
-    "prompt": "Build an educational UI that still feels like a product, not a doc.",
+    "prompt": "Make it educational but feel like a product — not a manual.",
     "tags": [
       "education",
       "culture"
@@ -1371,7 +1371,7 @@
   },
   {
     "id": "graphs-01",
-    "prompt": "Connect related records across two fields in one cohesive view.",
+    "prompt": "Connect related records across two ideas in one cohesive view.",
     "tags": [
       "graphs",
       "search",
@@ -1380,7 +1380,7 @@
   },
   {
     "id": "graphs-02",
-    "prompt": "Build a detail page that pulls linked data from a second endpoint.",
+    "prompt": "Build a detail page that pulls in linked information from a second source.",
     "tags": [
       "graphs",
       "search",
@@ -1389,7 +1389,7 @@
   },
   {
     "id": "graphs-03",
-    "prompt": "Design a master-detail layout fed by chained API calls.",
+    "prompt": "Design a list-and-detail layout where selecting one item reveals more.",
     "tags": [
       "graphs",
       "search",
@@ -1398,7 +1398,7 @@
   },
   {
     "id": "graphs-04",
-    "prompt": "Prototype a graph of entities that share a common attribute.",
+    "prompt": "Show how entities relate when they share a common trait.",
     "tags": [
       "graphs",
       "search",
@@ -1407,7 +1407,7 @@
   },
   {
     "id": "graphs-05",
-    "prompt": "Create a network view with a readable default — not hairball chaos.",
+    "prompt": "Draw connections between items — but keep the default view readable.",
     "tags": [
       "graphs",
       "search",
@@ -1416,7 +1416,7 @@
   },
   {
     "id": "graphs-06",
-    "prompt": "Build a 'see also' panel based on shared tags or categories.",
+    "prompt": "Add a 'see also' section based on shared tags or categories.",
     "tags": [
       "graphs",
       "search",
@@ -1425,7 +1425,7 @@
   },
   {
     "id": "graphs-07",
-    "prompt": "Design a connection card — how does this record relate to that one?",
+    "prompt": "Explain how one record relates to another in a simple connection card.",
     "tags": [
       "graphs",
       "search",
@@ -1434,7 +1434,7 @@
   },
   {
     "id": "graphs-08",
-    "prompt": "Prototype cross-linking between list items and a map or chart.",
+    "prompt": "Link list items to a map or chart so the relationship clicks.",
     "tags": [
       "graphs",
       "search",
@@ -1443,7 +1443,7 @@
   },
   {
     "id": "graphs-09",
-    "prompt": "Create a hub page that stitches three endpoints into one narrative.",
+    "prompt": "Stitch two or three sources into one coherent story on a hub page.",
     "tags": [
       "graphs",
       "search",
@@ -1452,7 +1452,7 @@
   },
   {
     "id": "graphs-10",
-    "prompt": "Build a connector UI that makes dependencies obvious.",
+    "prompt": "Make dependencies and relationships obvious at a glance.",
     "tags": [
       "graphs",
       "search",
@@ -1461,7 +1461,7 @@
   },
   {
     "id": "mobile-01",
-    "prompt": "Simplify a complex dataset into one friendly first screen.",
+    "prompt": "Boil a complex dataset down to one friendly first screen.",
     "tags": [
       "mobile",
       "comparison"
@@ -1469,7 +1469,7 @@
   },
   {
     "id": "mobile-02",
-    "prompt": "Design an entry point that hides complexity until someone asks for it.",
+    "prompt": "Hide complexity until someone asks for more detail.",
     "tags": [
       "mobile",
       "comparison"
@@ -1477,7 +1477,7 @@
   },
   {
     "id": "mobile-03",
-    "prompt": "Build a progressive disclosure flow over live API data.",
+    "prompt": "Reveal information step by step as people go deeper.",
     "tags": [
       "mobile",
       "comparison"
@@ -1485,7 +1485,7 @@
   },
   {
     "id": "mobile-04",
-    "prompt": "Prototype a welcome state that fetches something useful immediately.",
+    "prompt": "Show something useful immediately on the welcome screen.",
     "tags": [
       "mobile",
       "comparison"
@@ -1493,7 +1493,7 @@
   },
   {
     "id": "mobile-05",
-    "prompt": "Create a single-call MVP that still feels complete.",
+    "prompt": "Ship a small first version that still feels complete.",
     "tags": [
       "mobile",
       "comparison"
@@ -1501,7 +1501,7 @@
   },
   {
     "id": "mobile-06",
-    "prompt": "Design a calm UI for a noisy dataset.",
+    "prompt": "Calm a noisy dataset with a clean, simple layout.",
     "tags": [
       "mobile",
       "comparison"
@@ -1509,7 +1509,7 @@
   },
   {
     "id": "mobile-07",
-    "prompt": "Build a 'start here' screen with one recommended record.",
+    "prompt": "Start with one recommended record — a clear 'begin here.'",
     "tags": [
       "mobile",
       "comparison"
@@ -1517,7 +1517,7 @@
   },
   {
     "id": "mobile-08",
-    "prompt": "Prototype a simplified mode vs. power mode toggle.",
+    "prompt": "Offer a simple mode and a power mode for different comfort levels.",
     "tags": [
       "mobile",
       "comparison"
@@ -1525,7 +1525,7 @@
   },
   {
     "id": "mobile-09",
-    "prompt": "Create an onboarding that completes in under thirty seconds.",
+    "prompt": "Finish getting started in under thirty seconds.",
     "tags": [
       "mobile",
       "comparison"
@@ -1533,7 +1533,7 @@
   },
   {
     "id": "mobile-10",
-    "prompt": "Design a first-run experience that works without instructions.",
+    "prompt": "Make the first run work without instructions.",
     "tags": [
       "mobile",
       "comparison"
@@ -1541,7 +1541,7 @@
   },
   {
     "id": "fun-01",
-    "prompt": "Find and highlight one delightful anomaly in today's data.",
+    "prompt": "Find one delightful surprise in today's data and put it front and center.",
     "tags": [
       "fun",
       "media",
@@ -1550,7 +1550,7 @@
   },
   {
     "id": "fun-02",
-    "prompt": "Build a surprise screen — the record nobody expected to see.",
+    "prompt": "Build a 'you won't expect this' screen from a real record.",
     "tags": [
       "fun",
       "media",
@@ -1559,7 +1559,7 @@
   },
   {
     "id": "fun-03",
-    "prompt": "Design a 'weird but true' card from a real API response.",
+    "prompt": "Design a 'weird but true' card sourced from today's data.",
     "tags": [
       "fun",
       "media",
@@ -1568,7 +1568,7 @@
   },
   {
     "id": "fun-04",
-    "prompt": "Prototype a daily oddity generator from valid records.",
+    "prompt": "Generate a daily oddity from valid records — something worth a smile.",
     "tags": [
       "fun",
       "media",
@@ -1577,7 +1577,7 @@
   },
   {
     "id": "fun-05",
-    "prompt": "Create a highlight reel of the five most interesting entries.",
+    "prompt": "Curate the five most interesting entries into a highlight reel.",
     "tags": [
       "fun",
       "media",
@@ -1586,7 +1586,7 @@
   },
   {
     "id": "fun-06",
-    "prompt": "Build a serendipity button with great empty and error states.",
+    "prompt": "Add a serendipity button with great empty and error states.",
     "tags": [
       "fun",
       "media",
@@ -1595,7 +1595,7 @@
   },
   {
     "id": "fun-07",
-    "prompt": "Design a wow moment in the first three seconds of load.",
+    "prompt": "Create a wow moment in the first three seconds after load.",
     "tags": [
       "fun",
       "media",
@@ -1604,7 +1604,7 @@
   },
   {
     "id": "fun-08",
-    "prompt": "Prototype a celebration UI when a rare condition is met.",
+    "prompt": "Celebrate when a rare condition shows up in the data.",
     "tags": [
       "fun",
       "media",
@@ -1613,7 +1613,7 @@
   },
   {
     "id": "fun-09",
-    "prompt": "Create a Easter-egg interaction tied to a real field value.",
+    "prompt": "Hide a small Easter egg tied to a real value in the dataset.",
     "tags": [
       "fun",
       "media",
@@ -1622,7 +1622,7 @@
   },
   {
     "id": "fun-10",
-    "prompt": "Build something that makes the team smile and learn something.",
+    "prompt": "Make the team smile and learn something at the same time.",
     "tags": [
       "fun",
       "media",
@@ -1631,7 +1631,7 @@
   },
   {
     "id": "social-01",
-    "prompt": "Design for a team ritual — a prompt everyone can riff on together.",
+    "prompt": "Design for a team ritual — something everyone can riff on together.",
     "tags": [
       "social",
       "share",
@@ -1640,7 +1640,7 @@
   },
   {
     "id": "social-02",
-    "prompt": "Build a collab view where two people compare picks side by side.",
+    "prompt": "Let two people compare their picks side by side.",
     "tags": [
       "social",
       "share",
@@ -1649,7 +1649,7 @@
   },
   {
     "id": "social-03",
-    "prompt": "Create a voting UI on which record should win today.",
+    "prompt": "Vote on which record should win today.",
     "tags": [
       "social",
       "share",
@@ -1658,7 +1658,7 @@
   },
   {
     "id": "social-04",
-    "prompt": "Prototype a handoff link that preserves the exact API state.",
+    "prompt": "Share a link that preserves exactly what you're looking at.",
     "tags": [
       "social",
       "share",
@@ -1667,7 +1667,7 @@
   },
   {
     "id": "social-05",
-    "prompt": "Design a comment-ready summary card for Slack threads.",
+    "prompt": "Create a summary card ready to paste into Slack.",
     "tags": [
       "social",
       "share",
@@ -1676,7 +1676,7 @@
   },
   {
     "id": "social-06",
-    "prompt": "Build a pair exercise: same data, two different takes.",
+    "prompt": "Run a pair exercise: same data, two different interpretations.",
     "tags": [
       "social",
       "share",
@@ -1685,7 +1685,7 @@
   },
   {
     "id": "social-07",
-    "prompt": "Create a team board of favorite finds from the dataset.",
+    "prompt": "Build a team board of favorite finds from the dataset.",
     "tags": [
       "social",
       "share",
@@ -1694,7 +1694,7 @@
   },
   {
     "id": "social-08",
-    "prompt": "Prototype a daily standup slide from live public data.",
+    "prompt": "Make one slide for a daily standup from live public data.",
     "tags": [
       "social",
       "share",
@@ -1703,7 +1703,7 @@
   },
   {
     "id": "social-09",
-    "prompt": "Design a shared canvas for sketching on top of real records.",
+    "prompt": "Sketch on top of real records on a shared canvas.",
     "tags": [
       "social",
       "share",
@@ -1712,7 +1712,7 @@
   },
   {
     "id": "social-10",
-    "prompt": "Build something that sparks a five-minute team jam.",
+    "prompt": "Spark a five-minute team jam around today's prompt.",
     "tags": [
       "social",
       "share",

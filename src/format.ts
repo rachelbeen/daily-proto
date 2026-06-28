@@ -17,6 +17,8 @@ function formatSourceSection(source: DataSource): string[] {
     "",
     source.description,
     "",
+    source.dataSummary,
+    "",
     `- Docs: ${source.docsUrl}`,
     `- Auth: ${authNote(source.auth)}`,
     `- Tags: ${source.tags.map((t) => `\`${t}\``).join(", ")}`,

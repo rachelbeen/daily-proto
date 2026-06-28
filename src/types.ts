@@ -5,6 +5,7 @@ export interface DataSource {
   name: string;
   category: string;
   description: string;
+  dataSummary: string;
   baseUrl: string;
   docsUrl: string;
   auth: ApiAuth;

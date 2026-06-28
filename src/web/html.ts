@@ -23,6 +23,10 @@ function formatSourceDetail(source: DataSource): string {
   return source.description;
 }
 
+function formatSourceSummary(source: DataSource): string {
+  return source.dataSummary;
+}
+
 function sourceDataPath(source: DataSource): string {
   return `/api/data/${encodeURIComponent(source.id)}`;
 }
@@ -34,6 +38,7 @@ function renderSourceCard(source: DataSource): string {
       <article class="source-card">
         <h2 class="source-title">${escapeHtml(source.name)} · ${escapeHtml(source.category)}</h2>
         <p class="source-desc">${escapeHtml(formatSourceDetail(source))}</p>
+        <p class="source-summary">${escapeHtml(formatSourceSummary(source))}</p>
         <div class="cta-row">
           <a class="cta cta-primary" href="${escapeHtml(dataPath)}" target="_blank" rel="noopener noreferrer">
             Use the data -&gt;
@@ -244,6 +249,18 @@ const pageStyles = `
       font-weight: 500;
       line-height: 1.55;
       color: var(--ink);
+    }
+
+    .source-summary {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .source-panel--multi .source-summary {
+      font-size: 15px;
     }
 
     .cta-row {
