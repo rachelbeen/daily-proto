@@ -18,7 +18,7 @@
       "time-series",
       "maps"
     ],
-    "dataSummary": "Sample link: a starter set of records — weather forecast for the coordinates in the link. Near-term forecast / schedule."
+    "dataSummary": "Weather forecast for a specific location. Looks ahead — forecast or schedule data."
   },
   {
     "id": "rest-countries",
@@ -40,7 +40,7 @@
       "comparison",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — countries in that world region. Point-in-time snapshot."
+    "dataSummary": "Countries in one world region. A snapshot from right now."
   },
   {
     "id": "usgs-earthquakes",
@@ -63,7 +63,7 @@
       "alerts",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — earthquakes magnitude 2.5+ from the last 24 hours. Live or very recent data."
+    "dataSummary": "Earthquakes magnitude 2.5+ from the last 24 hours. Updates frequently — near real-time."
   },
   {
     "id": "open-library",
@@ -84,7 +84,7 @@
       "media",
       "education"
     ],
-    "dataSummary": "Sample link: 10 records — book search results. Point-in-time snapshot from a search or listing."
+    "dataSummary": "10 entries — book search results. A snapshot from a search or listing."
   },
   {
     "id": "open-food-facts",
@@ -105,7 +105,7 @@
       "comparison",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — Open Food Facts records from the food API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — open food facts data. A snapshot from a search or listing."
   },
   {
     "id": "coingecko",
@@ -126,7 +126,7 @@
       "charts",
       "trending"
     ],
-    "dataSummary": "Sample link: 10 records — CoinGecko records from the markets API. Point-in-time snapshot."
+    "dataSummary": "10 entries — coingecko data. A snapshot from right now."
   },
   {
     "id": "pokeapi",
@@ -147,7 +147,7 @@
       "comparison",
       "collections"
     ],
-    "dataSummary": "Sample link: 20 records — Pokémon species records. Point-in-time snapshot."
+    "dataSummary": "20 entries — Pokémon species. A snapshot from right now."
   },
   {
     "id": "iss-location",
@@ -168,7 +168,7 @@
       "maps",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — Open Notify — ISS records from the space API. Live or very recent data."
+    "dataSummary": "Open notify — iss data. Updates frequently — near real-time."
   },
   {
     "id": "met-museum",
@@ -189,7 +189,7 @@
       "search",
       "gallery"
     ],
-    "dataSummary": "Sample link: a starter set of records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Search results. A snapshot from a search or listing."
   },
   {
     "id": "art-institute",
@@ -210,7 +210,7 @@
       "search",
       "gallery"
     ],
-    "dataSummary": "Sample link: 5 records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "open-brewery",
@@ -231,7 +231,7 @@
       "maps",
       "local"
     ],
-    "dataSummary": "Sample link: 10 records — brewery listings for the city in the link. Point-in-time snapshot."
+    "dataSummary": "10 entries — brewery listings for a sample city. A snapshot from right now."
   },
   {
     "id": "gbif",
@@ -252,7 +252,7 @@
       "maps",
       "science"
     ],
-    "dataSummary": "Sample link: 10 records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "10 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "hn-firebase",
@@ -273,7 +273,7 @@
       "trending",
       "ranking"
     ],
-    "dataSummary": "Sample link: a starter set of records — top Hacker News story IDs. Point-in-time snapshot."
+    "dataSummary": "Top Hacker News stories. A snapshot from right now."
   },
   {
     "id": "openfda",
@@ -294,7 +294,7 @@
       "alerts",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — health results for “classification:Class I”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — results for “classification:Class I”. A snapshot from a search or listing."
   },
   {
     "id": "wikidata",
@@ -315,7 +315,7 @@
       "education",
       "graphs"
     ],
-    "dataSummary": "Sample link: a starter set of records — knowledge results for “marie curie”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Results for “marie curie”. A snapshot from a search or listing."
   },
   {
     "id": "nasa-donki",
@@ -336,7 +336,7 @@
       "time-series",
       "alerts"
     ],
-    "dataSummary": "Sample link: a starter set of records — NASA DONKI records from the space weather API. Point-in-time snapshot."
+    "dataSummary": "Nasa donki data. A snapshot from right now."
   },
   {
     "id": "city-bikes",
@@ -359,7 +359,7 @@
       "real-time",
       "transit"
     ],
-    "dataSummary": "Sample link: a starter set of records — CityBikes records from the transit API. Point-in-time snapshot."
+    "dataSummary": "Citybikes data. A snapshot from right now."
   },
   {
     "id": "dog-ceo",
@@ -380,7 +380,7 @@
       "media",
       "collections"
     ],
-    "dataSummary": "Sample link: a starter set of records — Dog CEO records from the fun API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Dog ceo data. A snapshot from a search or listing."
   },
   {
     "id": "us-census",
@@ -401,7 +401,7 @@
       "charts",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — US Census Bureau records from the demographics API. Point-in-time snapshot."
+    "dataSummary": "Us census bureau data. A snapshot from right now."
   },
   {
     "id": "cat-facts",
@@ -421,13 +421,13 @@
       "fun",
       "science"
     ],
-    "dataSummary": "Sample link: a starter set of records — one random fact. Point-in-time snapshot."
+    "dataSummary": "One random fact. A snapshot from right now."
   },
   {
     "id": "dog-api",
     "name": "Dog API",
     "category": "Animals",
-    "description": "Dog API — One random record.",
+    "description": "Dog API — One random item.",
     "baseUrl": "https://dog.ceo",
     "docsUrl": "https://dog.ceo/dog-api/",
     "auth": "none",
@@ -441,13 +441,13 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: 1 record — one random record. Point-in-time snapshot."
+    "dataSummary": "1 entry — one random item. A snapshot from right now."
   },
   {
     "id": "shibe-online",
     "name": "Shibe.Online",
     "category": "Animals",
-    "description": "Shibe.Online — Shibe.Online records from the animals API.",
+    "description": "Shibe.Online — Shibe.online data.",
     "baseUrl": "https://shibe.online",
     "docsUrl": "http://shibe.online/",
     "auth": "none",
@@ -461,13 +461,13 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: a starter set of records — Shibe.Online records from the animals API. Point-in-time snapshot."
+    "dataSummary": "Shibe.online data. A snapshot from right now."
   },
   {
     "id": "axolotl-api",
     "name": "Axolotl API",
     "category": "Animals",
-    "description": "Axolotl API — One random record.",
+    "description": "Axolotl API — One random item.",
     "baseUrl": "https://theaxolotlapi.netlify.app",
     "docsUrl": "https://theaxolotlapi.netlify.app/",
     "auth": "none",
@@ -481,13 +481,13 @@
       "fun",
       "science"
     ],
-    "dataSummary": "Sample link: 1 record — one random record. Point-in-time snapshot."
+    "dataSummary": "1 entry — one random item. A snapshot from right now."
   },
   {
     "id": "animechan",
     "name": "AnimeChan",
     "category": "Anime",
-    "description": "AnimeChan — One random record.",
+    "description": "AnimeChan — One random item.",
     "baseUrl": "https://animechan.xyz",
     "docsUrl": "https://animechan.xyz/",
     "auth": "none",
@@ -501,7 +501,7 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: 1 record — one random record. Point-in-time snapshot."
+    "dataSummary": "1 entry — one random item. A snapshot from right now."
   },
   {
     "id": "studio-ghibli",
@@ -521,7 +521,7 @@
       "fun",
       "culture"
     ],
-    "dataSummary": "Sample link: a starter set of records — film catalog entries. Point-in-time snapshot."
+    "dataSummary": "Film catalog entries. A snapshot from right now."
   },
   {
     "id": "jikan",
@@ -541,13 +541,13 @@
       "fun",
       "ranking"
     ],
-    "dataSummary": "Sample link: a starter set of records — top-ranked anime titles. Point-in-time snapshot."
+    "dataSummary": "Top-ranked anime titles. A snapshot from right now."
   },
   {
     "id": "nhtsa",
     "name": "NHTSA",
     "category": "Vehicle",
-    "description": "NHTSA — NHTSA records from the vehicle API.",
+    "description": "NHTSA — Nhtsa data.",
     "baseUrl": "https://vpic.nhtsa.dot.gov",
     "docsUrl": "https://vpic.nhtsa.dot.gov/api/",
     "auth": "none",
@@ -561,13 +561,13 @@
       "search",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — NHTSA records from the vehicle API. Point-in-time snapshot."
+    "dataSummary": "Nhtsa data. A snapshot from right now."
   },
   {
     "id": "rijksmuseum",
     "name": "Rijksmuseum",
     "category": "Art",
-    "description": "Rijksmuseum — Rijksmuseum records from the art API.",
+    "description": "Rijksmuseum — Rijksmuseum data.",
     "baseUrl": "https://www.rijksmuseum.nl",
     "docsUrl": "https://data.rijksmuseum.nl/",
     "auth": "none",
@@ -581,13 +581,13 @@
       "culture",
       "gallery"
     ],
-    "dataSummary": "Sample link: 5 records — Rijksmuseum records from the art API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — rijksmuseum data. A snapshot from a search or listing."
   },
   {
     "id": "harvard-art-museums",
     "name": "Harvard Art Museums",
     "category": "Art",
-    "description": "Harvard Art Museums — Harvard Art Museums records from the art API.",
+    "description": "Harvard Art Museums — Harvard art museums data.",
     "baseUrl": "https://api.harvardartmuseums.org",
     "docsUrl": "https://github.com/harvardartmuseums/api-docs",
     "auth": "free-key",
@@ -601,13 +601,13 @@
       "culture",
       "gallery"
     ],
-    "dataSummary": "Sample link: 5 records — Harvard Art Museums records from the art API. Point-in-time snapshot."
+    "dataSummary": "5 entries — harvard art museums data. A snapshot from right now."
   },
   {
     "id": "smithsonian",
     "name": "Smithsonian",
     "category": "Art",
-    "description": "Smithsonian — Search results for the query in the link.",
+    "description": "Smithsonian — Search results.",
     "baseUrl": "https://api.si.edu",
     "docsUrl": "https://edan.si.edu/openaccess/apidocs/",
     "auth": "none",
@@ -621,7 +621,7 @@
       "culture",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Search results. A snapshot from a search or listing."
   },
   {
     "id": "europeana",
@@ -641,13 +641,13 @@
       "culture",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — book search results. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Book search results. A snapshot from a search or listing."
   },
   {
     "id": "deezer",
     "name": "Deezer",
     "category": "Music",
-    "description": "Deezer — Deezer records from the music API.",
+    "description": "Deezer — Deezer data.",
     "baseUrl": "https://api.deezer.com",
     "docsUrl": "https://developers.deezer.com/api",
     "auth": "none",
@@ -661,13 +661,13 @@
       "media",
       "trending"
     ],
-    "dataSummary": "Sample link: a starter set of records — Deezer records from the music API. Point-in-time snapshot."
+    "dataSummary": "Deezer data. A snapshot from right now."
   },
   {
     "id": "musicbrainz",
     "name": "MusicBrainz",
     "category": "Music",
-    "description": "MusicBrainz — Music results for “beatles”.",
+    "description": "MusicBrainz — Results for “beatles”.",
     "baseUrl": "https://musicbrainz.org",
     "docsUrl": "https://musicbrainz.org/doc/MusicBrainz_API",
     "auth": "none",
@@ -681,13 +681,13 @@
       "search",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — music results for “beatles”. Point-in-time snapshot."
+    "dataSummary": "Results for “beatles”. A snapshot from right now."
   },
   {
     "id": "lyrics-ovh",
     "name": "Lyrics.ovh",
     "category": "Music",
-    "description": "Lyrics.ovh — Lyrics.ovh records from the music API.",
+    "description": "Lyrics.ovh — Lyrics.ovh data.",
     "baseUrl": "https://api.lyrics.ovh",
     "docsUrl": "https://lyricsovh.docs.apiary.io/",
     "auth": "none",
@@ -701,13 +701,13 @@
       "media",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Lyrics.ovh records from the music API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Lyrics.ovh data. A snapshot from a search or listing."
   },
   {
     "id": "open-trivia-db",
     "name": "Open Trivia DB",
     "category": "Games",
-    "description": "Open Trivia DB — Open Trivia DB records from the games API.",
+    "description": "Open Trivia DB — Open trivia db data.",
     "baseUrl": "https://opentdb.com",
     "docsUrl": "https://opentdb.com/api_config.php",
     "auth": "none",
@@ -721,13 +721,13 @@
       "fun",
       "collections"
     ],
-    "dataSummary": "Sample link: 5 records — Open Trivia DB records from the games API. Point-in-time snapshot."
+    "dataSummary": "5 entries — open trivia db data. A snapshot from right now."
   },
   {
     "id": "free-chess",
     "name": "Free Chess",
     "category": "Games",
-    "description": "Free Chess — Free Chess records from the games API.",
+    "description": "Free Chess — Free chess data.",
     "baseUrl": "https://chess-api.com",
     "docsUrl": "https://chess-api.com/",
     "auth": "none",
@@ -741,13 +741,13 @@
       "fun",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — Free Chess records from the games API. Point-in-time snapshot."
+    "dataSummary": "Free chess data. A snapshot from right now."
   },
   {
     "id": "tcgdex",
     "name": "TCGdex",
     "category": "Games",
-    "description": "TCGdex — TCGdex records from the games API.",
+    "description": "TCGdex — Tcgdex data.",
     "baseUrl": "https://api.tcgdex.net",
     "docsUrl": "https://www.tcgdex.net/",
     "auth": "none",
@@ -761,13 +761,13 @@
       "fun",
       "collections"
     ],
-    "dataSummary": "Sample link: 5 records — TCGdex records from the games API. Point-in-time snapshot."
+    "dataSummary": "5 entries — tcgdex data. A snapshot from right now."
   },
   {
     "id": "marvel",
     "name": "Marvel",
     "category": "Games",
-    "description": "Marvel — Marvel records from the games API.",
+    "description": "Marvel — Marvel data.",
     "baseUrl": "https://gateway.marvel.com",
     "docsUrl": "https://developer.marvel.com/",
     "auth": "free-key",
@@ -781,13 +781,13 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: a starter set of records — Marvel records from the games API. Point-in-time snapshot."
+    "dataSummary": "Marvel data. A snapshot from right now."
   },
   {
     "id": "swapi",
     "name": "SWAPI",
     "category": "Film",
-    "description": "SWAPI — One character/person record (Star Wars API).",
+    "description": "SWAPI — One Star Wars character.",
     "baseUrl": "https://swapi.dev",
     "docsUrl": "https://swapi.dev/",
     "auth": "none",
@@ -801,13 +801,13 @@
       "fun",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — one character/person record (Star Wars API). Point-in-time snapshot."
+    "dataSummary": "One Star Wars character. A snapshot from right now."
   },
   {
     "id": "stapi",
     "name": "STAPI",
     "category": "Film",
-    "description": "STAPI — Search results for the query in the link.",
+    "description": "STAPI — Search results.",
     "baseUrl": "https://stapi.co",
     "docsUrl": "https://stapi.co/",
     "auth": "none",
@@ -821,13 +821,13 @@
       "fun",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "tvmaze",
     "name": "TVMaze",
     "category": "Entertainment",
-    "description": "TVMaze — TVMaze records from the entertainment API.",
+    "description": "TVMaze — Tvmaze data.",
     "baseUrl": "https://api.tvmaze.com",
     "docsUrl": "https://www.tvmaze.com/api",
     "auth": "none",
@@ -841,13 +841,13 @@
       "media",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — TVMaze records from the entertainment API. Point-in-time snapshot."
+    "dataSummary": "Tvmaze data. A snapshot from right now."
   },
   {
     "id": "omdb",
     "name": "OMDb",
     "category": "Entertainment",
-    "description": "OMDb — OMDb records from the entertainment API.",
+    "description": "OMDb — Omdb data.",
     "baseUrl": "https://www.omdbapi.com",
     "docsUrl": "https://www.omdbapi.com/",
     "auth": "free-key",
@@ -861,13 +861,13 @@
       "media",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — OMDb records from the entertainment API. Point-in-time snapshot."
+    "dataSummary": "Omdb data. A snapshot from right now."
   },
   {
     "id": "chronicling-america",
     "name": "Chronicling America",
     "category": "News",
-    "description": "Chronicling America — News results for “chicago”.",
+    "description": "Chronicling America — Results for “chicago”.",
     "baseUrl": "https://chroniclingamerica.loc.gov",
     "docsUrl": "https://chroniclingamerica.loc.gov/about/api/",
     "auth": "none",
@@ -881,13 +881,13 @@
       "culture",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — news results for “chicago”. Point-in-time snapshot."
+    "dataSummary": "Results for “chicago”. A snapshot from right now."
   },
   {
     "id": "gnews",
     "name": "GNews",
     "category": "News",
-    "description": "GNews — GNews records from the news API.",
+    "description": "GNews — Gnews data.",
     "baseUrl": "https://gnews.io",
     "docsUrl": "https://gnews.io/",
     "auth": "free-key",
@@ -901,13 +901,13 @@
       "trending",
       "social"
     ],
-    "dataSummary": "Sample link: 5 records — GNews records from the news API. Point-in-time snapshot."
+    "dataSummary": "5 entries — gnews data. A snapshot from right now."
   },
   {
     "id": "spaceflight-news",
     "name": "Spaceflight News",
     "category": "Science",
-    "description": "Spaceflight News — Spaceflight News records from the science API.",
+    "description": "Spaceflight News — Spaceflight news data.",
     "baseUrl": "https://api.spaceflightnewsapi.net",
     "docsUrl": "https://spaceflightnewsapi.net/",
     "auth": "none",
@@ -921,7 +921,7 @@
       "science",
       "trending"
     ],
-    "dataSummary": "Sample link: 5 records — Spaceflight News records from the science API. Point-in-time snapshot."
+    "dataSummary": "5 entries — spaceflight news data. A snapshot from right now."
   },
   {
     "id": "launch-library-2",
@@ -941,13 +941,13 @@
       "science",
       "time-series"
     ],
-    "dataSummary": "Sample link: 5 records — upcoming scheduled events. Near-term forecast / schedule."
+    "dataSummary": "5 entries — upcoming scheduled events. Looks ahead — forecast or schedule data."
   },
   {
     "id": "exoplanet-archive",
     "name": "Exoplanet Archive",
     "category": "Science",
-    "description": "Exoplanet Archive — Science results for “select top 5 pl_name from ps”.",
+    "description": "Exoplanet Archive — Results for “select top 5 pl_name from ps”.",
     "baseUrl": "https://exoplanetarchive.ipac.caltech.edu",
     "docsUrl": "https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html",
     "auth": "none",
@@ -961,13 +961,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — science results for “select top 5 pl_name from ps”. Point-in-time snapshot."
+    "dataSummary": "Results for “select top 5 pl_name from ps”. A snapshot from right now."
   },
   {
     "id": "numbers-api",
     "name": "Numbers API",
     "category": "Science",
-    "description": "Numbers API — Numbers API records from the science API.",
+    "description": "Numbers API — Numbers api data.",
     "baseUrl": "http://numbersapi.com",
     "docsUrl": "http://numbersapi.com/",
     "auth": "none",
@@ -981,13 +981,13 @@
       "fun",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — Numbers API records from the science API. Point-in-time snapshot."
+    "dataSummary": "Numbers api data. A snapshot from right now."
   },
   {
     "id": "usgs-water-services",
     "name": "USGS Water Services",
     "category": "Science",
-    "description": "USGS Water Services — Stream flow / water level readings over time.",
+    "description": "USGS Water Services — Stream flow and water level readings over time.",
     "baseUrl": "https://waterservices.usgs.gov",
     "docsUrl": "https://waterservices.usgs.gov/",
     "auth": "none",
@@ -1001,13 +1001,13 @@
       "science",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — stream flow / water level readings over time. Point-in-time snapshot."
+    "dataSummary": "Stream flow and water level readings over time. A snapshot from right now."
   },
   {
     "id": "noaa-tides",
     "name": "NOAA Tides",
     "category": "Weather",
-    "description": "NOAA Tides — Tide or current predictions for the station/date in the link.",
+    "description": "NOAA Tides — Tide or current predictions for one station and date.",
     "baseUrl": "https://api.tidesandcurrents.noaa.gov",
     "docsUrl": "https://api.tidesandcurrents.noaa.gov/api/",
     "auth": "none",
@@ -1021,13 +1021,13 @@
       "geo",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — tide or current predictions for the station/date in the link. Live or very recent data."
+    "dataSummary": "Tide or current predictions for one station and date. Updates frequently — near real-time."
   },
   {
     "id": "weatherapi",
     "name": "WeatherAPI",
     "category": "Weather",
-    "description": "WeatherAPI — Weather results for “London”.",
+    "description": "WeatherAPI — Results for “London”.",
     "baseUrl": "https://api.weatherapi.com",
     "docsUrl": "https://www.weatherapi.com/docs/",
     "auth": "free-key",
@@ -1041,13 +1041,13 @@
       "geo",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — weather results for “London”. Live or very recent data."
+    "dataSummary": "Results for “London”. Updates frequently — near real-time."
   },
   {
     "id": "7timer",
     "name": "7Timer!",
     "category": "Weather",
-    "description": "7Timer! — 7Timer! records from the weather API.",
+    "description": "7Timer! — 7timer! data.",
     "baseUrl": "http://www.7timer.info",
     "docsUrl": "http://www.7timer.info/doc.php",
     "auth": "none",
@@ -1061,13 +1061,13 @@
       "geo",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — 7Timer! records from the weather API. Point-in-time snapshot."
+    "dataSummary": "7timer! data. A snapshot from right now."
   },
   {
     "id": "open-aq",
     "name": "Open AQ",
     "category": "Environment",
-    "description": "Open AQ — Open AQ records from the environment API.",
+    "description": "Open AQ — Open aq data.",
     "baseUrl": "https://api.openaq.org",
     "docsUrl": "https://docs.openaq.org/",
     "auth": "none",
@@ -1081,13 +1081,13 @@
       "science",
       "maps"
     ],
-    "dataSummary": "Sample link: 5 records — Open AQ records from the environment API. Point-in-time snapshot."
+    "dataSummary": "5 entries — open aq data. A snapshot from right now."
   },
   {
     "id": "airvisual",
     "name": "AirVisual",
     "category": "Environment",
-    "description": "AirVisual — AirVisual records from the environment API.",
+    "description": "AirVisual — Airvisual data.",
     "baseUrl": "https://api.airvisual.com",
     "docsUrl": "https://www.iqair.com/air-pollution-data-api",
     "auth": "free-key",
@@ -1101,7 +1101,7 @@
       "health",
       "geo"
     ],
-    "dataSummary": "Sample link: a starter set of records — AirVisual records from the environment API. Point-in-time snapshot."
+    "dataSummary": "Airvisual data. A snapshot from right now."
   },
   {
     "id": "carbon-interface",
@@ -1121,7 +1121,7 @@
       "science",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — Carbon Interface records from the environment API. Point-in-time snapshot."
+    "dataSummary": "Carbon interface data. A snapshot from right now."
   },
   {
     "id": "climatiq",
@@ -1141,13 +1141,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Climatiq records from the environment API. Point-in-time snapshot."
+    "dataSummary": "Climatiq data. A snapshot from right now."
   },
   {
     "id": "openstreetmap-nominatim",
     "name": "OpenStreetMap Nominatim",
     "category": "Geocoding",
-    "description": "OpenStreetMap Nominatim — Search results for the query in the link.",
+    "description": "OpenStreetMap Nominatim — Search results.",
     "baseUrl": "https://nominatim.openstreetmap.org",
     "docsUrl": "https://nominatim.org/release-docs/develop/api/Overview/",
     "auth": "none",
@@ -1161,13 +1161,13 @@
       "geo",
       "maps"
     ],
-    "dataSummary": "Sample link: 5 records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "geonames",
     "name": "GeoNames",
     "category": "Geocoding",
-    "description": "GeoNames — Geocoding results for “london”.",
+    "description": "GeoNames — Results for “london”.",
     "baseUrl": "http://api.geonames.org",
     "docsUrl": "https://www.geonames.org/export/web-services.html",
     "auth": "free-key",
@@ -1181,13 +1181,13 @@
       "geo",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — geocoding results for “london”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Results for “london”. A snapshot from a search or listing."
   },
   {
     "id": "rest-countries-v1",
     "name": "REST Countries v1",
     "category": "Geography",
-    "description": "REST Countries v1 — Country profiles (population, borders, currencies).",
+    "description": "REST Countries v1 — Country profiles — population, borders, currencies, flags.",
     "baseUrl": "https://restcountries.com",
     "docsUrl": "https://restcountries.com/",
     "auth": "none",
@@ -1201,7 +1201,7 @@
       "geo",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — country profiles (population, borders, currencies). Point-in-time snapshot."
+    "dataSummary": "Country profiles — population, borders, currencies, flags. A snapshot from right now."
   },
   {
     "id": "world-bank",
@@ -1223,7 +1223,7 @@
       "comparison",
       "charts"
     ],
-    "dataSummary": "Sample link: 5 records — poverty headcount ratio (international poverty line). Annual time series — each country includes values across many years."
+    "dataSummary": "5 entries — poverty headcount ratio (international poverty line). Year-by-year history for each country."
   },
   {
     "id": "data-gov-ckan",
@@ -1243,7 +1243,7 @@
       "search",
       "education"
     ],
-    "dataSummary": "Sample link: 5 records — US government open dataset search results. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — US government open dataset search results. A snapshot from a search or listing."
   },
   {
     "id": "fbi-wanted",
@@ -1263,13 +1263,13 @@
       "search",
       "alerts"
     ],
-    "dataSummary": "Sample link: a starter set of records — FBI wanted list entries. Point-in-time snapshot from a search or listing."
+    "dataSummary": "FBI wanted list entries. A snapshot from a search or listing."
   },
   {
     "id": "uk-police",
     "name": "UK Police",
     "category": "Government",
-    "description": "UK Police — Street-level crime reports for the coordinates/month in the link.",
+    "description": "UK Police — Street-level crime reports for one area and month.",
     "baseUrl": "https://data.police.uk",
     "docsUrl": "https://data.police.uk/docs/",
     "auth": "none",
@@ -1283,13 +1283,13 @@
       "geo",
       "maps"
     ],
-    "dataSummary": "Sample link: a starter set of records — street-level crime reports for the coordinates/month in the link. Point-in-time snapshot."
+    "dataSummary": "Street-level crime reports for one area and month. A snapshot from right now."
   },
   {
     "id": "opensanctions",
     "name": "OpenSanctions",
     "category": "Government",
-    "description": "OpenSanctions — Government results for “smith”.",
+    "description": "OpenSanctions — Results for “smith”.",
     "baseUrl": "https://api.opensanctions.org",
     "docsUrl": "https://www.opensanctions.org/docs/api/",
     "auth": "none",
@@ -1303,13 +1303,13 @@
       "search",
       "alerts"
     ],
-    "dataSummary": "Sample link: 5 records — government results for “smith”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — results for “smith”. A snapshot from a search or listing."
   },
   {
     "id": "congress-gov",
     "name": "Congress.gov",
     "category": "Government",
-    "description": "Congress.gov — Congress.gov records from the government API.",
+    "description": "Congress.gov — Congress.gov data.",
     "baseUrl": "https://api.congress.gov",
     "docsUrl": "https://api.congress.gov/",
     "auth": "free-key",
@@ -1323,13 +1323,13 @@
       "education",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — Congress.gov records from the government API. Point-in-time snapshot."
+    "dataSummary": "5 entries — congress.gov data. A snapshot from right now."
   },
   {
     "id": "pendleton",
     "name": "Pendleton",
     "category": "Government",
-    "description": "Pendleton — Pendleton records from the government API.",
+    "description": "Pendleton — Pendleton data.",
     "baseUrl": "https://api.census.gov",
     "docsUrl": "https://www.census.gov/data/developers/data-sets.html",
     "auth": "free-key",
@@ -1343,13 +1343,13 @@
       "geo",
       "charts"
     ],
-    "dataSummary": "Sample link: a starter set of records — Pendleton records from the government API. Time series — values over multiple dates in each record."
+    "dataSummary": "Pendleton data. Tracks change over time."
   },
   {
     "id": "opencorporates",
     "name": "OpenCorporates",
     "category": "Business",
-    "description": "OpenCorporates — Search results for the query in the link.",
+    "description": "OpenCorporates — Search results.",
     "baseUrl": "https://api.opencorporates.com",
     "docsUrl": "https://api.opencorporates.com/",
     "auth": "free-key",
@@ -1363,13 +1363,13 @@
       "search",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Search results. A snapshot from a search or listing."
   },
   {
     "id": "companies-house-uk",
     "name": "Companies House UK",
     "category": "Business",
-    "description": "Companies House UK — Business results for “design”.",
+    "description": "Companies House UK — Results for “design”.",
     "baseUrl": "https://api.company-information.service.gov.uk",
     "docsUrl": "https://developer.company-information.service.gov.uk/",
     "auth": "free-key",
@@ -1383,7 +1383,7 @@
       "search",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — business results for “design”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Results for “design”. A snapshot from a search or listing."
   },
   {
     "id": "frankfurter",
@@ -1403,7 +1403,7 @@
       "finance",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — the latest available readings. Live or very recent data."
+    "dataSummary": "The latest available readings. Updates frequently — near real-time."
   },
   {
     "id": "exchangerate-api",
@@ -1423,13 +1423,13 @@
       "finance",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — the latest available readings. Live or very recent data."
+    "dataSummary": "The latest available readings. Updates frequently — near real-time."
   },
   {
     "id": "alpha-vantage",
     "name": "Alpha Vantage",
     "category": "Finance",
-    "description": "Alpha Vantage — Alpha Vantage records from the finance API.",
+    "description": "Alpha Vantage — Alpha vantage data.",
     "baseUrl": "https://www.alphavantage.co",
     "docsUrl": "https://www.alphavantage.co/documentation/",
     "auth": "free-key",
@@ -1443,13 +1443,13 @@
       "finance",
       "trending"
     ],
-    "dataSummary": "Sample link: a starter set of records — Alpha Vantage records from the finance API. Point-in-time snapshot."
+    "dataSummary": "Alpha vantage data. A snapshot from right now."
   },
   {
     "id": "fred",
     "name": "FRED",
     "category": "Finance",
-    "description": "FRED — FRED records from the finance API.",
+    "description": "FRED — Fred data.",
     "baseUrl": "https://api.stlouisfed.org",
     "docsUrl": "https://fred.stlouisfed.org/docs/api/fred/",
     "auth": "free-key",
@@ -1463,13 +1463,13 @@
       "finance",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — FRED records from the finance API. Time series — values over multiple dates in each record."
+    "dataSummary": "Fred data. Tracks change over time."
   },
   {
     "id": "iex-cloud",
     "name": "IEX Cloud",
     "category": "Finance",
-    "description": "IEX Cloud — IEX Cloud records from the finance API.",
+    "description": "IEX Cloud — Iex cloud data.",
     "baseUrl": "https://cloud.iexapis.com",
     "docsUrl": "https://iexcloud.io/docs/api/",
     "auth": "free-key",
@@ -1483,7 +1483,7 @@
       "finance",
       "ranking"
     ],
-    "dataSummary": "Sample link: a starter set of records — IEX Cloud records from the finance API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Iex cloud data. A snapshot from a search or listing."
   },
   {
     "id": "binance-public",
@@ -1503,13 +1503,13 @@
       "finance",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — live market prices. Point-in-time snapshot."
+    "dataSummary": "Live market prices. A snapshot from right now."
   },
   {
     "id": "coincap",
     "name": "CoinCap",
     "category": "Cryptocurrency",
-    "description": "CoinCap — CoinCap records from the cryptocurrency API.",
+    "description": "CoinCap — Coincap data.",
     "baseUrl": "https://api.coincap.io",
     "docsUrl": "https://docs.coincap.io/",
     "auth": "none",
@@ -1523,13 +1523,13 @@
       "finance",
       "trending"
     ],
-    "dataSummary": "Sample link: 5 records — CoinCap records from the cryptocurrency API. Point-in-time snapshot."
+    "dataSummary": "5 entries — coincap data. A snapshot from right now."
   },
   {
     "id": "blockchair",
     "name": "Blockchair",
     "category": "Blockchain",
-    "description": "Blockchair — Blockchair records from the blockchain API.",
+    "description": "Blockchair — Blockchair data.",
     "baseUrl": "https://api.blockchair.com",
     "docsUrl": "https://blockchair.com/api/docs",
     "auth": "none",
@@ -1543,13 +1543,13 @@
       "finance",
       "science"
     ],
-    "dataSummary": "Sample link: a starter set of records — Blockchair records from the blockchain API. Point-in-time snapshot."
+    "dataSummary": "Blockchair data. A snapshot from right now."
   },
   {
     "id": "etherscan",
     "name": "Etherscan",
     "category": "Blockchain",
-    "description": "Etherscan — Etherscan records from the blockchain API.",
+    "description": "Etherscan — Etherscan data.",
     "baseUrl": "https://api.etherscan.io",
     "docsUrl": "https://docs.etherscan.io/",
     "auth": "free-key",
@@ -1563,13 +1563,13 @@
       "finance",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — Etherscan records from the blockchain API. Point-in-time snapshot."
+    "dataSummary": "Etherscan data. A snapshot from right now."
   },
   {
     "id": "openfda-drugs",
     "name": "OpenFDA Drugs",
     "category": "Health",
-    "description": "OpenFDA Drugs — OpenFDA Drugs records from the health API.",
+    "description": "OpenFDA Drugs — Openfda drugs data.",
     "baseUrl": "https://api.fda.gov",
     "docsUrl": "https://open.fda.gov/apis/drug/",
     "auth": "none",
@@ -1583,13 +1583,13 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — OpenFDA Drugs records from the health API. Point-in-time snapshot."
+    "dataSummary": "5 entries — openfda drugs data. A snapshot from right now."
   },
   {
     "id": "disease-sh",
     "name": "Disease.sh",
     "category": "Health",
-    "description": "Disease.sh — Country-level stats for the country in the link.",
+    "description": "Disease.sh — Country-level stats for one country.",
     "baseUrl": "https://disease.sh",
     "docsUrl": "https://disease.sh/docs/",
     "auth": "none",
@@ -1603,13 +1603,13 @@
       "health",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — country-level stats for the country in the link. Point-in-time snapshot."
+    "dataSummary": "Country-level stats for one country. A snapshot from right now."
   },
   {
     "id": "nutritionix",
     "name": "Nutritionix",
     "category": "Health",
-    "description": "Nutritionix — Health results for “apple”.",
+    "description": "Nutritionix — Results for “apple”.",
     "baseUrl": "https://trackapi.nutritionix.com",
     "docsUrl": "https://developer.nutritionix.com/docs/v2",
     "auth": "free-key",
@@ -1623,13 +1623,13 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — health results for “apple”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Results for “apple”. A snapshot from a search or listing."
   },
   {
     "id": "open-disease",
     "name": "Open Disease",
     "category": "Health",
-    "description": "Open Disease — Historical time-series values.",
+    "description": "Open Disease — Historical values over time.",
     "baseUrl": "https://disease.sh",
     "docsUrl": "https://disease.sh/",
     "auth": "none",
@@ -1643,13 +1643,13 @@
       "health",
       "charts"
     ],
-    "dataSummary": "Sample link: a starter set of records — historical time-series values. Time series — values over multiple dates in each record."
+    "dataSummary": "Historical values over time. Tracks change over time."
   },
   {
     "id": "rxnorm",
     "name": "RxNorm",
     "category": "Health",
-    "description": "RxNorm — RxNorm records from the health API.",
+    "description": "RxNorm — Rxnorm data.",
     "baseUrl": "https://rxnav.nlm.nih.gov",
     "docsUrl": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
     "auth": "none",
@@ -1663,13 +1663,13 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — RxNorm records from the health API. Point-in-time snapshot."
+    "dataSummary": "Rxnorm data. A snapshot from right now."
   },
   {
     "id": "basketball-data",
     "name": "Basketball Data",
     "category": "Sports",
-    "description": "Basketball Data — Basketball Data records from the sports API.",
+    "description": "Basketball Data — Basketball data data.",
     "baseUrl": "https://api.balldontlie.io",
     "docsUrl": "https://www.balldontlie.io/",
     "auth": "none",
@@ -1683,13 +1683,13 @@
       "fun",
       "ranking"
     ],
-    "dataSummary": "Sample link: 5 records — Basketball Data records from the sports API. Point-in-time snapshot."
+    "dataSummary": "5 entries — basketball data data. A snapshot from right now."
   },
   {
     "id": "thesportsdb",
     "name": "TheSportsDB",
     "category": "Sports",
-    "description": "TheSportsDB — TheSportsDB records from the sports API.",
+    "description": "TheSportsDB — Thesportsdb data.",
     "baseUrl": "https://www.thesportsdb.com",
     "docsUrl": "https://www.thesportsdb.com/api.php",
     "auth": "free-key",
@@ -1703,13 +1703,13 @@
       "fun",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — TheSportsDB records from the sports API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Thesportsdb data. A snapshot from a search or listing."
   },
   {
     "id": "football-data-org",
     "name": "Football-Data.org",
     "category": "Sports",
-    "description": "Football-Data.org — Football-Data.org records from the sports API.",
+    "description": "Football-Data.org — Football-data.org data.",
     "baseUrl": "https://api.football-data.org",
     "docsUrl": "https://www.football-data.org/documentation/quickstart",
     "auth": "free-key",
@@ -1723,13 +1723,13 @@
       "fun",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — Football-Data.org records from the sports API. Point-in-time snapshot."
+    "dataSummary": "Football-data.org data. A snapshot from right now."
   },
   {
     "id": "openligadb",
     "name": "OpenLigaDB",
     "category": "Sports",
-    "description": "OpenLigaDB — OpenLigaDB records from the sports API.",
+    "description": "OpenLigaDB — Openligadb data.",
     "baseUrl": "https://api.openligadb.de",
     "docsUrl": "https://api.openligadb.de/",
     "auth": "none",
@@ -1743,13 +1743,13 @@
       "fun",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenLigaDB records from the sports API. Point-in-time snapshot."
+    "dataSummary": "Openligadb data. A snapshot from right now."
   },
   {
     "id": "strava",
     "name": "Strava",
     "category": "Sports",
-    "description": "Strava — Strava records from the sports API.",
+    "description": "Strava — Strava data.",
     "baseUrl": "https://www.strava.com",
     "docsUrl": "https://developers.strava.com/",
     "auth": "free-key",
@@ -1763,13 +1763,13 @@
       "geo",
       "maps"
     ],
-    "dataSummary": "Sample link: a starter set of records — Strava records from the sports API. Point-in-time snapshot."
+    "dataSummary": "Strava data. A snapshot from right now."
   },
   {
     "id": "transport-for-london",
     "name": "Transport for London",
     "category": "Transportation",
-    "description": "Transport for London — Transport for London records from the transportation API.",
+    "description": "Transport for London — Transport for london data.",
     "baseUrl": "https://api.tfl.gov.uk",
     "docsUrl": "https://api.tfl.gov.uk/",
     "auth": "free-key",
@@ -1783,13 +1783,13 @@
       "transit",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — Transport for London records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Transport for london data. A snapshot from right now."
   },
   {
     "id": "mbta",
     "name": "MBTA",
     "category": "Transportation",
-    "description": "MBTA — MBTA records from the transportation API.",
+    "description": "MBTA — Mbta data.",
     "baseUrl": "https://api-v3.mbta.com",
     "docsUrl": "https://www.mbta.com/developers/v3-api",
     "auth": "none",
@@ -1803,13 +1803,13 @@
       "transit",
       "geo"
     ],
-    "dataSummary": "Sample link: a starter set of records — MBTA records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Mbta data. A snapshot from right now."
   },
   {
     "id": "bart",
     "name": "BART",
     "category": "Transportation",
-    "description": "BART — BART records from the transportation API.",
+    "description": "BART — Bart data.",
     "baseUrl": "https://api.bart.gov",
     "docsUrl": "https://api.bart.gov/docs/overview/index.aspx",
     "auth": "free-key",
@@ -1823,13 +1823,13 @@
       "transit",
       "alerts"
     ],
-    "dataSummary": "Sample link: a starter set of records — BART records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Bart data. A snapshot from right now."
   },
   {
     "id": "transitland",
     "name": "TransitLand",
     "category": "Transportation",
-    "description": "TransitLand — TransitLand records from the transportation API.",
+    "description": "TransitLand — Transitland data.",
     "baseUrl": "https://transit.land",
     "docsUrl": "https://www.transit.land/documentation/",
     "auth": "none",
@@ -1843,13 +1843,13 @@
       "transit",
       "geo"
     ],
-    "dataSummary": "Sample link: 5 records — TransitLand records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "5 entries — transitland data. A snapshot from right now."
   },
   {
     "id": "aviationstack",
     "name": "Aviationstack",
     "category": "Transportation",
-    "description": "Aviationstack — Aviationstack records from the transportation API.",
+    "description": "Aviationstack — Aviationstack data.",
     "baseUrl": "http://api.aviationstack.com",
     "docsUrl": "https://aviationstack.com/documentation",
     "auth": "free-key",
@@ -1863,13 +1863,13 @@
       "transit",
       "real-time"
     ],
-    "dataSummary": "Sample link: 5 records — Aviationstack records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "5 entries — aviationstack data. A snapshot from right now."
   },
   {
     "id": "opensky-network",
     "name": "OpenSky Network",
     "category": "Transportation",
-    "description": "OpenSky Network — OpenSky Network records from the transportation API.",
+    "description": "OpenSky Network — Opensky network data.",
     "baseUrl": "https://opensky-network.org",
     "docsUrl": "https://openskynetwork.github.io/opensky-api/",
     "auth": "none",
@@ -1883,13 +1883,13 @@
       "transit",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenSky Network records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Opensky network data. A snapshot from right now."
   },
   {
     "id": "usgs-elevation",
     "name": "USGS Elevation",
     "category": "Geography",
-    "description": "USGS Elevation — USGS Elevation records from the geography API.",
+    "description": "USGS Elevation — Usgs elevation data.",
     "baseUrl": "https://nationalmap.gov",
     "docsUrl": "https://www.usgs.gov/centers/eros/science/3dep",
     "auth": "none",
@@ -1903,13 +1903,13 @@
       "geo",
       "science"
     ],
-    "dataSummary": "Sample link: a starter set of records — USGS Elevation records from the geography API. Point-in-time snapshot."
+    "dataSummary": "Usgs elevation data. A snapshot from right now."
   },
   {
     "id": "nasa-apod",
     "name": "NASA APOD",
     "category": "Science",
-    "description": "NASA APOD — NASA APOD records from the science API.",
+    "description": "NASA APOD — Nasa apod data.",
     "baseUrl": "https://api.nasa.gov",
     "docsUrl": "https://api.nasa.gov/",
     "auth": "free-key",
@@ -1923,13 +1923,13 @@
       "science",
       "media"
     ],
-    "dataSummary": "Sample link: a starter set of records — NASA APOD records from the science API. Point-in-time snapshot."
+    "dataSummary": "Nasa apod data. A snapshot from right now."
   },
   {
     "id": "nasa-neows",
     "name": "NASA NeoWs",
     "category": "Science",
-    "description": "NASA NeoWs — NASA NeoWs records from the science API.",
+    "description": "NASA NeoWs — Nasa neows data.",
     "baseUrl": "https://api.nasa.gov",
     "docsUrl": "https://api.nasa.gov/",
     "auth": "free-key",
@@ -1943,13 +1943,13 @@
       "science",
       "alerts"
     ],
-    "dataSummary": "Sample link: a starter set of records — NASA NeoWs records from the science API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Nasa neows data. A snapshot from a search or listing."
   },
   {
     "id": "inspire",
     "name": "Inspire",
     "category": "Science",
-    "description": "Inspire — Science results for “quantum”.",
+    "description": "Inspire — Results for “quantum”.",
     "baseUrl": "https://inspirehep.net",
     "docsUrl": "https://inspirehep.net/",
     "auth": "none",
@@ -1963,13 +1963,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — science results for “quantum”. Point-in-time snapshot."
+    "dataSummary": "5 entries — results for “quantum”. A snapshot from right now."
   },
   {
     "id": "crossref",
     "name": "CrossRef",
     "category": "Science",
-    "description": "CrossRef — Science results for “machine learning”.",
+    "description": "CrossRef — Results for “machine learning”.",
     "baseUrl": "https://api.crossref.org",
     "docsUrl": "https://api.crossref.org/",
     "auth": "none",
@@ -1983,13 +1983,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — science results for “machine learning”. Point-in-time snapshot."
+    "dataSummary": "5 entries — results for “machine learning”. A snapshot from right now."
   },
   {
     "id": "openalex",
     "name": "OpenAlex",
     "category": "Science",
-    "description": "OpenAlex — Science results for “climate”.",
+    "description": "OpenAlex — Results for “climate”.",
     "baseUrl": "https://api.openalex.org",
     "docsUrl": "https://docs.openalex.org/",
     "auth": "none",
@@ -2003,13 +2003,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — science results for “climate”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — results for “climate”. A snapshot from a search or listing."
   },
   {
     "id": "pubmed",
     "name": "PubMed",
     "category": "Health",
-    "description": "PubMed — PubMed records from the health API.",
+    "description": "PubMed — Pubmed data.",
     "baseUrl": "https://eutils.ncbi.nlm.nih.gov",
     "docsUrl": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
     "auth": "none",
@@ -2023,7 +2023,7 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — PubMed records from the health API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Pubmed data. A snapshot from a search or listing."
   },
   {
     "id": "clinicaltrials-gov",
@@ -2043,7 +2043,7 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — clinical trial study records. Point-in-time snapshot."
+    "dataSummary": "5 entries — clinical trial study records. A snapshot from right now."
   },
   {
     "id": "open-targets",
@@ -2063,13 +2063,13 @@
       "health",
       "science"
     ],
-    "dataSummary": "Sample link: a starter set of records — country-level stats for the country in the link. Point-in-time snapshot."
+    "dataSummary": "Country-level stats for one country. A snapshot from right now."
   },
   {
     "id": "gbif-species",
     "name": "GBIF Species",
     "category": "Science",
-    "description": "GBIF Species — Search results for the query in the link.",
+    "description": "GBIF Species — Search results.",
     "baseUrl": "https://api.gbif.org",
     "docsUrl": "https://www.gbif.org/developer/species",
     "auth": "none",
@@ -2083,13 +2083,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "inaturalist",
     "name": "iNaturalist",
     "category": "Science",
-    "description": "iNaturalist — INaturalist records from the science API.",
+    "description": "iNaturalist — Inaturalist data.",
     "baseUrl": "https://api.inaturalist.org",
     "docsUrl": "https://api.inaturalist.org/v1/docs/",
     "auth": "none",
@@ -2103,13 +2103,13 @@
       "science",
       "geo"
     ],
-    "dataSummary": "Sample link: 5 records — iNaturalist records from the science API. Time series — values over multiple dates in each record."
+    "dataSummary": "5 entries — inaturalist data. Tracks change over time."
   },
   {
     "id": "eol",
     "name": "EOL",
     "category": "Science",
-    "description": "EOL — Search results for the query in the link.",
+    "description": "EOL — Search results.",
     "baseUrl": "https://v3.globiz.org",
     "docsUrl": "https://eol.org/docs/what-is-eol/data-services",
     "auth": "none",
@@ -2123,13 +2123,13 @@
       "science",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Search results. A snapshot from a search or listing."
   },
   {
     "id": "plantnet",
     "name": "PlantNet",
     "category": "Science",
-    "description": "PlantNet — PlantNet records from the science API.",
+    "description": "PlantNet — Plantnet data.",
     "baseUrl": "https://my-api.plantnet.org",
     "docsUrl": "https://my.plantnet.org/",
     "auth": "free-key",
@@ -2143,13 +2143,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — PlantNet records from the science API. Point-in-time snapshot."
+    "dataSummary": "Plantnet data. A snapshot from right now."
   },
   {
     "id": "open-topo-data",
     "name": "Open Topo Data",
     "category": "Geography",
-    "description": "Open Topo Data — Open Topo Data records from the geography API.",
+    "description": "Open Topo Data — Open topo data data.",
     "baseUrl": "https://api.opentopodata.org",
     "docsUrl": "https://www.opentopodata.org/",
     "auth": "none",
@@ -2163,13 +2163,13 @@
       "geo",
       "maps"
     ],
-    "dataSummary": "Sample link: a starter set of records — Open Topo Data records from the geography API. Point-in-time snapshot."
+    "dataSummary": "Open topo data data. A snapshot from right now."
   },
   {
     "id": "sunrise-sunset",
     "name": "Sunrise Sunset",
     "category": "Weather",
-    "description": "Sunrise Sunset — Sunrise Sunset records from the weather API.",
+    "description": "Sunrise Sunset — Sunrise sunset data.",
     "baseUrl": "https://api.sunrise-sunset.org",
     "docsUrl": "https://sunrise-sunset.org/api",
     "auth": "none",
@@ -2183,13 +2183,13 @@
       "geo",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — Sunrise Sunset records from the weather API. Point-in-time snapshot."
+    "dataSummary": "Sunrise sunset data. A snapshot from right now."
   },
   {
     "id": "ip-geolocation",
     "name": "IP Geolocation",
     "category": "Geocoding",
-    "description": "IP Geolocation — IP Geolocation records from the geocoding API.",
+    "description": "IP Geolocation — Ip geolocation data.",
     "baseUrl": "http://ip-api.com",
     "docsUrl": "https://ip-api.com/docs",
     "auth": "none",
@@ -2203,13 +2203,13 @@
       "geo",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — IP Geolocation records from the geocoding API. Point-in-time snapshot."
+    "dataSummary": "Ip geolocation data. A snapshot from right now."
   },
   {
     "id": "zippopotam",
     "name": "Zippopotam",
     "category": "Geography",
-    "description": "Zippopotam — Zippopotam records from the geography API.",
+    "description": "Zippopotam — Zippopotam data.",
     "baseUrl": "https://api.zippopotam.us",
     "docsUrl": "https://www.zippopotam.us/",
     "auth": "none",
@@ -2223,13 +2223,13 @@
       "geo",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — Zippopotam records from the geography API. Point-in-time snapshot."
+    "dataSummary": "Zippopotam data. A snapshot from right now."
   },
   {
     "id": "rest-countries-flags",
     "name": "Rest Countries Flags",
     "category": "Geography",
-    "description": "Rest Countries Flags — Rest Countries Flags records from the geography API.",
+    "description": "Rest Countries Flags — Rest countries flags data.",
     "baseUrl": "https://flagcdn.com",
     "docsUrl": "https://flagcdn.com/",
     "auth": "none",
@@ -2243,13 +2243,13 @@
       "media",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — Rest Countries Flags records from the geography API. Point-in-time snapshot."
+    "dataSummary": "Rest countries flags data. A snapshot from right now."
   },
   {
     "id": "universities-list",
     "name": "Universities List",
     "category": "Education",
-    "description": "Universities List — Search results for the query in the link.",
+    "description": "Universities List — Search results.",
     "baseUrl": "http://universities.hipolabs.com",
     "docsUrl": "http://universities.hipolabs.com/",
     "auth": "none",
@@ -2263,13 +2263,13 @@
       "education",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Search results. A snapshot from a search or listing."
   },
   {
     "id": "open-library-authors",
     "name": "Open Library Authors",
     "category": "Books",
-    "description": "Open Library Authors — Open Library Authors records from the books API.",
+    "description": "Open Library Authors — Open library authors data.",
     "baseUrl": "https://openlibrary.org",
     "docsUrl": "https://openlibrary.org/developers/api",
     "auth": "none",
@@ -2283,13 +2283,13 @@
       "education",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Open Library Authors records from the books API. Point-in-time snapshot."
+    "dataSummary": "Open library authors data. A snapshot from right now."
   },
   {
     "id": "google-books",
     "name": "Google Books",
     "category": "Books",
-    "description": "Google Books — Books results for “design”.",
+    "description": "Google Books — Results for “design”.",
     "baseUrl": "https://www.googleapis.com",
     "docsUrl": "https://developers.google.com/books",
     "auth": "free-key",
@@ -2303,13 +2303,13 @@
       "search",
       "media"
     ],
-    "dataSummary": "Sample link: a starter set of records — books results for “design”. Point-in-time snapshot."
+    "dataSummary": "Results for “design”. A snapshot from right now."
   },
   {
     "id": "poetrydb",
     "name": "PoetryDB",
     "category": "Books",
-    "description": "PoetryDB — PoetryDB records from the books API.",
+    "description": "PoetryDB — Poetrydb data.",
     "baseUrl": "https://poetrydb.org",
     "docsUrl": "https://github.com/thundercomb/poetrydb",
     "auth": "none",
@@ -2323,13 +2323,13 @@
       "culture",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — PoetryDB records from the books API. Point-in-time snapshot."
+    "dataSummary": "Poetrydb data. A snapshot from right now."
   },
   {
     "id": "quotable",
     "name": "Quotable",
     "category": "Social",
-    "description": "Quotable — One random record.",
+    "description": "Quotable — One random item.",
     "baseUrl": "https://dummyjson.com",
     "docsUrl": "https://dummyjson.com/docs/quotes",
     "auth": "none",
@@ -2343,13 +2343,13 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: 1 record — one random record. Point-in-time snapshot."
+    "dataSummary": "1 entry — one random item. A snapshot from right now."
   },
   {
     "id": "advice-slip",
     "name": "Advice Slip",
     "category": "Social",
-    "description": "Advice Slip — Advice Slip records from the social API.",
+    "description": "Advice Slip — Advice slip data.",
     "baseUrl": "https://api.adviceslip.com",
     "docsUrl": "https://api.adviceslip.com/",
     "auth": "none",
@@ -2363,7 +2363,7 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: a starter set of records — Advice Slip records from the social API. Point-in-time snapshot."
+    "dataSummary": "Advice slip data. A snapshot from right now."
   },
   {
     "id": "bored-api",
@@ -2383,13 +2383,13 @@
       "fun",
       "tools"
     ],
-    "dataSummary": "Sample link: 1 record — one random record. Point-in-time snapshot."
+    "dataSummary": "1 entry — one random item. A snapshot from right now."
   },
   {
     "id": "random-user",
     "name": "Random User",
     "category": "Social",
-    "description": "Random User — One random record.",
+    "description": "Random User — One random item.",
     "baseUrl": "https://randomuser.me",
     "docsUrl": "https://randomuser.me/documentation",
     "auth": "none",
@@ -2403,13 +2403,13 @@
       "tools",
       "fun"
     ],
-    "dataSummary": "Sample link: a starter set of records — one random record. Point-in-time snapshot."
+    "dataSummary": "One random item. A snapshot from right now."
   },
   {
     "id": "jsonplaceholder",
     "name": "JSONPlaceholder",
     "category": "Development",
-    "description": "JSONPlaceholder — Sample JSON placeholder records for UI prototyping.",
+    "description": "JSONPlaceholder — Demo user and post data for practice apps.",
     "baseUrl": "https://jsonplaceholder.typicode.com",
     "docsUrl": "https://jsonplaceholder.typicode.com/",
     "auth": "none",
@@ -2423,13 +2423,13 @@
       "tools",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — sample JSON placeholder records for UI prototyping. Point-in-time snapshot."
+    "dataSummary": "Demo user and post data for practice apps. A snapshot from right now."
   },
   {
     "id": "httpbin",
     "name": "HTTPBin",
     "category": "Development",
-    "description": "HTTPBin — HTTPBin records from the development API.",
+    "description": "HTTPBin — Httpbin data.",
     "baseUrl": "https://httpbin.org",
     "docsUrl": "https://httpbin.org/",
     "auth": "none",
@@ -2443,13 +2443,13 @@
       "tools",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — HTTPBin records from the development API. Point-in-time snapshot."
+    "dataSummary": "Httpbin data. A snapshot from right now."
   },
   {
     "id": "reqres",
     "name": "ReqRes",
     "category": "Development",
-    "description": "ReqRes — Sample JSON placeholder records for UI prototyping.",
+    "description": "ReqRes — Demo user and post data for practice apps.",
     "baseUrl": "https://reqres.in",
     "docsUrl": "https://reqres.in/",
     "auth": "none",
@@ -2463,13 +2463,13 @@
       "tools",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — sample JSON placeholder records for UI prototyping. Point-in-time snapshot."
+    "dataSummary": "Demo user and post data for practice apps. A snapshot from right now."
   },
   {
     "id": "github-public",
     "name": "GitHub Public",
     "category": "Development",
-    "description": "GitHub Public — GitHub Public records from the development API.",
+    "description": "GitHub Public — Github public data.",
     "baseUrl": "https://api.github.com",
     "docsUrl": "https://docs.github.com/en/rest",
     "auth": "none",
@@ -2483,13 +2483,13 @@
       "social",
       "ranking"
     ],
-    "dataSummary": "Sample link: a starter set of records — GitHub Public records from the development API. Point-in-time snapshot."
+    "dataSummary": "Github public data. A snapshot from right now."
   },
   {
     "id": "gitlab-public",
     "name": "GitLab Public",
     "category": "Development",
-    "description": "GitLab Public — GitLab Public records from the development API.",
+    "description": "GitLab Public — Gitlab public data.",
     "baseUrl": "https://gitlab.com",
     "docsUrl": "https://docs.gitlab.com/ee/api/",
     "auth": "none",
@@ -2503,7 +2503,7 @@
       "social",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — GitLab Public records from the development API. Point-in-time snapshot."
+    "dataSummary": "5 entries — gitlab public data. A snapshot from right now."
   },
   {
     "id": "npm-registry",
@@ -2523,13 +2523,13 @@
       "tools",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — the latest available readings. Live or very recent data."
+    "dataSummary": "The latest available readings. Updates frequently — near real-time."
   },
   {
     "id": "pypi",
     "name": "PyPI",
     "category": "Development",
-    "description": "PyPI — PyPI records from the development API.",
+    "description": "PyPI — Pypi data.",
     "baseUrl": "https://pypi.org",
     "docsUrl": "https://warehouse.pypa.io/api-reference/",
     "auth": "none",
@@ -2543,13 +2543,13 @@
       "tools",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — PyPI records from the development API. Point-in-time snapshot."
+    "dataSummary": "Pypi data. A snapshot from right now."
   },
   {
     "id": "stackexchange",
     "name": "StackExchange",
     "category": "Social",
-    "description": "StackExchange — StackExchange records from the social API.",
+    "description": "StackExchange — Stackexchange data.",
     "baseUrl": "https://api.stackexchange.com",
     "docsUrl": "https://api.stackexchange.com/docs",
     "auth": "none",
@@ -2563,13 +2563,13 @@
       "social",
       "ranking"
     ],
-    "dataSummary": "Sample link: a starter set of records — StackExchange records from the social API. Point-in-time snapshot."
+    "dataSummary": "Stackexchange data. A snapshot from right now."
   },
   {
     "id": "reddit",
     "name": "Reddit",
     "category": "Social",
-    "description": "Reddit — Reddit records from the social API.",
+    "description": "Reddit — Reddit data.",
     "baseUrl": "https://www.reddit.com",
     "docsUrl": "https://www.reddit.com/dev/api/",
     "auth": "none",
@@ -2583,13 +2583,13 @@
       "social",
       "trending"
     ],
-    "dataSummary": "Sample link: 5 records — Reddit records from the social API. Point-in-time snapshot."
+    "dataSummary": "5 entries — reddit data. A snapshot from right now."
   },
   {
     "id": "dev-to",
     "name": "Dev.to",
     "category": "Social",
-    "description": "Dev.to — Dev.to records from the social API.",
+    "description": "Dev.to — Dev.to data.",
     "baseUrl": "https://dev.to",
     "docsUrl": "https://developers.forem.com/api",
     "auth": "none",
@@ -2603,13 +2603,13 @@
       "social",
       "trending"
     ],
-    "dataSummary": "Sample link: 5 records — Dev.to records from the social API. Point-in-time snapshot."
+    "dataSummary": "5 entries — dev.to data. A snapshot from right now."
   },
   {
     "id": "mastodon",
     "name": "Mastodon",
     "category": "Social",
-    "description": "Mastodon — Mastodon records from the social API.",
+    "description": "Mastodon — Mastodon data.",
     "baseUrl": "https://mastodon.social",
     "docsUrl": "https://docs.joinmastodon.org/api/",
     "auth": "none",
@@ -2623,13 +2623,13 @@
       "social",
       "trending"
     ],
-    "dataSummary": "Sample link: a starter set of records — Mastodon records from the social API. Point-in-time snapshot."
+    "dataSummary": "Mastodon data. A snapshot from right now."
   },
   {
     "id": "lobste-rs",
     "name": "Lobste.rs",
     "category": "Social",
-    "description": "Lobste.rs — Lobste.rs records from the social API.",
+    "description": "Lobste.rs — Lobste.rs data.",
     "baseUrl": "https://lobste.rs",
     "docsUrl": "https://lobste.rs/",
     "auth": "none",
@@ -2643,7 +2643,7 @@
       "social",
       "ranking"
     ],
-    "dataSummary": "Sample link: a starter set of records — Lobste.rs records from the social API. Point-in-time snapshot."
+    "dataSummary": "Lobste.rs data. A snapshot from right now."
   },
   {
     "id": "product-hunt",
@@ -2663,13 +2663,13 @@
       "trending",
       "ranking"
     ],
-    "dataSummary": "Sample link: 5 records — GitHub repository search results. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — GitHub repository search results. A snapshot from a search or listing."
   },
   {
     "id": "y-combinator",
     "name": "Y Combinator",
     "category": "Business",
-    "description": "Y Combinator — Y Combinator records from the business API.",
+    "description": "Y Combinator — Y combinator data.",
     "baseUrl": "https://yc-oss.github.io",
     "docsUrl": "https://github.com/yc-oss/api",
     "auth": "none",
@@ -2683,7 +2683,7 @@
       "trending",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — Y Combinator records from the business API. Point-in-time snapshot."
+    "dataSummary": "Y combinator data. A snapshot from right now."
   },
   {
     "id": "openml",
@@ -2703,7 +2703,7 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenML records from the machine learning API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Openml data. A snapshot from a search or listing."
   },
   {
     "id": "hugging-face",
@@ -2723,13 +2723,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — Hugging Face records from the machine learning API. Point-in-time snapshot."
+    "dataSummary": "5 entries — hugging face data. A snapshot from right now."
   },
   {
     "id": "openml-datasets",
     "name": "OpenML Datasets",
     "category": "Data",
-    "description": "OpenML Datasets — OpenML Datasets records from the data API.",
+    "description": "OpenML Datasets — Openml datasets data.",
     "baseUrl": "https://www.openml.org",
     "docsUrl": "https://docs.openml.org/",
     "auth": "none",
@@ -2743,13 +2743,13 @@
       "science",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenML Datasets records from the data API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Openml datasets data. A snapshot from a search or listing."
   },
   {
     "id": "kaggle-public",
     "name": "Kaggle Public",
     "category": "Data",
-    "description": "Kaggle Public — Kaggle Public records from the data API.",
+    "description": "Kaggle Public — Kaggle public data.",
     "baseUrl": "https://www.kaggle.com",
     "docsUrl": "https://www.kaggle.com/docs/api",
     "auth": "free-key",
@@ -2763,13 +2763,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — Kaggle Public records from the data API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — kaggle public data. A snapshot from a search or listing."
   },
   {
     "id": "wikidata-sparql",
     "name": "Wikidata SPARQL",
     "category": "Knowledge",
-    "description": "Wikidata SPARQL — Knowledge results for “SELECT ?item WHERE {?item wdt:P31 wd:Q5} LIMIT 5”.",
+    "description": "Wikidata SPARQL — Results for “SELECT ?item WHERE {?item wdt:P31 wd:Q5} LIMIT 5”.",
     "baseUrl": "https://query.wikidata.org",
     "docsUrl": "https://query.wikidata.org/",
     "auth": "none",
@@ -2783,13 +2783,13 @@
       "graphs",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — knowledge results for “SELECT ?item WHERE {?item wdt:P31 wd:Q5} LIMIT 5”. Point-in-time snapshot."
+    "dataSummary": "Results for “SELECT ?item WHERE {?item wdt:P31 wd:Q5} LIMIT 5”. A snapshot from right now."
   },
   {
     "id": "wikipedia",
     "name": "Wikipedia",
     "category": "Knowledge",
-    "description": "Wikipedia — Wikipedia records from the knowledge API.",
+    "description": "Wikipedia — Wikipedia data.",
     "baseUrl": "https://en.wikipedia.org",
     "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
     "auth": "none",
@@ -2803,13 +2803,13 @@
       "education",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Wikipedia records from the knowledge API. Point-in-time snapshot."
+    "dataSummary": "Wikipedia data. A snapshot from right now."
   },
   {
     "id": "dictionary-api",
     "name": "Dictionary API",
     "category": "Text",
-    "description": "Dictionary API — Dictionary API records from the text API.",
+    "description": "Dictionary API — Dictionary api data.",
     "baseUrl": "https://api.dictionaryapi.dev",
     "docsUrl": "https://dictionaryapi.dev/",
     "auth": "none",
@@ -2823,13 +2823,13 @@
       "education",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — Dictionary API records from the text API. Point-in-time snapshot."
+    "dataSummary": "Dictionary api data. A snapshot from right now."
   },
   {
     "id": "datamuse",
     "name": "Datamuse",
     "category": "Text",
-    "description": "Datamuse — Datamuse records from the text API.",
+    "description": "Datamuse — Datamuse data.",
     "baseUrl": "https://api.datamuse.com",
     "docsUrl": "https://www.datamuse.com/api/",
     "auth": "none",
@@ -2843,13 +2843,13 @@
       "tools",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — Datamuse records from the text API. Point-in-time snapshot."
+    "dataSummary": "5 entries — datamuse data. A snapshot from right now."
   },
   {
     "id": "wordnik",
     "name": "Wordnik",
     "category": "Text",
-    "description": "Wordnik — One random record.",
+    "description": "Wordnik — One random item.",
     "baseUrl": "https://api.wordnik.com",
     "docsUrl": "https://developer.wordnik.com/",
     "auth": "free-key",
@@ -2863,13 +2863,13 @@
       "education",
       "fun"
     ],
-    "dataSummary": "Sample link: 5 records — one random record. Point-in-time snapshot."
+    "dataSummary": "5 entries — one random item. A snapshot from right now."
   },
   {
     "id": "pexels",
     "name": "Pexels",
     "category": "Photography",
-    "description": "Pexels — Search results for the query in the link.",
+    "description": "Pexels — Search results.",
     "baseUrl": "https://api.pexels.com",
     "docsUrl": "https://www.pexels.com/api/",
     "auth": "free-key",
@@ -2883,13 +2883,13 @@
       "media",
       "gallery"
     ],
-    "dataSummary": "Sample link: 5 records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "unsplash",
     "name": "Unsplash",
     "category": "Photography",
-    "description": "Unsplash — Unsplash records from the photography API.",
+    "description": "Unsplash — Unsplash data.",
     "baseUrl": "https://api.unsplash.com",
     "docsUrl": "https://unsplash.com/developers",
     "auth": "free-key",
@@ -2903,13 +2903,13 @@
       "media",
       "gallery"
     ],
-    "dataSummary": "Sample link: 5 records — Unsplash records from the photography API. Point-in-time snapshot."
+    "dataSummary": "5 entries — unsplash data. A snapshot from right now."
   },
   {
     "id": "giphy",
     "name": "Giphy",
     "category": "Entertainment",
-    "description": "Giphy — Giphy records from the entertainment API.",
+    "description": "Giphy — Giphy data.",
     "baseUrl": "https://api.giphy.com",
     "docsUrl": "https://developers.giphy.com/docs/",
     "auth": "free-key",
@@ -2923,13 +2923,13 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: 5 records — Giphy records from the entertainment API. Point-in-time snapshot."
+    "dataSummary": "5 entries — giphy data. A snapshot from right now."
   },
   {
     "id": "tenor",
     "name": "Tenor",
     "category": "Entertainment",
-    "description": "Tenor — Tenor records from the entertainment API.",
+    "description": "Tenor — Tenor data.",
     "baseUrl": "https://tenor.googleapis.com",
     "docsUrl": "https://tenor.com/gifapi/documentation",
     "auth": "free-key",
@@ -2943,13 +2943,13 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: 5 records — Tenor records from the entertainment API. Point-in-time snapshot."
+    "dataSummary": "5 entries — tenor data. A snapshot from right now."
   },
   {
     "id": "colorado-data",
     "name": "Colorado Data",
     "category": "Government",
-    "description": "Colorado Data — Colorado Data records from the government API.",
+    "description": "Colorado Data — Colorado data data.",
     "baseUrl": "https://data.colorado.gov",
     "docsUrl": "https://data.colorado.gov/",
     "auth": "none",
@@ -2963,13 +2963,13 @@
       "geo",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Colorado Data records from the government API. Point-in-time snapshot."
+    "dataSummary": "Colorado data data. A snapshot from right now."
   },
   {
     "id": "nyc-open-data",
     "name": "NYC Open Data",
     "category": "Government",
-    "description": "NYC Open Data — NYC Open Data records from the government API.",
+    "description": "NYC Open Data — Nyc open data data.",
     "baseUrl": "https://data.cityofnewyork.us",
     "docsUrl": "https://opendata.cityofnewyork.us/",
     "auth": "none",
@@ -2983,13 +2983,13 @@
       "geo",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — NYC Open Data records from the government API. Point-in-time snapshot."
+    "dataSummary": "Nyc open data data. A snapshot from right now."
   },
   {
     "id": "sf-open-data",
     "name": "SF Open Data",
     "category": "Government",
-    "description": "SF Open Data — SF Open Data records from the government API.",
+    "description": "SF Open Data — Sf open data data.",
     "baseUrl": "https://data.sfgov.org",
     "docsUrl": "https://datasf.org/opendata/",
     "auth": "none",
@@ -3003,13 +3003,13 @@
       "geo",
       "local"
     ],
-    "dataSummary": "Sample link: a starter set of records — SF Open Data records from the government API. Point-in-time snapshot."
+    "dataSummary": "Sf open data data. A snapshot from right now."
   },
   {
     "id": "chicago-data",
     "name": "Chicago Data",
     "category": "Government",
-    "description": "Chicago Data — Chicago Data records from the government API.",
+    "description": "Chicago Data — Chicago data data.",
     "baseUrl": "https://data.cityofchicago.org",
     "docsUrl": "https://data.cityofchicago.org/",
     "auth": "none",
@@ -3023,13 +3023,13 @@
       "geo",
       "local"
     ],
-    "dataSummary": "Sample link: a starter set of records — Chicago Data records from the government API. Point-in-time snapshot."
+    "dataSummary": "Chicago data data. A snapshot from right now."
   },
   {
     "id": "uk-food-hygiene",
     "name": "UK Food Hygiene",
     "category": "Food",
-    "description": "UK Food Hygiene — UK Food Hygiene records from the food API.",
+    "description": "UK Food Hygiene — Uk food hygiene data.",
     "baseUrl": "https://api.ratings.food.gov.uk",
     "docsUrl": "https://api.ratings.food.gov.uk/",
     "auth": "none",
@@ -3043,13 +3043,13 @@
       "health",
       "local"
     ],
-    "dataSummary": "Sample link: 5 records — UK Food Hygiene records from the food API. Point-in-time snapshot."
+    "dataSummary": "5 entries — uk food hygiene data. A snapshot from right now."
   },
   {
     "id": "usda-fooddata",
     "name": "USDA FoodData",
     "category": "Food",
-    "description": "USDA FoodData — Search results for the query in the link.",
+    "description": "USDA FoodData — Search results.",
     "baseUrl": "https://api.nal.usda.gov",
     "docsUrl": "https://fdc.nal.usda.gov/api-guide.html",
     "auth": "free-key",
@@ -3063,13 +3063,13 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — search results for the query in the link. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "mealdb",
     "name": "MealDB",
     "category": "Food",
-    "description": "MealDB — MealDB records from the food API.",
+    "description": "MealDB — Mealdb data.",
     "baseUrl": "https://www.themealdb.com",
     "docsUrl": "https://www.themealdb.com/api.php",
     "auth": "free-key",
@@ -3083,13 +3083,13 @@
       "fun",
       "local"
     ],
-    "dataSummary": "Sample link: a starter set of records — MealDB records from the food API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Mealdb data. A snapshot from a search or listing."
   },
   {
     "id": "punk-api",
     "name": "Punk API",
     "category": "Food",
-    "description": "Punk API — Punk API records from the food API.",
+    "description": "Punk API — Punk api data.",
     "baseUrl": "https://punkapi.com",
     "docsUrl": "https://punkapi.com/documentation",
     "auth": "none",
@@ -3103,13 +3103,13 @@
       "fun",
       "local"
     ],
-    "dataSummary": "Sample link: 5 records — Punk API records from the food API. Point-in-time snapshot."
+    "dataSummary": "5 entries — punk api data. A snapshot from right now."
   },
   {
     "id": "open-brewery-2",
     "name": "Open Brewery",
     "category": "Food",
-    "description": "Open Brewery — Brewery listings for the city in the link.",
+    "description": "Open Brewery — Brewery listings for a sample city.",
     "baseUrl": "https://api.openbrewerydb.org",
     "docsUrl": "https://www.openbrewerydb.org/documentation",
     "auth": "none",
@@ -3123,13 +3123,13 @@
       "local",
       "geo"
     ],
-    "dataSummary": "Sample link: 5 records — brewery listings for the city in the link. Point-in-time snapshot."
+    "dataSummary": "5 entries — brewery listings for a sample city. A snapshot from right now."
   },
   {
     "id": "spoonacular",
     "name": "Spoonacular",
     "category": "Food",
-    "description": "Spoonacular — Spoonacular records from the food API.",
+    "description": "Spoonacular — Spoonacular data.",
     "baseUrl": "https://api.spoonacular.com",
     "docsUrl": "https://spoonacular.com/food-api/docs",
     "auth": "free-key",
@@ -3143,13 +3143,13 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Spoonacular records from the food API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Spoonacular data. A snapshot from a search or listing."
   },
   {
     "id": "edamam",
     "name": "Edamam",
     "category": "Food",
-    "description": "Edamam — Food results for “salad”.",
+    "description": "Edamam — Results for “salad”.",
     "baseUrl": "https://api.edamam.com",
     "docsUrl": "https://developer.edamam.com/",
     "auth": "free-key",
@@ -3163,13 +3163,13 @@
       "health",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — food results for “salad”. Point-in-time snapshot."
+    "dataSummary": "Results for “salad”. A snapshot from right now."
   },
   {
     "id": "open-notify-people",
     "name": "Open Notify People",
     "category": "Space",
-    "description": "Open Notify People — Open Notify People records from the space API.",
+    "description": "Open Notify People — Open notify people data.",
     "baseUrl": "http://api.open-notify.org",
     "docsUrl": "http://open-notify.org/",
     "auth": "none",
@@ -3183,7 +3183,7 @@
       "science",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — Open Notify People records from the space API. Point-in-time snapshot."
+    "dataSummary": "Open notify people data. A snapshot from right now."
   },
   {
     "id": "spacex-api",
@@ -3203,13 +3203,13 @@
       "science",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — the latest available readings. Live or very recent data."
+    "dataSummary": "The latest available readings. Updates frequently — near real-time."
   },
   {
     "id": "launch-library",
     "name": "Launch Library",
     "category": "Science",
-    "description": "Launch Library — Rocket launch schedule.",
+    "description": "Launch Library — Upcoming rocket launches.",
     "baseUrl": "https://ll.thespacedevs.com",
     "docsUrl": "https://thespacedevs.com/llapi",
     "auth": "none",
@@ -3223,13 +3223,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — rocket launch schedule. Point-in-time snapshot."
+    "dataSummary": "5 entries — upcoming rocket launches. A snapshot from right now."
   },
   {
     "id": "asterank",
     "name": "Asterank",
     "category": "Science",
-    "description": "Asterank — Asterank records from the science API.",
+    "description": "Asterank — Asterank data.",
     "baseUrl": "https://www.asterank.com",
     "docsUrl": "https://www.asterank.com/",
     "auth": "none",
@@ -3243,13 +3243,13 @@
       "science",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — Asterank records from the science API. Point-in-time snapshot."
+    "dataSummary": "5 entries — asterank data. A snapshot from right now."
   },
   {
     "id": "usgs-volcano",
     "name": "USGS Volcano",
     "category": "Science",
-    "description": "USGS Volcano — USGS Volcano records from the science API.",
+    "description": "USGS Volcano — Usgs volcano data.",
     "baseUrl": "https://volcano.status.gov",
     "docsUrl": "https://volcanoes.usgs.gov/",
     "auth": "none",
@@ -3263,13 +3263,13 @@
       "science",
       "alerts"
     ],
-    "dataSummary": "Sample link: a starter set of records — USGS Volcano records from the science API. Point-in-time snapshot."
+    "dataSummary": "Usgs volcano data. A snapshot from right now."
   },
   {
     "id": "openaq-countries",
     "name": "OpenAQ Countries",
     "category": "Environment",
-    "description": "OpenAQ Countries — OpenAQ Countries records from the environment API.",
+    "description": "OpenAQ Countries — Openaq countries data.",
     "baseUrl": "https://api.openaq.org",
     "docsUrl": "https://docs.openaq.org/",
     "auth": "none",
@@ -3283,13 +3283,13 @@
       "geo",
       "comparison"
     ],
-    "dataSummary": "Sample link: 10 records — OpenAQ Countries records from the environment API. Point-in-time snapshot."
+    "dataSummary": "10 entries — openaq countries data. A snapshot from right now."
   },
   {
     "id": "purple-air",
     "name": "Purple Air",
     "category": "Environment",
-    "description": "Purple Air — Purple Air records from the environment API.",
+    "description": "Purple Air — Purple air data.",
     "baseUrl": "https://api.purpleair.com",
     "docsUrl": "https://api.purpleair.com/",
     "auth": "free-key",
@@ -3303,13 +3303,13 @@
       "health",
       "maps"
     ],
-    "dataSummary": "Sample link: a starter set of records — Purple Air records from the environment API. Point-in-time snapshot."
+    "dataSummary": "Purple air data. A snapshot from right now."
   },
   {
     "id": "opencellid",
     "name": "OpenCellID",
     "category": "Geography",
-    "description": "OpenCellID — OpenCellID records from the geography API.",
+    "description": "OpenCellID — Opencellid data.",
     "baseUrl": "https://opencellid.org",
     "docsUrl": "https://opencellid.org/",
     "auth": "free-key",
@@ -3323,13 +3323,13 @@
       "geo",
       "maps"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenCellID records from the geography API. Point-in-time snapshot."
+    "dataSummary": "Opencellid data. A snapshot from right now."
   },
   {
     "id": "rest-countries-region",
     "name": "Rest Countries Region",
     "category": "Geography",
-    "description": "Rest Countries Region — Countries in that world region.",
+    "description": "Rest Countries Region — Countries in one world region.",
     "baseUrl": "https://restcountries.com",
     "docsUrl": "https://restcountries.com/",
     "auth": "none",
@@ -3343,13 +3343,13 @@
       "comparison",
       "geo"
     ],
-    "dataSummary": "Sample link: a starter set of records — countries in that world region. Point-in-time snapshot."
+    "dataSummary": "Countries in one world region. A snapshot from right now."
   },
   {
     "id": "geojs",
     "name": "GeoJS",
     "category": "Geocoding",
-    "description": "GeoJS — GeoJS records from the geocoding API.",
+    "description": "GeoJS — Geojs data.",
     "baseUrl": "https://get.geojs.io",
     "docsUrl": "https://www.geojs.io/",
     "auth": "none",
@@ -3363,13 +3363,13 @@
       "geo",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — GeoJS records from the geocoding API. Point-in-time snapshot."
+    "dataSummary": "Geojs data. A snapshot from right now."
   },
   {
     "id": "rest-countries-currency",
     "name": "Rest Countries Currency",
     "category": "Finance",
-    "description": "Rest Countries Currency — Country profiles (population, borders, currencies).",
+    "description": "Rest Countries Currency — Country profiles — population, borders, currencies, flags.",
     "baseUrl": "https://restcountries.com",
     "docsUrl": "https://restcountries.com/",
     "auth": "none",
@@ -3383,13 +3383,13 @@
       "finance",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — country profiles (population, borders, currencies). Point-in-time snapshot."
+    "dataSummary": "Country profiles — population, borders, currencies, flags. A snapshot from right now."
   },
   {
     "id": "vatcomply",
     "name": "VATComply",
     "category": "Finance",
-    "description": "VATComply — VATComply records from the finance API.",
+    "description": "VATComply — Vatcomply data.",
     "baseUrl": "https://api.vatcomply.com",
     "docsUrl": "https://www.vatcomply.com/documentation",
     "auth": "none",
@@ -3403,7 +3403,7 @@
       "finance",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — VATComply records from the finance API. Point-in-time snapshot."
+    "dataSummary": "Vatcomply data. A snapshot from right now."
   },
   {
     "id": "coindesk",
@@ -3423,13 +3423,13 @@
       "finance",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — live market prices. Point-in-time snapshot."
+    "dataSummary": "Live market prices. A snapshot from right now."
   },
   {
     "id": "alternative-me-fear-greed",
     "name": "Alternative.me Fear Greed",
     "category": "Cryptocurrency",
-    "description": "Alternative.me Fear Greed — Alternative.me Fear Greed records from the cryptocurrency API.",
+    "description": "Alternative.me Fear Greed — Alternative.me fear greed data.",
     "baseUrl": "https://api.alternative.me",
     "docsUrl": "https://alternative.me/crypto/fear-and-greed-index/",
     "auth": "none",
@@ -3443,7 +3443,7 @@
       "finance",
       "charts"
     ],
-    "dataSummary": "Sample link: 5 records — Alternative.me Fear Greed records from the cryptocurrency API. Point-in-time snapshot."
+    "dataSummary": "5 entries — alternative.me fear greed data. A snapshot from right now."
   },
   {
     "id": "openml-tasks",
@@ -3463,13 +3463,13 @@
       "science",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenML Tasks records from the machine learning API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Openml tasks data. A snapshot from a search or listing."
   },
   {
     "id": "archive-org",
     "name": "Archive.org",
     "category": "Books",
-    "description": "Archive.org — Books results for “collection:opensource”.",
+    "description": "Archive.org — Results for “collection:opensource”.",
     "baseUrl": "https://archive.org",
     "docsUrl": "https://archive.org/developers/",
     "auth": "none",
@@ -3483,13 +3483,13 @@
       "media",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — books results for “collection:opensource”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — results for “collection:opensource”. A snapshot from a search or listing."
   },
   {
     "id": "library-of-congress",
     "name": "Library of Congress",
     "category": "Books",
-    "description": "Library of Congress — Books results for “maps”.",
+    "description": "Library of Congress — Results for “maps”.",
     "baseUrl": "https://www.loc.gov",
     "docsUrl": "https://www.loc.gov/apis/",
     "auth": "none",
@@ -3503,13 +3503,13 @@
       "culture",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — books results for “maps”. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Results for “maps”. A snapshot from a search or listing."
   },
   {
     "id": "openstreetmap-overpass",
     "name": "OpenStreetMap Overpass",
     "category": "Geography",
-    "description": "OpenStreetMap Overpass — OpenStreetMap Overpass records from the geography API.",
+    "description": "OpenStreetMap Overpass — Openstreetmap overpass data.",
     "baseUrl": "https://overpass-api.de",
     "docsUrl": "https://wiki.openstreetmap.org/wiki/Overpass_API",
     "auth": "none",
@@ -3523,13 +3523,13 @@
       "geo",
       "maps"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenStreetMap Overpass records from the geography API. Point-in-time snapshot."
+    "dataSummary": "Openstreetmap overpass data. A snapshot from right now."
   },
   {
     "id": "opentripplanner",
     "name": "OpenTripPlanner",
     "category": "Transportation",
-    "description": "OpenTripPlanner — OpenTripPlanner records from the transportation API.",
+    "description": "OpenTripPlanner — Opentripplanner data.",
     "baseUrl": "https://demo.opentripplanner.org",
     "docsUrl": "https://docs.opentripplanner.org/",
     "auth": "none",
@@ -3543,13 +3543,13 @@
       "transit",
       "geo"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenTripPlanner records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Opentripplanner data. A snapshot from right now."
   },
   {
     "id": "open-charge-map",
     "name": "Open Charge Map",
     "category": "Transportation",
-    "description": "Open Charge Map — Open Charge Map records from the transportation API.",
+    "description": "Open Charge Map — Open charge map data.",
     "baseUrl": "https://api.openchargemap.io",
     "docsUrl": "https://openchargemap.org/site/develop/api",
     "auth": "none",
@@ -3563,13 +3563,13 @@
       "transit",
       "geo"
     ],
-    "dataSummary": "Sample link: a starter set of records — Open Charge Map records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Open charge map data. A snapshot from right now."
   },
   {
     "id": "bikeshare-map",
     "name": "Bikeshare Map",
     "category": "Transportation",
-    "description": "Bikeshare Map — Bikeshare Map records from the transportation API.",
+    "description": "Bikeshare Map — Bikeshare map data.",
     "baseUrl": "https://gbfs.bcycle.com",
     "docsUrl": "https://gbfs.bcycle.com/",
     "auth": "none",
@@ -3583,13 +3583,13 @@
       "transit",
       "real-time"
     ],
-    "dataSummary": "Sample link: a starter set of records — Bikeshare Map records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Bikeshare map data. A snapshot from right now."
   },
   {
     "id": "opensky-flights",
     "name": "OpenSky Flights",
     "category": "Transportation",
-    "description": "OpenSky Flights — OpenSky Flights records from the transportation API.",
+    "description": "OpenSky Flights — Opensky flights data.",
     "baseUrl": "https://opensky-network.org",
     "docsUrl": "https://openskynetwork.github.io/opensky-api/",
     "auth": "none",
@@ -3603,13 +3603,13 @@
       "transit",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenSky Flights records from the transportation API. Point-in-time snapshot."
+    "dataSummary": "Opensky flights data. A snapshot from right now."
   },
   {
     "id": "openml-flows",
     "name": "OpenML Flows",
     "category": "Data",
-    "description": "OpenML Flows — OpenML Flows records from the data API.",
+    "description": "OpenML Flows — Openml flows data.",
     "baseUrl": "https://www.openml.org",
     "docsUrl": "https://docs.openml.org/",
     "auth": "none",
@@ -3623,13 +3623,13 @@
       "science",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenML Flows records from the data API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Openml flows data. A snapshot from a search or listing."
   },
   {
     "id": "openml-tasks-type",
     "name": "OpenML Tasks Type",
     "category": "Data",
-    "description": "OpenML Tasks Type — OpenML Tasks Type records from the data API.",
+    "description": "OpenML Tasks Type — Openml tasks type data.",
     "baseUrl": "https://www.openml.org",
     "docsUrl": "https://docs.openml.org/",
     "auth": "none",
@@ -3643,7 +3643,7 @@
       "science",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenML Tasks Type records from the data API. Point-in-time snapshot."
+    "dataSummary": "Openml tasks type data. A snapshot from right now."
   },
   {
     "id": "open-civic-data",
@@ -3663,13 +3663,13 @@
       "geo",
       "education"
     ],
-    "dataSummary": "Sample link: 5 records — Open States records from the government API. Point-in-time snapshot."
+    "dataSummary": "5 entries — open states data. A snapshot from right now."
   },
   {
     "id": "openstates",
     "name": "OpenStates",
     "category": "Government",
-    "description": "OpenStates — OpenStates records from the government API.",
+    "description": "OpenStates — Openstates data.",
     "baseUrl": "https://v3.openstates.org",
     "docsUrl": "https://docs.openstates.org/",
     "auth": "none",
@@ -3683,7 +3683,7 @@
       "education",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — OpenStates records from the government API. Point-in-time snapshot."
+    "dataSummary": "5 entries — openstates data. A snapshot from right now."
   },
   {
     "id": "ballotpedia",
@@ -3703,13 +3703,13 @@
       "education",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — Open States Bills records from the government API. Point-in-time snapshot."
+    "dataSummary": "5 entries — open states bills data. A snapshot from right now."
   },
   {
     "id": "openfec",
     "name": "OpenFEC",
     "category": "Government",
-    "description": "OpenFEC — OpenFEC records from the government API.",
+    "description": "OpenFEC — Openfec data.",
     "baseUrl": "https://api.open.fec.gov",
     "docsUrl": "https://api.open.fec.gov/developers/",
     "auth": "free-key",
@@ -3723,13 +3723,13 @@
       "comparison",
       "search"
     ],
-    "dataSummary": "Sample link: 5 records — OpenFEC records from the government API. Point-in-time snapshot."
+    "dataSummary": "5 entries — openfec data. A snapshot from right now."
   },
   {
     "id": "courtlistener",
     "name": "CourtListener",
     "category": "Government",
-    "description": "CourtListener — CourtListener records from the government API.",
+    "description": "CourtListener — Courtlistener data.",
     "baseUrl": "https://www.courtlistener.com",
     "docsUrl": "https://www.courtlistener.com/help/api/",
     "auth": "none",
@@ -3743,13 +3743,13 @@
       "search",
       "education"
     ],
-    "dataSummary": "Sample link: 5 records — CourtListener records from the government API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "5 entries — courtlistener data. A snapshot from a search or listing."
   },
   {
     "id": "opencorporates-us",
     "name": "OpenCorporates US",
     "category": "Business",
-    "description": "OpenCorporates US — OpenCorporates US records from the business API.",
+    "description": "OpenCorporates US — Opencorporates us data.",
     "baseUrl": "https://api.opencorporates.com",
     "docsUrl": "https://api.opencorporates.com/",
     "auth": "free-key",
@@ -3763,13 +3763,13 @@
       "search",
       "comparison"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenCorporates US records from the business API. Point-in-time snapshot."
+    "dataSummary": "Opencorporates us data. A snapshot from right now."
   },
   {
     "id": "sec-edgar",
     "name": "SEC EDGAR",
     "category": "Finance",
-    "description": "SEC EDGAR — SEC EDGAR records from the finance API.",
+    "description": "SEC EDGAR — Sec edgar data.",
     "baseUrl": "https://data.sec.gov",
     "docsUrl": "https://www.sec.gov/edgar/sec-api-documentation",
     "auth": "none",
@@ -3783,13 +3783,13 @@
       "finance",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — SEC EDGAR records from the finance API. Point-in-time snapshot."
+    "dataSummary": "Sec edgar data. A snapshot from right now."
   },
   {
     "id": "treasury-fiscal",
     "name": "Treasury Fiscal",
     "category": "Finance",
-    "description": "Treasury Fiscal — Treasury Fiscal records from the finance API.",
+    "description": "Treasury Fiscal — Treasury fiscal data.",
     "baseUrl": "https://api.fiscaldata.treasury.gov",
     "docsUrl": "https://fiscaldata.treasury.gov/api-documentation/",
     "auth": "none",
@@ -3803,7 +3803,7 @@
       "finance",
       "time-series"
     ],
-    "dataSummary": "Sample link: a starter set of records — Treasury Fiscal records from the finance API. Point-in-time snapshot."
+    "dataSummary": "Treasury fiscal data. A snapshot from right now."
   },
   {
     "id": "bls",
@@ -3823,7 +3823,7 @@
       "finance",
       "time-series"
     ],
-    "dataSummary": "Sample link: 5 records — unemployment (% of labor force). Annual time series — each country includes values across many years."
+    "dataSummary": "5 entries — unemployment (% of labor force). Year-by-year history for each country."
   },
   {
     "id": "openml-studies",
@@ -3843,13 +3843,13 @@
       "science",
       "education"
     ],
-    "dataSummary": "Sample link: a starter set of records — OpenML Studies records from the machine learning API. Point-in-time snapshot from a search or listing."
+    "dataSummary": "Openml studies data. A snapshot from a search or listing."
   },
   {
     "id": "agify",
     "name": "Agify",
     "category": "Tools",
-    "description": "Agify — Agify records from the tools API.",
+    "description": "Agify — Agify data.",
     "baseUrl": "https://api.agify.io",
     "docsUrl": "https://agify.io/",
     "auth": "none",
@@ -3863,13 +3863,13 @@
       "tools",
       "fun"
     ],
-    "dataSummary": "Sample link: a starter set of records — Agify records from the tools API. Point-in-time snapshot."
+    "dataSummary": "Agify data. A snapshot from right now."
   },
   {
     "id": "genderize",
     "name": "Genderize",
     "category": "Tools",
-    "description": "Genderize — Genderize records from the tools API.",
+    "description": "Genderize — Genderize data.",
     "baseUrl": "https://api.genderize.io",
     "docsUrl": "https://genderize.io/",
     "auth": "none",
@@ -3883,13 +3883,13 @@
       "tools",
       "fun"
     ],
-    "dataSummary": "Sample link: a starter set of records — Genderize records from the tools API. Point-in-time snapshot."
+    "dataSummary": "Genderize data. A snapshot from right now."
   },
   {
     "id": "nationalize",
     "name": "Nationalize",
     "category": "Tools",
-    "description": "Nationalize — Nationalize records from the tools API.",
+    "description": "Nationalize — Nationalize data.",
     "baseUrl": "https://api.nationalize.io",
     "docsUrl": "https://nationalize.io/",
     "auth": "none",
@@ -3903,13 +3903,13 @@
       "geo",
       "fun"
     ],
-    "dataSummary": "Sample link: a starter set of records — Nationalize records from the tools API. Point-in-time snapshot."
+    "dataSummary": "Nationalize data. A snapshot from right now."
   },
   {
     "id": "ipinfo-lite",
     "name": "IPinfo Lite",
     "category": "Geocoding",
-    "description": "IPinfo Lite — IPinfo Lite records from the geocoding API.",
+    "description": "IPinfo Lite — Ipinfo lite data.",
     "baseUrl": "https://ipinfo.io",
     "docsUrl": "https://ipinfo.io/developers",
     "auth": "free-key",
@@ -3923,13 +3923,13 @@
       "geo",
       "tools"
     ],
-    "dataSummary": "Sample link: a starter set of records — IPinfo Lite records from the geocoding API. Point-in-time snapshot."
+    "dataSummary": "Ipinfo lite data. A snapshot from right now."
   },
   {
     "id": "abstract-email",
     "name": "Abstract Email",
     "category": "Tools",
-    "description": "Abstract Email — Abstract Email records from the tools API.",
+    "description": "Abstract Email — Abstract email data.",
     "baseUrl": "https://emailvalidation.abstractapi.com",
     "docsUrl": "https://www.abstractapi.com/email-verification-validation-api",
     "auth": "free-key",
@@ -3943,13 +3943,13 @@
       "tools",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Abstract Email records from the tools API. Point-in-time snapshot."
+    "dataSummary": "Abstract email data. A snapshot from right now."
   },
   {
     "id": "abstract-phone",
     "name": "Abstract Phone",
     "category": "Tools",
-    "description": "Abstract Phone — Abstract Phone records from the tools API.",
+    "description": "Abstract Phone — Abstract phone data.",
     "baseUrl": "https://phonevalidation.abstractapi.com",
     "docsUrl": "https://www.abstractapi.com/phone-validation-api",
     "auth": "free-key",
@@ -3963,13 +3963,13 @@
       "tools",
       "search"
     ],
-    "dataSummary": "Sample link: a starter set of records — Abstract Phone records from the tools API. Point-in-time snapshot."
+    "dataSummary": "Abstract phone data. A snapshot from right now."
   },
   {
     "id": "uuid-generator",
     "name": "UUID Generator",
     "category": "Tools",
-    "description": "UUID Generator — UUID Generator records from the tools API.",
+    "description": "UUID Generator — Uuid generator data.",
     "baseUrl": "https://www.uuidtools.com",
     "docsUrl": "https://www.uuidtools.com/docs",
     "auth": "none",
@@ -3983,13 +3983,13 @@
       "tools",
       "fun"
     ],
-    "dataSummary": "Sample link: a starter set of records — UUID Generator records from the tools API. Point-in-time snapshot."
+    "dataSummary": "Uuid generator data. A snapshot from right now."
   },
   {
     "id": "yes-no-maybe",
     "name": "Yes No Maybe",
     "category": "Fun",
-    "description": "Yes No Maybe — Yes No Maybe records from the fun API.",
+    "description": "Yes No Maybe — Yes no maybe data.",
     "baseUrl": "https://yesno.wtf",
     "docsUrl": "https://yesno.wtf/api",
     "auth": "none",
@@ -4003,13 +4003,13 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: a starter set of records — Yes No Maybe records from the fun API. Point-in-time snapshot."
+    "dataSummary": "Yes no maybe data. A snapshot from right now."
   },
   {
     "id": "kanye-rest",
     "name": "Kanye Rest",
     "category": "Fun",
-    "description": "Kanye Rest — Kanye Rest records from the fun API.",
+    "description": "Kanye Rest — Kanye rest data.",
     "baseUrl": "https://api.kanye.rest",
     "docsUrl": "https://kanye.rest/",
     "auth": "none",
@@ -4023,6 +4023,6 @@
       "fun",
       "media"
     ],
-    "dataSummary": "Sample link: a starter set of records — Kanye Rest records from the fun API. Point-in-time snapshot."
+    "dataSummary": "Kanye rest data. A snapshot from right now."
   }
 ]

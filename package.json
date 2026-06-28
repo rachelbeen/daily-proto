@@ -11,7 +11,7 @@
     "dev": "tsx src/cli.ts",
     "generate": "tsx src/cli.ts generate",
     "post": "tsx src/cli.ts post",
-    "seed": "node scripts/seed-catalog.mjs",
+    "seed": "node scripts/seed-catalog.mjs && mkdir -p dist/data && cp -r src/data/catalog dist/data/",
     "start": "node dist/server.js",
     "serve": "tsx src/server.ts",
     "today": "tsx src/cli.ts today"

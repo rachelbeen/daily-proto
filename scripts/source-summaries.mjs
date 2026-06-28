@@ -9,56 +9,56 @@ const WB_INDICATORS = {
 const PATH_DATASET_HINTS = [
   [/\/earthquakes\/feed\/.*\/2\.5_day/i, "earthquakes magnitude 2.5+ from the last 24 hours"],
   [/\/earthquakes\/feed/i, "recent earthquake events"],
-  [/\/v1\/forecast/i, "weather forecast for the coordinates in the link"],
+  [/\/v1\/forecast/i, "weather forecast for a specific location"],
   [/\/air-quality/i, "hourly air-quality readings"],
-  [/\/forecast\?/i, "weather forecast for the coordinates in the link"],
-  [/\/countries\/([a-z]{2,3})/i, "country-level stats for the country in the link"],
-  [/\/region\/([a-z]+)/i, "countries in that world region"],
+  [/\/forecast\?/i, "weather forecast for a specific location"],
+  [/\/countries\/([a-z]{2,3})/i, "country-level stats for one country"],
+  [/\/region\/([a-z]+)/i, "countries in one world region"],
   [/\/search\.json/i, "book search results"],
-  [/\/search\?/i, "search results for the query in the link"],
-  [/\/random/i, "one random record"],
+  [/\/search\?/i, "search results"],
+  [/\/random/i, "one random item"],
   [/\/latest/i, "the latest available readings"],
   [/\/upcoming/i, "upcoming scheduled events"],
-  [/\/historical/i, "historical time-series values"],
+  [/\/historical/i, "historical values over time"],
   [/\/alerts\/active/i, "active weather alerts right now"],
   [/\/ticker/i, "live market prices"],
   [/\/top\/anime/i, "top-ranked anime titles"],
   [/\/launches\/latest/i, "the most recent space launch"],
-  [/\/people\/\d+/i, "one character/person record (Star Wars API)"],
+  [/\/people\/\d+/i, "one Star Wars character"],
   [/\/films/i, "film catalog entries"],
-  [/\/breweries/i, "brewery listings for the city in the link"],
-  [/\/pokemon/i, "Pokémon species records"],
+  [/\/breweries/i, "brewery listings for a sample city"],
+  [/\/pokemon/i, "Pokémon species"],
   [/\/fact$/i, "one random fact"],
-  [/\/activity/i, "one random activity suggestion"],
+  [/\/activity/i, "one random activity idea"],
   [/\/joke/i, "one random joke"],
   [/\/quotes?\/random/i, "one random quote"],
-  [/\/dictionaryapi/i, "dictionary definition for the word in the link"],
-  [/\/worldbank\.org\/v2\/country\/all\/indicator/i, "country comparison for the World Bank indicator in the link"],
-  [/\/worldbank\.org/i, "World Bank development indicator time series"],
+  [/\/dictionaryapi/i, "dictionary definition for one word"],
+  [/\/worldbank\.org\/v2\/country\/all\/indicator/i, "country-by-country comparison for one development indicator"],
+  [/\/worldbank\.org/i, "development indicators by country"],
   [/\/openstates\.org\/bills/i, "recent state legislature bills"],
-  [/\/openstates\.org\/jurisdictions/i, "US state & local jurisdictions"],
-  [/\/datagetter/i, "tide or current predictions for the station/date in the link"],
-  [/\/nwis\/iv/i, "stream flow / water level readings over time"],
+  [/\/openstates\.org\/jurisdictions/i, "US state and local jurisdictions"],
+  [/\/datagetter/i, "tide or current predictions for one station and date"],
+  [/\/nwis\/iv/i, "stream flow and water level readings over time"],
   [/\/openaq\.org/i, "air-quality monitoring locations"],
-  [/\/fda\.gov/i, "FDA open data records"],
-  [/\/disease\.sh/i, "public health / COVID statistics"],
+  [/\/fda\.gov/i, "FDA public safety and recall records"],
+  [/\/disease\.sh/i, "public health and COVID statistics"],
   [/\/frankfurter/i, "today's foreign-exchange rates"],
-  [/\/coingecko\.com/i, "crypto market prices and caps"],
-  [/\/pokeapi/i, "Pokémon data"],
-  [/\/restcountries/i, "country profiles (population, borders, currencies)"],
-  [/\/nominatim/i, "geocoded place search results"],
-  [/\/tvmaze/i, "TV show metadata"],
+  [/\/coingecko\.com/i, "crypto market prices and market caps"],
+  [/\/pokeapi/i, "Pokémon species data"],
+  [/\/restcountries/i, "country profiles — population, borders, currencies, flags"],
+  [/\/nominatim/i, "place search and geocoding results"],
+  [/\/tvmaze/i, "TV show information"],
   [/\/spaceflightnews/i, "recent spaceflight news articles"],
-  [/\/ll\.thespacedevs/i, "rocket launch schedule"],
+  [/\/ll\.thespacedevs/i, "upcoming rocket launches"],
   [/\/api\.github\.com\/search/i, "GitHub repository search results"],
-  [/\/hn\.algolia|firebaseio\.com\/v0\/top/i, "top Hacker News story IDs"],
-  [/\/data\.police\.uk/i, "street-level crime reports for the coordinates/month in the link"],
+  [/\/hn\.algolia|firebaseio\.com\/v0\/top/i, "top Hacker News stories"],
+  [/\/data\.police\.uk/i, "street-level crime reports for one area and month"],
   [/\/api\.fbi\.gov\/wanted/i, "FBI wanted list entries"],
   [/\/catalog\.data\.gov/i, "US government open dataset search results"],
   [/\/clinicaltrials\.gov/i, "clinical trial study records"],
   [/\/openalex\.org/i, "scholarly paper metadata"],
-  [/\/crossref\.org/i, "academic publication metadata (DOIs)"],
-  [/\/jsonplaceholder|reqres\.in/i, "sample JSON placeholder records for UI prototyping"],
+  [/\/crossref\.org/i, "academic publication metadata"],
+  [/\/jsonplaceholder|reqres\.in/i, "demo user and post data for practice apps"],
 ];
 
 function extractSampleSize(endpoint) {
@@ -92,35 +92,38 @@ function inferDatasetLabel(endpoint, name, category) {
   try {
     const url = new URL(endpoint);
     const q = url.searchParams.get("q") ?? url.searchParams.get("query") ?? url.searchParams.get("search");
-    if (q) return `${category.toLowerCase()} results for “${decodeURIComponent(q).replace(/\+/g, " ")}”`;
+    if (q) {
+      const query = decodeURIComponent(q).replace(/\+/g, " ");
+      return `results for “${query}”`;
+    }
   } catch {
     // ignore
   }
 
-  return `${name} records from the ${category.toLowerCase()} API`;
+  return `${name.toLowerCase()} data`;
 }
 
 function inferTimeScope(endpoint) {
   if (/2\.5_day|_day\.|today|current\.json|\/latest|iss-now|real-?time/i.test(endpoint)) {
-    return "Live or very recent data";
+    return "Updates frequently — near real-time.";
   }
   if (/forecast|predictions|upcoming/i.test(endpoint)) {
-    return "Near-term forecast / schedule";
+    return "Looks ahead — forecast or schedule data.";
   }
   if (/historical|observations|time-series|timeseries|\/iv\?/i.test(endpoint)) {
-    return "Time series — values over multiple dates in each record";
+    return "Tracks change over time.";
   }
   if (/indicator\/|worldbank|fred\.stlouisfed|worldbank\.org/i.test(endpoint)) {
-    return "Annual time series — each country includes values across many years";
+    return "Year-by-year history for each country.";
   }
   if (/search|browse|list|collection/i.test(endpoint)) {
-    return "Point-in-time snapshot from a search or listing";
+    return "A snapshot from a search or listing.";
   }
-  return "Point-in-time snapshot";
+  return "A snapshot from right now.";
 }
 
-function pluralizeRecords(count) {
-  return count === 1 ? "1 record" : `${count} records`;
+function capitalize(value) {
+  return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
 export function inferDataSummary(source) {
@@ -128,8 +131,12 @@ export function inferDataSummary(source) {
   const dataset = inferDatasetLabel(source.exampleEndpoint, source.name, source.category);
   const time = inferTimeScope(source.exampleEndpoint);
 
-  const sizePart = size ? pluralizeRecords(size) : "a starter set of records";
-  return `Sample link: ${sizePart} — ${dataset}. ${time}.`;
+  if (size) {
+    const unit = size === 1 ? "entry" : "entries";
+    return `${size} ${unit} — ${dataset}. ${time}`;
+  }
+
+  return `${capitalize(dataset)}. ${time}`;
 }
 
 export function enrichSource(source) {
@@ -139,7 +146,7 @@ export function enrichSource(source) {
   let description = source.description;
   if (generic) {
     const dataset = inferDatasetLabel(source.exampleEndpoint, source.name, source.category);
-    description = `${source.name} — ${dataset.charAt(0).toUpperCase()}${dataset.slice(1)}.`;
+    description = `${source.name} — ${capitalize(dataset)}.`;
   }
 
   return { ...source, description, dataSummary };
