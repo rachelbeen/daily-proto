@@ -2,6 +2,7 @@ import { getDataSourceById } from "./data/catalog.js";
 import { fetchSourceData } from "./fetch-source.js";
 import { generateDailyPrompt, parseGenerateOptions } from "./generate.js";
 import { renderPromptPage, renderPromptPayload } from "./web/html.js";
+import { renderPitbullSuperheroPage } from "./web/pitbull-superhero.js";
 
 export async function handleRequest(
   req: import("node:http").IncomingMessage,
@@ -39,6 +40,16 @@ export async function handleRequest(
     const prompt = generateDailyPrompt(options);
     res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
     res.end(JSON.stringify(renderPromptPayload(prompt), null, 2));
+    return;
+  }
+
+  if (url.pathname === "/pitbull") {
+    res.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store, no-cache, must-revalidate",
+      "Pragma": "no-cache",
+    });
+    res.end(renderPitbullSuperheroPage());
     return;
   }
 

@@ -8,17 +8,6 @@ function escapeHtml(value: string): string {
     .replaceAll('"', "&quot;");
 }
 
-function formatDisplayDate(isoDate: string): string {
-  const date = new Date(`${isoDate}T12:00:00Z`);
-  return new Intl.DateTimeFormat("en-US", {
-    weekday: "long",
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  }).format(date);
-}
-
 function formatSourceDetail(source: DataSource): string {
   return source.description;
 }
@@ -68,7 +57,6 @@ export function renderPromptPayload(prompt: DailyPrompt) {
 
   return {
     ...prompt,
-    displayDate: formatDisplayDate(prompt.date),
     headline: renderHeadline(prompt),
     sourceLabel: renderSourceLabel(prompt),
     panelMode,
@@ -386,7 +374,6 @@ function clientScript(prompt: DailyPrompt): string {
 }
 
 export function renderPromptPage(prompt: DailyPrompt): string {
-  const displayDate = formatDisplayDate(prompt.date);
   const headline = renderHeadline(prompt);
   const sourceLabel = renderSourceLabel(prompt);
   const panelMode = prompt.dataSources.length === 1 ? "single" : "multi";
@@ -396,7 +383,7 @@ export function renderPromptPage(prompt: DailyPrompt): string {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily Proto Inspo — ${escapeHtml(displayDate)}</title>
+  <title>Daily Proto Inspo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;800&display=swap" rel="stylesheet" />

@@ -14,6 +14,7 @@
     "seed": "node scripts/seed-catalog.mjs && mkdir -p dist/data && cp -r src/data/catalog dist/data/",
     "start": "node dist/server.js",
     "serve": "tsx src/server.ts",
+    "restart:pitbull": "bash scripts/restart-pitbull.sh",
     "today": "tsx src/cli.ts today"
   },
   "engines": {

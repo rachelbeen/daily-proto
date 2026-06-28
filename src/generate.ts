@@ -1,3 +1,4 @@
+import { addCalendarDays, todayIsoDate } from "./date.js";
 import { sourceCombos } from "./data/bundles.js";
 import { challenges, dataSources, getDataSourceById } from "./data/catalog.js";
 import { constraints, twists } from "./data/templates.js";
@@ -83,7 +84,7 @@ export function resolveDate(input?: string): string {
     }
     return input;
   }
-  return new Date().toISOString().slice(0, 10);
+  return todayIsoDate();
 }
 
 function parseSeed(value: string | null): number | undefined {
@@ -133,13 +134,10 @@ export function generateDailyPrompt(options?: string | GenerateOptions): DailyPr
 
 export function listUpcoming(count: number, startDate?: string): DailyPrompt[] {
   const start = resolveDate(startDate ?? process.env.PROMPT_DATE);
-  const base = new Date(`${start}T12:00:00Z`);
   const prompts: DailyPrompt[] = [];
 
   for (let i = 0; i < count; i++) {
-    const day = new Date(base);
-    day.setUTCDate(base.getUTCDate() + i);
-    const date = day.toISOString().slice(0, 10);
+    const date = addCalendarDays(start, i);
     prompts.push(generateDailyPrompt({ date }));
   }
 

@@ -17,6 +17,7 @@ Environment:
   SLACK_WEBHOOK_URL     Slack incoming webhook
   DISCORD_WEBHOOK_URL   Discord webhook
   PROMPT_DATE           Override date for testing (YYYY-MM-DD)
+  PROMPT_TIMEZONE       IANA timezone for "today" (default: America/New_York)
 `);
 }
 
