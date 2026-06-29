@@ -1,5 +1,5 @@
 import type { OpenDataCatalog } from "../data/open-data-index.js";
-import { renderPageLinks, siteNavStyles } from "./site-nav.js";
+import { renderPageLinks, siteNavScript, siteNavStyles } from "./site-nav.js";
 
 const pageStyles = `
   :root {
@@ -536,6 +536,7 @@ export function renderOpenDataIndexPage(catalog: OpenDataCatalog): string {
     </footer>
   </div>
 
+  <script>${siteNavScript()}</script>
   <script>${clientScript(catalog)}</script>
 </body>
 </html>`;

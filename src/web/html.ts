@@ -1,5 +1,5 @@
 import type { DailyPrompt, DataSource } from "../types.js";
-import { renderPageLinks, siteNavStyles } from "./site-nav.js";
+import { renderPageLinks, siteNavScript, siteNavStyles, DAILY_PROMPT_STATE_KEY } from "./site-nav.js";
 
 function escapeHtml(value: string): string {
   return value
@@ -382,6 +382,37 @@ function clientScript(prompt: DailyPrompt): string {
       sourceSeed: ${prompt.sourceSeed},
     };
 
+    const STATE_KEY = ${JSON.stringify(DAILY_PROMPT_STATE_KEY)};
+
+    (function restoreDailyState() {
+      let saved;
+      try {
+        const raw = sessionStorage.getItem(STATE_KEY);
+        saved = raw ? JSON.parse(raw) : null;
+      } catch {
+        return;
+      }
+      if (!saved || !saved.date) return;
+
+      const url = new URL(location.href);
+      const urlMatches =
+        url.searchParams.get("date") === saved.date &&
+        url.searchParams.get("promptSeed") === String(saved.promptSeed) &&
+        url.searchParams.get("sourceSeed") === String(saved.sourceSeed);
+      if (urlMatches) return;
+
+      const embeddedMatches =
+        state.date === saved.date &&
+        state.promptSeed === saved.promptSeed &&
+        state.sourceSeed === saved.sourceSeed;
+      if (embeddedMatches) return;
+
+      url.searchParams.set("date", saved.date);
+      url.searchParams.set("promptSeed", String(saved.promptSeed));
+      url.searchParams.set("sourceSeed", String(saved.sourceSeed));
+      location.replace(url.pathname + "?" + url.searchParams.toString());
+    })();
+
     function randomSeed() {
       return Math.floor(Math.random() * 2 ** 32);
     }
@@ -392,6 +423,14 @@ function clientScript(prompt: DailyPrompt): string {
       params.set("promptSeed", String(state.promptSeed));
       params.set("sourceSeed", String(state.sourceSeed));
       history.replaceState(null, "", "?" + params.toString());
+      sessionStorage.setItem(
+        STATE_KEY,
+        JSON.stringify({
+          date: state.date,
+          promptSeed: state.promptSeed,
+          sourceSeed: state.sourceSeed,
+        }),
+      );
     }
 
     function wait(ms) {
@@ -541,6 +580,7 @@ export function renderPromptPage(prompt: DailyPrompt): string {
       </div>
     </aside>
   </div>
+  <script>${siteNavScript()}</script>
   <script>${clientScript(prompt)}</script>
 </body>
 </html>`;
