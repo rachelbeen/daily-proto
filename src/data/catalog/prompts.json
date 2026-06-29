@@ -25,7 +25,7 @@
   },
   {
     "id": "map-04",
-    "prompt": "Show how crowded, spread out, or far apart things are — all on one map.",
+    "prompt": "Show how crowded, spread out, or far apart things are, all on one map.",
     "tags": [
       "map",
       "geo"
@@ -41,7 +41,7 @@
   },
   {
     "id": "map-06",
-    "prompt": "Help someone spot the odd one out on a map — the place that doesn't fit the pattern.",
+    "prompt": "Help someone spot the odd one out on a map: the place that doesn't fit the pattern.",
     "tags": [
       "map",
       "geo"
@@ -99,7 +99,7 @@
   },
   {
     "id": "charts-03",
-    "prompt": "Compare what's happening now with what's normal — using real numbers, not made-up ones.",
+    "prompt": "Compare what's happening now with what's normal, using real numbers, not made-up ones.",
     "tags": [
       "charts",
       "time-series",
@@ -117,7 +117,7 @@
   },
   {
     "id": "charts-05",
-    "prompt": "Show a handful of key numbers from today's data — all real, nothing fake.",
+    "prompt": "Show a handful of key numbers from today's data, all real, nothing fake.",
     "tags": [
       "charts",
       "time-series",
@@ -225,7 +225,7 @@
   },
   {
     "id": "search-07",
-    "prompt": "Put two things next to each other — cities, products, whatever fits — and make differences pop.",
+    "prompt": "Put two things next to each other (cities, products, whatever fits) and make differences pop.",
     "tags": [
       "search",
       "comparison",
@@ -269,7 +269,7 @@
   },
   {
     "id": "time-series-02",
-    "prompt": "Build a timeline that shows momentum — not every single point at once.",
+    "prompt": "Build a timeline that shows momentum, not every single point at once.",
     "tags": [
       "time-series",
       "trending"
@@ -397,7 +397,7 @@
   },
   {
     "id": "alerts-08",
-    "prompt": "Design an alert card with enough context to be useful — not just noise.",
+    "prompt": "Design an alert card with enough context to be useful, not just noise.",
     "tags": [
       "alerts",
       "real-time"
@@ -445,7 +445,7 @@
   },
   {
     "id": "comparison-04",
-    "prompt": "Create a 'this vs. that' screen — two cities, products, species, artworks, whatever fits.",
+    "prompt": "Create a 'this vs. that' screen with two cities, products, species, artworks, whatever fits.",
     "tags": [
       "comparison",
       "education"
@@ -533,7 +533,7 @@
   },
   {
     "id": "search-05",
-    "prompt": "Combine search, filters, and sort — plus one small delightful detail in the results.",
+    "prompt": "Combine search, filters, and sort, plus one small delightful detail in the results.",
     "tags": [
       "search",
       "gallery"
@@ -581,7 +581,7 @@
   },
   {
     "id": "culture-01",
-    "prompt": "Tell a story in three beats — hook, proof, takeaway.",
+    "prompt": "Tell a story in three beats: hook, proof, takeaway.",
     "tags": [
       "culture",
       "education",
@@ -671,7 +671,7 @@
   },
   {
     "id": "fun-01",
-    "prompt": "Turn today's data into a light game or quiz — still using real records.",
+    "prompt": "Turn today's data into a light game or quiz, still using real records.",
     "tags": [
       "fun",
       "collections",
@@ -716,7 +716,7 @@
   },
   {
     "id": "fun-06",
-    "prompt": "Build a guessing game using clues from real fields — nothing made up.",
+    "prompt": "Build a guessing game using clues from real fields. Nothing made up.",
     "tags": [
       "fun",
       "collections",
@@ -743,7 +743,7 @@
   },
   {
     "id": "fun-09",
-    "prompt": "Use play to introduce what's in the dataset — fun first, facts second.",
+    "prompt": "Use play to introduce what's in the dataset: fun first, facts second.",
     "tags": [
       "fun",
       "collections",
@@ -761,7 +761,7 @@
   },
   {
     "id": "media-01",
-    "prompt": "Design something worth sharing — a card or link your team would actually post.",
+    "prompt": "Design something worth sharing, like a card or link your team would actually post.",
     "tags": [
       "media",
       "trending",
@@ -806,7 +806,7 @@
   },
   {
     "id": "media-06",
-    "prompt": "Have fun with text from the data — quotes, labels, captions — in something shareable.",
+    "prompt": "Have fun with quotes, labels, and captions from the data in something shareable.",
     "tags": [
       "media",
       "trending",
@@ -842,7 +842,7 @@
   },
   {
     "id": "media-10",
-    "prompt": "Build something fun enough to pass around the team — but still grounded in real data.",
+    "prompt": "Build something fun enough to pass around the team, but still grounded in real data.",
     "tags": [
       "media",
       "trending",
@@ -941,7 +941,7 @@
   },
   {
     "id": "ranking-01",
-    "prompt": "Rank records by something that actually matters — and show why.",
+    "prompt": "Rank records by something that actually matters, and show why.",
     "tags": [
       "ranking",
       "trending",
@@ -968,7 +968,7 @@
   },
   {
     "id": "ranking-04",
-    "prompt": "Show who rose or fell since yesterday — the movers list.",
+    "prompt": "Show who rose or fell since yesterday: the movers list.",
     "tags": [
       "ranking",
       "trending",
@@ -977,7 +977,7 @@
   },
   {
     "id": "ranking-05",
-    "prompt": "Celebrate the outliers — the records that stand out from the pack.",
+    "prompt": "Celebrate the outliers, the records that stand out from the pack.",
     "tags": [
       "ranking",
       "trending",
@@ -1031,7 +1031,7 @@
   },
   {
     "id": "search-01",
-    "prompt": "Reward curiosity — every click should open a new question worth asking.",
+    "prompt": "Reward curiosity: every click should open a new question worth asking.",
     "tags": [
       "search",
       "education",
@@ -1121,7 +1121,7 @@
   },
   {
     "id": "charts-01",
-    "prompt": "Use one chart only — let the layout and chart type carry the insight.",
+    "prompt": "Use one chart only. Let the layout and chart type carry the insight.",
     "tags": [
       "charts",
       "comparison"
@@ -1169,7 +1169,7 @@
   },
   {
     "id": "charts-07",
-    "prompt": "Show many small trends on one page — like a row of tiny line charts.",
+    "prompt": "Show many small trends on one page, like a row of tiny line charts.",
     "tags": [
       "charts",
       "comparison"
@@ -1299,7 +1299,7 @@
   },
   {
     "id": "education-02",
-    "prompt": "Use real examples from today's source — no placeholder text.",
+    "prompt": "Use real examples from today's source, no placeholder text.",
     "tags": [
       "education",
       "culture"
@@ -1363,7 +1363,7 @@
   },
   {
     "id": "education-10",
-    "prompt": "Make it educational but feel like a product — not a manual.",
+    "prompt": "Make it educational but feel like a product, not a manual.",
     "tags": [
       "education",
       "culture"
@@ -1407,7 +1407,7 @@
   },
   {
     "id": "graphs-05",
-    "prompt": "Draw connections between items — but keep the default view readable.",
+    "prompt": "Draw connections between items, but keep the default view readable.",
     "tags": [
       "graphs",
       "search",
@@ -1509,7 +1509,7 @@
   },
   {
     "id": "mobile-07",
-    "prompt": "Start with one recommended record — a clear 'begin here.'",
+    "prompt": "Start with one recommended record, a clear 'begin here.'",
     "tags": [
       "mobile",
       "comparison"
@@ -1568,7 +1568,7 @@
   },
   {
     "id": "fun-04",
-    "prompt": "Generate a daily oddity from valid records — something worth a smile.",
+    "prompt": "Generate a daily oddity from valid records, something worth a smile.",
     "tags": [
       "fun",
       "media",
@@ -1631,7 +1631,7 @@
   },
   {
     "id": "social-01",
-    "prompt": "Design for a team ritual — something everyone can riff on together.",
+    "prompt": "Design for a team ritual: something everyone can riff on together.",
     "tags": [
       "social",
       "share",
