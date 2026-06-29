@@ -41,4 +41,5 @@ export interface GenerateOptions {
   date?: string;
   promptSeed?: number;
   sourceSeed?: number;
+  excludeSourceIds?: string[];
 }

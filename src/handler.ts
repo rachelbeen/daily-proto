@@ -11,10 +11,12 @@ export async function handleRequest(
   res: import("node:http").ServerResponse,
 ): Promise<void> {
   const url = new URL(req.url ?? "/", `http://${req.headers.host ?? "localhost"}`);
+  const excludeSourceIds = url.searchParams.getAll("exclude");
   const options = parseGenerateOptions(
     url.searchParams.get("date"),
     url.searchParams.get("promptSeed"),
     url.searchParams.get("sourceSeed"),
+    excludeSourceIds.length > 0 ? excludeSourceIds : undefined,
   );
 
   const dataMatch = url.pathname.match(/^\/api\/data\/([^/]+)$/);

@@ -380,6 +380,7 @@ function clientScript(prompt: DailyPrompt): string {
       date: ${JSON.stringify(prompt.date)},
       promptSeed: ${prompt.promptSeed},
       sourceSeed: ${prompt.sourceSeed},
+      sourceIds: ${JSON.stringify(prompt.dataSources.map((source) => source.id))},
     };
 
     const STATE_KEY = ${JSON.stringify(DAILY_PROMPT_STATE_KEY)};
@@ -456,14 +457,14 @@ function clientScript(prompt: DailyPrompt): string {
       });
     }
 
-    async function refreshWithAnimation(button, target, apply, bumpSeed) {
+    async function refreshWithAnimation(button, target, apply, bumpSeed, excludeCurrentSources = false) {
       if (button.disabled) return;
       button.disabled = true;
       button.classList.add("is-busy");
 
       try {
         bumpSeed();
-        const dataPromise = fetchPrompt();
+        const dataPromise = fetchPrompt(excludeCurrentSources);
 
         if (prefersReducedMotion()) {
           apply(await dataPromise);
@@ -499,15 +500,19 @@ function clientScript(prompt: DailyPrompt): string {
       document.getElementById("source-heading").textContent = data.sourceLabel;
       document.getElementById("source-content").innerHTML = data.html.sourceContent;
       state.sourceSeed = data.sourceSeed;
+      state.sourceIds = data.dataSources.map((source) => source.id);
       updateUrl();
     }
 
-    async function fetchPrompt() {
+    async function fetchPrompt(excludeCurrentSources = false) {
       const params = new URLSearchParams({
         date: state.date,
         promptSeed: String(state.promptSeed),
         sourceSeed: String(state.sourceSeed),
       });
+      if (excludeCurrentSources) {
+        state.sourceIds.forEach((id) => params.append("exclude", id));
+      }
       const response = await fetch("/api/prompt.json?" + params.toString());
       if (!response.ok) throw new Error("Failed to refresh");
       return response.json();
@@ -528,6 +533,7 @@ function clientScript(prompt: DailyPrompt): string {
         document.getElementById("source-content"),
         applySourcesOnly,
         () => { state.sourceSeed = randomSeed(); },
+        true,
       );
     });
 

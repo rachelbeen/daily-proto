@@ -21,22 +21,58 @@ function pick<T>(items: T[], seed: number, salt: string): T {
   return items[index]!;
 }
 
+function pickWeighted<T>(items: T[], weights: number[], seed: number, salt: string): T {
+  if (items.length === 0) {
+    throw new Error(`Cannot pick from empty list (${salt})`);
+  }
+
+  const total = weights.reduce((sum, weight) => sum + weight, 0);
+  if (total <= 0) {
+    return pick(items, seed, salt);
+  }
+
+  let roll = hashString(`${seed}:${salt}`) % total;
+  for (let i = 0; i < items.length; i++) {
+    roll -= weights[i]!;
+    if (roll < 0) {
+      return items[i]!;
+    }
+  }
+
+  return items[items.length - 1]!;
+}
+
+function sourceIdsKey(sources: DataSource[]): string {
+  return sources
+    .map((source) => source.id)
+    .sort()
+    .join(",");
+}
+
 function tagOverlap(source: DataSource, tags: string[]): number {
   return source.tags.filter((tag) => tags.includes(tag)).length;
 }
 
-function sourcesForChallenge(challenge: ChallengeTemplate): DataSource[] {
-  const ranked = dataSources
+function sourcesForChallenge(challenge: ChallengeTemplate): {
+  pool: DataSource[];
+  weights: number[];
+} {
+  const scored = dataSources
     .map((source) => ({ source, score: tagOverlap(source, challenge.tags) }))
     .filter((entry) => entry.score > 0)
-    .sort((a, b) => b.score - a.score);
+    .sort((a, b) => b.score - a.score || a.source.name.localeCompare(b.source.name));
 
-  if (ranked.length === 0) {
-    return dataSources;
+  if (scored.length === 0) {
+    return {
+      pool: dataSources,
+      weights: dataSources.map(() => 1),
+    };
   }
 
-  const topScore = ranked[0]!.score;
-  return ranked.filter((entry) => entry.score === topScore).map((entry) => entry.source);
+  return {
+    pool: scored.map((entry) => entry.source),
+    weights: scored.map((entry) => entry.score),
+  };
 }
 
 function combosForChallenge(challenge: ChallengeTemplate) {
@@ -55,7 +91,7 @@ function combosForChallenge(challenge: ChallengeTemplate) {
   return tagged.length > 0 ? tagged : sourceCombos;
 }
 
-function resolveAlignedSources(
+function resolveAlignedSourcesOnce(
   challenge: ChallengeTemplate,
   sourceSeed: number,
 ): Pick<DailyPrompt, "dataSources" | "comboNote"> {
@@ -73,8 +109,33 @@ function resolveAlignedSources(
     }
   }
 
-  const pool = sourcesForChallenge(challenge);
-  return { dataSources: [pick(pool, sourceSeed, "source")] };
+  const { pool, weights } = sourcesForChallenge(challenge);
+  return { dataSources: [pickWeighted(pool, weights, sourceSeed, "source")] };
+}
+
+function resolveAlignedSources(
+  challenge: ChallengeTemplate,
+  sourceSeed: number,
+  excludeSourceIds?: string[],
+): Pick<DailyPrompt, "dataSources" | "comboNote"> {
+  const excludeKey =
+    excludeSourceIds && excludeSourceIds.length > 0
+      ? [...excludeSourceIds].sort().join(",")
+      : "";
+
+  if (!excludeKey) {
+    return resolveAlignedSourcesOnce(challenge, sourceSeed);
+  }
+
+  for (let attempt = 0; attempt < 24; attempt++) {
+    const attemptSeed = sourceSeed + hashString(`exclude:${attempt}`);
+    const result = resolveAlignedSourcesOnce(challenge, attemptSeed);
+    if (sourceIdsKey(result.dataSources) !== excludeKey) {
+      return result;
+    }
+  }
+
+  return resolveAlignedSourcesOnce(challenge, sourceSeed);
 }
 
 export function resolveDate(input?: string): string {
@@ -100,11 +161,13 @@ export function parseGenerateOptions(
   dateParam?: string | null,
   promptSeedParam?: string | null,
   sourceSeedParam?: string | null,
+  excludeSourceIds?: string[],
 ): GenerateOptions {
   return {
     date: dateParam ?? undefined,
     promptSeed: parseSeed(promptSeedParam ?? null),
     sourceSeed: parseSeed(sourceSeedParam ?? null),
+    excludeSourceIds,
   };
 }
 
@@ -117,7 +180,11 @@ export function generateDailyPrompt(options?: string | GenerateOptions): DailyPr
   const challenge = pick(challenges, promptSeed, "challenge");
   const sourceSeed = opts.sourceSeed ?? hashString(`${date}:sources:${challenge.id}`);
 
-  const { dataSources: sources, comboNote } = resolveAlignedSources(challenge, sourceSeed);
+  const { dataSources: sources, comboNote } = resolveAlignedSources(
+    challenge,
+    sourceSeed,
+    opts.excludeSourceIds,
+  );
 
   return {
     date,
