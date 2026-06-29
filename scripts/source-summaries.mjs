@@ -16,7 +16,30 @@ const PATH_DATASET_HINTS = [
   [/\/region\/([a-z]+)/i, "countries in one world region"],
   [/\/search\.json/i, "book search results"],
   [/\/search\?/i, "search results"],
-  [/\/random/i, "one random item"],
+  [/\/breeds\/list\/all/i, "dog breed catalog grouped by type"],
+  [/\/breed\/[^/]+\/images/i, "dog breed image gallery"],
+  [/\/facts\?/i, "cat facts"],
+  [/\/advice\/search/i, "advice search results"],
+  [/\/quotes\?anime=/i, "anime quotes by title"],
+  [/\/api\/people$/i, "Star Wars characters"],
+  [/\/shows\?page=/i, "TV show catalog"],
+  [/\/launches\?limit=/i, "SpaceX launch history"],
+  [/\/apod\?.*count=/i, "recent astronomy pictures of the day"],
+  [/\/uuid\?count=/i, "UUID batch"],
+  [/\/search\?text=/i, "npm package search results"],
+  [/\/search\/\?q=.*format=json/i, "PyPI package search results"],
+  [/\/search\/authors\.json/i, "author search results"],
+  [/\/kanye\.rest\/quotes/i, "Kanye West quote archive"],
+  [/\/agify\.io\?name\[\]/i, "predicted ages for multiple names"],
+  [/\/genderize\.io\?name\[\]/i, "predicted genders for multiple names"],
+  [/\/nationalize\.io\?name\[\]/i, "predicted nationalities for multiple names"],
+  [/\/opentopodata\.org.*\|/i, "elevation readings for multiple coordinates"],
+  [/\/dummyjson\.com\/quotes/i, "inspirational quotes"],
+  [/\/jokes\/programming\/ten/i, "programming jokes"],
+  [/\/shibes\?count=/i, "Shiba Inu images"],
+  [/\/theaxolotlapi.*\/api\/$/i, "axolotl profiles"],
+  [/\/randomWords/i, "random dictionary words"],
+  [/\/random(?:\/|\?|$)/i, "one random item"],
   [/\/latest/i, "the latest available readings"],
   [/\/upcoming/i, "upcoming scheduled events"],
   [/\/historical/i, "historical values over time"],
@@ -41,7 +64,8 @@ const PATH_DATASET_HINTS = [
   [/\/nwis\/iv/i, "stream flow and water level readings over time"],
   [/\/openaq\.org/i, "air-quality monitoring locations"],
   [/\/fda\.gov/i, "FDA public safety and recall records"],
-  [/\/disease\.sh/i, "public health and COVID statistics"],
+  [/\/randomuser\.me/i, "fictional user profiles"],
+  [/\/disease\.sh\/v3\/covid-19\/countries/i, "COVID-19 stats by country"],
   [/\/frankfurter/i, "today's foreign-exchange rates"],
   [/\/coingecko\.com/i, "crypto market prices and market caps"],
   [/\/pokeapi/i, "Pokémon species data"],
@@ -64,18 +88,29 @@ const PATH_DATASET_HINTS = [
 function extractSampleSize(endpoint) {
   try {
     const url = new URL(endpoint);
-    const sizeKeys = ["limit", "per_page", "page_size", "pageSize", "rows", "max", "amount", "ps", "size"];
+    const sizeKeys = ["limit", "per_page", "page_size", "pageSize", "rows", "max", "amount", "ps", "size", "count", "maxresults", "results"];
     for (const key of sizeKeys) {
       const value = url.searchParams.get(key);
       if (value && /^\d+$/.test(value)) {
         return Number(value);
       }
     }
-    if (url.pathname.includes("/random")) return 1;
+    if (/\/(?:api\/)?random(?:\/|$|\?)/.test(url.pathname)) return 1;
+    const nameParams = url.searchParams.getAll("name[]");
+    if (nameParams.length > 1) return nameParams.length;
   } catch {
     return null;
   }
   return null;
+}
+
+function endpointMatchTarget(endpoint) {
+  try {
+    const url = new URL(endpoint);
+    return `${url.pathname}${url.search}`;
+  } catch {
+    return endpoint;
+  }
 }
 
 function inferDatasetLabel(endpoint, name, category) {
@@ -85,8 +120,10 @@ function inferDatasetLabel(endpoint, name, category) {
     return WB_INDICATORS[code] ?? `World Bank indicator ${code}`;
   }
 
+  const matchTarget = endpointMatchTarget(endpoint);
+
   for (const [pattern, label] of PATH_DATASET_HINTS) {
-    if (pattern.test(endpoint)) return label;
+    if (pattern.test(matchTarget) || pattern.test(endpoint)) return label;
   }
 
   try {

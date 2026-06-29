@@ -527,12 +527,12 @@ const CURATED_SOURCES = [
     id: "dog-ceo",
     name: "Dog CEO",
     category: "Fun",
-    description: "Random dog images by breed.",
+    description: "Dog breed catalog with 100+ breeds grouped by type, plus per-breed image galleries.",
     baseUrl: "https://dog.ceo",
     docsUrl: "https://dog.ceo/dog-api/documentation",
     auth: "none",
     exampleEndpoint: "https://dog.ceo/api/breeds/list/all",
-    sampleFields: ["message", "status", "breeds"],
+    sampleFields: ["message", "status", "breed", "sub-breed"],
     tags: ["fun", "media", "collections"],
   },
   {
@@ -618,22 +618,140 @@ function buildSources() {
 /** Patch known-dead or misconfigured endpoints after catalog assembly. */
 function applySourceFixes(sources) {
   const fixes = {
+    "cat-facts": {
+      exampleEndpoint: "https://catfact.ninja/facts?limit=10&max_length=140",
+      description: "Cat facts and breed lists — multiple facts per request.",
+      sampleFields: ["fact", "length"],
+    },
+    "dog-api": {
+      exampleEndpoint: "https://dog.ceo/api/breed/hound/images",
+      description: "Dog breed image galleries — dozens of photos per breed.",
+      sampleFields: ["message", "status"],
+    },
+    "shibe-online": {
+      exampleEndpoint: "https://shibe.online/api/shibes?count=10&urls=true",
+      description: "Shiba Inu image batches with optional metadata URLs.",
+      sampleFields: ["urls", "breeds", "count"],
+    },
+    "axolotl-api": {
+      exampleEndpoint: "https://theaxolotlapi.netlify.app/api/",
+      description: "Axolotl profiles with names, colors, and morph traits.",
+      sampleFields: ["name", "color", "morph", "age"],
+    },
     animechan: {
-      exampleEndpoint: "https://animechan.xyz/api/random",
+      exampleEndpoint: "https://animechan.xyz/api/quotes?anime=Naruto",
       docsUrl: "https://animechan.xyz/",
       baseUrl: "https://animechan.xyz",
+      description: "Anime quotes by title or character — multiple quotes per request.",
+      sampleFields: ["anime", "character", "quote"],
+    },
+    swapi: {
+      exampleEndpoint: "https://swapi.dev/api/people",
+      description: "Star Wars people, planets, and starships with pagination.",
+      sampleFields: ["name", "height", "mass", "films"],
+    },
+    tvmaze: {
+      exampleEndpoint: "https://api.tvmaze.com/shows?page=0",
+      description: "TV show catalog with genres, schedules, and episode metadata.",
+      sampleFields: ["name", "genres", "rating", "premiered"],
+    },
+    quotable: {
+      exampleEndpoint: "https://dummyjson.com/quotes?limit=10",
+      docsUrl: "https://dummyjson.com/docs/quotes",
+      baseUrl: "https://dummyjson.com",
+      description: "Inspirational quotes with authors and tags.",
+      sampleFields: ["quote", "author", "tags"],
+    },
+    "advice-slip": {
+      exampleEndpoint: "https://api.adviceslip.com/advice/search?query=life",
+      description: "Searchable advice snippets — multiple results per query.",
+      sampleFields: ["id", "advice", "total_results"],
     },
     "bored-api": {
       name: "Official Joke API",
-      exampleEndpoint: "https://official-joke-api.appspot.com/random_joke",
+      exampleEndpoint: "https://official-joke-api.appspot.com/jokes/programming/ten",
       docsUrl: "https://official-joke-api.appspot.com/",
       baseUrl: "https://official-joke-api.appspot.com",
-      description: "Random programming jokes — a lighthearted JSON API for quick UI prototypes.",
+      description: "Programming joke batches for quick UI prototypes.",
+      sampleFields: ["setup", "punchline", "type", "id"],
     },
-    quotable: {
-      exampleEndpoint: "https://dummyjson.com/quotes/random?limit=1",
-      docsUrl: "https://dummyjson.com/docs/quotes",
-      baseUrl: "https://dummyjson.com",
+    "kanye-rest": {
+      exampleEndpoint: "https://api.kanye.rest/quotes",
+      description: "Kanye West quotes — full quote archive as JSON.",
+      sampleFields: ["quote", "id"],
+    },
+    "open-targets": {
+      exampleEndpoint: "https://disease.sh/v3/covid-19/countries?limit=10",
+      docsUrl: "https://disease.sh/docs/",
+      baseUrl: "https://disease.sh",
+      description: "Public health statistics useful for charts and trend explorers.",
+    },
+    "npm-registry": {
+      exampleEndpoint: "https://registry.npmjs.org/-/v1/search?text=react&size=10",
+      description: "npm package search with versions, keywords, and download stats.",
+      sampleFields: ["name", "version", "description", "keywords"],
+    },
+    pypi: {
+      exampleEndpoint: "https://pypi.org/search/?q=flask&format=json",
+      description: "PyPI package search with project metadata.",
+      sampleFields: ["name", "version", "summary", "package_url"],
+    },
+    "open-library-authors": {
+      exampleEndpoint: "https://openlibrary.org/search/authors.json?q=twain&limit=10",
+      description: "Author search with birth dates, work counts, and alternate names.",
+      sampleFields: ["name", "birth_date", "work_count", "top_work"],
+    },
+    "spacex-api": {
+      exampleEndpoint: "https://api.spacexdata.com/v4/launches?limit=10",
+      description: "SpaceX launch history with dates, rockets, and outcomes.",
+      sampleFields: ["name", "date_utc", "success", "details"],
+    },
+    "nasa-apod": {
+      exampleEndpoint: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=5",
+      description: "NASA Astronomy Picture of the Day — batch of recent images.",
+      sampleFields: ["title", "date", "url", "explanation"],
+    },
+    "binance-public": {
+      exampleEndpoint:
+        "https://api.binance.com/api/v3/ticker/24hr?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%2C%22BNBUSDT%22%2C%22SOLUSDT%22%2C%22ADAUSDT%22%5D",
+      description: "Crypto 24-hour price and volume stats for top trading pairs.",
+      sampleFields: ["symbol", "lastPrice", "priceChangePercent", "volume"],
+    },
+    httpbin: {
+      exampleEndpoint: "https://httpbin.org/uuid?count=10",
+      description: "HTTP test helpers — UUID batches and request echo utilities.",
+      sampleFields: ["uuids"],
+    },
+    agify: {
+      exampleEndpoint: "https://api.agify.io?name[]=michael&name[]=jessica&name[]=oliver&name[]=sophia&name[]=liam",
+      description: "Predicted ages for batches of first names.",
+      sampleFields: ["name", "age", "count"],
+    },
+    genderize: {
+      exampleEndpoint:
+        "https://api.genderize.io?name[]=luc&name[]=emma&name[]=alex&name[]=jordan&name[]=taylor",
+      description: "Predicted genders for batches of first names.",
+      sampleFields: ["name", "gender", "probability", "count"],
+    },
+    nationalize: {
+      exampleEndpoint:
+        "https://api.nationalize.io?name[]=nathaniel&name[]=yuki&name[]=olga&name[]=carlos&name[]=mei",
+      description: "Predicted nationalities for batches of first names.",
+      sampleFields: ["name", "country", "probability", "count"],
+    },
+    "open-topo-data": {
+      exampleEndpoint:
+        "https://api.opentopodata.org/v1/aster30m?locations=40.7128,-74.0060|34.0522,-118.2437|51.5074,-0.1278|48.8566,2.3522|35.6762,139.6503",
+      description: "Elevation lookups for multiple coordinates in one request.",
+      sampleFields: ["location", "elevation", "dataset"],
+    },
+    "random-user": {
+      description: "Random fictional user profiles for demos and prototypes.",
+      sampleFields: ["name", "email", "location", "picture"],
+    },
+    wordnik: {
+      description: "Random dictionary words with definitions and examples.",
+      sampleFields: ["word", "definitions", "examples"],
     },
     "open-aq": {
       exampleEndpoint: "https://api.openaq.org/v3/locations?limit=5",
@@ -664,7 +782,7 @@ function applySourceFixes(sources) {
       baseUrl: "https://api.blockchain.info",
     },
     "open-targets": {
-      exampleEndpoint: "https://disease.sh/v3/covid-19/countries/usa",
+      exampleEndpoint: "https://disease.sh/v3/covid-19/countries?limit=10",
       docsUrl: "https://disease.sh/docs/",
       baseUrl: "https://disease.sh",
       description: "Public health statistics useful for charts and trend explorers.",

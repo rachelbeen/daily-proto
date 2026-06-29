@@ -1,7 +1,9 @@
 import { getDataSourceById } from "./data/catalog.js";
+import { loadOpenDataCatalog } from "./data/open-data-index.js";
 import { fetchSourceData } from "./fetch-source.js";
 import { generateDailyPrompt, parseGenerateOptions } from "./generate.js";
 import { renderPromptPage, renderPromptPayload } from "./web/html.js";
+import { renderOpenDataIndexPage } from "./web/open-data-index.js";
 import { renderPitbullSuperheroPage } from "./web/pitbull-superhero.js";
 
 export async function handleRequest(
@@ -43,6 +45,12 @@ export async function handleRequest(
     return;
   }
 
+  if (url.pathname === "/health") {
+    res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+    res.end(JSON.stringify({ ok: true, routes: ["/", "/open-data", "/api/prompt.json"] }));
+    return;
+  }
+
   if (url.pathname === "/pitbull") {
     res.writeHead(200, {
       "Content-Type": "text/html; charset=utf-8",
@@ -53,6 +61,17 @@ export async function handleRequest(
     return;
   }
 
+  if (url.pathname === "/open-data" || url.pathname === "/open-data/") {
+    const catalog = loadOpenDataCatalog();
+    res.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store, no-cache, must-revalidate",
+      Pragma: "no-cache",
+    });
+    res.end(renderOpenDataIndexPage(catalog));
+    return;
+  }
+
   if (url.pathname !== "/") {
     res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
     res.end("Not found");
@@ -60,6 +79,10 @@ export async function handleRequest(
   }
 
   const prompt = generateDailyPrompt(options);
-  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+  res.writeHead(200, {
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    Pragma: "no-cache",
+  });
   res.end(renderPromptPage(prompt));
 }

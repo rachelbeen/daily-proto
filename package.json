@@ -7,13 +7,15 @@
     "daily-proto": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc && cp -r src/data/catalog dist/data/",
+    "build": "tsc && cp -r src/data/catalog dist/data/ && cp -r src/data/open-data-index dist/data/",
     "dev": "tsx src/cli.ts",
     "generate": "tsx src/cli.ts generate",
     "post": "tsx src/cli.ts post",
     "seed": "node scripts/seed-catalog.mjs && mkdir -p dist/data && cp -r src/data/catalog dist/data/",
     "start": "node dist/server.js",
-    "serve": "tsx src/server.ts",
+    "serve": "npm run build && node dist/server.js",
+    "web": "bash scripts/start-web.sh",
+    "restart": "bash scripts/start-web.sh",
     "restart:pitbull": "bash scripts/restart-pitbull.sh",
     "today": "tsx src/cli.ts today"
   },

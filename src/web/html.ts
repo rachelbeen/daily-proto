@@ -1,4 +1,5 @@
 import type { DailyPrompt, DataSource } from "../types.js";
+import { renderPageLinks, siteNavStyles } from "./site-nav.js";
 
 function escapeHtml(value: string): string {
   return value
@@ -99,16 +100,18 @@ const pageStyles = `
       flex: 968 1 1;
       min-width: 0;
       background: var(--mint);
-      padding: 80px;
+      padding: var(--site-gutter);
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      gap: 40px;
+      justify-content: flex-start;
+      gap: 0;
     }
 
     .headline-block {
+      flex: 1;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 40px;
       max-width: 782px;
     }
@@ -298,7 +301,7 @@ const pageStyles = `
       .source-panel {
         flex: none;
         width: auto;
-        padding: clamp(2rem, 6vw, 80px);
+        padding: var(--site-gutter);
         overflow: visible;
       }
 
@@ -387,11 +390,14 @@ export function renderPromptPage(prompt: DailyPrompt): string {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;800&display=swap" rel="stylesheet" />
-  <style>${pageStyles}</style>
+  <style>${siteNavStyles}${pageStyles}</style>
 </head>
 <body>
   <div class="shell">
     <section class="prompt-panel" aria-labelledby="prompt-heading">
+      <div class="site-nav-slot">
+        ${renderPageLinks("daily")}
+      </div>
       <div class="headline-block">
         <div class="chip-row" aria-label="Prompt metadata">
           <span class="neon-chip">Today's Prompt</span>

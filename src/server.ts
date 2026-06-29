@@ -7,6 +7,7 @@ const server = createServer((req, res) => {
   void handleRequest(req, res);
 });
 
-server.listen(port, () => {
-  console.log(`Daily Proto → http://localhost:${port}`);
+server.listen(port, "0.0.0.0", () => {
+  console.log(`Daily Proto → http://127.0.0.1:${port}`);
+  console.log(`Open Data Index → http://127.0.0.1:${port}/open-data`);
 });

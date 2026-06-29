@@ -365,7 +365,7 @@
     "id": "dog-ceo",
     "name": "Dog CEO",
     "category": "Fun",
-    "description": "Random dog images by breed.",
+    "description": "Dog breed catalog with 100+ breeds grouped by type, plus per-breed image galleries.",
     "baseUrl": "https://dog.ceo",
     "docsUrl": "https://dog.ceo/dog-api/documentation",
     "auth": "none",
@@ -373,14 +373,15 @@
     "sampleFields": [
       "message",
       "status",
-      "breeds"
+      "breed",
+      "sub-breed"
     ],
     "tags": [
       "fun",
       "media",
       "collections"
     ],
-    "dataSummary": "Dog ceo data. A snapshot from a search or listing."
+    "dataSummary": "Dog breed catalog grouped by type. A snapshot from a search or listing."
   },
   {
     "id": "us-census",
@@ -407,101 +408,100 @@
     "id": "cat-facts",
     "name": "Cat Facts",
     "category": "Animals",
-    "description": "Cat Facts — One random fact.",
+    "description": "Cat facts and breed lists — multiple facts per request.",
     "baseUrl": "https://catfact.ninja",
     "docsUrl": "https://alexwohlbruck.github.io/catfacts/",
     "auth": "none",
-    "exampleEndpoint": "https://catfact.ninja/fact",
+    "exampleEndpoint": "https://catfact.ninja/facts?limit=10&max_length=140",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "fact",
+      "length"
     ],
     "tags": [
       "fun",
       "science"
     ],
-    "dataSummary": "One random fact. A snapshot from right now."
+    "dataSummary": "10 entries — cat facts. A snapshot from right now."
   },
   {
     "id": "dog-api",
     "name": "Dog API",
     "category": "Animals",
-    "description": "Dog API — One random item.",
+    "description": "Dog breed image galleries — dozens of photos per breed.",
     "baseUrl": "https://dog.ceo",
     "docsUrl": "https://dog.ceo/dog-api/",
     "auth": "none",
-    "exampleEndpoint": "https://dog.ceo/api/breeds/image/random",
+    "exampleEndpoint": "https://dog.ceo/api/breed/hound/images",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "message",
+      "status"
     ],
     "tags": [
       "fun",
       "media"
     ],
-    "dataSummary": "1 entry — one random item. A snapshot from right now."
+    "dataSummary": "Dog breed image gallery. A snapshot from right now."
   },
   {
     "id": "shibe-online",
     "name": "Shibe.Online",
     "category": "Animals",
-    "description": "Shibe.Online — Shibe.online data.",
+    "description": "Shiba Inu image batches with optional metadata URLs.",
     "baseUrl": "https://shibe.online",
     "docsUrl": "http://shibe.online/",
     "auth": "none",
-    "exampleEndpoint": "https://shibe.online/api/shibes?count=1",
+    "exampleEndpoint": "https://shibe.online/api/shibes?count=10&urls=true",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "urls",
+      "breeds",
+      "count"
     ],
     "tags": [
       "fun",
       "media"
     ],
-    "dataSummary": "Shibe.online data. A snapshot from right now."
+    "dataSummary": "10 entries — Shiba Inu images. A snapshot from right now."
   },
   {
     "id": "axolotl-api",
     "name": "Axolotl API",
     "category": "Animals",
-    "description": "Axolotl API — One random item.",
+    "description": "Axolotl profiles with names, colors, and morph traits.",
     "baseUrl": "https://theaxolotlapi.netlify.app",
     "docsUrl": "https://theaxolotlapi.netlify.app/",
     "auth": "none",
-    "exampleEndpoint": "https://theaxolotlapi.netlify.app/api/random",
+    "exampleEndpoint": "https://theaxolotlapi.netlify.app/api/",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "color",
+      "morph",
+      "age"
     ],
     "tags": [
       "fun",
       "science"
     ],
-    "dataSummary": "1 entry — one random item. A snapshot from right now."
+    "dataSummary": "Axolotl profiles. A snapshot from right now."
   },
   {
     "id": "animechan",
     "name": "AnimeChan",
     "category": "Anime",
-    "description": "AnimeChan — One random item.",
+    "description": "Anime quotes by title or character — multiple quotes per request.",
     "baseUrl": "https://animechan.xyz",
     "docsUrl": "https://animechan.xyz/",
     "auth": "none",
-    "exampleEndpoint": "https://animechan.xyz/api/random",
+    "exampleEndpoint": "https://animechan.xyz/api/quotes?anime=Naruto",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "anime",
+      "character",
+      "quote"
     ],
     "tags": [
       "fun",
       "media"
     ],
-    "dataSummary": "1 entry — one random item. A snapshot from right now."
+    "dataSummary": "Anime quotes by title. A snapshot from right now."
   },
   {
     "id": "studio-ghibli",
@@ -787,21 +787,22 @@
     "id": "swapi",
     "name": "SWAPI",
     "category": "Film",
-    "description": "SWAPI — One Star Wars character.",
+    "description": "Star Wars people, planets, and starships with pagination.",
     "baseUrl": "https://swapi.dev",
     "docsUrl": "https://swapi.dev/",
     "auth": "none",
-    "exampleEndpoint": "https://swapi.dev/api/people/1",
+    "exampleEndpoint": "https://swapi.dev/api/people",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "height",
+      "mass",
+      "films"
     ],
     "tags": [
       "fun",
       "education"
     ],
-    "dataSummary": "One Star Wars character. A snapshot from right now."
+    "dataSummary": "Star Wars characters. A snapshot from right now."
   },
   {
     "id": "stapi",
@@ -827,21 +828,22 @@
     "id": "tvmaze",
     "name": "TVMaze",
     "category": "Entertainment",
-    "description": "TVMaze — Tvmaze data.",
+    "description": "TV show catalog with genres, schedules, and episode metadata.",
     "baseUrl": "https://api.tvmaze.com",
     "docsUrl": "https://www.tvmaze.com/api",
     "auth": "none",
-    "exampleEndpoint": "https://api.tvmaze.com/shows/1",
+    "exampleEndpoint": "https://api.tvmaze.com/shows?page=0",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "genres",
+      "rating",
+      "premiered"
     ],
     "tags": [
       "media",
       "search"
     ],
-    "dataSummary": "Tvmaze data. A snapshot from right now."
+    "dataSummary": "TV show catalog. A snapshot from right now."
   },
   {
     "id": "omdb",
@@ -1489,15 +1491,16 @@
     "id": "binance-public",
     "name": "Binance Public",
     "category": "Cryptocurrency",
-    "description": "Binance Public — Live market prices.",
+    "description": "Crypto 24-hour price and volume stats for top trading pairs.",
     "baseUrl": "https://api.binance.com",
     "docsUrl": "https://binance-docs.github.io/apidocs/spot/en/",
     "auth": "none",
-    "exampleEndpoint": "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT",
+    "exampleEndpoint": "https://api.binance.com/api/v3/ticker/24hr?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%2C%22BNBUSDT%22%2C%22SOLUSDT%22%2C%22ADAUSDT%22%5D",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "symbol",
+      "lastPrice",
+      "priceChangePercent",
+      "volume"
     ],
     "tags": [
       "finance",
@@ -1589,11 +1592,11 @@
     "id": "disease-sh",
     "name": "Disease.sh",
     "category": "Health",
-    "description": "Disease.sh — Country-level stats for one country.",
+    "description": "Disease.sh — COVID-19 stats by country.",
     "baseUrl": "https://disease.sh",
     "docsUrl": "https://disease.sh/docs/",
     "auth": "none",
-    "exampleEndpoint": "https://disease.sh/v3/covid-19/countries/usa",
+    "exampleEndpoint": "https://disease.sh/v3/covid-19/countries?limit=10",
     "sampleFields": [
       "id",
       "name",
@@ -1603,7 +1606,7 @@
       "health",
       "time-series"
     ],
-    "dataSummary": "Country-level stats for one country. A snapshot from right now."
+    "dataSummary": "10 entries — COVID-19 stats by country. A snapshot from right now."
   },
   {
     "id": "nutritionix",
@@ -1909,21 +1912,22 @@
     "id": "nasa-apod",
     "name": "NASA APOD",
     "category": "Science",
-    "description": "NASA APOD — Nasa apod data.",
+    "description": "NASA Astronomy Picture of the Day — batch of recent images.",
     "baseUrl": "https://api.nasa.gov",
     "docsUrl": "https://api.nasa.gov/",
     "auth": "free-key",
-    "exampleEndpoint": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+    "exampleEndpoint": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=5",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "title",
+      "date",
+      "url",
+      "explanation"
     ],
     "tags": [
       "science",
       "media"
     ],
-    "dataSummary": "Nasa apod data. A snapshot from right now."
+    "dataSummary": "5 entries — recent astronomy pictures of the day. A snapshot from right now."
   },
   {
     "id": "nasa-neows",
@@ -2053,7 +2057,7 @@
     "baseUrl": "https://disease.sh",
     "docsUrl": "https://disease.sh/docs/",
     "auth": "none",
-    "exampleEndpoint": "https://disease.sh/v3/covid-19/countries/usa",
+    "exampleEndpoint": "https://disease.sh/v3/covid-19/countries?limit=10",
     "sampleFields": [
       "id",
       "name",
@@ -2063,7 +2067,7 @@
       "health",
       "science"
     ],
-    "dataSummary": "Country-level stats for one country. A snapshot from right now."
+    "dataSummary": "10 entries — COVID-19 stats by country. A snapshot from right now."
   },
   {
     "id": "gbif-species",
@@ -2149,15 +2153,15 @@
     "id": "open-topo-data",
     "name": "Open Topo Data",
     "category": "Geography",
-    "description": "Open Topo Data — Open topo data data.",
+    "description": "Elevation lookups for multiple coordinates in one request.",
     "baseUrl": "https://api.opentopodata.org",
     "docsUrl": "https://www.opentopodata.org/",
     "auth": "none",
-    "exampleEndpoint": "https://api.opentopodata.org/v1/aster30m?locations=57.688709,11.976404",
+    "exampleEndpoint": "https://api.opentopodata.org/v1/aster30m?locations=40.7128,-74.0060|34.0522,-118.2437|51.5074,-0.1278|48.8566,2.3522|35.6762,139.6503",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "location",
+      "elevation",
+      "dataset"
     ],
     "tags": [
       "geo",
@@ -2269,21 +2273,22 @@
     "id": "open-library-authors",
     "name": "Open Library Authors",
     "category": "Books",
-    "description": "Open Library Authors — Open library authors data.",
+    "description": "Author search with birth dates, work counts, and alternate names.",
     "baseUrl": "https://openlibrary.org",
     "docsUrl": "https://openlibrary.org/developers/api",
     "auth": "none",
-    "exampleEndpoint": "https://openlibrary.org/authors/OL23919A.json",
+    "exampleEndpoint": "https://openlibrary.org/search/authors.json?q=twain&limit=10",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "birth_date",
+      "work_count",
+      "top_work"
     ],
     "tags": [
       "education",
       "search"
     ],
-    "dataSummary": "Open library authors data. A snapshot from right now."
+    "dataSummary": "10 entries — author search results. A snapshot from a search or listing."
   },
   {
     "id": "google-books",
@@ -2329,81 +2334,83 @@
     "id": "quotable",
     "name": "Quotable",
     "category": "Social",
-    "description": "Quotable — One random item.",
+    "description": "Inspirational quotes with authors and tags.",
     "baseUrl": "https://dummyjson.com",
     "docsUrl": "https://dummyjson.com/docs/quotes",
     "auth": "none",
-    "exampleEndpoint": "https://dummyjson.com/quotes/random?limit=1",
+    "exampleEndpoint": "https://dummyjson.com/quotes?limit=10",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "quote",
+      "author",
+      "tags"
     ],
     "tags": [
       "fun",
       "media"
     ],
-    "dataSummary": "1 entry — one random item. A snapshot from right now."
+    "dataSummary": "10 entries — inspirational quotes. A snapshot from right now."
   },
   {
     "id": "advice-slip",
     "name": "Advice Slip",
     "category": "Social",
-    "description": "Advice Slip — Advice slip data.",
+    "description": "Searchable advice snippets — multiple results per query.",
     "baseUrl": "https://api.adviceslip.com",
     "docsUrl": "https://api.adviceslip.com/",
     "auth": "none",
-    "exampleEndpoint": "https://api.adviceslip.com/advice",
+    "exampleEndpoint": "https://api.adviceslip.com/advice/search?query=life",
     "sampleFields": [
       "id",
-      "name",
-      "data"
+      "advice",
+      "total_results"
     ],
     "tags": [
       "fun",
       "media"
     ],
-    "dataSummary": "Advice slip data. A snapshot from right now."
+    "dataSummary": "Search results. A snapshot from a search or listing."
   },
   {
     "id": "bored-api",
     "name": "Official Joke API",
     "category": "Social",
-    "description": "Random programming jokes — a lighthearted JSON API for quick UI prototypes.",
+    "description": "Programming joke batches for quick UI prototypes.",
     "baseUrl": "https://official-joke-api.appspot.com",
     "docsUrl": "https://official-joke-api.appspot.com/",
     "auth": "none",
-    "exampleEndpoint": "https://official-joke-api.appspot.com/random_joke",
+    "exampleEndpoint": "https://official-joke-api.appspot.com/jokes/programming/ten",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "setup",
+      "punchline",
+      "type",
+      "id"
     ],
     "tags": [
       "fun",
       "tools"
     ],
-    "dataSummary": "1 entry — one random item. A snapshot from right now."
+    "dataSummary": "Programming jokes. A snapshot from right now."
   },
   {
     "id": "random-user",
     "name": "Random User",
     "category": "Social",
-    "description": "Random User — One random item.",
+    "description": "Random fictional user profiles for demos and prototypes.",
     "baseUrl": "https://randomuser.me",
     "docsUrl": "https://randomuser.me/documentation",
     "auth": "none",
     "exampleEndpoint": "https://randomuser.me/api/?results=5",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "email",
+      "location",
+      "picture"
     ],
     "tags": [
       "tools",
       "fun"
     ],
-    "dataSummary": "One random item. A snapshot from right now."
+    "dataSummary": "5 entries — fictional user profiles. A snapshot from right now."
   },
   {
     "id": "jsonplaceholder",
@@ -2429,21 +2436,19 @@
     "id": "httpbin",
     "name": "HTTPBin",
     "category": "Development",
-    "description": "HTTPBin — Httpbin data.",
+    "description": "HTTP test helpers — UUID batches and request echo utilities.",
     "baseUrl": "https://httpbin.org",
     "docsUrl": "https://httpbin.org/",
     "auth": "none",
-    "exampleEndpoint": "https://httpbin.org/json",
+    "exampleEndpoint": "https://httpbin.org/uuid?count=10",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "uuids"
     ],
     "tags": [
       "tools",
       "education"
     ],
-    "dataSummary": "Httpbin data. A snapshot from right now."
+    "dataSummary": "10 entries — UUID batch. A snapshot from right now."
   },
   {
     "id": "reqres",
@@ -2509,41 +2514,43 @@
     "id": "npm-registry",
     "name": "npm Registry",
     "category": "Development",
-    "description": "npm Registry — The latest available readings.",
+    "description": "npm package search with versions, keywords, and download stats.",
     "baseUrl": "https://registry.npmjs.org",
     "docsUrl": "https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md",
     "auth": "none",
-    "exampleEndpoint": "https://registry.npmjs.org/react/latest",
+    "exampleEndpoint": "https://registry.npmjs.org/-/v1/search?text=react&size=10",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "version",
+      "description",
+      "keywords"
     ],
     "tags": [
       "tools",
       "search"
     ],
-    "dataSummary": "The latest available readings. Updates frequently — near real-time."
+    "dataSummary": "10 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "pypi",
     "name": "PyPI",
     "category": "Development",
-    "description": "PyPI — Pypi data.",
+    "description": "PyPI package search with project metadata.",
     "baseUrl": "https://pypi.org",
     "docsUrl": "https://warehouse.pypa.io/api-reference/",
     "auth": "none",
-    "exampleEndpoint": "https://pypi.org/pypi/requests/json",
+    "exampleEndpoint": "https://pypi.org/search/?q=flask&format=json",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "version",
+      "summary",
+      "package_url"
     ],
     "tags": [
       "tools",
       "search"
     ],
-    "dataSummary": "Pypi data. A snapshot from right now."
+    "dataSummary": "PyPI package search results. A snapshot from a search or listing."
   },
   {
     "id": "stackexchange",
@@ -2849,21 +2856,21 @@
     "id": "wordnik",
     "name": "Wordnik",
     "category": "Text",
-    "description": "Wordnik — One random item.",
+    "description": "Random dictionary words with definitions and examples.",
     "baseUrl": "https://api.wordnik.com",
     "docsUrl": "https://developer.wordnik.com/",
     "auth": "free-key",
     "exampleEndpoint": "https://api.wordnik.com/v4/word.json/randomWords?limit=5&api_key=demo",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "word",
+      "definitions",
+      "examples"
     ],
     "tags": [
       "education",
       "fun"
     ],
-    "dataSummary": "5 entries — one random item. A snapshot from right now."
+    "dataSummary": "5 entries — random dictionary words. A snapshot from right now."
   },
   {
     "id": "pexels",
@@ -3189,21 +3196,22 @@
     "id": "spacex-api",
     "name": "SpaceX API",
     "category": "Science",
-    "description": "SpaceX API — The latest available readings.",
+    "description": "SpaceX launch history with dates, rockets, and outcomes.",
     "baseUrl": "https://api.spacexdata.com",
     "docsUrl": "https://github.com/r-spacex/SpaceX-API",
     "auth": "none",
-    "exampleEndpoint": "https://api.spacexdata.com/v4/launches/latest",
+    "exampleEndpoint": "https://api.spacexdata.com/v4/launches?limit=10",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "date_utc",
+      "success",
+      "details"
     ],
     "tags": [
       "science",
       "time-series"
     ],
-    "dataSummary": "The latest available readings. Updates frequently — near real-time."
+    "dataSummary": "10 entries — SpaceX launch history. A snapshot from right now."
   },
   {
     "id": "launch-library",
@@ -3563,7 +3571,7 @@
       "transit",
       "geo"
     ],
-    "dataSummary": "Open charge map data. A snapshot from right now."
+    "dataSummary": "5 entries — open charge map data. A snapshot from right now."
   },
   {
     "id": "bikeshare-map",
@@ -3849,61 +3857,63 @@
     "id": "agify",
     "name": "Agify",
     "category": "Tools",
-    "description": "Agify — Agify data.",
+    "description": "Predicted ages for batches of first names.",
     "baseUrl": "https://api.agify.io",
     "docsUrl": "https://agify.io/",
     "auth": "none",
-    "exampleEndpoint": "https://api.agify.io?name=michael",
+    "exampleEndpoint": "https://api.agify.io?name[]=michael&name[]=jessica&name[]=oliver&name[]=sophia&name[]=liam",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "age",
+      "count"
     ],
     "tags": [
       "tools",
       "fun"
     ],
-    "dataSummary": "Agify data. A snapshot from right now."
+    "dataSummary": "5 entries — agify data. A snapshot from right now."
   },
   {
     "id": "genderize",
     "name": "Genderize",
     "category": "Tools",
-    "description": "Genderize — Genderize data.",
+    "description": "Predicted genders for batches of first names.",
     "baseUrl": "https://api.genderize.io",
     "docsUrl": "https://genderize.io/",
     "auth": "none",
-    "exampleEndpoint": "https://api.genderize.io?name=luc",
+    "exampleEndpoint": "https://api.genderize.io?name[]=luc&name[]=emma&name[]=alex&name[]=jordan&name[]=taylor",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "gender",
+      "probability",
+      "count"
     ],
     "tags": [
       "tools",
       "fun"
     ],
-    "dataSummary": "Genderize data. A snapshot from right now."
+    "dataSummary": "5 entries — genderize data. A snapshot from right now."
   },
   {
     "id": "nationalize",
     "name": "Nationalize",
     "category": "Tools",
-    "description": "Nationalize — Nationalize data.",
+    "description": "Predicted nationalities for batches of first names.",
     "baseUrl": "https://api.nationalize.io",
     "docsUrl": "https://nationalize.io/",
     "auth": "none",
-    "exampleEndpoint": "https://api.nationalize.io?name=nathaniel",
+    "exampleEndpoint": "https://api.nationalize.io?name[]=nathaniel&name[]=yuki&name[]=olga&name[]=carlos&name[]=mei",
     "sampleFields": [
-      "id",
       "name",
-      "data"
+      "country",
+      "probability",
+      "count"
     ],
     "tags": [
       "geo",
       "fun"
     ],
-    "dataSummary": "Nationalize data. A snapshot from right now."
+    "dataSummary": "5 entries — nationalize data. A snapshot from right now."
   },
   {
     "id": "ipinfo-lite",
@@ -4009,15 +4019,14 @@
     "id": "kanye-rest",
     "name": "Kanye Rest",
     "category": "Fun",
-    "description": "Kanye Rest — Kanye rest data.",
+    "description": "Kanye West quotes — full quote archive as JSON.",
     "baseUrl": "https://api.kanye.rest",
     "docsUrl": "https://kanye.rest/",
     "auth": "none",
-    "exampleEndpoint": "https://api.kanye.rest/",
+    "exampleEndpoint": "https://api.kanye.rest/quotes",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "quote",
+      "id"
     ],
     "tags": [
       "fun",

@@ -1,0 +1,2196 @@
+{
+  "name": "The Open Data Index",
+  "description": "A curated directory of open/public data APIs for prototyping.",
+  "generated": "2026-06-29",
+  "counts": {
+    "sources": 133,
+    "categories": 14
+  },
+  "authLegend": {
+    "none": "No key — open, just GET",
+    "key": "Free key — quick signup",
+    "oauth": "OAuth flow"
+  },
+  "categories": [
+    {
+      "key": "art",
+      "label": "Art & Culture",
+      "color": "#B23A48",
+      "count": 16
+    },
+    {
+      "key": "science",
+      "label": "Science & Space",
+      "color": "#2E6E8E",
+      "count": 16
+    },
+    {
+      "key": "civic",
+      "label": "Government & Civic",
+      "color": "#5B6770",
+      "count": 9
+    },
+    {
+      "key": "news",
+      "label": "News & Journalism",
+      "color": "#8B6F47",
+      "count": 7
+    },
+    {
+      "key": "maps",
+      "label": "Maps & Places",
+      "color": "#2F8F6B",
+      "count": 12
+    },
+    {
+      "key": "nature",
+      "label": "Nature & Environment",
+      "color": "#6F8E2F",
+      "count": 6
+    },
+    {
+      "key": "health",
+      "label": "Health & Biology",
+      "color": "#1B9E8A",
+      "count": 7
+    },
+    {
+      "key": "finance",
+      "label": "Finance & Economy",
+      "color": "#B58A2E",
+      "count": 6
+    },
+    {
+      "key": "books",
+      "label": "Books & Words",
+      "color": "#7E5BA6",
+      "count": 12
+    },
+    {
+      "key": "food",
+      "label": "Food & Drink",
+      "color": "#D9772F",
+      "count": 5
+    },
+    {
+      "key": "music",
+      "label": "Music & Media",
+      "color": "#C0497F",
+      "count": 7
+    },
+    {
+      "key": "sports",
+      "label": "Sports",
+      "color": "#CE5A2D",
+      "count": 7
+    },
+    {
+      "key": "dev",
+      "label": "Dev & Open Source",
+      "color": "#3A4149",
+      "count": 7
+    },
+    {
+      "key": "games",
+      "label": "Games & Play",
+      "color": "#9B4DCA",
+      "count": 16
+    }
+  ],
+  "sources": [
+    {
+      "id": "the-met-collection",
+      "name": "The Met Collection",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "none",
+      "description": "490k+ open-access artworks with high-res public-domain images, departments & search.",
+      "endpoint": "collectionapi.metmuseum.org/public/collection/v1",
+      "docs": "https://metmuseum.github.io/",
+      "tags": [
+        "museum",
+        "painting",
+        "object"
+      ]
+    },
+    {
+      "id": "art-institute-of-chicago",
+      "name": "Art Institute of Chicago",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "none",
+      "description": "120k+ works with IIIF images, colors, and rich tombstone metadata.",
+      "endpoint": "api.artic.edu/api/v1/artworks",
+      "docs": "https://api.artic.edu/docs/",
+      "tags": [
+        "museum"
+      ]
+    },
+    {
+      "id": "rijksmuseum",
+      "name": "Rijksmuseum",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "700k+ objects — Rembrandt, Vermeer & the Dutch masters, with images.",
+      "endpoint": "rijksmuseum.nl/api/en/collection",
+      "docs": "https://data.rijksmuseum.nl/",
+      "tags": [
+        "museum",
+        "dutch"
+      ]
+    },
+    {
+      "id": "harvard-art-museums",
+      "name": "Harvard Art Museums",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "250k objects across three museums, deep metadata and color analysis.",
+      "endpoint": "api.harvardartmuseums.org/object",
+      "docs": "https://github.com/harvardartmuseums/api-docs",
+      "tags": [
+        "museum"
+      ]
+    },
+    {
+      "id": "cleveland-museum-of-art",
+      "name": "Cleveland Museum of Art",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "none",
+      "description": "60k+ works, mostly CC0 open access with downloadable images.",
+      "endpoint": "openaccess-api.clevelandart.org/api/artworks",
+      "docs": "https://openaccess-api.clevelandart.org/",
+      "tags": [
+        "museum"
+      ]
+    },
+    {
+      "id": "smithsonian-open-access",
+      "name": "Smithsonian Open Access",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "3M+ CC0 images & records spanning all Smithsonian museums and archives.",
+      "endpoint": "api.si.edu/openaccess/api/v1.0",
+      "docs": "https://www.si.edu/openaccess/devtools",
+      "tags": [
+        "museum"
+      ]
+    },
+    {
+      "id": "cooper-hewitt",
+      "name": "Cooper Hewitt",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "Smithsonian's design museum — objects, people, and color-tagged records.",
+      "endpoint": "api.collection.cooperhewitt.org",
+      "docs": "https://collection.cooperhewitt.org/api/",
+      "tags": [
+        "design",
+        "museum"
+      ]
+    },
+    {
+      "id": "europeana",
+      "name": "Europeana",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "50M+ cultural-heritage items from museums & libraries across Europe.",
+      "endpoint": "api.europeana.eu",
+      "docs": "https://apis.europeana.eu/",
+      "tags": [
+        "heritage",
+        "europe"
+      ]
+    },
+    {
+      "id": "wikidata-sparql",
+      "name": "Wikidata (SPARQL)",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "none",
+      "description": "Query the structured knowledge graph behind Wikipedia — people, places, works.",
+      "endpoint": "query.wikidata.org/sparql",
+      "docs": "https://query.wikidata.org/",
+      "tags": [
+        "knowledge",
+        "graph",
+        "wikipedia"
+      ]
+    },
+    {
+      "id": "nasa-apis",
+      "name": "NASA APIs",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "key",
+      "description": "APOD, Mars rover photos, EPIC Earth imagery, near-Earth objects. DEMO_KEY works.",
+      "endpoint": "api.nasa.gov",
+      "docs": "https://api.nasa.gov/",
+      "tags": [
+        "space",
+        "mars",
+        "astronomy"
+      ]
+    },
+    {
+      "id": "iss-now-open-notify",
+      "name": "ISS Now (Open Notify)",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Live latitude/longitude of the International Space Station, updated by the second.",
+      "endpoint": "api.open-notify.org/iss-now.json",
+      "docs": "http://open-notify.org/Open-Notify-API/",
+      "tags": [
+        "space",
+        "iss",
+        "satellite"
+      ]
+    },
+    {
+      "id": "launch-library-2",
+      "name": "Launch Library 2",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Every rocket launch, past and upcoming, across all space agencies and companies.",
+      "endpoint": "ll.thespacedevs.com/2.2.0/launch",
+      "docs": "https://thespacedevs.com/llapi",
+      "tags": [
+        "space",
+        "rocket",
+        "launch"
+      ]
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Open API over millions of physics, math, CS & bio preprints.",
+      "endpoint": "export.arxiv.org/api/query",
+      "docs": "https://info.arxiv.org/help/api/",
+      "tags": [
+        "papers",
+        "research",
+        "preprint"
+      ]
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "250M+ scholarly works, authors, institutions & citations — fully open.",
+      "endpoint": "api.openalex.org/works",
+      "docs": "https://docs.openalex.org/",
+      "tags": [
+        "papers",
+        "research",
+        "citations"
+      ]
+    },
+    {
+      "id": "usgs-earthquakes",
+      "name": "USGS Earthquakes",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Real-time global earthquake feed as GeoJSON, filterable by magnitude & time.",
+      "endpoint": "earthquake.usgs.gov/fdsnws/event/1",
+      "docs": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "tags": [
+        "geology",
+        "seismic"
+      ]
+    },
+    {
+      "id": "open-meteo",
+      "name": "Open-Meteo",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Free global weather — forecast, historical, marine & air quality. No key, ever.",
+      "endpoint": "api.open-meteo.com/v1/forecast",
+      "docs": "https://open-meteo.com/en/docs",
+      "tags": [
+        "weather",
+        "forecast",
+        "climate"
+      ]
+    },
+    {
+      "id": "nws-weather-noaa",
+      "name": "NWS Weather (NOAA)",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Official U.S. forecasts, alerts & observations straight from the National Weather Service.",
+      "endpoint": "api.weather.gov",
+      "docs": "https://www.weather.gov/documentation/services-web-api",
+      "tags": [
+        "weather",
+        "forecast"
+      ]
+    },
+    {
+      "id": "pubchem",
+      "name": "PubChem",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Chemical compounds, structures & properties from the NIH chemistry database.",
+      "endpoint": "pubchem.ncbi.nlm.nih.gov/rest/pug",
+      "docs": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest",
+      "tags": [
+        "chemistry",
+        "molecules"
+      ]
+    },
+    {
+      "id": "nyc-open-data-311",
+      "name": "NYC Open Data — 311",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "none",
+      "description": "The famous one: every NYC 311 service request, including noise complaints.",
+      "endpoint": "data.cityofnewyork.us/resource/erm2-nwe9.json",
+      "docs": "https://opendata.cityofnewyork.us/",
+      "tags": [
+        "new",
+        "york",
+        "noise",
+        "complaints",
+        "311",
+        "socrata"
+      ]
+    },
+    {
+      "id": "socrata-discovery",
+      "name": "Socrata Discovery",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "none",
+      "description": "One catalog across hundreds of city & state portals (Chicago, SF, LA…).",
+      "endpoint": "api.us.socrata.com/api/catalog/v1",
+      "docs": "https://dev.socrata.com/",
+      "tags": [
+        "cities",
+        "government",
+        "catalog"
+      ]
+    },
+    {
+      "id": "data-gov",
+      "name": "Data.gov",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "none",
+      "description": "The U.S. federal catalog — 250k+ datasets, many with live API endpoints.",
+      "endpoint": "catalog.data.gov/api/3",
+      "docs": "https://catalog.data.gov/",
+      "tags": [
+        "federal",
+        "government",
+        "usa"
+      ]
+    },
+    {
+      "id": "u-s-census-bureau",
+      "name": "U.S. Census Bureau",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "key",
+      "description": "Population, demographics & economic data down to the census tract.",
+      "endpoint": "api.census.gov/data",
+      "docs": "https://www.census.gov/data/developers.html",
+      "tags": [
+        "population",
+        "demographics"
+      ]
+    },
+    {
+      "id": "openfec",
+      "name": "OpenFEC",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "key",
+      "description": "U.S. campaign finance — candidates, committees, donations & spending.",
+      "endpoint": "api.open.fec.gov/v1",
+      "docs": "https://api.open.fec.gov/developers/",
+      "tags": [
+        "elections",
+        "money",
+        "politics"
+      ]
+    },
+    {
+      "id": "congress-gov-api",
+      "name": "Congress.gov API",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "key",
+      "description": "Bills, members, votes & the Congressional Record from the Library of Congress.",
+      "endpoint": "api.congress.gov/v3",
+      "docs": "https://api.congress.gov/",
+      "tags": [
+        "legislation",
+        "politics"
+      ]
+    },
+    {
+      "id": "uk-police-data",
+      "name": "UK Police Data",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "none",
+      "description": "Street-level crime, outcomes & stop-and-search across England & Wales.",
+      "endpoint": "data.police.uk/api",
+      "docs": "https://data.police.uk/docs/",
+      "tags": [
+        "crime",
+        "uk",
+        "britain"
+      ]
+    },
+    {
+      "id": "data-europa-eu",
+      "name": "data.europa.eu",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "none",
+      "description": "The EU's official open-data portal — 1.7M+ datasets from member states.",
+      "endpoint": "data.europa.eu/api/hub/search",
+      "docs": "https://data.europa.eu/en",
+      "tags": [
+        "europe",
+        "government"
+      ]
+    },
+    {
+      "id": "open-states",
+      "name": "Open States",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "key",
+      "description": "Bills, legislators & votes across all 50 U.S. state legislatures.",
+      "endpoint": "v3.openstates.org",
+      "docs": "https://docs.openstates.org/api-v3/",
+      "tags": [
+        "legislation",
+        "states"
+      ]
+    },
+    {
+      "id": "overpass-openstreetmap",
+      "name": "Overpass (OpenStreetMap)",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Query the entire world map — every cafe, bench, trail or building, by tag.",
+      "endpoint": "overpass-api.de/api/interpreter",
+      "docs": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+      "tags": [
+        "osm",
+        "map",
+        "geo"
+      ]
+    },
+    {
+      "id": "nominatim",
+      "name": "Nominatim",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Forward & reverse geocoding backed by the full OSM dataset. Mind the rate limit.",
+      "endpoint": "nominatim.openstreetmap.org/search",
+      "docs": "https://nominatim.org/release-docs/latest/api/Overview/",
+      "tags": [
+        "geocoding",
+        "address",
+        "osm"
+      ]
+    },
+    {
+      "id": "rest-countries",
+      "name": "REST Countries",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Flags, currencies, languages, borders & population for every country.",
+      "endpoint": "restcountries.com/v3.1/all",
+      "docs": "https://restcountries.com/",
+      "tags": [
+        "country",
+        "flag",
+        "reference"
+      ]
+    },
+    {
+      "id": "geonames",
+      "name": "GeoNames",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "key",
+      "description": "11M+ place names worldwide — cities, postal codes, timezones, elevation.",
+      "endpoint": "api.geonames.org",
+      "docs": "https://www.geonames.org/export/web-services.html",
+      "tags": [
+        "places",
+        "cities",
+        "geo"
+      ]
+    },
+    {
+      "id": "open-elevation",
+      "name": "Open-Elevation",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Elevation in meters for any latitude/longitude, single or batched.",
+      "endpoint": "api.open-elevation.com/api/v1/lookup",
+      "docs": "https://open-elevation.com/",
+      "tags": [
+        "elevation",
+        "terrain"
+      ]
+    },
+    {
+      "id": "openrouteservice",
+      "name": "OpenRouteService",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "key",
+      "description": "Directions, isochrones, matrices & geocoding on open map data.",
+      "endpoint": "api.openrouteservice.org",
+      "docs": "https://openrouteservice.org/dev/#/api-docs",
+      "tags": [
+        "routing",
+        "directions"
+      ]
+    },
+    {
+      "id": "ipapi",
+      "name": "ipapi",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Geolocate any IP address — city, region, coordinates, timezone & ISP.",
+      "endpoint": "ipapi.co/json",
+      "docs": "https://ipapi.co/api/",
+      "tags": [
+        "ip",
+        "geolocation"
+      ]
+    },
+    {
+      "id": "gbif",
+      "name": "GBIF",
+      "category": "nature",
+      "categoryLabel": "Nature & Environment",
+      "color": "#6F8E2F",
+      "auth": "none",
+      "description": "2B+ species occurrence records — the backbone of global biodiversity data.",
+      "endpoint": "api.gbif.org/v1",
+      "docs": "https://techdocs.gbif.org/en/openapi/",
+      "tags": [
+        "species",
+        "biodiversity",
+        "occurrences"
+      ]
+    },
+    {
+      "id": "inaturalist",
+      "name": "iNaturalist",
+      "category": "nature",
+      "categoryLabel": "Nature & Environment",
+      "color": "#6F8E2F",
+      "auth": "none",
+      "description": "Millions of crowd-sourced, photo-backed wildlife observations worldwide.",
+      "endpoint": "api.inaturalist.org/v1",
+      "docs": "https://api.inaturalist.org/v1/docs/",
+      "tags": [
+        "wildlife",
+        "observations",
+        "nature"
+      ]
+    },
+    {
+      "id": "ebird-cornell",
+      "name": "eBird (Cornell)",
+      "category": "nature",
+      "categoryLabel": "Nature & Environment",
+      "color": "#6F8E2F",
+      "auth": "key",
+      "description": "Bird sightings, hotspots & recent observations from the world's birders.",
+      "endpoint": "api.ebird.org/v2",
+      "docs": "https://documenter.getpostman.com/view/664302/S1ENwy59",
+      "tags": [
+        "birds",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "openaq",
+      "name": "OpenAQ",
+      "category": "nature",
+      "categoryLabel": "Nature & Environment",
+      "color": "#6F8E2F",
+      "auth": "key",
+      "description": "Open air-quality measurements (PM2.5, ozone…) aggregated globally.",
+      "endpoint": "api.openaq.org/v3",
+      "docs": "https://docs.openaq.org/",
+      "tags": [
+        "air",
+        "pollution",
+        "environment"
+      ]
+    },
+    {
+      "id": "usgs-water-services",
+      "name": "USGS Water Services",
+      "category": "nature",
+      "categoryLabel": "Nature & Environment",
+      "color": "#6F8E2F",
+      "auth": "none",
+      "description": "Real-time U.S. streamflow, groundwater & water-quality from monitoring sites.",
+      "endpoint": "waterservices.usgs.gov/nwis",
+      "docs": "https://waterservices.usgs.gov/",
+      "tags": [
+        "water",
+        "rivers",
+        "hydrology"
+      ]
+    },
+    {
+      "id": "nasa-eonet",
+      "name": "NASA EONET",
+      "category": "nature",
+      "categoryLabel": "Nature & Environment",
+      "color": "#6F8E2F",
+      "auth": "none",
+      "description": "Live natural events — wildfires, storms, volcanoes — as a geospatial feed.",
+      "endpoint": "eonet.gsfc.nasa.gov/api/v3/events",
+      "docs": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "tags": [
+        "wildfire",
+        "storm",
+        "disaster"
+      ]
+    },
+    {
+      "id": "openfda",
+      "name": "openFDA",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
+      "auth": "none",
+      "description": "Drug labels, adverse events, recalls & device data from the U.S. FDA.",
+      "endpoint": "api.fda.gov",
+      "docs": "https://open.fda.gov/apis/",
+      "tags": [
+        "drugs",
+        "medicine",
+        "recalls"
+      ]
+    },
+    {
+      "id": "disease-sh",
+      "name": "disease.sh",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
+      "auth": "none",
+      "description": "Tidy worldwide disease statistics (COVID, influenza, vaccines) by country.",
+      "endpoint": "disease.sh/v3",
+      "docs": "https://disease.sh/docs/",
+      "tags": [
+        "covid",
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "who-gho",
+      "name": "WHO GHO",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
+      "auth": "none",
+      "description": "World Health Organization's Global Health Observatory indicators via OData.",
+      "endpoint": "ghoapi.azureedge.net/api",
+      "docs": "https://www.who.int/data/gho/info/gho-odata-api",
+      "tags": [
+        "global",
+        "health",
+        "who"
+      ]
+    },
+    {
+      "id": "clinicaltrials-gov",
+      "name": "ClinicalTrials.gov",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
+      "auth": "none",
+      "description": "450k+ registered clinical studies, fully queryable in v2.",
+      "endpoint": "clinicaltrials.gov/api/v2",
+      "docs": "https://clinicaltrials.gov/data-api/api",
+      "tags": [
+        "trials",
+        "medicine"
+      ]
+    },
+    {
+      "id": "ensembl-rest",
+      "name": "Ensembl REST",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
+      "auth": "none",
+      "description": "Genomics — genes, variants & sequences across hundreds of species.",
+      "endpoint": "rest.ensembl.org",
+      "docs": "https://rest.ensembl.org/",
+      "tags": [
+        "genomics",
+        "dna",
+        "genes"
+      ]
+    },
+    {
+      "id": "uniprot",
+      "name": "UniProt",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
+      "auth": "none",
+      "description": "The reference database of protein sequences and functional annotation.",
+      "endpoint": "rest.uniprot.org",
+      "docs": "https://www.uniprot.org/help/api",
+      "tags": [
+        "protein",
+        "biology"
+      ]
+    },
+    {
+      "id": "rxnorm-nih",
+      "name": "RxNorm (NIH)",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
+      "auth": "none",
+      "description": "Normalized U.S. drug names, ingredients & interaction lookups.",
+      "endpoint": "rxnav.nlm.nih.gov/REST",
+      "docs": "https://lhncbc.nlm.nih.gov/RxNav/APIs/",
+      "tags": [
+        "drugs",
+        "pharmacy"
+      ]
+    },
+    {
+      "id": "world-bank-open-data",
+      "name": "World Bank Open Data",
+      "category": "finance",
+      "categoryLabel": "Finance & Economy",
+      "color": "#B58A2E",
+      "auth": "none",
+      "description": "Thousands of development indicators for every country, back to 1960.",
+      "endpoint": "api.worldbank.org/v2",
+      "docs": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "tags": [
+        "economy",
+        "gdp",
+        "development"
+      ]
+    },
+    {
+      "id": "fred-st-louis-fed",
+      "name": "FRED (St. Louis Fed)",
+      "category": "finance",
+      "categoryLabel": "Finance & Economy",
+      "color": "#B58A2E",
+      "auth": "key",
+      "description": "800k+ U.S. & global economic time series — rates, jobs, inflation.",
+      "endpoint": "api.stlouisfed.org/fred",
+      "docs": "https://fred.stlouisfed.org/docs/api/fred/",
+      "tags": [
+        "economy",
+        "macro"
+      ]
+    },
+    {
+      "id": "imf-datamapper",
+      "name": "IMF DataMapper",
+      "category": "finance",
+      "categoryLabel": "Finance & Economy",
+      "color": "#B58A2E",
+      "auth": "none",
+      "description": "Macroeconomic indicators and outlook projections by the IMF.",
+      "endpoint": "imf.org/external/datamapper/api/v1",
+      "docs": "https://www.imf.org/external/datamapper/api/help",
+      "tags": [
+        "economy",
+        "imf"
+      ]
+    },
+    {
+      "id": "frankfurter",
+      "name": "Frankfurter",
+      "category": "finance",
+      "categoryLabel": "Finance & Economy",
+      "color": "#B58A2E",
+      "auth": "none",
+      "description": "Free currency exchange rates from the ECB — current & historical, no key.",
+      "endpoint": "api.frankfurter.app/latest",
+      "docs": "https://www.frankfurter.app/docs/",
+      "tags": [
+        "currency",
+        "forex",
+        "exchange"
+      ]
+    },
+    {
+      "id": "coingecko",
+      "name": "CoinGecko",
+      "category": "finance",
+      "categoryLabel": "Finance & Economy",
+      "color": "#B58A2E",
+      "auth": "none",
+      "description": "Prices, market caps & history for 10k+ crypto coins. Generous free tier.",
+      "endpoint": "api.coingecko.com/api/v3",
+      "docs": "https://www.coingecko.com/en/api",
+      "tags": [
+        "crypto",
+        "bitcoin"
+      ]
+    },
+    {
+      "id": "alpha-vantage",
+      "name": "Alpha Vantage",
+      "category": "finance",
+      "categoryLabel": "Finance & Economy",
+      "color": "#B58A2E",
+      "auth": "key",
+      "description": "Stock quotes, technical indicators & FX. Free key, ~25 calls/day.",
+      "endpoint": "alphavantage.co/query",
+      "docs": "https://www.alphavantage.co/documentation/",
+      "tags": [
+        "stocks",
+        "market"
+      ]
+    },
+    {
+      "id": "open-library",
+      "name": "Open Library",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "20M+ book records with covers, editions, authors & subjects.",
+      "endpoint": "openlibrary.org/search.json",
+      "docs": "https://openlibrary.org/developers/api",
+      "tags": [
+        "books",
+        "library",
+        "covers"
+      ]
+    },
+    {
+      "id": "gutendex",
+      "name": "Gutendex",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Clean JSON over Project Gutenberg's 70k+ free public-domain ebooks.",
+      "endpoint": "gutendex.com/books",
+      "docs": "https://gutendex.com/",
+      "tags": [
+        "books",
+        "ebooks",
+        "gutenberg"
+      ]
+    },
+    {
+      "id": "google-books",
+      "name": "Google Books",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Search volumes worldwide with previews, ratings & metadata.",
+      "endpoint": "googleapis.com/books/v1/volumes",
+      "docs": "https://developers.google.com/books",
+      "tags": [
+        "books",
+        "search"
+      ]
+    },
+    {
+      "id": "datamuse",
+      "name": "Datamuse",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Word-finding engine — rhymes, synonyms, associations & autocomplete.",
+      "endpoint": "api.datamuse.com/words",
+      "docs": "https://www.datamuse.com/api/",
+      "tags": [
+        "words",
+        "language",
+        "rhyme"
+      ]
+    },
+    {
+      "id": "free-dictionary",
+      "name": "Free Dictionary",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Definitions, phonetics, examples & synonyms for English words.",
+      "endpoint": "api.dictionaryapi.dev/api/v2",
+      "docs": "https://dictionaryapi.dev/",
+      "tags": [
+        "dictionary",
+        "definitions",
+        "words"
+      ]
+    },
+    {
+      "id": "poetrydb",
+      "name": "PoetryDB",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Search thousands of public-domain poems by author, title or line.",
+      "endpoint": "poetrydb.org",
+      "docs": "https://poetrydb.org/",
+      "tags": [
+        "poetry",
+        "poems"
+      ]
+    },
+    {
+      "id": "themealdb",
+      "name": "TheMealDB",
+      "category": "food",
+      "categoryLabel": "Food & Drink",
+      "color": "#D9772F",
+      "auth": "none",
+      "description": "Recipes with ingredients, images & instructions, searchable by category.",
+      "endpoint": "themealdb.com/api/json/v1/1",
+      "docs": "https://www.themealdb.com/api.php",
+      "tags": [
+        "recipes",
+        "cooking"
+      ]
+    },
+    {
+      "id": "thecocktaildb",
+      "name": "TheCocktailDB",
+      "category": "food",
+      "categoryLabel": "Food & Drink",
+      "color": "#D9772F",
+      "auth": "none",
+      "description": "Cocktail recipes, ingredients & glassware — a classic prototyping favorite.",
+      "endpoint": "thecocktaildb.com/api/json/v1/1",
+      "docs": "https://www.thecocktaildb.com/api.php",
+      "tags": [
+        "drinks",
+        "cocktails"
+      ]
+    },
+    {
+      "id": "open-food-facts",
+      "name": "Open Food Facts",
+      "category": "food",
+      "categoryLabel": "Food & Drink",
+      "color": "#D9772F",
+      "auth": "none",
+      "description": "3M+ crowd-sourced products with nutrition, ingredients, labels & images.",
+      "endpoint": "world.openfoodfacts.org/api/v2",
+      "docs": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+      "tags": [
+        "food",
+        "nutrition",
+        "grocery"
+      ]
+    },
+    {
+      "id": "usda-fooddata-central",
+      "name": "USDA FoodData Central",
+      "category": "food",
+      "categoryLabel": "Food & Drink",
+      "color": "#D9772F",
+      "auth": "key",
+      "description": "Authoritative U.S. nutrition data for hundreds of thousands of foods.",
+      "endpoint": "api.nal.usda.gov/fdc/v1",
+      "docs": "https://fdc.nal.usda.gov/api-guide.html",
+      "tags": [
+        "nutrition",
+        "food"
+      ]
+    },
+    {
+      "id": "open-brewery-db",
+      "name": "Open Brewery DB",
+      "category": "food",
+      "categoryLabel": "Food & Drink",
+      "color": "#D9772F",
+      "auth": "none",
+      "description": "Breweries worldwide with type, location & contact info.",
+      "endpoint": "api.openbrewerydb.org/v1/breweries",
+      "docs": "https://www.openbrewerydb.org/documentation",
+      "tags": [
+        "beer",
+        "breweries"
+      ]
+    },
+    {
+      "id": "musicbrainz",
+      "name": "MusicBrainz",
+      "category": "music",
+      "categoryLabel": "Music & Media",
+      "color": "#C0497F",
+      "auth": "none",
+      "description": "The open music encyclopedia — artists, releases, recordings & relationships.",
+      "endpoint": "musicbrainz.org/ws/2",
+      "docs": "https://musicbrainz.org/doc/MusicBrainz_API",
+      "tags": [
+        "music",
+        "artists",
+        "discography"
+      ]
+    },
+    {
+      "id": "cover-art-archive",
+      "name": "Cover Art Archive",
+      "category": "music",
+      "categoryLabel": "Music & Media",
+      "color": "#C0497F",
+      "auth": "none",
+      "description": "Album artwork linked to MusicBrainz releases, free to fetch.",
+      "endpoint": "coverartarchive.org",
+      "docs": "https://musicbrainz.org/doc/Cover_Art_Archive/API",
+      "tags": [
+        "album",
+        "art",
+        "music"
+      ]
+    },
+    {
+      "id": "last-fm",
+      "name": "Last.fm",
+      "category": "music",
+      "categoryLabel": "Music & Media",
+      "color": "#C0497F",
+      "auth": "key",
+      "description": "Scrobble data, charts, similar artists & rich music metadata.",
+      "endpoint": "ws.audioscrobbler.com/2.0",
+      "docs": "https://www.last.fm/api",
+      "tags": [
+        "music",
+        "charts"
+      ]
+    },
+    {
+      "id": "spotify-web-api",
+      "name": "Spotify Web API",
+      "category": "music",
+      "categoryLabel": "Music & Media",
+      "color": "#C0497F",
+      "auth": "oauth",
+      "description": "Catalog, audio features, playlists & recommendations.",
+      "endpoint": "api.spotify.com/v1",
+      "docs": "https://developer.spotify.com/documentation/web-api",
+      "tags": [
+        "music",
+        "streaming"
+      ]
+    },
+    {
+      "id": "tmdb",
+      "name": "TMDB",
+      "category": "music",
+      "categoryLabel": "Music & Media",
+      "color": "#C0497F",
+      "auth": "key",
+      "description": "Movies & TV — posters, cast, ratings, trending. Excellent free tier.",
+      "endpoint": "api.themoviedb.org/3",
+      "docs": "https://developer.themoviedb.org/docs",
+      "tags": [
+        "movies",
+        "film",
+        "tv"
+      ]
+    },
+    {
+      "id": "tvmaze",
+      "name": "TVmaze",
+      "category": "music",
+      "categoryLabel": "Music & Media",
+      "color": "#C0497F",
+      "auth": "none",
+      "description": "TV show schedules, episodes & cast — no key for the public endpoints.",
+      "endpoint": "api.tvmaze.com",
+      "docs": "https://www.tvmaze.com/api",
+      "tags": [
+        "tv",
+        "shows",
+        "episodes"
+      ]
+    },
+    {
+      "id": "omdb",
+      "name": "OMDb",
+      "category": "music",
+      "categoryLabel": "Music & Media",
+      "color": "#C0497F",
+      "auth": "key",
+      "description": "Movie & series data by title or IMDb ID. Free key by email.",
+      "endpoint": "omdbapi.com",
+      "docs": "https://www.omdbapi.com/",
+      "tags": [
+        "movies",
+        "imdb"
+      ]
+    },
+    {
+      "id": "transitland",
+      "name": "Transitland",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "key",
+      "description": "Worldwide transit feeds (GTFS) — routes, stops & schedules in one API.",
+      "endpoint": "transit.land/api/v2",
+      "docs": "https://www.transit.land/documentation",
+      "tags": [
+        "transit",
+        "gtfs",
+        "bus",
+        "train"
+      ]
+    },
+    {
+      "id": "opensky-network",
+      "name": "OpenSky Network",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Live aircraft positions worldwide — track flights in real time.",
+      "endpoint": "opensky-network.org/api",
+      "docs": "https://openskynetwork.github.io/opensky-api/",
+      "tags": [
+        "flights",
+        "aircraft",
+        "aviation"
+      ]
+    },
+    {
+      "id": "gbfs-citi-bike",
+      "name": "GBFS / Citi Bike",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Real-time bikeshare feeds — station status & free bikes, standardized worldwide.",
+      "endpoint": "gbfs.citibikenyc.com/gbfs/gbfs.json",
+      "docs": "https://gbfs.org/",
+      "tags": [
+        "bikeshare",
+        "mobility"
+      ]
+    },
+    {
+      "id": "bart",
+      "name": "BART",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Bay Area Rapid Transit — real-time departures, routes & advisories.",
+      "endpoint": "api.bart.gov/api",
+      "docs": "https://api.bart.gov/docs/overview/index.aspx",
+      "tags": [
+        "subway",
+        "bay",
+        "area",
+        "train"
+      ]
+    },
+    {
+      "id": "openflights",
+      "name": "OpenFlights",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Open dataset of 10k+ airports, airlines & routes (CSV downloads).",
+      "endpoint": "openflights.org/data.html",
+      "docs": "https://openflights.org/data.html",
+      "tags": [
+        "airports",
+        "flights",
+        "aviation"
+      ]
+    },
+    {
+      "id": "pok-api",
+      "name": "PokéAPI",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Every Pokémon, move, type & evolution — the gold-standard teaching API.",
+      "endpoint": "pokeapi.co/api/v2",
+      "docs": "https://pokeapi.co/docs/v2",
+      "tags": [
+        "pokemon",
+        "games"
+      ]
+    },
+    {
+      "id": "swapi",
+      "name": "SWAPI",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Star Wars people, planets, ships & films. Use swapi.info as a stable mirror.",
+      "endpoint": "swapi.dev/api",
+      "docs": "https://swapi.info/",
+      "tags": [
+        "star",
+        "wars"
+      ]
+    },
+    {
+      "id": "dog-ceo",
+      "name": "Dog CEO",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Endless random dog photos by breed — instant demo material.",
+      "endpoint": "dog.ceo/api",
+      "docs": "https://dog.ceo/dog-api/",
+      "tags": [
+        "dogs",
+        "images",
+        "animals"
+      ]
+    },
+    {
+      "id": "the-cat-api",
+      "name": "The Cat API",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Cat images, breeds & filters; optional free key for more.",
+      "endpoint": "api.thecatapi.com/v1",
+      "docs": "https://thecatapi.com/",
+      "tags": [
+        "cats",
+        "images",
+        "animals"
+      ]
+    },
+    {
+      "id": "rick-and-morty",
+      "name": "Rick and Morty",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Characters, locations & episodes — clean REST + GraphQL.",
+      "endpoint": "rickandmortyapi.com/api",
+      "docs": "https://rickandmortyapi.com/documentation",
+      "tags": [
+        "cartoon",
+        "characters"
+      ]
+    },
+    {
+      "id": "open-trivia-db",
+      "name": "Open Trivia DB",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Free quiz questions across categories & difficulties — great for games.",
+      "endpoint": "opentdb.com/api.php",
+      "docs": "https://opentdb.com/api_config.php",
+      "tags": [
+        "trivia",
+        "quiz"
+      ]
+    },
+    {
+      "id": "jsonplaceholder",
+      "name": "JSONPlaceholder",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Fake REST data (posts, users, todos) for wiring up UI prototypes fast.",
+      "endpoint": "jsonplaceholder.typicode.com",
+      "docs": "https://jsonplaceholder.typicode.com/",
+      "tags": [
+        "mock",
+        "fake",
+        "testing"
+      ]
+    },
+    {
+      "id": "numbers-api",
+      "name": "Numbers API",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "A factoid for any number — math, trivia, dates. Tiny and delightful.",
+      "endpoint": "numbersapi.com",
+      "docs": "http://numbersapi.com/",
+      "tags": [
+        "numbers",
+        "facts"
+      ]
+    },
+    {
+      "id": "quotable",
+      "name": "Quotable",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Searchable quotations by author & tag for widgets and daily-quote apps.",
+      "endpoint": "api.quotable.io",
+      "docs": "https://github.com/lukePeavey/quotable",
+      "tags": [
+        "quotes",
+        "inspiration"
+      ]
+    },
+    {
+      "id": "unsplash",
+      "name": "Unsplash",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "High-quality free photography with search, collections & user data. Demo tier to start.",
+      "endpoint": "api.unsplash.com",
+      "docs": "https://unsplash.com/developers",
+      "tags": [
+        "photos",
+        "stock",
+        "images",
+        "design"
+      ]
+    },
+    {
+      "id": "pexels",
+      "name": "Pexels",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "Free stock photos and videos with a clean, generous API.",
+      "endpoint": "api.pexels.com/v1",
+      "docs": "https://www.pexels.com/api/",
+      "tags": [
+        "photos",
+        "video",
+        "stock"
+      ]
+    },
+    {
+      "id": "pixabay",
+      "name": "Pixabay",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "Photos, illustrations, vectors & video clips, all free to use.",
+      "endpoint": "pixabay.com/api",
+      "docs": "https://pixabay.com/api/docs/",
+      "tags": [
+        "photos",
+        "illustrations",
+        "stock"
+      ]
+    },
+    {
+      "id": "nasa-image-video-library",
+      "name": "NASA Image & Video Library",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "none",
+      "description": "Hundreds of thousands of NASA photos, audio & video, fully searchable.",
+      "endpoint": "images-api.nasa.gov",
+      "docs": "https://api.nasa.gov/",
+      "tags": [
+        "space",
+        "photos",
+        "nasa"
+      ]
+    },
+    {
+      "id": "lorem-picsum",
+      "name": "Lorem Picsum",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "none",
+      "description": "Drop-in placeholder photos at any size — perfect for mockups.",
+      "endpoint": "picsum.photos",
+      "docs": "https://picsum.photos/",
+      "tags": [
+        "placeholder",
+        "mockup",
+        "images"
+      ]
+    },
+    {
+      "id": "flickr",
+      "name": "Flickr",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "key",
+      "description": "Billions of photos with rich tags, geodata, albums & EXIF.",
+      "endpoint": "flickr.com/services/rest",
+      "docs": "https://www.flickr.com/services/api/",
+      "tags": [
+        "photos",
+        "community"
+      ]
+    },
+    {
+      "id": "wikimedia-commons",
+      "name": "Wikimedia Commons",
+      "category": "art",
+      "categoryLabel": "Art & Culture",
+      "color": "#B23A48",
+      "auth": "none",
+      "description": "100M+ freely-licensed images, audio & video via the MediaWiki API.",
+      "endpoint": "commons.wikimedia.org/w/api.php",
+      "docs": "https://commons.wikimedia.org/wiki/Commons:API",
+      "tags": [
+        "images",
+        "media",
+        "free"
+      ]
+    },
+    {
+      "id": "nasa-gibs",
+      "name": "NASA GIBS",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "1,000+ full-resolution satellite imagery layers as map tiles, updated daily.",
+      "endpoint": "gibs.earthdata.nasa.gov/wmts",
+      "docs": "https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api",
+      "tags": [
+        "satellite",
+        "imagery",
+        "earth",
+        "tiles"
+      ]
+    },
+    {
+      "id": "ms-planetary-computer",
+      "name": "MS Planetary Computer",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "STAC catalog over petabytes of open Earth-observation data — Landsat, Sentinel & more.",
+      "endpoint": "planetarycomputer.microsoft.com/api/stac/v1",
+      "docs": "https://planetarycomputer.microsoft.com/docs/",
+      "tags": [
+        "satellite",
+        "stac",
+        "landsat",
+        "sentinel"
+      ]
+    },
+    {
+      "id": "copernicus-data-space",
+      "name": "Copernicus Data Space",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "oauth",
+      "description": "Free access to all Sentinel missions — radar & multispectral imagery of Earth.",
+      "endpoint": "dataspace.copernicus.eu",
+      "docs": "https://documentation.dataspace.copernicus.eu/APIs.html",
+      "tags": [
+        "sentinel",
+        "satellite",
+        "europe",
+        "esa"
+      ]
+    },
+    {
+      "id": "nasa-epic",
+      "name": "NASA EPIC",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Daily full-disk images of the sunlit Earth from the DSCOVR satellite.",
+      "endpoint": "epic.gsfc.nasa.gov/api",
+      "docs": "https://epic.gsfc.nasa.gov/about/api",
+      "tags": [
+        "earth",
+        "dscovr",
+        "satellite"
+      ]
+    },
+    {
+      "id": "nasa-earthdata-cmr",
+      "name": "NASA Earthdata CMR",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Search 9,000+ Earth-science datasets and their granules in one catalog.",
+      "endpoint": "cmr.earthdata.nasa.gov/search",
+      "docs": "https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html",
+      "tags": [
+        "earth",
+        "observation",
+        "catalog"
+      ]
+    },
+    {
+      "id": "usgs-earthexplorer-m2m",
+      "name": "USGS EarthExplorer (M2M)",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "key",
+      "description": "Programmatic access to the full Landsat archive and aerial imagery.",
+      "endpoint": "m2m.cr.usgs.gov/api",
+      "docs": "https://m2m.cr.usgs.gov/",
+      "tags": [
+        "landsat",
+        "satellite",
+        "usgs"
+      ]
+    },
+    {
+      "id": "openaerialmap",
+      "name": "OpenAerialMap",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Open aerial & drone imagery from around the world, indexed as STAC.",
+      "endpoint": "api.openaerialmap.org",
+      "docs": "https://docs.openaerialmap.org/",
+      "tags": [
+        "aerial",
+        "drone",
+        "imagery"
+      ]
+    },
+    {
+      "id": "the-guardian",
+      "name": "The Guardian",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "key",
+      "description": "Open Platform: full article text, tags & sections back to 1999. Free key.",
+      "endpoint": "content.guardianapis.com",
+      "docs": "https://open-platform.theguardian.com/",
+      "tags": [
+        "news",
+        "articles",
+        "journalism"
+      ]
+    },
+    {
+      "id": "new-york-times",
+      "name": "New York Times",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "key",
+      "description": "Article Search, Top Stories, Most Popular & Books lists. Free key.",
+      "endpoint": "api.nytimes.com/svc",
+      "docs": "https://developer.nytimes.com/",
+      "tags": [
+        "news",
+        "nyt",
+        "journalism"
+      ]
+    },
+    {
+      "id": "gdelt-2-0",
+      "name": "GDELT 2.0",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "none",
+      "description": "Global news events, themes & tone from worldwide coverage, refreshed every 15 min.",
+      "endpoint": "api.gdeltproject.org/api/v2",
+      "docs": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+      "tags": [
+        "news",
+        "events",
+        "global"
+      ]
+    },
+    {
+      "id": "hacker-news",
+      "name": "Hacker News",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "none",
+      "description": "Stories, comments & users from HN via a simple Firebase API.",
+      "endpoint": "hacker-news.firebaseio.com/v0",
+      "docs": "https://github.com/HackerNews/API",
+      "tags": [
+        "tech",
+        "news",
+        "startup"
+      ]
+    },
+    {
+      "id": "spaceflight-news",
+      "name": "Spaceflight News",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "none",
+      "description": "Articles, blogs & reports about spaceflight, aggregated and searchable.",
+      "endpoint": "api.spaceflightnewsapi.net/v4",
+      "docs": "https://spaceflightnewsapi.net/",
+      "tags": [
+        "space",
+        "news"
+      ]
+    },
+    {
+      "id": "chronicling-america",
+      "name": "Chronicling America",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "none",
+      "description": "Digitized historic U.S. newspapers, 1770s–present, from the Library of Congress.",
+      "endpoint": "chroniclingamerica.loc.gov",
+      "docs": "https://chroniclingamerica.loc.gov/about/api/",
+      "tags": [
+        "newspapers",
+        "history",
+        "archive"
+      ]
+    },
+    {
+      "id": "newsapi",
+      "name": "NewsAPI",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "key",
+      "description": "Headlines & articles from 150k+ sources worldwide. Free developer tier.",
+      "endpoint": "newsapi.org/v2",
+      "docs": "https://newsapi.org/docs",
+      "tags": [
+        "news",
+        "headlines"
+      ]
+    },
+    {
+      "id": "libretranslate",
+      "name": "LibreTranslate",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "key",
+      "description": "Open-source machine translation you can self-host or hit on a hosted instance.",
+      "endpoint": "libretranslate.com",
+      "docs": "https://libretranslate.com/docs/",
+      "tags": [
+        "translation",
+        "language",
+        "open",
+        "source"
+      ]
+    },
+    {
+      "id": "mymemory",
+      "name": "MyMemory",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "World's largest translation memory — 1,000+ language pairs, no key for light use.",
+      "endpoint": "api.mymemory.translated.net/get",
+      "docs": "https://mymemory.translated.net/doc/spec.php",
+      "tags": [
+        "translation",
+        "language"
+      ]
+    },
+    {
+      "id": "deepl-api-free",
+      "name": "DeepL API Free",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "key",
+      "description": "High-quality neural translation; free tier covers 500k characters/month.",
+      "endpoint": "api-free.deepl.com/v2",
+      "docs": "https://developers.deepl.com/docs",
+      "tags": [
+        "translation",
+        "language"
+      ]
+    },
+    {
+      "id": "apertium",
+      "name": "Apertium",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Open-source rule-based translation, strong on lesser-resourced language pairs.",
+      "endpoint": "apertium.org/apy",
+      "docs": "https://wiki.apertium.org/wiki/Apertium-apy",
+      "tags": [
+        "translation",
+        "language",
+        "open",
+        "source"
+      ]
+    },
+    {
+      "id": "wiktionary",
+      "name": "Wiktionary",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Definitions, etymologies & translations across languages via the MediaWiki API.",
+      "endpoint": "en.wiktionary.org/w/api.php",
+      "docs": "https://www.mediawiki.org/wiki/API:Main_page",
+      "tags": [
+        "dictionary",
+        "language",
+        "etymology"
+      ]
+    },
+    {
+      "id": "tatoeba",
+      "name": "Tatoeba",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Millions of example sentences with translations, searchable by language.",
+      "endpoint": "tatoeba.org/en/api_v0",
+      "docs": "https://en.wiki.tatoeba.org/articles/show/api",
+      "tags": [
+        "sentences",
+        "language",
+        "examples"
+      ]
+    },
+    {
+      "id": "thesportsdb",
+      "name": "TheSportsDB",
+      "category": "sports",
+      "categoryLabel": "Sports",
+      "color": "#CE5A2D",
+      "auth": "none",
+      "description": "Teams, players, events, logos & scores across dozens of sports. Free test key.",
+      "endpoint": "thesportsdb.com/api/v1/json/3",
+      "docs": "https://www.thesportsdb.com/api.php",
+      "tags": [
+        "sports",
+        "scores",
+        "teams"
+      ]
+    },
+    {
+      "id": "balldontlie",
+      "name": "balldontlie",
+      "category": "sports",
+      "categoryLabel": "Sports",
+      "color": "#CE5A2D",
+      "auth": "key",
+      "description": "NBA, NFL, MLB, NHL & soccer stats, games & standings. Free key — Knicks included.",
+      "endpoint": "api.balldontlie.io",
+      "docs": "https://docs.balldontlie.io/",
+      "tags": [
+        "nba",
+        "basketball",
+        "sports",
+        "stats",
+        "knicks"
+      ]
+    },
+    {
+      "id": "football-data-org",
+      "name": "Football-Data.org",
+      "category": "sports",
+      "categoryLabel": "Sports",
+      "color": "#CE5A2D",
+      "auth": "key",
+      "description": "Soccer competitions, fixtures, standings & scorers. Generous free tier.",
+      "endpoint": "api.football-data.org/v4",
+      "docs": "https://www.football-data.org/",
+      "tags": [
+        "soccer",
+        "football",
+        "fixtures"
+      ]
+    },
+    {
+      "id": "mlb-stats-api",
+      "name": "MLB Stats API",
+      "category": "sports",
+      "categoryLabel": "Sports",
+      "color": "#CE5A2D",
+      "auth": "none",
+      "description": "Official MLB data — schedules, live games, players & deep stats.",
+      "endpoint": "statsapi.mlb.com/api/v1",
+      "docs": "https://github.com/toddrob99/MLB-StatsAPI/wiki",
+      "tags": [
+        "baseball",
+        "mlb",
+        "stats"
+      ]
+    },
+    {
+      "id": "nhl-api",
+      "name": "NHL API",
+      "category": "sports",
+      "categoryLabel": "Sports",
+      "color": "#CE5A2D",
+      "auth": "none",
+      "description": "Schedules, scores, standings & player stats for the NHL.",
+      "endpoint": "api-web.nhle.com/v1",
+      "docs": "https://github.com/Zmalski/NHL-API-Reference",
+      "tags": [
+        "hockey",
+        "nhl",
+        "stats"
+      ]
+    },
+    {
+      "id": "espn-unofficial",
+      "name": "ESPN (unofficial)",
+      "category": "sports",
+      "categoryLabel": "Sports",
+      "color": "#CE5A2D",
+      "auth": "none",
+      "description": "Undocumented JSON endpoints for live scores & standings across leagues.",
+      "endpoint": "site.api.espn.com/apis/site/v2/sports",
+      "docs": "https://github.com/pseudo-r/Public-ESPN-API",
+      "tags": [
+        "sports",
+        "scores",
+        "espn"
+      ]
+    },
+    {
+      "id": "jolpica-f1",
+      "name": "Jolpica-F1",
+      "category": "sports",
+      "categoryLabel": "Sports",
+      "color": "#CE5A2D",
+      "auth": "none",
+      "description": "Formula 1 results, schedules & standings — the successor to the Ergast API.",
+      "endpoint": "api.jolpi.ca/ergast/f1",
+      "docs": "https://github.com/jolpica/jolpica-f1",
+      "tags": [
+        "formula",
+        "1",
+        "racing",
+        "f1",
+        "ergast"
+      ]
+    },
+    {
+      "id": "github-rest-api",
+      "name": "GitHub REST API",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "Repos, issues, commits, users & stars. Higher limits with a free token.",
+      "endpoint": "api.github.com",
+      "docs": "https://docs.github.com/rest",
+      "tags": [
+        "github",
+        "code",
+        "repos",
+        "open",
+        "source"
+      ]
+    },
+    {
+      "id": "npm-registry",
+      "name": "npm Registry",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "Package metadata, versions & download counts for the JS ecosystem.",
+      "endpoint": "registry.npmjs.org",
+      "docs": "https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md",
+      "tags": [
+        "npm",
+        "packages",
+        "javascript"
+      ]
+    },
+    {
+      "id": "pypi",
+      "name": "PyPI",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "JSON metadata for any Python package — versions, releases, dependencies.",
+      "endpoint": "pypi.org/pypi/{package}/json",
+      "docs": "https://docs.pypi.org/api/json/",
+      "tags": [
+        "python",
+        "packages",
+        "pip"
+      ]
+    },
+    {
+      "id": "crates-io",
+      "name": "crates.io",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "Metadata, versions & download stats for the Rust crate ecosystem.",
+      "endpoint": "crates.io/api/v1/crates",
+      "docs": "https://crates.io/data-access",
+      "tags": [
+        "rust",
+        "packages",
+        "crates"
+      ]
+    },
+    {
+      "id": "stack-exchange",
+      "name": "Stack Exchange",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "Questions, answers & users across Stack Overflow and 170+ sites.",
+      "endpoint": "api.stackexchange.com/2.3",
+      "docs": "https://api.stackexchange.com/docs",
+      "tags": [
+        "stackoverflow",
+        "questions",
+        "code"
+      ]
+    },
+    {
+      "id": "libraries-io",
+      "name": "Libraries.io",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "key",
+      "description": "Open-source packages across 30+ registries, with dependency graphs.",
+      "endpoint": "libraries.io/api",
+      "docs": "https://libraries.io/api",
+      "tags": [
+        "packages",
+        "dependencies",
+        "open",
+        "source"
+      ]
+    },
+    {
+      "id": "have-i-been-pwned",
+      "name": "Have I Been Pwned",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "Check passwords against breaches via the keyless k-anonymity range API.",
+      "endpoint": "api.pwnedpasswords.com/range",
+      "docs": "https://haveibeenpwned.com/API/v3",
+      "tags": [
+        "security",
+        "passwords",
+        "breach"
+      ]
+    },
+    {
+      "id": "rawg",
+      "name": "RAWG",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "key",
+      "description": "500k+ video games with ratings, screenshots, platforms & stores. Free key.",
+      "endpoint": "api.rawg.io/api",
+      "docs": "https://rawg.io/apidocs",
+      "tags": [
+        "video",
+        "games"
+      ]
+    },
+    {
+      "id": "scryfall",
+      "name": "Scryfall",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Every Magic: The Gathering card with images, prices & rich search syntax.",
+      "endpoint": "api.scryfall.com",
+      "docs": "https://scryfall.com/docs/api",
+      "tags": [
+        "magic",
+        "cards",
+        "mtg"
+      ]
+    },
+    {
+      "id": "deck-of-cards",
+      "name": "Deck of Cards",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Shuffle and draw from virtual card decks — a hackathon classic.",
+      "endpoint": "deckofcardsapi.com/api",
+      "docs": "https://deckofcardsapi.com/",
+      "tags": [
+        "cards",
+        "playing",
+        "games"
+      ]
+    },
+    {
+      "id": "chess-com",
+      "name": "Chess.com",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Public player profiles, game archives, stats & leaderboards.",
+      "endpoint": "api.chess.com/pub",
+      "docs": "https://www.chess.com/news/view/published-data-api",
+      "tags": [
+        "chess",
+        "games"
+      ]
+    },
+    {
+      "id": "lichess",
+      "name": "Lichess",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Games, puzzles, tournaments & the opening explorer from the open chess site.",
+      "endpoint": "lichess.org/api",
+      "docs": "https://lichess.org/api",
+      "tags": [
+        "chess",
+        "puzzles",
+        "games"
+      ]
+    },
+    {
+      "id": "igdb",
+      "name": "IGDB",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "oauth",
+      "description": "Vast game database — covers, genres, release dates & companies (Twitch auth).",
+      "endpoint": "api.igdb.com/v4",
+      "docs": "https://api-docs.igdb.com/",
+      "tags": [
+        "video",
+        "games",
+        "database"
+      ]
+    },
+    {
+      "id": "freetogame",
+      "name": "FreeToGame",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Catalog of free-to-play PC & browser games with details and tags.",
+      "endpoint": "freetogame.com/api",
+      "docs": "https://www.freetogame.com/api-doc",
+      "tags": [
+        "games",
+        "free",
+        "to",
+        "play"
+      ]
+    }
+  ]
+}
