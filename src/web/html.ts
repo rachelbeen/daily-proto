@@ -77,6 +77,11 @@ const pageStyles = `
       --ink: #1a1a1a;
       --muted: #666666;
       --white: #ffffff;
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --duration-fast: 200ms;
+      --duration-med: 380ms;
+      --duration-slow: 520ms;
     }
 
     * { box-sizing: border-box; }
@@ -147,10 +152,38 @@ const pageStyles = `
       border: none;
       cursor: pointer;
       font-family: inherit;
-      transition: opacity 120ms ease;
+      transition:
+        opacity var(--duration-fast) var(--ease-out),
+        transform var(--duration-fast) var(--ease-out),
+        box-shadow var(--duration-fast) var(--ease-out),
+        filter var(--duration-fast) var(--ease-out);
     }
 
-    .mint-chip:hover { opacity: 0.85; }
+    .mint-chip:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px -10px rgba(6, 95, 70, 0.55);
+    }
+
+    .mint-chip:active {
+      transform: translateY(0) scale(0.98);
+      transition-duration: 120ms;
+    }
+
+    .mint-chip.is-busy {
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    .headline-swap,
+    .source-swap {
+      transition: opacity var(--duration-slow) var(--ease-out);
+    }
+
+    .headline-swap.is-faded,
+    .source-swap.is-faded {
+      opacity: 0;
+    }
 
     h1 {
       margin: 0;
@@ -272,11 +305,24 @@ const pageStyles = `
       font-weight: 800;
       line-height: 1.45;
       text-decoration: none;
-      transition: opacity 120ms ease;
+      transition:
+        opacity var(--duration-fast) var(--ease-out),
+        transform var(--duration-fast) var(--ease-out),
+        box-shadow var(--duration-fast) var(--ease-out),
+        border-color var(--duration-fast) var(--ease-out);
       white-space: nowrap;
     }
 
-    .cta:hover { opacity: 0.88; }
+    .cta:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px -12px rgba(26, 26, 26, 0.35);
+    }
+
+    .cta:active {
+      transform: translateY(0) scale(0.99);
+      transition-duration: 120ms;
+    }
 
     .cta-primary {
       background: var(--ink);
@@ -312,6 +358,20 @@ const pageStyles = `
       .headline-block {
         max-width: none;
       }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .headline-swap,
+      .source-swap,
+      .mint-chip,
+      .cta {
+        transition: none !important;
+      }
+
+      .headline-swap.is-faded,
+      .source-swap.is-faded {
+        opacity: 1;
+      }
     }`;
 
 function clientScript(prompt: DailyPrompt): string {
@@ -332,6 +392,60 @@ function clientScript(prompt: DailyPrompt): string {
       params.set("promptSeed", String(state.promptSeed));
       params.set("sourceSeed", String(state.sourceSeed));
       history.replaceState(null, "", "?" + params.toString());
+    }
+
+    function wait(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
+    function prefersReducedMotion() {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    }
+
+    function waitForTransition(el) {
+      return new Promise((resolve) => {
+        const done = () => {
+          el.removeEventListener("transitionend", onEnd);
+          clearTimeout(fallback);
+          resolve();
+        };
+        const onEnd = (event) => {
+          if (event.target === el && event.propertyName === "opacity") done();
+        };
+        const fallback = setTimeout(done, 700);
+        el.addEventListener("transitionend", onEnd);
+      });
+    }
+
+    async function refreshWithAnimation(button, target, apply, bumpSeed) {
+      if (button.disabled) return;
+      button.disabled = true;
+      button.classList.add("is-busy");
+
+      try {
+        bumpSeed();
+        const dataPromise = fetchPrompt();
+
+        if (prefersReducedMotion()) {
+          apply(await dataPromise);
+          return;
+        }
+
+        const height = target.offsetHeight;
+        if (height > 0) target.style.minHeight = height + "px";
+        target.classList.add("is-faded");
+        const [, data] = await Promise.all([waitForTransition(target), dataPromise]);
+        apply(data);
+        const newHeight = target.scrollHeight;
+        if (newHeight > 0) target.style.minHeight = Math.max(height, newHeight) + "px";
+        await wait(16);
+        target.classList.remove("is-faded");
+        await waitForTransition(target);
+        target.style.minHeight = "";
+      } finally {
+        button.disabled = false;
+        button.classList.remove("is-busy");
+      }
     }
 
     function applyPromptOnly(data) {
@@ -360,16 +474,22 @@ function clientScript(prompt: DailyPrompt): string {
       return response.json();
     }
 
-    document.getElementById("refresh-prompt").addEventListener("click", async () => {
-      state.promptSeed = randomSeed();
-      const data = await fetchPrompt();
-      applyPromptOnly(data);
+    document.getElementById("refresh-prompt").addEventListener("click", () => {
+      refreshWithAnimation(
+        document.getElementById("refresh-prompt"),
+        document.getElementById("headline-swap"),
+        applyPromptOnly,
+        () => { state.promptSeed = randomSeed(); },
+      );
     });
 
-    document.getElementById("refresh-sources").addEventListener("click", async () => {
-      state.sourceSeed = randomSeed();
-      const data = await fetchPrompt();
-      applySourcesOnly(data);
+    document.getElementById("refresh-sources").addEventListener("click", () => {
+      refreshWithAnimation(
+        document.getElementById("refresh-sources"),
+        document.getElementById("source-content"),
+        applySourcesOnly,
+        () => { state.sourceSeed = randomSeed(); },
+      );
     });
 
     updateUrl();
@@ -403,7 +523,9 @@ export function renderPromptPage(prompt: DailyPrompt): string {
           <span class="neon-chip">Today's Prompt</span>
           <button type="button" class="mint-chip" id="refresh-prompt">Refresh prompt</button>
         </div>
-        <h1 id="prompt-heading">${escapeHtml(headline)}</h1>
+        <div class="headline-swap" id="headline-swap">
+          <h1 id="prompt-heading">${escapeHtml(headline)}</h1>
+        </div>
       </div>
     </section>
 
@@ -413,7 +535,7 @@ export function renderPromptPage(prompt: DailyPrompt): string {
           <span class="neon-chip source-label" id="source-heading">${escapeHtml(sourceLabel)}</span>
           <button type="button" class="mint-chip" id="refresh-sources">Refresh data</button>
         </div>
-        <div id="source-content">
+        <div class="source-swap" id="source-content">
           ${renderSourceContent(prompt)}
         </div>
       </div>

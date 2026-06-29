@@ -22,7 +22,7 @@ export const siteNavStyles = `
   .page-tab {
     color: var(--muted);
     text-decoration: none;
-    transition: color 120ms ease;
+    transition: color 220ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .page-tab[aria-current="page"] {

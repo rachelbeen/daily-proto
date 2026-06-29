@@ -12,6 +12,9 @@ const pageStyles = `
     --white: #ffffff;
     --line: rgba(0, 0, 0, 0.08);
     --line-strong: rgba(0, 0, 0, 0.12);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --duration-fast: 220ms;
+    --duration-med: 380ms;
   }
 
   * { box-sizing: border-box; }
@@ -155,7 +158,11 @@ const pageStyles = `
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+    transition:
+      background var(--duration-fast) var(--ease-out),
+      color var(--duration-fast) var(--ease-out),
+      border-color var(--duration-fast) var(--ease-out),
+      transform var(--duration-fast) var(--ease-out);
     white-space: nowrap;
     font-family: inherit;
     justify-content: flex-start;
@@ -240,7 +247,9 @@ const pageStyles = `
     gap: 11px;
     text-decoration: none;
     color: inherit;
-    transition: transform 120ms ease, box-shadow 120ms ease;
+    transition:
+      transform var(--duration-med) var(--ease-out),
+      box-shadow var(--duration-med) var(--ease-out);
   }
 
   .card:hover {
@@ -271,7 +280,9 @@ const pageStyles = `
   .arrow {
     flex: none;
     color: var(--muted);
-    transition: transform 120ms ease, color 120ms ease;
+    transition:
+      transform var(--duration-fast) var(--ease-out),
+      color var(--duration-fast) var(--ease-out);
     margin-top: 2px;
   }
 
