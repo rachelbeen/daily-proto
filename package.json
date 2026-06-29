@@ -7,7 +7,7 @@
     "daily-proto": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc && cp -r src/data/catalog dist/data/ && cp -r src/data/open-data-index dist/data/",
+    "build": "tsc && cp -r src/data/catalog dist/data/ && cp -r src/data/open-data-index dist/data/ && cp src/data/open-data-endpoints.json dist/data/",
     "dev": "tsx src/cli.ts",
     "generate": "tsx src/cli.ts generate",
     "post": "tsx src/cli.ts post",
