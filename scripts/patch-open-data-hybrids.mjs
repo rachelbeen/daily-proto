@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Restore primary categories for hybrid APIs and list them in multiple sections.
+ * Keep domain APIs in their home category (art, science, nature, etc.).
+ * Only explicit hybrids appear in multiple sections.
  * Run: node scripts/patch-open-data-hybrids.mjs
  */
 import { readFileSync, writeFileSync } from "node:fs";
@@ -9,25 +10,29 @@ import { fileURLToPath } from "node:url";
 
 const apisPath = join(dirname(fileURLToPath(import.meta.url)), "..", "src/data/open-data-index/apis.json");
 
-/** primary category + every section the card should appear in */
-const HYBRIDS = {
-  "the-met-collection": ["art", "education"],
-  "art-institute-of-chicago": ["art", "education"],
-  "smithsonian-open-access": ["art", "education"],
-  europeana: ["art", "education"],
-  "wikimedia-commons": ["art", "education"],
-  "nasa-image-video-library": ["science", "education"],
-  "iss-now-open-notify": ["science", "education"],
-  "launch-library-2": ["science", "education"],
-  "nasa-eonet": ["science", "education"],
-  "exoplanet-archive": ["science", "education"],
-  "open-meteo": ["science", "education"],
-  inaturalist: ["nature", "education"],
-  gbif: ["nature", "education"],
-  pubchem: ["health", "education"],
-  "open-states": ["civic", "education"],
-  "open-food-facts": ["food", "education"],
+/** APIs that belong in one section only — restored from Education overlap. */
+const SINGLE_CATEGORY = {
+  "the-met-collection": "art",
+  "art-institute-of-chicago": "art",
+  "smithsonian-open-access": "art",
+  europeana: "art",
+  "wikimedia-commons": "art",
+  "nasa-image-video-library": "science",
+  "iss-now-open-notify": "science",
+  "launch-library-2": "science",
+  "nasa-eonet": "science",
+  "exoplanet-archive": "science",
+  "open-notify-people": "science",
+  "open-meteo": "science",
+  inaturalist: "nature",
+  gbif: "nature",
+  pubchem: "health",
+  "open-states": "civic",
+  "open-food-facts": "food",
 };
+
+/** Optional cross-listing — empty unless we add true dual-purpose APIs later. */
+const HYBRIDS = {};
 
 const catalog = JSON.parse(readFileSync(apisPath, "utf8"));
 const categoryByKey = Object.fromEntries(catalog.categories.map((c) => [c.key, c]));
@@ -41,10 +46,23 @@ function applyPrimary(source, primaryKey) {
 }
 
 for (const source of catalog.sources) {
+  const single = SINGLE_CATEGORY[source.id];
+  if (single) {
+    delete source.categories;
+    applyPrimary(source, single);
+    continue;
+  }
+
   const hybrid = HYBRIDS[source.id];
-  if (!hybrid) continue;
-  source.categories = hybrid;
-  applyPrimary(source, hybrid[0]);
+  if (hybrid) {
+    source.categories = hybrid;
+    applyPrimary(source, hybrid[0]);
+    continue;
+  }
+
+  if (source.categories) {
+    delete source.categories;
+  }
 }
 
 const counts = {};
@@ -64,7 +82,5 @@ catalog.generated = new Date().toISOString().slice(0, 10);
 
 writeFileSync(apisPath, `${JSON.stringify(catalog, null, 2)}\n`);
 
-console.log("Hybrid categories applied:");
-for (const [id, cats] of Object.entries(HYBRIDS)) {
-  console.log(`  ${id} → ${cats.join(" + ")}`);
-}
+console.log(`Restored ${Object.keys(SINGLE_CATEGORY).length} APIs to a single home category.`);
+console.log(`Education count: ${counts.education ?? 0}`);

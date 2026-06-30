@@ -16,7 +16,7 @@
       "key": "education",
       "label": "Education & Learning",
       "color": "#2563EB",
-      "count": 39
+      "count": 22
     },
     {
       "key": "art",
@@ -28,7 +28,7 @@
       "key": "science",
       "label": "Science & Space",
       "color": "#2E6E8E",
-      "count": 18
+      "count": 19
     },
     {
       "key": "civic",
@@ -118,10 +118,6 @@
         "museum",
         "painting",
         "object"
-      ],
-      "categories": [
-        "art",
-        "education"
       ]
     },
     {
@@ -136,10 +132,6 @@
       "docs": "https://api.artic.edu/docs/",
       "tags": [
         "museum"
-      ],
-      "categories": [
-        "art",
-        "education"
       ]
     },
     {
@@ -197,10 +189,6 @@
       "docs": "https://www.si.edu/openaccess/devtools",
       "tags": [
         "museum"
-      ],
-      "categories": [
-        "art",
-        "education"
       ]
     },
     {
@@ -231,10 +219,6 @@
       "tags": [
         "heritage",
         "europe"
-      ],
-      "categories": [
-        "art",
-        "education"
       ]
     },
     {
@@ -283,10 +267,6 @@
         "space",
         "iss",
         "satellite"
-      ],
-      "categories": [
-        "science",
-        "education"
       ]
     },
     {
@@ -303,10 +283,6 @@
         "space",
         "rocket",
         "launch"
-      ],
-      "categories": [
-        "science",
-        "education"
       ]
     },
     {
@@ -370,10 +346,6 @@
         "weather",
         "forecast",
         "climate"
-      ],
-      "categories": [
-        "science",
-        "education"
       ]
     },
     {
@@ -404,10 +376,6 @@
       "tags": [
         "chemistry",
         "molecules"
-      ],
-      "categories": [
-        "health",
-        "education"
       ]
     },
     {
@@ -551,10 +519,6 @@
       "tags": [
         "legislation",
         "states"
-      ],
-      "categories": [
-        "civic",
-        "education"
       ]
     },
     {
@@ -680,10 +644,6 @@
         "species",
         "biodiversity",
         "occurrences"
-      ],
-      "categories": [
-        "nature",
-        "education"
       ]
     },
     {
@@ -700,10 +660,6 @@
         "wildlife",
         "observations",
         "nature"
-      ],
-      "categories": [
-        "nature",
-        "education"
       ]
     },
     {
@@ -767,10 +723,6 @@
         "wildfire",
         "storm",
         "disaster"
-      ],
-      "categories": [
-        "science",
-        "education"
       ]
     },
     {
@@ -1111,10 +1063,6 @@
         "food",
         "nutrition",
         "grocery"
-      ],
-      "categories": [
-        "food",
-        "education"
       ]
     },
     {
@@ -1538,10 +1486,6 @@
         "space",
         "photos",
         "nasa"
-      ],
-      "categories": [
-        "science",
-        "education"
       ]
     },
     {
@@ -1589,10 +1533,6 @@
         "images",
         "media",
         "free"
-      ],
-      "categories": [
-        "art",
-        "education"
       ]
     },
     {
@@ -2352,10 +2292,6 @@
         "space",
         "astronomy",
         "planets"
-      ],
-      "categories": [
-        "science",
-        "education"
       ]
     },
     {
@@ -2581,9 +2517,9 @@
         "astronauts",
         "stem"
       ],
-      "category": "education",
-      "categoryLabel": "Education & Learning",
-      "color": "#2563EB"
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E"
     }
   ]
 }
