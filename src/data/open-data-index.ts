@@ -19,6 +19,8 @@ export interface OpenDataSource {
   category: string;
   categoryLabel: string;
   color: string;
+  /** When set, the card appears in every listed category section. */
+  categories?: string[];
   auth: OpenDataAuth;
   description: string;
   endpoint: string;

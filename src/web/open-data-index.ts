@@ -411,7 +411,12 @@ const catalog = document.getElementById('catalog');
 const chipsEl = document.getElementById('chips');
 
 const counts = {};
-CATALOG.sources.forEach(d => counts[d.category] = (counts[d.category] || 0) + 1);
+function sourceCategories(d) {
+  return d.categories && d.categories.length ? d.categories : [d.category];
+}
+CATALOG.sources.forEach(d => {
+  sourceCategories(d).forEach(key => { counts[key] = (counts[key] || 0) + 1; });
+});
 
 function accentColor(key) {
   const i = CATALOG.categories.findIndex(c => c.key === key);
@@ -456,7 +461,7 @@ CATALOG.categories.forEach((v) => {
     '<h2>' + v.label + '</h2><span class="n">' + counts[v.key] + ' sources</span></div>' +
     '<div class="grid"></div>';
   const grid = sec.querySelector('.grid');
-  CATALOG.sources.filter(d => d.category === v.key).forEach(d => grid.appendChild(card(d, accent)));
+  CATALOG.sources.filter(d => sourceCategories(d).includes(v.key)).forEach(d => grid.appendChild(card(d, accent)));
   catalog.appendChild(sec);
 });
 
@@ -492,6 +497,8 @@ render();
 
 export function renderOpenDataIndexPage(catalog: OpenDataCatalog): string {
   const { sources, categories } = catalog.counts;
+  const educationCount =
+    catalog.categories.find((c) => c.key === "education")?.count ?? 0;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -512,7 +519,7 @@ export function renderOpenDataIndexPage(catalog: OpenDataCatalog): string {
           ${renderPageLinks("open-data")}
           <div class="index-intro">
             <h1>The Open Data Index</h1>
-            <p class="lede">Rich, real, public APIs you can pull from. Built for prototypes, demos, and hackathons.</p>
+            <p class="lede">Rich, real, public APIs you can pull from — including ${educationCount} curated for classrooms, kids, and lifelong learners. Built for prototypes, demos, and hackathons.</p>
             <div class="legend">
               <span class="legend-item"><span class="badge b-none" style="padding:4px 10px;font-size:9px;">No key</span> Open, just GET</span>
               <span class="legend-item"><span class="badge b-key" style="padding:4px 10px;font-size:9px;">Free key</span> Quick signup</span>

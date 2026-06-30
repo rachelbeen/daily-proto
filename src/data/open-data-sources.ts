@@ -11,6 +11,7 @@ const exampleEndpoints = JSON.parse(
 ) as Record<string, string>;
 
 const CATEGORY_TAGS: Record<string, string[]> = {
+  education: ["education", "search", "science", "fun"],
   art: ["culture", "education", "gallery", "search"],
   science: ["science", "charts", "time-series"],
   civic: ["civic", "education", "search", "geo"],
@@ -33,7 +34,11 @@ const TAG_HINTS: Record<string, string[]> = {
   transit: ["transit", "real-time", "geo"],
   weather: ["time-series", "alerts", "real-time"],
   game: ["fun", "games"],
-  quiz: ["fun", "games"],
+  quiz: ["fun", "games", "education"],
+  trivia: ["fun", "games", "education"],
+  classroom: ["education"],
+  vocabulary: ["education"],
+  stem: ["education", "science"],
 };
 
 const AUTH_MAP: Record<OpenDataSource["auth"], ApiAuth> = {

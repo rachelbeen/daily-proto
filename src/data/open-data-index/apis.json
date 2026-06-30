@@ -1,10 +1,10 @@
 {
   "name": "The Open Data Index",
   "description": "A curated directory of open/public data APIs for prototyping.",
-  "generated": "2026-06-28",
+  "generated": "2026-06-30",
   "counts": {
-    "sources": 149,
-    "categories": 14
+    "sources": 153,
+    "categories": 15
   },
   "authLegend": {
     "none": "No key — open, just GET",
@@ -13,22 +13,28 @@
   },
   "categories": [
     {
+      "key": "education",
+      "label": "Education & Learning",
+      "color": "#2563EB",
+      "count": 39
+    },
+    {
       "key": "art",
       "label": "Art & Culture",
       "color": "#B23A48",
-      "count": 16
+      "count": 14
     },
     {
       "key": "science",
       "label": "Science & Space",
       "color": "#2E6E8E",
-      "count": 19
+      "count": 18
     },
     {
       "key": "civic",
       "label": "Government & Civic",
       "color": "#5B6770",
-      "count": 11
+      "count": 10
     },
     {
       "key": "news",
@@ -40,13 +46,13 @@
       "key": "maps",
       "label": "Maps & Places",
       "color": "#2F8F6B",
-      "count": 15
+      "count": 14
     },
     {
       "key": "nature",
       "label": "Nature & Environment",
       "color": "#6F8E2F",
-      "count": 6
+      "count": 5
     },
     {
       "key": "health",
@@ -64,7 +70,7 @@
       "key": "books",
       "label": "Books & Words",
       "color": "#7E5BA6",
-      "count": 13
+      "count": 5
     },
     {
       "key": "food",
@@ -88,13 +94,13 @@
       "key": "dev",
       "label": "Dev & Open Source",
       "color": "#3A4149",
-      "count": 9
+      "count": 8
     },
     {
       "key": "games",
       "label": "Games & Play",
       "color": "#9B4DCA",
-      "count": 19
+      "count": 15
     }
   ],
   "sources": [
@@ -105,13 +111,17 @@
       "categoryLabel": "Art & Culture",
       "color": "#B23A48",
       "auth": "none",
-      "description": "490k+ open-access artworks with high-res public-domain images, departments & search.",
+      "description": "490k+ artworks with public-domain images — art history and visual culture lessons.",
       "endpoint": "collectionapi.metmuseum.org/public/collection/v1",
       "docs": "https://metmuseum.github.io/",
       "tags": [
         "museum",
         "painting",
         "object"
+      ],
+      "categories": [
+        "art",
+        "education"
       ]
     },
     {
@@ -126,6 +136,10 @@
       "docs": "https://api.artic.edu/docs/",
       "tags": [
         "museum"
+      ],
+      "categories": [
+        "art",
+        "education"
       ]
     },
     {
@@ -178,11 +192,15 @@
       "categoryLabel": "Art & Culture",
       "color": "#B23A48",
       "auth": "key",
-      "description": "3M+ CC0 images & records spanning all Smithsonian museums and archives.",
+      "description": "3M+ museum objects with CC0 images — history, science, and culture collections.",
       "endpoint": "api.si.edu/openaccess/api/v1.0",
       "docs": "https://www.si.edu/openaccess/devtools",
       "tags": [
         "museum"
+      ],
+      "categories": [
+        "art",
+        "education"
       ]
     },
     {
@@ -207,22 +225,26 @@
       "categoryLabel": "Art & Culture",
       "color": "#B23A48",
       "auth": "key",
-      "description": "50M+ cultural-heritage items from museums & libraries across Europe.",
+      "description": "50M+ heritage items from European museums and libraries — world history sourcebooks.",
       "endpoint": "api.europeana.eu",
       "docs": "https://apis.europeana.eu/",
       "tags": [
         "heritage",
         "europe"
+      ],
+      "categories": [
+        "art",
+        "education"
       ]
     },
     {
       "id": "wikidata-sparql",
       "name": "Wikidata (SPARQL)",
-      "category": "art",
-      "categoryLabel": "Art & Culture",
-      "color": "#B23A48",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Query the structured knowledge graph behind Wikipedia — people, places, works.",
+      "description": "Structured facts behind Wikipedia — biographies, timelines, and knowledge-graph explorers.",
       "endpoint": "query.wikidata.org/sparql",
       "docs": "https://query.wikidata.org/",
       "tags": [
@@ -254,13 +276,17 @@
       "categoryLabel": "Science & Space",
       "color": "#2E6E8E",
       "auth": "none",
-      "description": "Live latitude/longitude of the International Space Station, updated by the second.",
+      "description": "Live ISS coordinates — map the space station and connect to orbit lessons.",
       "endpoint": "api.open-notify.org/iss-now.json",
       "docs": "http://open-notify.org/Open-Notify-API/",
       "tags": [
         "space",
         "iss",
         "satellite"
+      ],
+      "categories": [
+        "science",
+        "education"
       ]
     },
     {
@@ -270,13 +296,17 @@
       "categoryLabel": "Science & Space",
       "color": "#2E6E8E",
       "auth": "none",
-      "description": "Every rocket launch, past and upcoming, across all space agencies and companies.",
+      "description": "Upcoming rocket launches worldwide — space-program calendars and STEM countdowns.",
       "endpoint": "ll.thespacedevs.com/2.2.0/launch",
       "docs": "https://thespacedevs.com/llapi",
       "tags": [
         "space",
         "rocket",
         "launch"
+      ],
+      "categories": [
+        "science",
+        "education"
       ]
     },
     {
@@ -298,11 +328,11 @@
     {
       "id": "openalex",
       "name": "OpenAlex",
-      "category": "science",
-      "categoryLabel": "Science & Space",
-      "color": "#2E6E8E",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "250M+ scholarly works, authors, institutions & citations — fully open.",
+      "description": "Open catalog of scholarly works — research skills and source evaluation for high school+.",
       "endpoint": "api.openalex.org/works",
       "docs": "https://docs.openalex.org/",
       "tags": [
@@ -333,13 +363,17 @@
       "categoryLabel": "Science & Space",
       "color": "#2E6E8E",
       "auth": "none",
-      "description": "Free global weather — forecast, historical, marine & air quality. No key, ever.",
+      "description": "Weather forecasts and climate data — charts for data literacy and earth science.",
       "endpoint": "api.open-meteo.com/v1/forecast",
       "docs": "https://open-meteo.com/en/docs",
       "tags": [
         "weather",
         "forecast",
         "climate"
+      ],
+      "categories": [
+        "science",
+        "education"
       ]
     },
     {
@@ -360,16 +394,20 @@
     {
       "id": "pubchem",
       "name": "PubChem",
-      "category": "science",
-      "categoryLabel": "Science & Space",
-      "color": "#2E6E8E",
+      "category": "health",
+      "categoryLabel": "Health & Biology",
+      "color": "#1B9E8A",
       "auth": "none",
-      "description": "Chemical compounds, structures & properties from the NIH chemistry database.",
+      "description": "Chemical compounds and structures from NIH — periodic-table explorers and chemistry lookups.",
       "endpoint": "pubchem.ncbi.nlm.nih.gov/rest/pug",
       "docs": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest",
       "tags": [
         "chemistry",
         "molecules"
+      ],
+      "categories": [
+        "health",
+        "education"
       ]
     },
     {
@@ -507,12 +545,16 @@
       "categoryLabel": "Government & Civic",
       "color": "#5B6770",
       "auth": "key",
-      "description": "Bills, legislators & votes across all 50 U.S. state legislatures.",
+      "description": "US state legislators and bills — civics projects on how government works.",
       "endpoint": "v3.openstates.org",
       "docs": "https://docs.openstates.org/api-v3/",
       "tags": [
         "legislation",
         "states"
+      ],
+      "categories": [
+        "civic",
+        "education"
       ]
     },
     {
@@ -550,11 +592,11 @@
     {
       "id": "rest-countries",
       "name": "REST Countries",
-      "category": "maps",
-      "categoryLabel": "Maps & Places",
-      "color": "#2F8F6B",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Flags, currencies, languages, borders & population for every country.",
+      "description": "Country profiles with flags, maps, and populations — geography quizzes and culture apps.",
       "endpoint": "restcountries.com/v3.1/all",
       "docs": "https://restcountries.com/",
       "tags": [
@@ -631,13 +673,17 @@
       "categoryLabel": "Nature & Environment",
       "color": "#6F8E2F",
       "auth": "none",
-      "description": "2B+ species occurrence records — the backbone of global biodiversity data.",
+      "description": "Global biodiversity species data — taxonomy trees and conservation explorers.",
       "endpoint": "api.gbif.org/v1",
       "docs": "https://techdocs.gbif.org/en/openapi/",
       "tags": [
         "species",
         "biodiversity",
         "occurrences"
+      ],
+      "categories": [
+        "nature",
+        "education"
       ]
     },
     {
@@ -647,13 +693,17 @@
       "categoryLabel": "Nature & Environment",
       "color": "#6F8E2F",
       "auth": "none",
-      "description": "Millions of crowd-sourced, photo-backed wildlife observations worldwide.",
+      "description": "Citizen-science species observations — nature journals, biodiversity hunts, and field guides.",
       "endpoint": "api.inaturalist.org/v1",
       "docs": "https://api.inaturalist.org/v1/docs/",
       "tags": [
         "wildlife",
         "observations",
         "nature"
+      ],
+      "categories": [
+        "nature",
+        "education"
       ]
     },
     {
@@ -706,17 +756,21 @@
     {
       "id": "nasa-eonet",
       "name": "NASA EONET",
-      "category": "nature",
-      "categoryLabel": "Nature & Environment",
-      "color": "#6F8E2F",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
       "auth": "none",
-      "description": "Live natural events — wildfires, storms, volcanoes — as a geospatial feed.",
+      "description": "Open natural events (wildfires, storms, volcanoes) — current-events science dashboards.",
       "endpoint": "eonet.gsfc.nasa.gov/api/v3/events",
       "docs": "https://eonet.gsfc.nasa.gov/docs/v3",
       "tags": [
         "wildfire",
         "storm",
         "disaster"
+      ],
+      "categories": [
+        "science",
+        "education"
       ]
     },
     {
@@ -769,11 +823,11 @@
     {
       "id": "clinicaltrials-gov",
       "name": "ClinicalTrials.gov",
-      "category": "health",
-      "categoryLabel": "Health & Biology",
-      "color": "#1B9E8A",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "450k+ registered clinical studies, fully queryable in v2.",
+      "description": "Real clinical study records — health literacy and how medical research works.",
       "endpoint": "clinicaltrials.gov/api/v2",
       "docs": "https://clinicaltrials.gov/data-api/api",
       "tags": [
@@ -922,11 +976,11 @@
     {
       "id": "open-library",
       "name": "Open Library",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "20M+ book records with covers, editions, authors & subjects.",
+      "description": "20M+ book records — build reading lists, author explorers, and library browsers.",
       "endpoint": "openlibrary.org/search.json",
       "docs": "https://openlibrary.org/developers/api",
       "tags": [
@@ -938,11 +992,11 @@
     {
       "id": "gutendex",
       "name": "Gutendex",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Clean JSON over Project Gutenberg's 70k+ free public-domain ebooks.",
+      "description": "70k+ free public-domain ebooks — reading apps and classroom libraries without paywalls.",
       "endpoint": "gutendex.com/books",
       "docs": "https://gutendex.com/",
       "tags": [
@@ -969,11 +1023,11 @@
     {
       "id": "datamuse",
       "name": "Datamuse",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Word-finding engine — rhymes, synonyms, associations & autocomplete.",
+      "description": "Rhymes, synonyms, and word associations — spelling bees, poetry tools, and word games.",
       "endpoint": "api.datamuse.com/words",
       "docs": "https://www.datamuse.com/api/",
       "tags": [
@@ -985,11 +1039,11 @@
     {
       "id": "free-dictionary",
       "name": "Free Dictionary",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Definitions, phonetics, examples & synonyms for English words.",
+      "description": "Definitions, phonetics, and examples — vocabulary builders for all ages.",
       "endpoint": "api.dictionaryapi.dev/api/v2",
       "docs": "https://dictionaryapi.dev/",
       "tags": [
@@ -1001,11 +1055,11 @@
     {
       "id": "poetrydb",
       "name": "PoetryDB",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Search thousands of public-domain poems by author, title or line.",
+      "description": "Thousands of public-domain poems — literature apps and close-reading prompts.",
       "endpoint": "poetrydb.org",
       "docs": "https://poetrydb.org/",
       "tags": [
@@ -1050,13 +1104,17 @@
       "categoryLabel": "Food & Drink",
       "color": "#D9772F",
       "auth": "none",
-      "description": "3M+ crowd-sourced products with nutrition, ingredients, labels & images.",
+      "description": "Crowdsourced nutrition labels — label-reading, health, and data-comparison projects.",
       "endpoint": "world.openfoodfacts.org/api/v2",
       "docs": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
       "tags": [
         "food",
         "nutrition",
         "grocery"
+      ],
+      "categories": [
+        "food",
+        "education"
       ]
     },
     {
@@ -1359,11 +1417,11 @@
     {
       "id": "open-trivia-db",
       "name": "Open Trivia DB",
-      "category": "games",
-      "categoryLabel": "Games & Play",
-      "color": "#9B4DCA",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Free quiz questions across categories & difficulties — great for games.",
+      "description": "Thousands of quiz questions by topic and difficulty — flashcards and classroom games.",
       "endpoint": "opentdb.com/api.php",
       "docs": "https://opentdb.com/api_config.php",
       "tags": [
@@ -1374,11 +1432,11 @@
     {
       "id": "jsonplaceholder",
       "name": "JSONPlaceholder",
-      "category": "games",
-      "categoryLabel": "Games & Play",
-      "color": "#9B4DCA",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Fake REST data (posts, users, todos) for wiring up UI prototypes fast.",
+      "description": "Classic fake REST data — first APIs for students learning to wire up lists and forms.",
       "endpoint": "jsonplaceholder.typicode.com",
       "docs": "https://jsonplaceholder.typicode.com/",
       "tags": [
@@ -1390,11 +1448,11 @@
     {
       "id": "numbers-api",
       "name": "Numbers API",
-      "category": "games",
-      "categoryLabel": "Games & Play",
-      "color": "#9B4DCA",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "A factoid for any number — math, trivia, dates. Tiny and delightful.",
+      "description": "Math and date trivia for any number — playful hooks for arithmetic and history lessons.",
       "endpoint": "numbersapi.com",
       "docs": "http://numbersapi.com/",
       "tags": [
@@ -1405,9 +1463,9 @@
     {
       "id": "quotable",
       "name": "Quotable",
-      "category": "games",
-      "categoryLabel": "Games & Play",
-      "color": "#9B4DCA",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
       "description": "Searchable quotations by author & tag for widgets and daily-quote apps.",
       "endpoint": "api.quotable.io",
@@ -1469,17 +1527,21 @@
     {
       "id": "nasa-image-video-library",
       "name": "NASA Image & Video Library",
-      "category": "art",
-      "categoryLabel": "Art & Culture",
-      "color": "#B23A48",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
       "auth": "none",
-      "description": "Hundreds of thousands of NASA photos, audio & video, fully searchable.",
+      "description": "Searchable NASA photos and videos — space and Earth science visual libraries.",
       "endpoint": "images-api.nasa.gov",
       "docs": "https://api.nasa.gov/",
       "tags": [
         "space",
         "photos",
         "nasa"
+      ],
+      "categories": [
+        "science",
+        "education"
       ]
     },
     {
@@ -1520,13 +1582,17 @@
       "categoryLabel": "Art & Culture",
       "color": "#B23A48",
       "auth": "none",
-      "description": "100M+ freely-licensed images, audio & video via the MediaWiki API.",
+      "description": "Free educational images, diagrams, and maps from Wikipedia's media library.",
       "endpoint": "commons.wikimedia.org/w/api.php",
       "docs": "https://commons.wikimedia.org/wiki/Commons:API",
       "tags": [
         "images",
         "media",
         "free"
+      ],
+      "categories": [
+        "art",
+        "education"
       ]
     },
     {
@@ -1821,11 +1887,11 @@
     {
       "id": "wiktionary",
       "name": "Wiktionary",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Definitions, etymologies & translations across languages via the MediaWiki API.",
+      "description": "Word definitions and etymologies across languages — deeper vocabulary than a simple dictionary.",
       "endpoint": "en.wiktionary.org/w/api.php",
       "docs": "https://www.mediawiki.org/wiki/API:Main_page",
       "tags": [
@@ -1837,11 +1903,11 @@
     {
       "id": "tatoeba",
       "name": "Tatoeba",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Millions of example sentences with translations, searchable by language.",
+      "description": "Multilingual example sentences — language-learning flashcards and translation practice.",
       "endpoint": "tatoeba.org/en/api_v0",
       "docs": "https://en.wiki.tatoeba.org/articles/show/api",
       "tags": [
@@ -2195,11 +2261,11 @@
     {
       "id": "wikipedia",
       "name": "Wikipedia",
-      "category": "books",
-      "categoryLabel": "Books & Words",
-      "color": "#7E5BA6",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Page summaries, images & links from the world's largest encyclopedia — no key needed.",
+      "description": "Article summaries and images from the world's largest encyclopedia — research starters for any topic.",
       "endpoint": "en.wikipedia.org/api/rest_v1",
       "docs": "https://www.mediawiki.org/wiki/API:REST_API",
       "tags": [
@@ -2243,11 +2309,11 @@
     {
       "id": "dummyjson",
       "name": "DummyJSON",
-      "category": "dev",
-      "categoryLabel": "Dev & Open Source",
-      "color": "#3A4149",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Products, carts, users, posts & quotes — richer fake data than JSONPlaceholder.",
+      "description": "Fake users, products, and posts — teach app design without touching real personal data.",
       "endpoint": "dummyjson.com",
       "docs": "https://dummyjson.com/docs",
       "tags": [
@@ -2279,23 +2345,27 @@
       "categoryLabel": "Science & Space",
       "color": "#2E6E8E",
       "auth": "none",
-      "description": "Confirmed exoplanets, host stars & orbital parameters — query via TAP SQL.",
+      "description": "Confirmed exoplanets with discovery dates and host stars — astronomy research for curious teens.",
       "endpoint": "exoplanetarchive.ipac.caltech.edu/TAP",
       "docs": "https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html",
       "tags": [
         "space",
         "astronomy",
         "planets"
+      ],
+      "categories": [
+        "science",
+        "education"
       ]
     },
     {
       "id": "crossref",
       "name": "Crossref",
-      "category": "science",
-      "categoryLabel": "Science & Space",
-      "color": "#2E6E8E",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Scholarly metadata for 150M+ DOIs — titles, authors, citations & funders.",
+      "description": "Scholarly paper metadata — teach older students how to find and cite real research.",
       "endpoint": "api.crossref.org/works",
       "docs": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
       "tags": [
@@ -2307,11 +2377,11 @@
     {
       "id": "date-nager",
       "name": "Nager.Date",
-      "category": "civic",
-      "categoryLabel": "Government & Civic",
-      "color": "#5B6770",
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB",
       "auth": "none",
-      "description": "Public holidays by country and year — great for calendars and scheduling UIs.",
+      "description": "Public holidays by country and year — culture, geography, and calendar math.",
       "endpoint": "date.nager.at/api/v3",
       "docs": "https://date.nager.at/swagger/index.html",
       "tags": [
@@ -2447,6 +2517,73 @@
         "manga",
         "ranking"
       ]
+    },
+    {
+      "id": "openverse",
+      "name": "Openverse",
+      "auth": "none",
+      "description": "Search 700M+ Creative Commons images and audio — safe media for classroom projects.",
+      "endpoint": "api.openverse.org/v1",
+      "docs": "https://api.openverse.org/v1/",
+      "tags": [
+        "images",
+        "audio",
+        "creative-commons",
+        "classroom"
+      ],
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB"
+    },
+    {
+      "id": "conceptnet",
+      "name": "ConceptNet",
+      "auth": "none",
+      "description": "Common-sense knowledge graph — word meanings and relations for vocabulary and logic games.",
+      "endpoint": "api.conceptnet.io",
+      "docs": "https://github.com/commonsense/conceptnet5/wiki/API",
+      "tags": [
+        "words",
+        "knowledge",
+        "graph",
+        "vocabulary"
+      ],
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB"
+    },
+    {
+      "id": "internet-archive",
+      "name": "Internet Archive",
+      "auth": "none",
+      "description": "Search millions of free books, films, courses, and software for self-paced learning.",
+      "endpoint": "archive.org/advancedsearch.php",
+      "docs": "https://archive.org/services/docs/api/advancedsearch.html",
+      "tags": [
+        "books",
+        "courses",
+        "archive",
+        "oer"
+      ],
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB"
+    },
+    {
+      "id": "open-notify-people",
+      "name": "People in Space",
+      "auth": "none",
+      "description": "Who is aboard the ISS right now — great hook for space and STEM lessons.",
+      "endpoint": "api.open-notify.org/astros.json",
+      "docs": "http://open-notify.org/Open-Notify-API/People-In-Space/",
+      "tags": [
+        "space",
+        "astronauts",
+        "stem"
+      ],
+      "category": "education",
+      "categoryLabel": "Education & Learning",
+      "color": "#2563EB"
     }
   ]
 }
