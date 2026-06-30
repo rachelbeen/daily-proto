@@ -86,5 +86,21 @@
   "chess-com": "https://api.chess.com/pub/player/magnuscarlsen",
   "lichess": "https://lichess.org/api/broadcast",
   "igdb": "https://api.igdb.com/v4/games",
-  "freetogame": "https://www.freetogame.com/api/games"
+  "freetogame": "https://www.freetogame.com/api/games",
+  "wikipedia": "https://en.wikipedia.org/api/rest_v1/page/summary/Open_data",
+  "reddit": "https://www.reddit.com/r/dataisbeautiful/top.json?limit=5",
+  "random-user": "https://randomuser.me/api/?results=5",
+  "dummyjson": "https://dummyjson.com/products?limit=10",
+  "spacex": "https://api.spacexdata.com/v4/launches/upcoming",
+  "exoplanet-archive": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+5+pl_name,disc_year+from+ps&format=json",
+  "crossref": "https://api.crossref.org/works?query=machine+learning&rows=5",
+  "date-nager": "https://date.nager.at/api/v3/PublicHolidays/2026/US",
+  "opensanctions": "https://api.opensanctions.org/search/default?q=smith&limit=5",
+  "sec-edgar": "https://data.sec.gov/submissions/CIK0000320193.json",
+  "sunrise-sunset": "https://api.sunrise-sunset.org/json?lat=40.71&lng=-74.01&formatted=0",
+  "zippopotam": "https://api.zippopotam.us/us/10001",
+  "open-charge-map": "https://api.openchargemap.io/v3/poi/?output=json&maxresults=5&countrycode=US",
+  "joke-api": "https://v2.jokeapi.dev/joke/Programming?type=single&safe-mode",
+  "advice-slip": "https://api.adviceslip.com/advice",
+  "jikan": "https://api.jikan.moe/v4/top/anime?limit=5"
 }

@@ -1,9 +1,9 @@
 {
   "name": "The Open Data Index",
   "description": "A curated directory of open/public data APIs for prototyping.",
-  "generated": "2026-06-29",
+  "generated": "2026-06-28",
   "counts": {
-    "sources": 133,
+    "sources": 149,
     "categories": 14
   },
   "authLegend": {
@@ -22,25 +22,25 @@
       "key": "science",
       "label": "Science & Space",
       "color": "#2E6E8E",
-      "count": 16
+      "count": 19
     },
     {
       "key": "civic",
       "label": "Government & Civic",
       "color": "#5B6770",
-      "count": 9
+      "count": 11
     },
     {
       "key": "news",
       "label": "News & Journalism",
       "color": "#8B6F47",
-      "count": 7
+      "count": 8
     },
     {
       "key": "maps",
       "label": "Maps & Places",
       "color": "#2F8F6B",
-      "count": 12
+      "count": 15
     },
     {
       "key": "nature",
@@ -58,13 +58,13 @@
       "key": "finance",
       "label": "Finance & Economy",
       "color": "#B58A2E",
-      "count": 6
+      "count": 7
     },
     {
       "key": "books",
       "label": "Books & Words",
       "color": "#7E5BA6",
-      "count": 12
+      "count": 13
     },
     {
       "key": "food",
@@ -88,13 +88,13 @@
       "key": "dev",
       "label": "Dev & Open Source",
       "color": "#3A4149",
-      "count": 7
+      "count": 9
     },
     {
       "key": "games",
       "label": "Games & Play",
       "color": "#9B4DCA",
-      "count": 16
+      "count": 19
     }
   ],
   "sources": [
@@ -2190,6 +2190,262 @@
         "free",
         "to",
         "play"
+      ]
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "category": "books",
+      "categoryLabel": "Books & Words",
+      "color": "#7E5BA6",
+      "auth": "none",
+      "description": "Page summaries, images & links from the world's largest encyclopedia — no key needed.",
+      "endpoint": "en.wikipedia.org/api/rest_v1",
+      "docs": "https://www.mediawiki.org/wiki/API:REST_API",
+      "tags": [
+        "encyclopedia",
+        "knowledge",
+        "search"
+      ]
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "category": "news",
+      "categoryLabel": "News & Journalism",
+      "color": "#8B6F47",
+      "auth": "none",
+      "description": "Public subreddit posts, comments & rankings via Reddit's JSON endpoints.",
+      "endpoint": "www.reddit.com",
+      "docs": "https://www.reddit.com/dev/api/",
+      "tags": [
+        "social",
+        "community",
+        "trending"
+      ]
+    },
+    {
+      "id": "random-user",
+      "name": "Random User",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "Fake user profiles with names, avatars & locations for UI mockups.",
+      "endpoint": "randomuser.me/api",
+      "docs": "https://randomuser.me/documentation",
+      "tags": [
+        "mock",
+        "users",
+        "prototype"
+      ]
+    },
+    {
+      "id": "dummyjson",
+      "name": "DummyJSON",
+      "category": "dev",
+      "categoryLabel": "Dev & Open Source",
+      "color": "#3A4149",
+      "auth": "none",
+      "description": "Products, carts, users, posts & quotes — richer fake data than JSONPlaceholder.",
+      "endpoint": "dummyjson.com",
+      "docs": "https://dummyjson.com/docs",
+      "tags": [
+        "mock",
+        "ecommerce",
+        "prototype"
+      ]
+    },
+    {
+      "id": "spacex",
+      "name": "SpaceX API",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Launches, rockets, capsules & company history from the community SpaceX API.",
+      "endpoint": "api.spacexdata.com/v4",
+      "docs": "https://github.com/r-spacex/SpaceX-API",
+      "tags": [
+        "space",
+        "rocket",
+        "launch"
+      ]
+    },
+    {
+      "id": "exoplanet-archive",
+      "name": "NASA Exoplanet Archive",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Confirmed exoplanets, host stars & orbital parameters — query via TAP SQL.",
+      "endpoint": "exoplanetarchive.ipac.caltech.edu/TAP",
+      "docs": "https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html",
+      "tags": [
+        "space",
+        "astronomy",
+        "planets"
+      ]
+    },
+    {
+      "id": "crossref",
+      "name": "Crossref",
+      "category": "science",
+      "categoryLabel": "Science & Space",
+      "color": "#2E6E8E",
+      "auth": "none",
+      "description": "Scholarly metadata for 150M+ DOIs — titles, authors, citations & funders.",
+      "endpoint": "api.crossref.org/works",
+      "docs": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "tags": [
+        "research",
+        "papers",
+        "doi"
+      ]
+    },
+    {
+      "id": "date-nager",
+      "name": "Nager.Date",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "none",
+      "description": "Public holidays by country and year — great for calendars and scheduling UIs.",
+      "endpoint": "date.nager.at/api/v3",
+      "docs": "https://date.nager.at/swagger/index.html",
+      "tags": [
+        "holidays",
+        "calendar",
+        "government"
+      ]
+    },
+    {
+      "id": "opensanctions",
+      "name": "OpenSanctions",
+      "category": "civic",
+      "categoryLabel": "Government & Civic",
+      "color": "#5B6770",
+      "auth": "none",
+      "description": "Global sanctions, PEPs & watchlists — search people and organizations.",
+      "endpoint": "api.opensanctions.org/search",
+      "docs": "https://www.opensanctions.org/docs/api/",
+      "tags": [
+        "sanctions",
+        "compliance",
+        "search"
+      ]
+    },
+    {
+      "id": "sec-edgar",
+      "name": "SEC EDGAR",
+      "category": "finance",
+      "categoryLabel": "Finance & Economy",
+      "color": "#B58A2E",
+      "auth": "none",
+      "description": "U.S. public company filings, submissions & financial statements — no API key.",
+      "endpoint": "data.sec.gov",
+      "docs": "https://www.sec.gov/edgar/sec-api-documentation",
+      "tags": [
+        "stocks",
+        "filings",
+        "companies"
+      ]
+    },
+    {
+      "id": "sunrise-sunset",
+      "name": "Sunrise-Sunset",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Sunrise, sunset & day length for any latitude and longitude.",
+      "endpoint": "api.sunrise-sunset.org/json",
+      "docs": "https://sunrise-sunset.org/api",
+      "tags": [
+        "geo",
+        "time",
+        "sun"
+      ]
+    },
+    {
+      "id": "zippopotam",
+      "name": "Zippopotam",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "none",
+      "description": "Postal code lookup — place names, states & coordinates for 60+ countries.",
+      "endpoint": "api.zippopotam.us",
+      "docs": "https://www.zippopotam.us/",
+      "tags": [
+        "postal",
+        "geo",
+        "lookup"
+      ]
+    },
+    {
+      "id": "open-charge-map",
+      "name": "Open Charge Map",
+      "category": "maps",
+      "categoryLabel": "Maps & Places",
+      "color": "#2F8F6B",
+      "auth": "key",
+      "description": "EV charging stations worldwide — locations, connectors & operator details.",
+      "endpoint": "api.openchargemap.io/v3/poi",
+      "docs": "https://openchargemap.org/site/develop/api",
+      "tags": [
+        "ev",
+        "charging",
+        "transit"
+      ]
+    },
+    {
+      "id": "joke-api",
+      "name": "JokeAPI",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Jokes by category, language & safe-mode filters — single or two-part setups.",
+      "endpoint": "v2.jokeapi.dev/joke",
+      "docs": "https://v2.jokeapi.dev/",
+      "tags": [
+        "jokes",
+        "fun",
+        "humor"
+      ]
+    },
+    {
+      "id": "advice-slip",
+      "name": "Advice Slip",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Random one-line advice snippets — dead simple for demos and widgets.",
+      "endpoint": "api.adviceslip.com/advice",
+      "docs": "https://api.adviceslip.com/",
+      "tags": [
+        "advice",
+        "fun",
+        "quotes"
+      ]
+    },
+    {
+      "id": "jikan",
+      "name": "Jikan",
+      "category": "games",
+      "categoryLabel": "Games & Play",
+      "color": "#9B4DCA",
+      "auth": "none",
+      "description": "Unofficial MyAnimeList API — anime, manga, characters & seasonal charts.",
+      "endpoint": "api.jikan.moe/v4",
+      "docs": "https://docs.api.jikan.moe/",
+      "tags": [
+        "anime",
+        "manga",
+        "ranking"
       ]
     }
   ]
