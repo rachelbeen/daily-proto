@@ -319,24 +319,25 @@
   },
   {
     "id": "nasa-donki",
-    "name": "NASA DONKI",
-    "category": "Space weather",
-    "description": "Solar flares, CMEs, and geomagnetic storms.",
-    "baseUrl": "https://api.nasa.gov",
-    "docsUrl": "https://api.nasa.gov/",
-    "auth": "free-key",
-    "exampleEndpoint": "https://api.nasa.gov/DONKI/FLR?startDate=2026-01-01&api_key=DEMO_KEY",
+    "name": "NASA EONET",
+    "category": "Natural events",
+    "description": "Open natural events — wildfires, storms, volcanoes, and more.",
+    "baseUrl": "https://eonet.gsfc.nasa.gov",
+    "docsUrl": "https://eonet.gsfc.nasa.gov/docs/v3",
+    "auth": "none",
+    "exampleEndpoint": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&limit=10",
     "sampleFields": [
-      "classType",
-      "beginTime",
-      "sourceLocation"
+      "title",
+      "categories",
+      "geometry",
+      "sources"
     ],
     "tags": [
       "science",
-      "time-series",
+      "maps",
       "alerts"
     ],
-    "dataSummary": "Nasa donki data. A snapshot from right now."
+    "dataSummary": "10 entries — open natural events (wildfires, storms, volcanoes). A snapshot from right now."
   },
   {
     "id": "city-bikes",
@@ -1910,44 +1911,46 @@
   },
   {
     "id": "nasa-apod",
-    "name": "NASA APOD",
+    "name": "NASA Images",
     "category": "Science",
-    "description": "NASA Astronomy Picture of the Day — batch of recent images.",
-    "baseUrl": "https://api.nasa.gov",
-    "docsUrl": "https://api.nasa.gov/",
-    "auth": "free-key",
-    "exampleEndpoint": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=5",
+    "description": "NASA image and video library — searchable space photos with titles and metadata.",
+    "baseUrl": "https://images-api.nasa.gov",
+    "docsUrl": "https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf",
+    "auth": "none",
+    "exampleEndpoint": "https://images-api.nasa.gov/search?q=nebula&media_type=image&page_size=10",
     "sampleFields": [
       "title",
-      "date",
-      "url",
-      "explanation"
+      "nasa_id",
+      "description",
+      "keywords",
+      "links"
     ],
     "tags": [
       "science",
       "media"
     ],
-    "dataSummary": "5 entries — recent astronomy pictures of the day. A snapshot from right now."
+    "dataSummary": "10 entries — search results. A snapshot from a search or listing."
   },
   {
     "id": "nasa-neows",
-    "name": "NASA NeoWs",
+    "name": "NASA EPIC",
     "category": "Science",
-    "description": "NASA NeoWs — Nasa neows data.",
-    "baseUrl": "https://api.nasa.gov",
-    "docsUrl": "https://api.nasa.gov/",
-    "auth": "free-key",
-    "exampleEndpoint": "https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=DEMO_KEY",
+    "description": "Earth imagery from the DSCOVR satellite — multiple views per date.",
+    "baseUrl": "https://api.epic.gsfc.nasa.gov",
+    "docsUrl": "https://epic.gsfc.nasa.gov/about/api",
+    "auth": "none",
+    "exampleEndpoint": "https://api.epic.gsfc.nasa.gov/api/natural/date/2024-06-15",
     "sampleFields": [
-      "id",
-      "name",
-      "data"
+      "caption",
+      "date",
+      "image",
+      "coords"
     ],
     "tags": [
       "science",
-      "alerts"
+      "media"
     ],
-    "dataSummary": "Nasa neows data. A snapshot from a search or listing."
+    "dataSummary": "Nasa epic data. A snapshot from right now."
   },
   {
     "id": "inspire",

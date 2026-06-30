@@ -532,7 +532,6 @@ export function renderOpenDataIndexPage(catalog: OpenDataCatalog): string {
 
     <footer class="index-shell">
       <span>${sources}+ open data sources · ${categories} categories</span>
-      <span>Verify current terms &amp; rate limits before shipping.</span>
     </footer>
   </div>
 

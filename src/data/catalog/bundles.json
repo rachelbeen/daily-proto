@@ -229,6 +229,17 @@
     ]
   },
   {
+    "id": "open-meteo__nasa-donki",
+    "sourceIds": [
+      "open-meteo",
+      "nasa-donki"
+    ],
+    "reason": "Pair Open-Meteo with NASA EONET to explore maps from two angles.",
+    "tags": [
+      "maps"
+    ]
+  },
+  {
     "id": "open-meteo__launch-library-2",
     "sourceIds": [
       "open-meteo",
@@ -505,17 +516,6 @@
       "openaq-countries"
     ],
     "reason": "Pair Open-Meteo with OpenAQ Countries to explore geo from two angles.",
-    "tags": [
-      "geo"
-    ]
-  },
-  {
-    "id": "open-meteo__rest-countries-region",
-    "sourceIds": [
-      "open-meteo",
-      "rest-countries-region"
-    ],
-    "reason": "Pair Open-Meteo with Rest Countries Region to explore geo from two angles.",
     "tags": [
       "geo"
     ]
