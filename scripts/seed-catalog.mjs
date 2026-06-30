@@ -309,6 +309,45 @@ const PROMPT_ARCHETYPES = [
       "Spark a five-minute team jam around today's prompt.",
     ],
   },
+  {
+    tags: ["product", "mobile", "search"],
+    prompts: [
+      "Show something useful immediately on the welcome screen.",
+      "Ship a small first version that still feels complete.",
+      "Make the first run work without instructions.",
+      "Create a wow moment in the first three seconds after load.",
+      "Boil a complex dataset down to one friendly first screen.",
+      "Design a step-by-step flow with smart defaults and a satisfying final answer.",
+      "Start with lots of choices and end with one clear recommendation.",
+      "Walk someone through a few questions and land on a suggestion backed by real data.",
+      "Build something a teammate could use to decide in one sitting.",
+      "Design a single view that answers one big question in under ten seconds.",
+      "Build search with a friendly empty state and satisfying real results.",
+      "Make the 'no results' screen as thoughtful as the hits.",
+      "Help people browse when they don't know what to search for yet.",
+      "Make an explore screen for someone who's never seen this data before.",
+      "Make sure filtering never feels like hitting a dead end.",
+      "Design a screen with a list on one side and a map on the other so people can explore locations.",
+      "Design a comparison that works on a phone with a swipe between the two.",
+      "Add a slider that updates the whole screen as people move through dates.",
+      "Offer a simple mode and a power mode for different comfort levels.",
+      "Design a list-and-detail layout where selecting one item reveals more.",
+      "Design a daily briefing screen your team could check every morning.",
+      "Build a glanceable commute-style screen from live transit or weather data.",
+      "Sketch an alert you'd actually want when something crosses a line that matters to you.",
+      "Design a notification that shows what triggered it and what to do next.",
+      "Build a simple stats screen for someone who usually finds dashboards overwhelming.",
+      "Combine search, filters, and sort — plus one small delightful detail in the results.",
+      "Find one delightful surprise in today's data and put it front and center.",
+      "Design something worth sharing — a card or link your team would actually post.",
+      "Design a shareable report that fits in a single screenshot.",
+      "Make it educational but feel like a product — not a manual.",
+      "Design for a team ritual — something everyone can riff on together.",
+      "Create a summary card ready to paste into Slack.",
+      "Make one slide for a daily standup from live public data.",
+      "Spark a five-minute team jam around today's prompt.",
+    ],
+  },
 ];
 
 const CURATED_SOURCES = [
@@ -949,7 +988,7 @@ function main() {
   const sources = buildSourcesWithFixes();
   const bundles = buildCombos(sources);
 
-  if (prompts.length !== 200) throw new Error(`Expected 200 prompts, got ${prompts.length}`);
+  if (prompts.length !== 234) throw new Error(`Expected 234 prompts, got ${prompts.length}`);
   if (sources.length < 200) throw new Error(`Expected 200 sources, got ${sources.length}`);
   if (bundles.length < 50) throw new Error(`Expected 50 combos, got ${bundles.length}`);
 

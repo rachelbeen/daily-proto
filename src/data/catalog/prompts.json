@@ -1718,5 +1718,311 @@
       "share",
       "comparison"
     ]
+  },
+  {
+    "id": "product-01",
+    "prompt": "Show something useful immediately on the welcome screen.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-02",
+    "prompt": "Ship a small first version that still feels complete.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-03",
+    "prompt": "Make the first run work without instructions.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-04",
+    "prompt": "Create a wow moment in the first three seconds after load.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-05",
+    "prompt": "Boil a complex dataset down to one friendly first screen.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-06",
+    "prompt": "Design a step-by-step flow with smart defaults and a satisfying final answer.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-07",
+    "prompt": "Start with lots of choices and end with one clear recommendation.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-08",
+    "prompt": "Walk someone through a few questions and land on a suggestion backed by real data.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-09",
+    "prompt": "Build something a teammate could use to decide in one sitting.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-10",
+    "prompt": "Design a single view that answers one big question in under ten seconds.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-11",
+    "prompt": "Build search with a friendly empty state and satisfying real results.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-12",
+    "prompt": "Make the 'no results' screen as thoughtful as the hits.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-13",
+    "prompt": "Help people browse when they don't know what to search for yet.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-14",
+    "prompt": "Make an explore screen for someone who's never seen this data before.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-15",
+    "prompt": "Make sure filtering never feels like hitting a dead end.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-16",
+    "prompt": "Design a screen with a list on one side and a map on the other so people can explore locations.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-17",
+    "prompt": "Design a comparison that works on a phone with a swipe between the two.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-18",
+    "prompt": "Add a slider that updates the whole screen as people move through dates.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-19",
+    "prompt": "Offer a simple mode and a power mode for different comfort levels.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-20",
+    "prompt": "Design a list-and-detail layout where selecting one item reveals more.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-21",
+    "prompt": "Design a daily briefing screen your team could check every morning.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-22",
+    "prompt": "Build a glanceable commute-style screen from live transit or weather data.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-23",
+    "prompt": "Sketch an alert you'd actually want when something crosses a line that matters to you.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-24",
+    "prompt": "Design a notification that shows what triggered it and what to do next.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-25",
+    "prompt": "Build a simple stats screen for someone who usually finds dashboards overwhelming.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-26",
+    "prompt": "Combine search, filters, and sort — plus one small delightful detail in the results.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-27",
+    "prompt": "Find one delightful surprise in today's data and put it front and center.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-28",
+    "prompt": "Design something worth sharing — a card or link your team would actually post.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-29",
+    "prompt": "Design a shareable report that fits in a single screenshot.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-30",
+    "prompt": "Make it educational but feel like a product — not a manual.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-31",
+    "prompt": "Design for a team ritual — something everyone can riff on together.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-32",
+    "prompt": "Create a summary card ready to paste into Slack.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-33",
+    "prompt": "Make one slide for a daily standup from live public data.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
+  },
+  {
+    "id": "product-34",
+    "prompt": "Spark a five-minute team jam around today's prompt.",
+    "tags": [
+      "product",
+      "mobile",
+      "search"
+    ]
   }
 ]
