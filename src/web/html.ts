@@ -102,7 +102,7 @@ const pageStyles = `
     }
 
     .prompt-panel {
-      flex: 968 1 1;
+      flex: 3 1 0;
       min-width: 0;
       background: var(--mint);
       padding: var(--site-gutter);
@@ -195,10 +195,11 @@ const pageStyles = `
     }
 
     .source-panel {
-      flex: 472 0 0;
-      width: 32.8%;
+      flex: 1 0 0;
+      min-width: 260px;
+      max-width: 380px;
       background: var(--white);
-      padding: 80px;
+      padding: 56px 40px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -289,8 +290,9 @@ const pageStyles = `
 
     .cta-row {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px;
       width: 100%;
     }
 
@@ -298,12 +300,13 @@ const pageStyles = `
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      padding: 12px 18px;
-      border-radius: 14px;
-      font-size: 14px;
+      flex: 1 1 0;
+      min-width: 0;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 12px;
       font-weight: 800;
-      line-height: 1.45;
+      line-height: 1.35;
       text-decoration: none;
       transition:
         opacity var(--duration-fast) var(--ease-out),
