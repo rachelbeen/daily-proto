@@ -31,7 +31,7 @@ function renderSourceCard(source: DataSource): string {
         <p class="source-summary">${escapeHtml(formatSourceSummary(source))}</p>
         <div class="cta-row">
           <a class="cta cta-primary" href="${escapeHtml(dataPath)}" target="_blank" rel="noopener noreferrer">
-            Use the data -&gt;
+            Use the data
           </a>
           <a class="cta cta-secondary" href="${escapeHtml(source.docsUrl)}" target="_blank" rel="noopener noreferrer">
             API docs

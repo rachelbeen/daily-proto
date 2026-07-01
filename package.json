@@ -7,11 +7,12 @@
     "daily-proto": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc && cp -r src/data/catalog dist/data/ && cp -r src/data/open-data-index dist/data/ && cp src/data/open-data-endpoints.json dist/data/",
+    "build": "tsc && cp -r src/data/catalog dist/data/ && cp -r src/data/open-data-index dist/data/ && cp src/data/open-data-endpoints.json dist/data/ && npm run validate-daily",
     "dev": "tsx src/cli.ts",
     "generate": "tsx src/cli.ts generate",
     "post": "tsx src/cli.ts post",
     "seed": "node scripts/seed-catalog.mjs && mkdir -p dist/data && cp -r src/data/catalog dist/data/",
+    "validate-daily": "tsx scripts/validate-daily-sources.ts",
     "start": "node --env-file-if-exists=.env dist/server.js",
     "serve": "npm run build && node --env-file-if-exists=.env dist/server.js",
     "web": "bash scripts/start-web.sh",

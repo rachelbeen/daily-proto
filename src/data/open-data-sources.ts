@@ -56,6 +56,21 @@ const CATALOG_ALIASES: Record<string, string> = {
   "open-states": "open-civic-data",
   "open-brewery-db": "open-brewery",
   "hacker-news": "hn-firebase",
+  "nyc-open-data-311": "nyc-open-data",
+  "data-gov": "data-gov-ckan",
+  "uk-police-data": "uk-police",
+  "overpass-openstreetmap": "openstreetmap-overpass",
+  nominatim: "openstreetmap-nominatim",
+  "nasa-eonet": "nasa-donki",
+  "rxnorm-nih": "rxnorm",
+  "world-bank-open-data": "world-bank",
+  "free-dictionary": "dictionary-api",
+  "nasa-image-video-library": "nasa-apod",
+  "github-rest-api": "github-public",
+  "stack-exchange": "stackexchange",
+  dummyjson: "quotable",
+  spacex: "spacex-api",
+  "internet-archive": "archive-org",
 };
 
 function uniqueTags(tags: string[]): string[] {
@@ -140,7 +155,10 @@ export function mergeOpenDataSources(baseSources: DataSource[]): DataSource[] {
   const baseIds = new Set(baseSources.map((source) => source.id));
   const merged = [...baseSources];
 
-  for (const source of loadOpenDataIndexSources()) {
+  for (const openSource of loadOpenDataCatalog().sources) {
+    if (openSource.auth !== "none") continue;
+
+    const source = openDataSourceToDataSource(openSource);
     if (baseIds.has(source.id)) continue;
     if (CATALOG_ALIASES[source.id] && baseIds.has(CATALOG_ALIASES[source.id]!)) {
       continue;
@@ -150,4 +168,20 @@ export function mergeOpenDataSources(baseSources: DataSource[]): DataSource[] {
   }
 
   return merged;
+}
+
+/** Ensures every no-key index API is reachable in the daily pool (directly or via alias). */
+export function validateNoAuthIndexCoverage(baseSources: DataSource[]): string[] {
+  const dailyIds = new Set(mergeOpenDataSources(baseSources).map((source) => source.id));
+  const missing: string[] = [];
+
+  for (const source of loadOpenDataCatalog().sources) {
+    if (source.auth !== "none") continue;
+    if (dailyIds.has(source.id)) continue;
+    const alias = CATALOG_ALIASES[source.id];
+    if (alias && dailyIds.has(alias)) continue;
+    missing.push(source.id);
+  }
+
+  return missing;
 }
