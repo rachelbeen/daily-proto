@@ -198,7 +198,7 @@ const pageStyles = `
       flex: 472 0 0;
       width: 32.8%;
       background: var(--white);
-      padding: var(--site-gutter);
+      padding: 80px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -213,7 +213,7 @@ const pageStyles = `
     .data-source-block {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 28px;
       width: 100%;
     }
 
@@ -239,8 +239,8 @@ const pageStyles = `
     .source-card {
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      padding-bottom: 20px;
+      gap: 18px;
+      padding-bottom: 24px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
 
@@ -261,7 +261,7 @@ const pageStyles = `
 
     .source-title {
       margin: 0;
-      font-size: clamp(1.25rem, 2.2vw, 24px);
+      font-size: 30px;
       font-weight: 800;
       line-height: 1.25;
       color: #000000;
@@ -269,37 +269,36 @@ const pageStyles = `
 
     .source-desc {
       margin: 0;
-      font-size: 16px;
+      font-size: 19px;
       font-weight: 500;
-      line-height: 1.5;
+      line-height: 1.55;
       color: var(--ink);
     }
 
     .source-summary {
       margin: 0;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 500;
-      line-height: 1.45;
+      line-height: 1.5;
       color: var(--muted);
     }
 
     .source-panel--multi .source-summary {
-      font-size: 13px;
+      font-size: 15px;
     }
 
     .cta-row {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      align-items: flex-start;
+      width: 100%;
     }
 
     .cta {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: fit-content;
-      max-width: 100%;
+      width: 100%;
       padding: 12px 18px;
       border-radius: 14px;
       font-size: 14px;
