@@ -303,7 +303,7 @@ const pageStyles = `
       flex: 1 1 0;
       min-width: 0;
       padding: 11px 18px;
-      border-radius: 100px;
+      border-radius: 12px;
       font-size: 12px;
       font-weight: 800;
       line-height: 1.3;
