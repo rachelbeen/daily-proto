@@ -102,7 +102,7 @@ const pageStyles = `
     }
 
     .prompt-panel {
-      flex: 5 1 0;
+      flex: 9 1 0;
       min-width: 0;
       background: var(--mint);
       padding: var(--site-gutter);
@@ -195,9 +195,9 @@ const pageStyles = `
     }
 
     .source-panel {
-      flex: 2 0 0;
-      min-width: 300px;
-      max-width: 440px;
+      flex: 4 0 0;
+      min-width: 320px;
+      max-width: 480px;
       background: var(--white);
       padding: 56px 40px;
       display: flex;
