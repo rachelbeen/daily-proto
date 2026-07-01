@@ -10,11 +10,25 @@ function escapeHtml(value: string): string {
 }
 
 function formatSourceDetail(source: DataSource): string {
-  return source.description;
-}
+  const description = source.description.trim();
+  const summary = source.dataSummary.trim();
 
-function formatSourceSummary(source: DataSource): string {
-  return source.dataSummary;
+  if (!summary) return description;
+
+  const normalizedSummary = summary.replace(/^[^.—]+ — /, "").trim();
+  if (!normalizedSummary || description.includes(normalizedSummary)) {
+    return description;
+  }
+
+  const summaryLead = normalizedSummary.split(".")[0]?.trim() ?? "";
+  if (summaryLead && description.includes(summaryLead)) {
+    const remainder = normalizedSummary.slice(summaryLead.length).replace(/^\.\s*/, "");
+    return remainder ? `${description} ${remainder}` : description;
+  }
+
+  if (normalizedSummary.includes(description)) return normalizedSummary;
+
+  return `${description} ${normalizedSummary}`;
 }
 
 function sourceDataPath(source: DataSource): string {
@@ -28,7 +42,6 @@ function renderSourceCard(source: DataSource): string {
       <article class="source-card">
         <h2 class="source-title">${escapeHtml(source.name)} · ${escapeHtml(source.category)}</h2>
         <p class="source-desc">${escapeHtml(formatSourceDetail(source))}</p>
-        <p class="source-summary">${escapeHtml(formatSourceSummary(source))}</p>
         <div class="cta-row">
           <a class="cta cta-primary" href="${escapeHtml(dataPath)}" target="_blank" rel="noopener noreferrer">
             Use the data
@@ -136,9 +149,9 @@ const pageStyles = `
       font-weight: 800;
       letter-spacing: 1px;
       text-transform: uppercase;
-      padding: 8px 16px;
+      padding: 10px 20px;
       border-radius: 100px;
-      line-height: 1.2;
+      line-height: 1.25;
     }
 
     .neon-chip {
@@ -275,23 +288,11 @@ const pageStyles = `
       color: var(--ink);
     }
 
-    .source-summary {
-      margin: 0;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.5;
-      color: var(--muted);
-    }
-
-    .source-panel--multi .source-summary {
-      font-size: 15px;
-    }
-
     .cta-row {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
       width: 100%;
     }
 
@@ -301,11 +302,11 @@ const pageStyles = `
       justify-content: center;
       flex: 1 1 0;
       min-width: 0;
-      padding: 8px 12px;
-      border-radius: 10px;
+      padding: 11px 18px;
+      border-radius: 100px;
       font-size: 12px;
       font-weight: 800;
-      line-height: 1.35;
+      line-height: 1.3;
       text-decoration: none;
       transition:
         opacity var(--duration-fast) var(--ease-out),
