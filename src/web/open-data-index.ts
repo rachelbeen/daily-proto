@@ -497,8 +497,6 @@ render();
 
 export function renderOpenDataIndexPage(catalog: OpenDataCatalog): string {
   const { sources, categories } = catalog.counts;
-  const educationCount =
-    catalog.categories.find((c) => c.key === "education")?.count ?? 0;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -519,7 +517,7 @@ export function renderOpenDataIndexPage(catalog: OpenDataCatalog): string {
           ${renderPageLinks("open-data")}
           <div class="index-intro">
             <h1>The Open Data Index</h1>
-            <p class="lede">Rich, real, public APIs you can pull from — including ${educationCount} curated for classrooms, kids, and lifelong learners. Built for prototypes, demos, and hackathons.</p>
+            <p class="lede">Rich, real, public APIs you can pull from. Built for prototypes, demos, and hackathons.</p>
             <div class="legend">
               <span class="legend-item"><span class="badge b-none" style="padding:4px 10px;font-size:9px;">No key</span> Open, just GET</span>
               <span class="legend-item"><span class="badge b-key" style="padding:4px 10px;font-size:9px;">Free key</span> Quick signup</span>
